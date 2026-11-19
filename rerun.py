@@ -27,8 +27,11 @@ What a run does, for a Lean proof:
      commit, and Mathlib's ready-made build, all into the work folder next to this file;
   3. refuses to go on unless every file to be built has the SHA-256 the list names, unless the files
      Lake reads (lakefile.toml, lake-manifest.json, lean-toolchain) hold nothing the kit does not
-     know, and unless a text search of the Lean files finds nothing that runs programs while building;
-  4. builds the proof with Lean and asks Lean which axioms the theorem rests on;
+     know, and unless a text search of the Lean files finds none of the words the kit knows can make
+     a build run code of the file or a program (a Lean file may import Mathlib, the proof's own files
+     and Lean.Elab.Tactic.Omega, Lean's omega tactic, which Mathlib imports too; nothing else);
+  4. builds the proof with Lean (lake build, with the targets the list's file names when it names
+     them) and asks Lean which axioms the theorem rests on;
   5. writes work/BATCH/BATCH.result.json: passed or failed, the axioms, the versions, the seconds.
 
 Nothing is installed outside the work folder (about 11 GB for a Lean proof that uses Mathlib);
@@ -89,19 +92,80 @@ ELAN_SHA256 = {
     "elan-aarch64-unknown-linux-gnu.tar.gz": "45cde3006f82f98804c94cf2ca4949d117060a5f3cc8afa62f523759947ee21f",
 }
 
-# What the text search looks for in the Lean files to be built, comments left out. Any of these can
-# make a build run a program; a proof has no need of them. One hit stops the run.
+# What the text search looks for in the Lean files to be built, comments left out. Each can make a build
+# run code the file wrote (outside the kernel's checking of proofs), run a program, write a file or reach
+# the network; a proof has no need of them. One hit stops the run. The list was drawn from the sources of
+# Lean 4.35 and of Mathlib and its dependencies (November 2026); it is a text search, not a proof that a
+# build runs no code of the file. Names containing `_` are written out: `\belab\b` does not see `by_elab`.
 FORBIDDEN = [
+    # Lean's own commands, terms and tactics that run code written in the file (in every file, no import).
     (r"#eval\b", "#eval"), (r"#exit\b", "#exit"), (r"\brun_cmd\b", "run_cmd"),
-    (r"\brun_elab\b", "run_elab"), (r"\brun_meta\b", "run_meta"),
-    (r"\b(builtin_)?initialize\b", "initialize"), (r"\bunsafe\b", "unsafe"),
-    (r"@\[\s*extern\b", "@[extern]"), (r"\bimplemented_by\b", "implemented_by"),
-    (r"\bnative_decide\b", "native_decide"), (r"\bofReduceBool\b", "ofReduceBool"),
-    (r"\bIO\b", "IO"), (r"\bLean\.", "Lean."), (r"\bopen\s+Lean\b", "open Lean"),
-    (r"\belab(_rules)?\b", "elab"), (r"\bmacro(_rules)?\b", "macro"), (r"\bsyntax\b", "syntax"),
-    (r"\bdeclare_syntax_cat\b", "declare_syntax_cat"), (r"\bevalExpr\b", "evalExpr"),
+    (r"\brun_elab\b", "run_elab"), (r"\brun_meta\b", "run_meta"), (r"\brun_tac\b", "run_tac"),
+    (r"\bby_elab\b", "by_elab"), (r"#guard\b", "#guard"), (r"\btest_extern\b", "test_extern"),
+    (r"\b(builtin_)?initialize\b", "initialize"), (r"\bnative_decide\b", "native_decide"),
+    (r"\+native\b", "+native"), (r"\bnative\s*:=", "native :="), (r"\bofReduceBool\b", "ofReduceBool"),
+    (r"\bevalExpr\b", "evalExpr"), (r"\binclude_str\b", "include_str"),
+    (r"\b(derive_eval_expr_instance_using_meta_eval|declare_(command_)?config_elab_legacy)\b",
+     "a configuration read by running code"),
+    # New syntax, macros and elaborators: code that runs while the file is read, and that can also build
+    # names the search would stop. Plain notation (notation, infix, notation3 ...) only fills in a fixed
+    # template and stays allowed; binder_predicate takes a whole macro.
+    (r"\belab(_rules|_stx_quot)?\b", "elab"), (r"\bmacro(_rules)?\b", "macro"), (r"\bsyntax\b", "syntax"),
+    (r"\bdeclare_syntax_cat\b", "declare_syntax_cat"), (r"\bbinder_predicate\b", "binder_predicate"),
+    (r"\bapp_delab\b", "app_delab"), (r"\b(builtin_)?d?simproc(_decl)?\b", "simproc"),
+    (r"\b(builtin_)?sevalproc\b", "sevalproc"),
+    # Unsafe and foreign code, and Lean's own internals (the meta-programming API lives under Lean).
+    (r"\bunsafe", "unsafe…"), (r"\bextern\b", "extern"), (r"\bimplemented_by\b", "implemented_by"),
+    (r"\bIO\b", "IO"), (r"\bLean", "Lean…"),
+    # Commands and tactics of Mathlib and its dependencies that run code written in the file, or start a
+    # program (curl, lake, the SAT solver), write files or use the network while the file is built.
+    (r"\bby_elabq\b", "by_elabq"), (r"\brun_tacq\b", "run_tacq"), (r"\brun_conv\b", "run_conv"),
+    (r"\beval%", "eval%"), (r"#html\b", "#html"), (r"#sample\b", "#sample"), (r"\bplausible\b", "plausible"),
+    (r"#widget\b", "#widget"), (r"\bshow_panel_widgets\b", "show_panel_widgets"),
+    (r"\bmk_rpc_widget%", "mk_rpc_widget%"), (r"#(leansearch|loogle|statesearch|search)\b", "#leansearch"),
+    (r"#clear_deprecations\b", "#clear_deprecations"), (r"\bbv_(decide|check)\b", "bv_decide"),
+    # Library code within reach of `import Mathlib` that writes files, starts programs or opens network
+    # connections, under names the words above do not cover. A second net: without one of the ways above
+    # to run code, nothing in a file can call them while it is built.
+    (r"\bStd\.(Async|Internal|Http)\b", "Std.Async"), (r"\bLake\b", "Lake"),
+    (r"\b(pickle|withUnpickle|rewriteOneFile|removeDeprecations|lintModules|getAllModulesSorted|getAllFiles)\b",
+     "a library function that writes files or starts programs"),
 ]
+# Searched in the whole text, as these can run over several lines: options of linarith (its discharger,
+# oracle and preprocessors are code the tactic runs) and rules added to aesop (a rule may be code).
+FORBIDDEN_SPANS = [
+    (r"\bn?linarith!?\??\s*\(", "linarith (…)"), (r"\baesop\w*\??\s*\(\s*add\b", "aesop (add …)"),
+]
+# Attributes (in @[…] and attribute […]) that register a declaration of the file as code that Lean, a tactic
+# or the editor runs; as above, drawn from the sources. Plain attributes (simp, ext, instance, to_additive,
+# csimp, macro_inline …) stay allowed; the tactics norm_num, positivity, aesop stay allowed too.
+CODE_ATTRIBUTES = {
+    "init", "export", "extern", "implemented_by", "command_elab", "term_elab", "tactic", "macro", "delab",
+    "app_unexpander", "formatter", "parenthesizer", "category_parenthesizer", "combinator_formatter",
+    "combinator_parenthesizer", "quot_precheck", "inductive_elab", "do", "incremental", "server_rpc_method",
+    "server_rpc_method_cancellable", "command_code_action", "hole_code_action", "tactic_code_action",
+    "code_action_provider", "simproc", "sevalproc", "library_suggestions", "try_suggestion", "try_tactic",
+    "grind_tactic", "run_parser_attribute_hooks", "unused_variables_ignore_fn", "missing_docs_handler",
+    "widget_module", "widget", "env_linter", "expr_presenter", "norm_num", "positivity", "gcongr_forward",
+    "bareiss_ext", "inclusion_param", "inclusion_ext", "hypothesis_ext", "inclusion_op", "hypothesis_op",
+    "polynomial_infer_base", "tacticAnalysis", "notation_class", "aesop",
+}
+CODE_ATTRIBUTE_PREFIXES = ("builtin_", "doc_")
+CODE_ATTRIBUTE_SUFFIXES = ("_parser",)
+ATTRIBUTE_LIST_RE = re.compile(r"@\[|\battribute\s*\[")
+ATTRIBUTE_NAME_RE = re.compile(r"\s*(?:(?:local|scoped)\s+)?-?\s*([A-Za-z_][\w.!?']*)")
+SET_OPTION_RE = re.compile(r"\bset_option\b\s*([^\s()]*)")
 IMPORT_RE = re.compile(r"^\s*(?:public\s+|private\s+|meta\s+)*import\s+(?:all\s+)?([A-Za-z0-9_.']+)\s*$")
+# Modules of Lean itself that a Lean file may import by their exact name, besides Mathlib and the proof's
+# own files. Lean.Elab.Tactic.Omega is the code of Lean's omega tactic. Mathlib imports it too
+# (Mathlib/Tactic/Order.lean has `public meta import Lean.Elab.Tactic.Omega`, and Lean treats a public meta
+# import as a public import that also loads the module's compiled code), so `import Mathlib`, which the kit
+# allows, brings it in already: naming it gives a file nothing that `import Mathlib` would not. It is taken
+# only as `import` or `public import` of this exact name: not `import all` (which also opens its private
+# part), not `meta import`, not a module under it or above it. What can make a build run a program
+# (FORBIDDEN above) is still searched for on every line, as before.
+ALLOWED_CORE_IMPORTS = {"Lean.Elab.Tactic.Omega"}
+CORE_IMPORT_RE = re.compile(r"^\s*(?:public\s+)?import\s+([A-Za-z0-9_.']+)\s*$")
 AXIOMS_RE = re.compile(r"^'([^']+)' depends on axioms: \[(.*)\]\s*$")
 NO_AXIOMS_RE = re.compile(r"^'([^']+)' does not depend on any axioms\s*$")
 
@@ -261,6 +325,16 @@ def check_spec(spec, path):
         bad("permittedAxioms must be a list")
     if not isinstance(spec.get("outputs"), list) or not spec["outputs"]:
         bad("outputs must name the built files to fingerprint")
+    targets = spec.get("buildTargets")
+    if "buildTargets" in spec and not (isinstance(targets, list) and 0 < len(targets) <= MAX_BUILD_TARGETS and all(
+            isinstance(t, str) and MODULE_NAME_RE.match(t) for t in targets)):
+        bad(f"buildTargets must be a list of 1 to {MAX_BUILD_TARGETS} names of the project's libraries or modules")
+
+
+def build_command(spec):
+    """Step 4's build: `lake build` and the targets the list's file names in buildTargets, or a bare
+    `lake build` (the package's default targets) when it names none."""
+    return ["lake", "build", *spec.get("buildTargets", [])]
 
 
 # ---------------------------------------------------------------------------- running tools
@@ -727,6 +801,10 @@ def read_toml(text):
 
 
 MODULE_NAME_RE = re.compile(r"^[A-Za-z_][A-Za-z0-9_']*(\.[A-Za-z_][A-Za-z0-9_']*)*$")
+# A list's file may name what `lake build` builds (buildTargets): Lake builds nothing on a bare `lake build`
+# when lakefile.toml names no defaultTargets. Each must be a lean_lib of lakefile.toml or a module of the
+# project's own files: plain names, never a flag, a path or another package's target.
+MAX_BUILD_TARGETS = 8
 GLOB_RE = re.compile(r"^[A-Za-z_][A-Za-z0-9_']*(\.[A-Za-z_][A-Za-z0-9_']*)*(\.[*+])?$")
 # The keys of lakefile.toml the kit knows, with the type each must have. Any other key stops the run:
 # moreLeanArgs, weakLeanArgs, moreLinkArgs, precompileModules, plugins, dynlibs, extraDepTargets,
@@ -801,6 +879,7 @@ def build_file_findings(src, spec):
             return []
         return value
 
+    libs = set()
     if pre + "lakefile.toml" not in files:
         found.append(f"{pre}lakefile.toml: the project has no lakefile.toml")
     else:
@@ -825,6 +904,7 @@ def build_file_findings(src, spec):
                         (scope is not None and scope != "leanprover-community"):
                     found.append(f"{pre}lakefile.toml: Mathlib must come from leanprover-community")
             for lib in tables(conf, "lean_lib"):
+                libs.add(lib.get("name"))
                 where = f"lean_lib {lib.get('name')}: "
                 keys(where, {k: v for k, v in lib.items() if k != "leanOptions"}, LIB_KEYS)
                 if "leanOptions" in lib:
@@ -837,6 +917,11 @@ def build_file_findings(src, spec):
                         found.append(f"{pre}lakefile.toml: {where}the glob {g} is not one the kit reads")
             for exe in tables(conf, "lean_exe"):
                 keys(f"lean_exe {exe.get('name')}: ", exe, EXE_KEYS)
+    targets = spec.get("buildTargets")
+    own = {name[len(pre):-len(".lean")].replace("/", ".") for name in files if name.endswith(".lean")}
+    for target in map(str, targets if isinstance(targets, list) else []):
+        if target not in libs and target not in own:
+            found.append(f"buildTargets: {target} is neither a lean_lib of {pre}lakefile.toml nor a module of the project")
 
     if pre + "lake-manifest.json" not in files:
         found.append(f"{pre}lake-manifest.json: the project has none, so its packages are not fixed")
@@ -909,7 +994,8 @@ def scan_source(src, spec):
                 continue
             if m:
                 module = m.group(1)
-                if not (module == "Mathlib" or module.startswith("Mathlib.") or module in own):
+                core = module in ALLOWED_CORE_IMPORTS and CORE_IMPORT_RE.match(line)
+                if not (module == "Mathlib" or module.startswith("Mathlib.") or module in own or core):
                     found.append(f"{name}:{number}: imports {module}")
                 continue
             if IMPORT_WORD_RE.match(line):  # «names», two imports on a line, an import over two lines...
@@ -918,10 +1004,48 @@ def scan_source(src, spec):
             for pattern, word in FORBIDDEN:
                 if re.search(pattern, line) or re.search(pattern, also):
                     found.append(f"{name}:{number}: {word}")
+            for option in sorted({o for text in (line, also) for o in SET_OPTION_RE.findall(text)}):
+                if not (option in OPTION_NAMES or option.startswith(OPTION_PREFIXES)):
+                    found.append(f"{name}:{number}: sets the Lean option {option or '(not on this line)'}, "
+                                 "which the kit does not know")
         for number in range(len(code.split("\n")) + 1, len(other) + 1):  # lines only the second reading has
             for pattern, word in FORBIDDEN:
                 if re.search(pattern, other[number - 1]):
                     found.append(f"{name}:{number}: {word}")
+        spans = set()  # what can run over several lines, in both readings
+        for text in (code, "\n".join(other)):
+            for pattern, word in FORBIDDEN_SPANS:
+                spans |= {(text.count("\n", 0, m.start()) + 1, word) for m in re.finditer(pattern, text)}
+            spans |= {(number, f"the attribute {attr}") for number, attr in code_attributes(text)}
+        found += [f"{name}:{number}: {word}" for number, word in sorted(spans)]
+    return found
+
+
+def code_attributes(text):
+    """(line, name) of each attribute in the @[…] and attribute […] lists of a Lean text that registers
+    code (CODE_ATTRIBUTES). A list ends at its closing bracket, past brackets and parentheses inside it."""
+    found = []
+    for m in ATTRIBUTE_LIST_RE.finditer(text):
+        i = start = m.end()
+        depth, items = 0, []
+        while i < len(text):
+            if text[i] in "[(":
+                depth += 1
+            elif text[i] in "])":
+                if depth == 0:
+                    break
+                depth -= 1
+            elif text[i] == "," and depth == 0:
+                items.append((start, text[start:i]))
+                start = i + 1
+            i += 1
+        items.append((start, text[start:i]))
+        for at, item in items:
+            n = ATTRIBUTE_NAME_RE.match(item)
+            attr = n.group(1) if n else ""
+            if attr in CODE_ATTRIBUTES or attr.startswith(CODE_ATTRIBUTE_PREFIXES) or \
+                    attr.endswith(CODE_ATTRIBUTE_SUFFIXES):
+                found.append((text.count("\n", 0, at + n.start(1)) + 1, attr))
     return found
 
 
@@ -1008,7 +1132,7 @@ def build(spec, work):
     _, version = output_of(["lean", "--version"], project, env)
 
     say("  Building the proof")
-    code, build_seconds = run(["lake", "build"], project, env, log, "building")
+    code, build_seconds = run(build_command(spec), project, env, log, "building")
     record = {"lean": version.strip()[:60], "buildExit": code, "buildSeconds": round(build_seconds, 1),
               "checkSeconds": 0.0, "axioms": {}, "problems": []}
     if code != 0:

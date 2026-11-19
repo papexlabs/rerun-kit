@@ -2,3 +2,4 @@
 5b1db838e1ebbc90e3b5b36320b36008f1cf957953187131485bf6437c370586  rerun.py  first release, 19 November 2026
 e987ae1ea2b97e615b843705ab3ccc1c39bc60d968332b89ae2c1bf34af9f347  rerun.py  the run drawn in a terminal (show.py), same lines with --plain, 19 November 2026
 74326a38779408557bede4776a0c57535f6b89d66b5a9da71913c1db5edb3f6b  rerun.py  a run taken through the Papex connection (--batch, --problem, --list), 19 November 2026
+c6c3473cfd9fce1f0720dff6be6d28d4c72c0d5518c705c77b870518a239e011  rerun.py  one core import allowed by name (Lean.Elab.Tactic.Omega), buildTargets for lake build, a tighter text search, 19 November 2026

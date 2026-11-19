@@ -34,9 +34,11 @@ plain lines instead; both say the same.
    that commit, and Mathlib's ready-made build. Everything goes into `work/` next to the kit.
    Nothing is installed anywhere else, and `python3 rerun.py --clean` deletes it.
 3. It stops unless every file to be built has the SHA-256 the list names, unless the files Lake
-   reads hold nothing the kit does not know, and unless a text search of the Lean files finds
-   nothing that runs programs while building (see below).
-4. It builds the proof with Lean and asks Lean which axioms the theorem rests on.
+   reads hold nothing the kit does not know, and unless a text search of the Lean files finds none
+   of the words the kit knows can make a build run code of the file or a program (see below).
+4. It builds the proof with Lean and asks Lean which axioms the theorem rests on. The build is
+   `lake build`, followed by the targets the list's file names, if any: when `lakefile.toml` names
+   no default targets, a bare `lake build` builds nothing.
 5. It writes a result file: passed or failed, the axioms, the versions, the seconds, and a
    fingerprint of what was built.
 
@@ -79,12 +81,27 @@ Mathlib's release, and the proof's files at one commit. Before it builds anythin
 - a file of Lake's own folder `.lake` is part of the repository, or `lean-toolchain` names another
   Lean version than the list;
 - a Lean file imports anything but Mathlib and the proof's own files, or writes an import the kit
-  cannot read (a `«name»`, two imports on one line);
-- a Lean file contains a command that runs programs (`#eval`, `run_cmd`, `initialize`, `unsafe`,
-  `macro`, `elab` and the like; the full list is `FORBIDDEN` in `rerun.py`).
+  cannot read (a `«name»`, two imports on one line). One module of Lean itself may be imported by its
+  exact name: `Lean.Elab.Tactic.Omega`, the code of Lean's `omega` tactic, which `import Mathlib`
+  brings in too;
+- a Lean file contains a word that can make a build run code the file wrote or start a program:
+  commands and tactics that run code (`#eval`, `run_cmd`, `run_tac`, `by_elab`, `#guard`,
+  `decide +native` …), new syntax and macros (`syntax`, `macro`, `elab`, `binder_predicate`,
+  simprocs), anything that starts with `unsafe` or `Lean`, `extern`, `IO`, attributes that register
+  code (`@[init]`, `@[tactic]`, `@[norm_num]`, `@[aesop]` …), commands of Mathlib's libraries that
+  start programs or use the network (`#leansearch`, `#loogle`, `#clear_deprecations`, `bv_decide`),
+  options of `linarith` and rules added to `aesop` (both can be code); the full lists are
+  `FORBIDDEN`, `FORBIDDEN_SPANS` and `CODE_ATTRIBUTES` in `rerun.py`;
+- a Lean file sets a Lean option that `lakefile.toml` may not set either (`set_option
+  debug.skipKernelTC`, for one, turns off Lean's kernel check).
 
-Anything the kit cannot read, it refuses. The search is a text search, not an audit. Lean and Mathlib
-come from their own release pages and are trusted as any Lean user trusts them.
+Anything the kit cannot read, it refuses. The search is a text search, not an audit. Its words were
+drawn from the sources of Lean 4.35, Mathlib and Mathlib's libraries, but a text search cannot show
+that a build runs no code of the file, and new versions of Lean or Mathlib can add new ways. It is
+one of several layers: Papex Labs chooses each list and the kit pins every file by SHA-256, the files
+Lake reads may hold nothing the kit does not know, the search, and with `--docker` the build runs in
+a container whose network is cut. Lean and Mathlib come from their own release pages and are trusted
+as any Lean user trusts them.
 
 If you would rather not build other people's files on your computer directly, use
 

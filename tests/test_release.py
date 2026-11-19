@@ -190,9 +190,11 @@ def project(name, files=None, lakefile=LAKEFILE, man=None, toolchain=TOOLCHAIN +
     return src, {"projectDir": "", "toolchain": TOOLCHAIN, "files": digests}
 
 
-def check(name, expect, **kw):
-    """expect: None (nothing found) or a piece of text one finding must contain."""
+def check(name, expect, targets=None, **kw):
+    """expect: None (nothing found) or a piece of text one finding must contain. targets: buildTargets."""
     src, spec = project(name, **kw)
+    if targets is not None:
+        spec["buildTargets"] = targets
     found = rerun.scan_source(src, spec)
     ok = (found == []) if expect is None else any(expect in f for f in found)
     case(name, ok, found if found else "nothing found")
@@ -272,6 +274,140 @@ check("R12 '/-' inside a string does not hide the lines after it", "run_cmd",
       files=dict(FILES, **{"Demo/A.lean": FILES["Demo/A.lean"] + 'def s := "/-"\nrun_cmd pure ()\ndef t := "-/"\n'}))
 check("A6 a character literal and primes make no false finding", None,
       files=dict(FILES, **{"Demo/A.lean": FILES["Demo/A.lean"] + "def c : Char := '\"' -- a quote\ntheorem h' : 1 = 1 := rfl\n"}))
+
+# One module of Lean itself may be imported by its exact name: Lean.Elab.Tactic.Omega (Mathlib imports it too).
+OMEGA = "Lean.Elab.Tactic.Omega"
+
+
+def with_import(line, rest="theorem Demo.a : 1 + 1 = 2 := by omega\n"):
+    return dict(FILES, **{"Demo/A.lean": f"import Mathlib.Tactic\n{line}\n\n{rest}"})
+
+
+check(f"C1 import {OMEGA}", None, files=with_import(f"import {OMEGA}"))
+check(f"C1 public import {OMEGA} in a module file", None, files=dict(FILES, **{
+    "Demo/A.lean": f"module\n\npublic import Mathlib.Tactic\npublic import {OMEGA}  -- the omega tactic\n\n"
+                   "public theorem Demo.a : 1 + 1 = 2 := by omega\n"}))
+for label, line, expect in [
+        ("a module under it", f"import {OMEGA}.Frontend", f"imports {OMEGA}.Frontend"),
+        ("the module above it", "import Lean.Elab.Tactic", "imports Lean.Elab.Tactic"),
+        ("another module of Lean", "import Lean.Elab.Command", "imports Lean.Elab.Command"),
+        ("all of Lean", "import Lean", "imports Lean"),
+        ("Std's omega", "import Std.Tactic.Omega", "imports Std.Tactic.Omega"),
+        ("a longer name", f"import {OMEGA}X", f"imports {OMEGA}X"),
+        ("the name with text after it", f"import {OMEGA} Mathlib", "an import the kit cannot read"),
+        ("the name with a trailing dot", f"import {OMEGA}.", "an import the kit cannot read"),
+        ("import all", f"import all {OMEGA}", f"imports {OMEGA}"),
+        ("public import all", f"public import all {OMEGA}", f"imports {OMEGA}"),
+        ("meta import", f"meta import {OMEGA}", f"imports {OMEGA}"),
+        ("public meta import", f"public meta import {OMEGA}", f"imports {OMEGA}"),
+        ("private import", f"private import {OMEGA}", f"imports {OMEGA}"),
+        ("two imports on one line", f"import {OMEGA} import Mathlib", "an import the kit cannot read"),
+        ("the name over two lines", "import\n  " + OMEGA, "an import the kit cannot read"),
+        ("the name written with « »", "import Lean.Elab.Tactic.«Omega»", "an import the kit cannot read")]:
+    check(f"C2 near the allowed import, refused: {label}", expect, files=with_import(line))
+# Lines each word of the search must stop (the first also with the allowed import, C3). A word of FORBIDDEN
+# without lines here fails F0, so a new word cannot go untested.
+FORBIDDEN_SAMPLES = {
+    "#eval": ["#eval 1", "#eval! 1"], "#exit": ["#exit"], "run_cmd": ["run_cmd pure ()"],
+    "run_elab": ["run_elab pure ()"], "run_meta": ["run_meta pure ()"],
+    "run_tac": ["example : True := by\n  run_tac pure ()\n  trivial"],
+    "by_elab": ["def t : Nat := by_elab pure (toExpr 1)"], "#guard": ["#guard 1 + 1 == 2"],
+    "test_extern": ["test_extern Nat.add 1 2"], "initialize": ["initialize x : Nat ← pure 1", "builtin_initialize pure ()"],
+    "native_decide": ["example : 1 = 1 := by native_decide"], "+native": ["example : 1 = 1 := by decide +native"],
+    "native :=": ["example : 1 = 1 := by decide (native := true)", "example : 1 = 1 := by decide (config := {native := true})"],
+    "ofReduceBool": ["#check ofReduceBool"], "evalExpr": ["def e := evalExpr", "def e := evalExpr'"],
+    "include_str": ['def s := include_str "/etc/hosts"'],
+    "a configuration read by running code": ["derive_eval_expr_instance_using_meta_eval Foo",
+                                             "declare_config_elab_legacy elabFoo Foo",
+                                             "declare_command_config_elab_legacy elabFoo Foo"],
+    "elab": ['elab "t" : tactic => pure ()', "elab_rules : tactic | _ => pure ()", "elab_stx_quot Foo.bar"],
+    "macro": ['macro "t" : tactic => `(tactic| rfl)', "macro_rules | `(t) => `(rfl)", "local macro \"t\" : term => `(1)"],
+    "syntax": ['syntax "t" : tactic'], "declare_syntax_cat": ["declare_syntax_cat c"],
+    "binder_predicate": ['binder_predicate x " ≫ " y:term => `($x > $y)'], "app_delab": ["app_delab f => pure default"],
+    "simproc": ["simproc s (f _) := fun _ => pure .continue", "dsimproc d (f _) := fun _ => pure .continue",
+                "simproc_decl s (f _) := fun _ => pure .continue", "builtin_simproc s (f _) := fun _ => pure .continue"],
+    "sevalproc": ["sevalproc s (f _) := fun _ => pure .continue"],
+    "unsafe…": ["unsafe def u : Nat := 1", "def f : Nat := unsafeBaseIO (pure 1)", "def g := unsafeCast 1",
+                "def h := unsafeIO (pure 1)", "def k := unsafeEIO (pure 1)", "theorem unsafety : True := trivial"],
+    "extern": ['@[extern "f"] opaque f : Nat', '@[simp, extern "c_f"] opaque f : Nat', '@[ extern "f" ] opaque f : Nat',
+               'attribute [extern "c_f"] f'],
+    "implemented_by": ["@[implemented_by g] def f : Nat := 1", "attribute [implemented_by g] f"],
+    "IO": ["def m : IO Unit := pure ()"],
+    "Lean…": ["def n := Lean.Name.anonymous", "open Lean in def x := 1", "namespace Lean", "open _root_.Lean in def x := 1",
+              "open Lean.Elab in def x := 1", "export Lean (Name)", "section\nopen Lean in\ndef x := 1\nend",
+              "def q := LeanSearchClient.getLeanSearchQueryJson", "def leandro := Leandro.x", "open «Lean» in def x := 1"],
+    "by_elabq": ["def t : Nat := by_elabq pure q(1)"], "run_tacq": ["example : True := by\n  run_tacq pure ()\n  trivial"],
+    "run_conv": ["example : 1 = 1 := by\n  conv => run_conv pure ()"], "eval%": ["def e : Nat := eval% 1 + 1"],
+    "#html": ["#html <b>x</b>"], "#sample": ["#sample Nat"], "plausible": ["example : 1 = 1 := by plausible"],
+    "#widget": ["#widget w"], "show_panel_widgets": ["show_panel_widgets [w]"], "mk_rpc_widget%": ["def w := mk_rpc_widget% f"],
+    "#leansearch": ['#leansearch "primes."', "#loogle Nat.succ", "example : True := by\n  #statesearch\n  trivial", '#search "x"'],
+    "#clear_deprecations": ['#clear_deprecations "2024-01-01" "2025-01-01" really'],
+    "bv_decide": ["example : True := by bv_decide", 'example : True := by bv_check "a.lrat"'],
+    "Std.Async": ["def s := Std.Async.UDP.Socket.mk", "def t := Std.Internal.UV.TCP.Socket.new", "def u := Std.Http.x"],
+    "Lake": ["def l := Lake.x"],
+    "a library function that writes files or starts programs": [
+        'def p := pickle "x" 1', "def a := getAllModulesSorted", "def b := lintModules", "def c := rewriteOneFile",
+        "def d := withUnpickle", "def e := removeDeprecations", "def f := getAllFiles"],
+}
+case("F0 every word of the search has lines in this test", all(w in FORBIDDEN_SAMPLES for _, w in rerun.FORBIDDEN),
+     [w for _, w in rerun.FORBIDDEN if w not in FORBIDDEN_SAMPLES] or "all")
+for _, word in rerun.FORBIDDEN:
+    lines = FORBIDDEN_SAMPLES.get(word, [])
+    for n, text in enumerate(lines):
+        check(f"F1 {word} stops ({n + 1}): {' | '.join(text.splitlines())[:60]}", f": {word}",
+              files=dict(FILES, **{"Demo/A.lean": f"import Mathlib.Tactic\n\n{text}\n"}))
+    if lines:
+        check(f"C3 {word} still stops a file that imports {OMEGA}", f": {word}",
+              files=with_import(f"import {OMEGA}", lines[0] + "\n"))
+for label, text, word in [  # over several lines (FORBIDDEN_SPANS)
+        ("linarith with a discharger", "example : True := by linarith (config := { discharger := t })", "linarith (…)"),
+        ("linarith! with a discharger", "example : True := by linarith! (discharger := t)", "linarith (…)"),
+        ("nlinarith, its option on the next line", "example : True := by\n  nlinarith\n    (oracle := o)", "linarith (…)"),
+        ("linarith with preprocessors", "example : True := by linarith (preprocessors := [p])", "linarith (…)"),
+        ("an aesop rule", "example : True := by aesop (add safe t)", "aesop (add …)"),
+        ("an aesop? rule over two lines", "example : True := by\n  aesop?\n    (add unsafe 50% t)", "aesop (add …)")]:
+    check(f"F2 {label}", f": {word}", files=dict(FILES, **{"Demo/A.lean": f"import Mathlib.Tactic\n\n{text}\n"}))
+for label, text, attr in [  # attributes that register code (CODE_ATTRIBUTES)
+        ("init", "@[init f] opaque x : Nat", "init"), ("builtin_init", "@[builtin_init f] opaque x : Nat", "builtin_init"),
+        ("export", "@[export lean_f] def f := 1", "export"), ("init in an attribute command", "attribute [init f] g", "init"),
+        ("tactic", "@[tactic Foo.bar] def t := 1", "tactic"), ("command_elab", "@[command_elab k] def c := 1", "command_elab"),
+        ("term_elab", "@[term_elab k] def c := 1", "term_elab"), ("macro", "@[macro k] def c := 1", "macro"),
+        ("delab", "@[delab app.f] def d := 1", "delab"), ("app_unexpander", "@[app_unexpander f] def u := 1", "app_unexpander"),
+        ("simproc", "@[simproc] def s := 1", "simproc"), ("norm_num", "@[norm_num _ + _] def e := 1", "norm_num"),
+        ("positivity", "@[positivity _ * _] def e := 1", "positivity"), ("aesop", "@[aesop safe apply] theorem t : True := trivial", "aesop"),
+        ("env_linter", "@[env_linter] def l := 1", "env_linter"), ("a parser", "@[my_cat_parser] def p := 1", "my_cat_parser"),
+        ("doc_role", "@[doc_role] def r := 1", "doc_role"), ("gcongr_forward", "@[gcongr_forward] def g := 1", "gcongr_forward"),
+        ("expr_presenter", "@[expr_presenter] def e := 1", "expr_presenter"), ("widget_module", "@[widget_module] def w := 1", "widget_module"),
+        ("tacticAnalysis", "@[tacticAnalysis] def a := 1", "tacticAnalysis"), ("second in a list", "@[simp, tactic k] def t := 1", "tactic"),
+        ("in a list over two lines", "@[simp,\n  norm_num _ + _] def e := 1", "norm_num"), ("local", "@[local norm_num _] def e := 1", "norm_num"),
+        ("scoped", "@[scoped tactic k] def t := 1", "tactic"), ("after a nested bracket", "@[simp ← foo, aesop safe (rule_sets := [X])] def t := 1", "aesop")]:
+    check(f"F3 the attribute {label}", f": the attribute {attr}", files=dict(FILES, **{"Demo/A.lean": f"import Mathlib.Tactic\n\n{text}\n"}))
+for label, text, option in [  # options a Lean file may set: the ones lakefile.toml may set
+        ("debug.skipKernelTC (turns off Lean's kernel check)", "set_option debug.skipKernelTC true in\ntheorem t : True := trivial", "debug.skipKernelTC"),
+        ("doc.verso (Lean code in doc comments)", "set_option doc.verso true", "doc.verso"),
+        ("a trace option", "set_option trace.Meta.synthInstance true in\ntheorem t : True := trivial", "trace.Meta.synthInstance"),
+        ("allowUnsafeReducibility", "set_option allowUnsafeReducibility true", "allowUnsafeReducibility"),
+        ("in a tactic block", "theorem t : True := by\n  set_option debug.skipKernelTC true in\n  trivial", "debug.skipKernelTC"),
+        ("its name on the next line", "set_option\n  maxHeartbeats 1 in\ntheorem t : True := trivial", "(not on this line)")]:
+    check(f"F4 set_option {label}", f"sets the Lean option {option}, which the kit does not know",
+          files=dict(FILES, **{"Demo/A.lean": f"import Mathlib.Tactic\n\n{text}\n"}))
+check("N1 near misses that stay allowed", None, files=dict(FILES, **{"Demo/A.lean": "import Mathlib.Tactic\n\n" + "\n".join([
+    "#guard_msgs in", "#check (1 : Nat)", "#guard_expr 1 = 1", "example : True := by", "  guard_target = True", "  trivial",
+    "theorem elaborated_run_length_le (n : Nat) : n ≤ n := le_refl n", "def nativeSize : Nat := 1",
+    "@[macro_inline] def mi (x : Nat) : Nat := x", "@[csimp] theorem cs : @id Nat = @id Nat := rfl", "@[simp] theorem s : 1 = 1 := rfl",
+    "attribute [local simp] Nat.add_comm", "attribute [-simp] Nat.add_comm", "attribute [local instance] Nat.instAdd",
+    "initialize_simps_projections Prod", "notation \"‖\" x \"‖\" => (x : Nat)", "infixl:65 \" +' \" => Nat.add",
+    "prefix:max \"√'\" => Nat.sqrt", "export Nat (succ)", "set_option maxHeartbeats 400000 in",
+    "set_option linter.style.longLine false in", "set_option pp.all true in", "example (a b : Nat) (h : a < b) : a ≤ b := by",
+    "  first | omega | linarith [h] | nlinarith [h] | positivity | norm_num | decide | decide +kernel | aesop | simp -simprocs",
+    "def stdMap : Std.HashMap Nat Nat := {}", "theorem Lakes_are_wet : True := trivial", "def matrixTrace := 1",
+    "#find_syntax \"omega\"", "#print axioms Nat.add_comm", "#reduce 1 + 1"])}))
+
+# What `lake build` builds: a bare `lake build` (the package's default targets), or the list's buildTargets.
+check("K1 buildTargets naming the project's lean_libs and a module", None, targets=["Demo", "Solution", "Demo.A"])
+check("K2 buildTargets naming no lean_lib and no module of the project", "buildTargets: cache is neither",
+      targets=["Demo", "cache"])
+check("K2 buildTargets naming a module of Mathlib", "buildTargets: Mathlib.Tactic is neither", targets=["Mathlib.Tactic"])
 
 # make_spec.py: it writes nothing for a unit the kit would stop, and the same bytes as before otherwise.
 # Its git calls are replaced by a stand-in that copies a local test project; nothing is fetched.
@@ -532,6 +668,70 @@ finally:
     else:
         os.environ["PAPEX_KIT_BACKGROUND"] = background
 case("S1 the show's Next box: one advice line as before, the three of --batch as one text", one and three, stage.after)
+
+# ---------------------------------------------------------------------------- buildTargets: what `lake build` builds
+# Lake builds nothing on a bare `lake build` when lakefile.toml names no defaultTargets; a list's file can then name
+# the targets. A file without the field gets the bare `lake build`, as before.
+SPEC_PATH = os.path.join(KIT, "lists", ERDOS, ERDOS_LIST, "erdos-824-lean.spec.json")
+base_spec = json.load(open(SPEC_PATH))
+for label, targets, ok in [
+        ("library names", ["Solution", "Challenge", "ReleaseAudit"], True), ("a module name", ["Gallai.Foundations.Parity"], True),
+        ("8 names", [f"T{n}" for n in range(8)], True), ("a flag", ["--help"], False), ("a path", ["Gallai/Foundations/Parity.lean"], False),
+        ("a path up", ["../Solution"], False), ("a module with +", ["+Solution"], False), ("another package's target", ["@mathlib/Mathlib"], False),
+        ("a facet", ["Solution:olean"], False), ("9 names", [f"T{n}" for n in range(9)], False), ("an empty list", [], False),
+        ("not a list", "Solution", False), ("not texts", [1], False), ("null", None, False)]:
+    why = stops(rerun.check_spec, dict(base_spec, buildTargets=targets), SPEC_PATH)
+    case(f"K3 buildTargets: {label} {'taken' if ok else 'refused'}",
+         why is None if ok else (why and "buildTargets must be a list of 1 to 8 names" in why), why or "taken")
+
+ran = {}
+
+
+def build_with_stand_ins(spec, name):
+    """rerun.build() with stand-ins for the tools: returns the command it ran for the build (nothing is built)."""
+    work = os.path.join(RUN, "build-" + name)
+    os.makedirs(os.path.join(work, "src"), exist_ok=True)
+    saved = rerun.run, rerun.output_of
+
+    def run_stand_in(cmd, cwd, env, log, label):
+        ran[name] = cmd
+        with open(log, "ab") as fh:
+            fh.write(b"a stand-in build\n")
+        return 1, 0.1
+
+    rerun.run, rerun.output_of = run_stand_in, lambda cmd, cwd, env: (0, "Lean (version 4.0.0, a stand-in)")
+    try:
+        with contextlib.redirect_stdout(io.StringIO()):
+            rerun.build(spec, work)
+    finally:
+        rerun.run, rerun.output_of = saved
+    return ran[name]
+
+
+builds = []
+for base, _, names in sorted(os.walk(os.path.join(KIT, "lists"))):
+    for n in sorted(names):
+        if n.endswith(".spec.json"):
+            spec = json.load(open(os.path.join(base, n)))
+            builds.append((n, spec.get("buildTargets"), build_with_stand_ins(spec, n) == ["lake", "build", *spec.get("buildTargets", [])]))
+case("K4 each list file of this kit: lake build and its buildTargets; without them the bare `lake build`, as before",
+     builds and all(ok for _, _, ok in builds), [f"{n}: {t or 'bare'}" for n, t, _ in builds])
+cmd = build_with_stand_ins(dict(base_spec, buildTargets=["Solution", "Challenge"]), "targets")
+case("K5 a list file with buildTargets: lake build and those targets, nothing else",
+     cmd == ["lake", "build", "Solution", "Challenge"] == rerun.build_command(dict(base_spec, buildTargets=["Solution", "Challenge"])),
+     cmd)
+
+src, _ = project("M-targets")
+out = os.path.join(RUN, "M-targets.spec.json")
+why = make_spec_with(src, dict(SEED, buildTargets=["Solution", "Demo.A"]), out, os.path.join(KIT, "tools", "make_spec.py"))
+written_spec = json.load(open(out)) if os.path.exists(out) else {}
+case("M4 make_spec.py carries buildTargets from the seed into the unit's file", why is None
+     and written_spec.get("buildTargets") == ["Solution", "Demo.A"], why or written_spec.get("buildTargets"))
+for label, targets, expect in [("a flag", ["--help"], "buildTargets must be a list"),
+                               ("a target not of the project", ["Solution", "cache"], "buildTargets: cache is neither")]:
+    out = os.path.join(RUN, f"M-targets-refused-{len(targets)}.spec.json")
+    why = make_spec_with(src, dict(SEED, buildTargets=targets), out, os.path.join(KIT, "tools", "make_spec.py"))
+    case(f"M5 make_spec.py writes nothing for buildTargets with {label}", why and expect in why and not os.path.exists(out), why)
 
 # ---------------------------------------------------------------------------- the runner as a hosted task
 # runner/render_task.py runs `runner.py --post` once and sums up what it printed. Papex is a stand-in: urlopen is

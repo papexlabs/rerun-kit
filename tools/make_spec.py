@@ -4,11 +4,12 @@
   python3 tools/make_spec.py SEED.json OUT.spec.json
 
 SEED.json holds everything but the file list: schema, system, title, repo, commit, projectDir,
-toolchain, leanCommit, theorems, permittedAxioms, outputs, statementFile, diskGb, expectedSeconds.
+toolchain, leanCommit, theorems, permittedAxioms, outputs, statementFile, diskGb, expectedSeconds,
+and buildTargets when `lake build` must be told what to build (lakefile.toml names no defaultTargets).
 This tool fetches the repository at the commit into a temporary folder (it builds nothing and runs
 nothing of it), lists the tracked files under projectDir and writes their SHA-256 values into
 "files". It also prints the manifest line for the unit. It writes nothing if the kit's own check
-(the files Lake reads, then the text search) would stop a run of this unit.
+(the unit's file, the files Lake reads, then the text search) would stop a run of this unit.
 """
 
 import hashlib
@@ -49,6 +50,7 @@ def main():
                 with open(path, "rb") as fh:
                     files[name] = hashlib.sha256(fh.read()).hexdigest()
         spec["files"] = dict(sorted(files.items()))
+        rerun.check_spec(spec, sys.argv[1])  # stops, as a run would, on a field the kit cannot read
         found = rerun.scan_source(folder, spec)
         if found:
             sys.exit("The kit would stop a run of this unit:\n" + "\n".join("  " + f for f in found[:40]))
