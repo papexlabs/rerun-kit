@@ -1,0 +1,52 @@
+{
+ "schema": "papex-rerun-spec/v1",
+ "system": "lean4",
+ "title": "Erdős 824, conditional lower bound: the Lean proof",
+ "repo": "https://github.com/daizisheng/erdos-824.git",
+ "commit": "b4b7099bb8ab9c1c7fc61dae18a73cdbe503fe5a",
+ "projectDir": "lean",
+ "toolchain": "leanprover/lean4:v4.35.0-rc2",
+ "leanCommit": "11acb17ec6b07a8f9e9173e6845197929540936b",
+ "statementFile": "lean/Challenge.lean",
+ "theorems": [
+  {
+   "name": "Palomar824.main_result",
+   "module": "Solution"
+  }
+ ],
+ "permittedAxioms": [
+  "propext",
+  "Classical.choice",
+  "Quot.sound"
+ ],
+ "outputs": [
+  "lean/.lake/build/lib/lean/Erdos824/Defs.olean",
+  "lean/.lake/build/lib/lean/Erdos824/Defs.olean.private",
+  "lean/.lake/build/lib/lean/Erdos824/Core.olean",
+  "lean/.lake/build/lib/lean/Erdos824/Core.olean.private",
+  "lean/.lake/build/lib/lean/Erdos824/Analytic.olean",
+  "lean/.lake/build/lib/lean/Erdos824/Analytic.olean.private",
+  "lean/.lake/build/lib/lean/Erdos824/Main.olean",
+  "lean/.lake/build/lib/lean/Erdos824/Main.olean.private",
+  "lean/.lake/build/lib/lean/Solution.olean",
+  "lean/.lake/build/lib/lean/Solution.olean.private"
+ ],
+ "diskGb": 12,
+ "expectedSeconds": 300,
+ "files": {
+  "lean/.gitignore": "8d21147ad12e71ec9b531a4a8cc4bb36340eaee232489797239b2d7cff5e0f7e",
+  "lean/Challenge.lean": "9d07acb83c880c6fa370ad91ea1629b4c73d95ee86dfadd9c563e0b7b888daa7",
+  "lean/Check.lean": "8f511d904d3bf5c84322a87360411f1a2654fa020064e74db7602cd3ba6b4b93",
+  "lean/Erdos824.lean": "f25224ba5b4d5357ac76c152d87b98e8c618c5d571d36ab1288ac84e0753f2ba",
+  "lean/Erdos824/Analytic.lean": "0ff667e56a96dfb34af29e91850829674e46b57db27f40a0283c5eb1f43c41c9",
+  "lean/Erdos824/Core.lean": "a40dbbee7e41d439daced4475401ad37fd956719c1ef880293e44fe24fe47180",
+  "lean/Erdos824/Defs.lean": "c5e8ab5a02852b91feffd25ef29b8def19554b7beb74c3ab80c733160aae7fdb",
+  "lean/Erdos824/Main.lean": "7e161cb62949ae13974df866954bb25829b0303bd0339555fc0f71c14ef74fbf",
+  "lean/Solution.lean": "8fe668b188e4f9777f05bef9975a12b6270f041cbb66c25810b2986e3f3550dd",
+  "lean/comparator.json": "70b4bdd2ec6a187483a71cac54d42c964afaf265c4ba920b369f3ebbf8a22d99",
+  "lean/formalization.yaml": "cc7e4cc0b0f3aedd116f4ccb44982a846cdb001146600d03a8aa920fcedbefc5",
+  "lean/lake-manifest.json": "3115e2f1d9f0fba78fb39f56e6e3b563ce2f2f85ff036e2ede8b74bba93a6b34",
+  "lean/lakefile.toml": "0c6660f44e524b0455480143198b666645bca9c3a91ffc787e678dee5ba34f35",
+  "lean/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a"
+ }
+}
