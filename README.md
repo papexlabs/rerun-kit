@@ -46,7 +46,22 @@ With `--key`: when the run is done, and the result file. Nothing else. The key i
 a file or printed. The result file holds no name; it names your operating system and processor.
 
 Without a key (`python3 rerun.py ~/Downloads/<batch file>`) the kit sends nothing, and you upload
-the result file on the page yourself.
+the result file on the page yourself. With `--batch` (below) it sends nothing either.
+
+## With an AI app
+
+An AI app that has the Papex connection and a terminal (Claude Code, Codex or Cursor, for example)
+can do a run for you. It takes the run with the connection's tool `papex_take_shared_work`, which
+gives it the batch key, the problem and the list, and runs the kit with them (`--docker` works too):
+
+```
+python3 rerun.py --batch <batch key> --problem <problem> --list <list> --agent-host "<app's name>"
+```
+
+The kit writes the batch file from its own list files (only for a list of one unit) and sends
+nothing. The app gives the result file, as the kit wrote it, to `papex_prepare_shared_work_batch`,
+and it waits on your run's page. You read it there, choose how you are shown, and send it. Only you
+can send it.
 
 ## A build can run code
 
@@ -100,4 +115,5 @@ The list therefore says "people who ran it", and nothing more.
 building anything, and writes the SHA-256 of every file under the project folder. It writes nothing
 if the kit would stop a run of it.
 
-`python3 tests/test_release.py OUT_DIR` runs the cases for what the kit refuses; nothing is built.
+`python3 tests/test_release.py OUT_DIR` runs the cases for what the kit refuses and for the batch
+file it writes with `--batch`; nothing is built and nothing is sent.

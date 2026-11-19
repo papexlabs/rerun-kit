@@ -238,6 +238,7 @@ class Stage:
         self.unit = None          # the run being drawn in its frame
         self.pending = None       # a check of this computer waiting for its words
         self.result_path = None
+        self.advice = []          # the kit's lines of what to do next, one text over one line or several
         self.after = []           # the "Next" box
 
     # ---------------------------------------------------------------- colour and writing
@@ -477,7 +478,8 @@ class Stage:
             self.write("\n  " + self.ink("✗", fg=self.seal, bold=True) + f" {'Result':<{LABEL}}  "
                        + self.ink(f"not sent ({facts.get('why', '')})", fg=self.seal) + "\n")
         elif event == "advice":
-            self.after = clauses(line.strip(), min(60, self.width() - 10))
+            self.advice.append(line.strip())
+            self.after = clauses(" ".join(self.advice), min(60, self.width() - 10))
         elif event == "end":
             self.finish(facts.get("path", ""))
         else:

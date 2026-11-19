@@ -3,6 +3,8 @@
 
   python3 rerun.py --key KIT_KEY [--api URL] [--docker] [--work DIR] [--agent-host NAME] [--plain]
   python3 rerun.py BATCH_FILE    [--docker] [--work DIR] [--agent-host NAME] [--plain]
+  python3 rerun.py --batch BATCH_KEY --problem SLUG --list LIST_KEY
+                                 [--docker] [--work DIR] [--agent-host NAME] [--plain]
   python3 rerun.py --check [--work DIR] [--plain]
   python3 rerun.py --clean [--work DIR]
 
@@ -11,6 +13,11 @@ the kit asks Papex what to run, says when it is done, and sends the result file 
 else leaves this computer, and the key is never written to a file or printed. BATCH_FILE is the file
 you can download from the page instead; then the kit sends nothing, and you upload the result file
 on the page yourself.
+
+The third command is for a run an AI app took for you through the Papex connection, which gives the
+app the batch key, the problem and the list. The kit writes the batch file itself from its own list
+files (only for a list of one unit) and sends nothing. The app gives the result file to the Papex
+connection (papex_prepare_shared_work_batch), or you upload it on the page. Only you send it.
 
 What a run does, for a Lean proof:
 
@@ -183,16 +190,22 @@ def load_json(path, what):
         stop(f"{what} could not be read ({e}).")
 
 
+def list_manifest(problem, list_key):
+    """The path of the list's manifest in lists/; the kit stops when it does not have the list."""
+    manifest = os.path.join(LISTS, problem, list_key + ".manifest.ndjson")
+    if not os.path.exists(manifest):
+        stop(f"This kit has no list {problem}/{list_key}. Get the newest kit (git pull) and run the "
+             "same command again.")
+    return manifest
+
+
 def find_spec(batch, unit_key):
     """The file that says what this unit runs, found through the list's manifest and checked
     against it. Returns (path, spec, 0x-sha256 of the spec file)."""
     problem, list_key = str(batch.get("problem")), str(batch.get("list"))
     if not SLUG_RE.match(problem) or not SLUG_RE.match(list_key) or not UNIT_RE.match(unit_key):
         stop("The batch names a problem, list or unit this kit cannot read.")
-    manifest = os.path.join(LISTS, problem, list_key + ".manifest.ndjson")
-    if not os.path.exists(manifest):
-        stop(f"This kit has no list {problem}/{list_key}. Get the newest kit (git pull) and run the "
-             "same command again.")
+    manifest = list_manifest(problem, list_key)
     if "0x" + sha256_file(manifest) != batch.get("listSha256"):
         stop(f"The list file {os.path.relpath(manifest)} is not the one Papex froze. Get the newest "
              "kit (git pull) and run the same command again.")
@@ -1275,6 +1288,42 @@ def fetch_batch(kit, work_root):
     return path
 
 
+def write_batch(work_root, batch_key, problem, list_key):
+    """--batch: for a run an AI app took through the Papex connection, which gives the batch key, the
+    problem and the list but no batch file. The kit writes the batch file itself from its own list
+    files, in the place where --key keeps the one Papex sends, and returns its path. Nothing is sent.
+    Only for a list of one unit (a re-run list, which keeps no proofs): every run of it builds that
+    unit, so the file holds nothing Papex would have chosen."""
+    if not BATCH_RE.match(batch_key):
+        stop("That is not a batch key (such as b-7f3a21). Use the batch key the Papex connection gave.")
+    if not SLUG_RE.match(problem) or not SLUG_RE.match(list_key):
+        stop("--problem and --list take a problem's slug and a list's key, such as erdos-problem-824 and "
+             "lean-rerun-v1.")
+    manifest = list_manifest(problem, list_key)
+    try:
+        with open(manifest, encoding="utf-8") as fh:
+            units = [json.loads(line) for line in fh if line.strip()]
+    except (OSError, ValueError) as e:
+        stop(f"The list file {os.path.relpath(manifest)} could not be read ({e}).")
+    if len(units) != 1:
+        stop(f"The list {problem}/{list_key} has {len(units)} units, and the kit writes the batch file itself "
+             "only for a list of one. Use the command with the key from the batch's page on papex.org, or the "
+             "batch file from that page.")
+    unit = units[0]
+    if not isinstance(unit, dict) or not UNIT_RE.match(str(unit.get("key"))) \
+            or not SLUG_RE.match(str(unit.get("kind"))):
+        stop(f"The list file {os.path.relpath(manifest)} names a unit this kit cannot read.")
+    batch = {"schema": BATCH_SCHEMA, "problem": problem, "list": list_key,
+             "listSha256": "0x" + sha256_file(manifest), "batch": batch_key, "kind": unit["kind"],
+             "resultSchema": RESULT_SCHEMA, "units": [{"key": unit["key"], "keepProof": False}]}
+    folder = os.path.join(batches_dir(work_root), batch_key)
+    os.makedirs(folder, exist_ok=True)
+    path = os.path.join(folder, f"{batch_key}.json")
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write(json.dumps(batch, separators=(",", ":")))
+    return path
+
+
 def send_result(kit, path):
     with open(path, "rb") as fh:
         body = fh.read()
@@ -1416,19 +1465,26 @@ def main(argv=None):
         return clean(work_root)
 
     key = take(argv, "--key")
+    taken, problem, list_key = take(argv, "--batch"), take(argv, "--problem"), take(argv, "--list")
     api = api_address(take(argv, "--api", DEFAULT_API))
     use_docker = flag(argv, "--docker")
     agent_host = take(argv, "--agent-host")
     if agent_host and not AGENT_HOST_RE.match(agent_host):
         stop("--agent-host takes letters, digits, spaces and . _ - + ( ) / : only, 80 at most.")
-    if len(argv) > 1 or (key and argv) or (not key and not argv) or any(a.startswith("-") for a in argv):
-        stop("Give either --key KIT_KEY or one BATCH_FILE. See --help.")
+    if (taken, problem, list_key) != (None, None, None):
+        if key is not None or argv or None in (taken, problem, list_key):
+            stop("--batch goes with --problem and --list, and without --key or a BATCH_FILE: "
+                 "python3 rerun.py --batch BATCH_KEY --problem SLUG --list LIST_KEY. See --help.")
+    elif len(argv) > 1 or (key and argv) or (not key and not argv) or any(a.startswith("-") for a in argv):
+        stop("Give --key KIT_KEY, one BATCH_FILE, or --batch BATCH_KEY --problem SLUG --list LIST_KEY. See --help.")
     if sys.version_info < (3, 9):
         stop("This kit needs Python 3.9 or later.")
 
     kit = None
     if key and not KEY_RE.match(key):
         stop("That is not a kit key. Copy the command again from your run's page on papex.org.")
+    if taken is not None:  # a run taken through the Papex connection: the batch file from the kit's lists
+        batch_path = write_batch(work_root, taken, problem, list_key)
     use_show(plain)
     if key:
         say("With the key the kit asks Papex what to run, says when it is done, and sends the result", event="leaves")
@@ -1436,7 +1492,7 @@ def main(argv=None):
         say(event="leaves")
         kit = Kit(api, key)
         batch_path = fetch_batch(kit, work_root)
-    else:
+    elif taken is None:
         batch_path = os.path.abspath(argv[0])
     _, batch = load_json(batch_path, "The batch file")
     if batch.get("schema") != BATCH_SCHEMA or not BATCH_RE.match(str(batch.get("batch"))) \
@@ -1491,6 +1547,13 @@ def main(argv=None):
     say(f"Result file: {result_path}", event="result", path=result_path)
     if kit:
         send_result(kit, result_path)
+    elif taken is not None:
+        say("  The AI app that took the run gives the result file, exactly as it is, to the Papex connection",
+            event="advice")
+        say(f"  (papex_prepare_shared_work_batch, batch {batch_key}), or you upload it on your run's page.",
+            event="advice")
+        say("  Only you send it: on that page on papex.org, choose how you are shown, and press Send.",
+            event="advice")
     else:
         say("  Upload it on your run's page on papex.org, choose how you are shown, and send it.", event="advice")
     say(f"The work folder holds Lean and Mathlib ({work_root}). Delete it with: python3 rerun.py --clean",

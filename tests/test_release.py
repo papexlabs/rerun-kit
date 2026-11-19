@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Cases for what the kit refuses before it builds anything. Nothing here builds or runs Lean.
+"""Cases for what the kit refuses before it builds anything, and for the batch file the kit writes itself
+(--batch). Nothing here builds or runs Lean, and nothing is sent: where a case runs the kit to its end,
+the fetch and the build are stand-ins and Papex is a stand-in too.
 
   python3 tests/test_release.py OUT_DIR [--corpus DIR] [--py39 PYTHON] [--real]
 
@@ -11,8 +13,10 @@ OUT_DIR    receives the small test projects (a new folder per run; nothing is de
 """
 
 import base64
+import contextlib
 import hashlib
 import importlib.util
+import io
 import json
 import os
 import subprocess
@@ -325,6 +329,207 @@ if OLD_TOOL:
     make_spec_with(src, SEED, b, OLD_TOOL)
     case("M3 make_spec.py writes the same bytes as the previous kit's", open(a, "rb").read() == open(b, "rb").read(),
          hashlib.sha256(open(a, "rb").read()).hexdigest()[:16])
+
+# ---------------------------------------------------------------------------- --batch: the batch file the kit writes
+# A run an AI app took through the Papex connection comes with a batch key, the problem and the list, and no
+# batch file. The kit writes that file itself from its own list files, for a list of one unit.
+ERDOS, ERDOS_LIST = "erdos-problem-824", "lean-rerun-v1"
+ERDOS_LIST_SHA256 = "0x1f837a1b5edcd6bd99a26e74cde4bf9b2d2c0aac8a61070a094a7b2cae8e28f2"  # the value Papex froze
+BATCH_KEY = "b-0a1b2c"
+# The keys of a batch file downloaded from a run's page, in their order.
+DOWNLOADED_KEYS = ["schema", "problem", "list", "listSha256", "batch", "kind", "resultSchema", "units",
+                   "reservedUntil", "closesAt"]
+
+
+def stops(work, *args):
+    """What the kit says when it stops (None: it did not stop)."""
+    try:
+        work(*args)
+    except SystemExit as e:
+        return str(e.code)
+    return None
+
+
+def batch_files(work_root):
+    found = []
+    for base, _, names in os.walk(os.path.join(work_root, "batches")):
+        found += [os.path.join(base, n) for n in names]
+    return found
+
+
+w = os.path.join(RUN, "batch-erdos")
+written = rerun.write_batch(w, BATCH_KEY, ERDOS, ERDOS_LIST)
+raw = open(written, "rb").read().decode()
+want = ('{"schema":"papex-shared-work-batch/v1","problem":"erdos-problem-824","list":"lean-rerun-v1",'
+        f'"listSha256":"{ERDOS_LIST_SHA256}","batch":"{BATCH_KEY}","kind":"run",'
+        '"resultSchema":"papex-shared-work-result/v1","units":[{"key":"erdos-824-lean","keepProof":false}]}')
+case("B1 --batch writes the batch file of erdos-problem-824/lean-rerun-v1 where --key keeps Papex's",
+     written == os.path.join(w, "batches", BATCH_KEY, BATCH_KEY + ".json") and raw == want,
+     f"{os.path.relpath(written, RUN)}: {raw}")
+for problem in sorted(os.listdir(rerun.LISTS)):
+    for mname in sorted(n for n in os.listdir(os.path.join(rerun.LISTS, problem)) if n.endswith(".manifest.ndjson")):
+        list_key = mname[:-len(".manifest.ndjson")]
+        mpath = os.path.join(rerun.LISTS, problem, mname)
+        lines = [json.loads(line) for line in open(mpath) if line.strip()]
+        w = os.path.join(RUN, f"batch-{problem}-{list_key}")
+        why = stops(rerun.write_batch, w, BATCH_KEY, problem, list_key)
+        got = json.load(open(batch_files(w)[0])) if not why and batch_files(w) else {}
+        why = why or stops(rerun.find_spec, got, lines[0]["key"])  # the kit's own reading of a batch file
+        case(f"B2 {problem}/{list_key}: written from the list's file, and the kit's reading of a batch file takes it",
+             not why and len(lines) == 1 and got.get("listSha256") == "0x" + hashlib.sha256(open(mpath, "rb").read()).hexdigest()
+             and got.get("kind") == lines[0]["kind"] and got.get("units") == [{"key": lines[0]["key"], "keepProof": False}],
+             why or f"listSha256 {got.get('listSha256')}, unit {got.get('units')}")
+read = [k for k in DOWNLOADED_KEYS[-2:] for f in ("rerun.py", "show.py", os.path.join("runner", "runner.py"))
+        if k in open(os.path.join(KIT, f), encoding="utf-8").read()]
+case("B3 the written file has a downloaded one's keys but reservedUntil and closesAt, which the kit and the runner never read",
+     list(json.loads(want)) == DOWNLOADED_KEYS[:-2] and not read, f"keys {list(json.loads(want))}; read: {read or 'nowhere'}")
+
+made = os.path.join(RUN, "made-up-lists")  # small lists made up for the cases that stop
+UNIT_LINE = '{"key":"%s","kind":"run","expectedSeconds":300,"inputSha256":"0x%s"}\n'
+for list_key, text in [("shared-v1", UNIT_LINE % ("u-1", "0" * 64) + UNIT_LINE % ("u-2", "1" * 64)), ("empty-v1", "\n"),
+                       ("broken-v1", '{"key":"u-1",\n'), ("no-kind-v1", '{"key":"u-1","expectedSeconds":300}\n')]:
+    os.makedirs(os.path.join(made, "demo-problem"), exist_ok=True)
+    with open(os.path.join(made, "demo-problem", list_key + ".manifest.ndjson"), "w") as fh:
+        fh.write(text)
+real_lists, rerun.LISTS = rerun.LISTS, made
+try:
+    for label, args, expect in [
+            ("B4 a list of more than one unit", (BATCH_KEY, "demo-problem", "shared-v1"),
+             "Use the command with the key from the batch's page on papex.org, or the batch file from that page."),
+            ("B4 a list of no unit", (BATCH_KEY, "demo-problem", "empty-v1"), "has 0 units"),
+            ("B5 a list this kit does not have", (BATCH_KEY, "demo-problem", "lean-rerun-v9"),
+             "This kit has no list demo-problem/lean-rerun-v9. Get the newest kit (git pull)"),
+            ("B6 a list file the kit cannot read", (BATCH_KEY, "demo-problem", "broken-v1"), "could not be read"),
+            ("B6 a unit without a kind", (BATCH_KEY, "demo-problem", "no-kind-v1"), "names a unit this kit cannot read"),
+            ("B7 not a batch key", ("b-XYZ123", "demo-problem", "shared-v1"), "That is not a batch key"),
+            ("B7 a batch key too long", ("b-0123456789a", "demo-problem", "shared-v1"), "That is not a batch key"),
+            ("B7 not a problem's slug", (BATCH_KEY, "Demo_Problem", "shared-v1"), "--problem and --list take"),
+            ("B7 a list key that leaves lists/", (BATCH_KEY, "demo-problem", "../shared-v1"), "--problem and --list take")]:
+        w = os.path.join(RUN, "batch-refused")
+        why = stops(rerun.write_batch, w, *args)
+        case(f"{label}: stops and writes nothing", why and expect in why and not batch_files(w), why)
+finally:
+    rerun.LISTS = real_lists
+
+w = os.path.join(RUN, "batch-usage")
+USAGE = "--batch goes with --problem and --list, and without --key or a BATCH_FILE"
+for label, argv in [("U1 --batch with --key", ["--batch", BATCH_KEY, "--problem", ERDOS, "--list", ERDOS_LIST, "--key", "swk_" + "A" * 43]),
+                    ("U1 --batch with a BATCH_FILE", ["--batch", BATCH_KEY, "--problem", ERDOS, "--list", ERDOS_LIST, written]),
+                    ("U2 --batch without --list", ["--batch", BATCH_KEY, "--problem", ERDOS]),
+                    ("U2 --batch without --problem", ["--batch", BATCH_KEY, "--list", ERDOS_LIST]),
+                    ("U3 --problem and --list without --batch", ["--problem", ERDOS, "--list", ERDOS_LIST])]:
+    why = stops(rerun.main, argv + ["--plain", "--work", w])
+    case(f"{label}: one usage line, nothing written", why and why.startswith(USAGE) and "\n" not in why and not batch_files(w), why)
+why = stops(rerun.main, ["--docker", "--plain", "--work", w])
+case("U4 no --key, no BATCH_FILE, no --batch: the usage line names the three", why and "--key KIT_KEY" in why
+     and "BATCH_FILE" in why and "--batch BATCH_KEY --problem SLUG --list LIST_KEY" in why and "\n" not in why, why)
+
+
+# The kit run to its end with stand-ins for the fetch and the build (nothing is built). Papex cannot be reached:
+# the kit's only ways out are urlopen (downloads) and Kit (the kit routes), and both are replaced.
+def run_kit(argv, kit_class=None):
+    calls = []
+    saved = {name: getattr(rerun, name) for name in ("fetch", "build", "free_gb", "Kit")}
+    saved_open = rerun.urllib.request.urlopen
+
+    def no_network(*a, **k):
+        calls.append("urlopen")
+        raise OSError("no network in the tests")
+
+    class NoKit:
+        def __init__(self, *a):
+            calls.append("Kit")
+            raise SystemExit("the kit tried to reach Papex")
+
+    rerun.fetch = lambda spec, work: 1.0
+    rerun.build = lambda spec, work: {"lean": "Lean (version 4.0.0, a stand-in)", "buildExit": 0, "buildSeconds": 2.0,
+                                      "checkSeconds": 1.0, "axioms": {"main": ["propext"]}, "problems": [],
+                                      "outputSha256": "0x" + "ab" * 32, "outputBytes": 10, "outcome": "PASS"}
+    rerun.free_gb = lambda path: 999.0
+    rerun.Kit = kit_class or NoKit
+    rerun.urllib.request.urlopen = no_network
+    out = io.StringIO()
+    try:
+        with contextlib.redirect_stdout(out):
+            code = rerun.main(argv)
+    except SystemExit as e:
+        code = e.code
+    finally:
+        for name, value in saved.items():
+            setattr(rerun, name, value)
+        rerun.urllib.request.urlopen = saved_open
+    return code, out.getvalue().split("\n"), calls
+
+
+def closing(work_root, *advice):
+    result = os.path.join(work_root, "batches", BATCH_KEY, BATCH_KEY + ".result.json")
+    return ["", f"Result file: {result}", *advice,
+            f"The work folder holds Lean and Mathlib ({work_root}). Delete it with: python3 rerun.py --clean", ""]
+
+
+w1 = os.path.join(RUN, "run-batch")
+code1, lines1, calls1 = run_kit(["--batch", BATCH_KEY, "--problem", ERDOS, "--list", ERDOS_LIST, "--plain", "--work", w1,
+                                 "--agent-host", "Test app"])
+end1 = closing(w1, "  The AI app that took the run gives the result file, exactly as it is, to the Papex connection",
+               f"  (papex_prepare_shared_work_batch, batch {BATCH_KEY}), or you upload it on your run's page.",
+               "  Only you send it: on that page on papex.org, choose how you are shown, and press Send.")
+try:
+    result1 = json.load(open(os.path.join(w1, "batches", BATCH_KEY, BATCH_KEY + ".result.json")))
+except (OSError, ValueError):
+    result1 = {}
+case("E1 --batch runs to its end, sends nothing, and its last lines say what to do next on this path",
+     code1 == 0 and lines1[-len(end1):] == end1 and not calls1 and result1.get("batch") == BATCH_KEY
+     and result1.get("listSha256") == ERDOS_LIST_SHA256 and result1.get("env", {}).get("agentHost") == "Test app",
+     f"exit {code1}; calls to Papex: {calls1 or 'none'}; last lines: {lines1[-len(end1):-1]}")
+
+w2 = os.path.join(RUN, "run-batch-file")
+code2, lines2, calls2 = run_kit([os.path.join(w1, "batches", BATCH_KEY, BATCH_KEY + ".json"), "--plain", "--work", w2])
+end2 = closing(w2, "  Upload it on your run's page on papex.org, choose how you are shown, and send it.")
+case("E2 BATCH_FILE (the file --batch wrote): the same run, and its last lines as in the published kit",
+     code2 == 0 and lines2[-len(end2):] == end2 and not calls2 and lines1[:-len(end1)] == lines2[:-len(end2)],
+     f"exit {code2}; calls to Papex: {calls2 or 'none'}; last lines: {lines2[-len(end2):-1]}")
+
+
+class StandInPapex(rerun.Kit):
+    """Papex as the kit routes answer; nothing leaves this computer."""
+
+    def request(self, method, route, body=None, timeout=30.0):
+        if route == "/batch":
+            return want.encode()
+        if route == "/result":
+            return b'{"pagePath":"/runs/b-0a1b2c"}'
+        return b"{}"
+
+
+w3 = os.path.join(RUN, "run-key")
+code3, lines3, calls3 = run_kit(["--key", "swk_" + "A" * 43, "--plain", "--work", w3], StandInPapex)
+end3 = closing(w3, "  Sent to Papex. Go back to your run's page, choose how you are shown, and press Send.",
+               "  https://papex.org/runs/b-0a1b2c")
+case("E3 --key (Papex a stand-in): its first and last lines as in the published kit",
+     code3 == 0 and lines3[-len(end3):] == end3 and not calls3 and lines3[:3] == [
+         "With the key the kit asks Papex what to run, says when it is done, and sends the result",
+         "file at the end. Nothing else leaves this computer.", ""],
+     f"exit {code3}; last lines: {lines3[-len(end3):-1]}")
+
+show_spec = importlib.util.spec_from_file_location("show", os.path.join(KIT, "show.py"))
+show = importlib.util.module_from_spec(show_spec)
+show_spec.loader.exec_module(show)
+background = os.environ.get("PAPEX_KIT_BACKGROUND")
+os.environ["PAPEX_KIT_BACKGROUND"] = "dark"  # otherwise the show asks the terminal
+try:
+    stage = show.Stage(stream=io.StringIO())
+    stage.hear(end2[2], "advice", {})
+    one = stage.after == show.clauses(end2[2].strip(), min(60, stage.width() - 10))
+    stage = show.Stage(stream=io.StringIO())
+    for line in end1[2:5]:
+        stage.hear(line, "advice", {})
+    three = " ".join(stage.after) == " ".join(line.strip() for line in end1[2:5]) and max(map(len, stage.after)) <= 60
+finally:
+    if background is None:
+        os.environ.pop("PAPEX_KIT_BACKGROUND")
+    else:
+        os.environ["PAPEX_KIT_BACKGROUND"] = background
+case("S1 the show's Next box: one advice line as before, the three of --batch as one text", one and three, stage.after)
 
 # ---------------------------------------------------------------------------- the kit's own lists
 if REAL:
