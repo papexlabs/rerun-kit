@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Run a published, machine-checkable result on your own computer and tell Papex what happened.
 
-  python3 rerun.py --key KIT_KEY [--api URL] [--docker] [--work DIR] [--agent-host NAME]
-  python3 rerun.py BATCH_FILE    [--docker] [--work DIR] [--agent-host NAME]
-  python3 rerun.py --check [--work DIR]
+  python3 rerun.py --key KIT_KEY [--api URL] [--docker] [--work DIR] [--agent-host NAME] [--plain]
+  python3 rerun.py BATCH_FILE    [--docker] [--work DIR] [--agent-host NAME] [--plain]
+  python3 rerun.py --check [--work DIR] [--plain]
   python3 rerun.py --clean [--work DIR]
 
 Your run's page on papex.org shows the first command with a key for your run, to copy. With the key
@@ -28,6 +28,9 @@ Nothing is installed outside the work folder (about 11 GB for a Lean proof that 
 --clean deletes it. --docker does steps 2 to 4 inside a container and cuts the container's network
 before the build (needs Docker). --check only tests that this computer can do a run.
 
+In a terminal the kit draws the run (with show.py next to this file). In a pipe, with NO_COLOR set or
+with --plain it prints plain lines instead; both say the same.
+
 A passing run shows that Lean accepts a proof of the sentence in the list's statement file, on your
 computer. It is not peer review, and it does not say that the sentence is the problem.
 
@@ -36,6 +39,7 @@ Needs Python 3.9 or later, git and curl, on macOS or Linux (on Windows: WSL). Se
 
 import hashlib
 import http.client
+import importlib.util
 import json
 import os
 import platform
@@ -99,8 +103,56 @@ def stop(message):
     raise SystemExit(message)
 
 
-def say(line=""):
-    print(line, flush=True)
+class Plain:
+    """What the kit prints: one line after another, exactly the lines it has always printed. In a
+    terminal a person looks at, the drawn run of show.py (next to this file) takes its place; a pipe,
+    a log, NO_COLOR, --plain and the phases inside the container get these lines. `event` and the
+    facts after it name what a line is about, for the drawing; here they change nothing."""
+
+    def say(self, line="", event=None, **facts):
+        print(line, flush=True)
+
+    def step(self, label, work):
+        """A check of this computer; the line after it says what was found."""
+        return work()
+
+    def phase(self, cmd):
+        """--docker: a phase of the run inside the container, its lines straight to the terminal."""
+        return subprocess.run(cmd, stdout=None, stderr=None, text=True).returncode
+
+    def fail(self, message):
+        """The kit's last word (why it stops). False here: Python prints it, as it always did."""
+        return False
+
+    def close(self):
+        pass
+
+
+UI = Plain()
+
+
+def say(line="", **show):
+    UI.say(line, **show)
+
+
+def use_show(plain):
+    """The drawn run of show.py when it is next to this file and this is a terminal it fits; the
+    plain lines otherwise (and whenever show.py cannot be read)."""
+    global UI
+    path = os.path.join(HERE, "show.py")
+    if plain or not os.path.isfile(path):
+        return
+    before = sys.dont_write_bytecode
+    try:
+        sys.dont_write_bytecode = True
+        spec = importlib.util.spec_from_file_location("papex_rerun_show", path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        UI = module.make() or UI
+    except Exception:
+        UI = Plain()
+    finally:
+        sys.dont_write_bytecode = before
 
 
 def sha256_bytes(data):
@@ -1045,12 +1097,12 @@ def docker_run(spec_path, spec, work, name):
         d("cp", spec_path, f"{name}:/kit/spec.json", capture=True)
         inside = ["exec", "-u", "runner", name, "python3", "/kit/rerun.py", "--spec", "/kit/spec.json",
                   "--work", "/work"]
-        if d(*inside, "--phase", "fetch")[0] != 0:
+        if UI.phase([docker, *inside, "--phase", "fetch"]) != 0:
             stop("The run stopped in the container before the build (see the lines above).")
         if d("network", "disconnect", "bridge", name, capture=True)[0] != 0:
             stop("The container's network could not be cut, so nothing was built.")
         say("  The container's network is cut")
-        if d(*inside, "--phase", "build")[0] != 0:
+        if UI.phase([docker, *inside, "--phase", "build"]) != 0:
             stop("The build could not be run in the container (see the lines above).")
         os.makedirs(work, exist_ok=True)
         for item in ("record.json", "build.log"):
@@ -1230,19 +1282,20 @@ def send_result(kit, path):
         answer = kit.request("PUT", "/result", body, 60.0)
     except (KitError, KeyboardInterrupt) as e:
         why = e.why() if isinstance(e, KitError) else "stopped"
-        say(f"  It was not sent ({why}).")
+        say(f"  It was not sent ({why}).", event="unsent", why=why)
         if getattr(e, "status", None) == 409:
-            say("  This run no longer takes a result, on its page either.")
+            say("  This run no longer takes a result, on its page either.", event="advice")
         else:
-            say("  Upload it on your run's page on papex.org, choose how you are shown, and send it.")
+            say("  Upload it on your run's page on papex.org, choose how you are shown, and send it.", event="advice")
         return False
-    say("  Sent to Papex. Go back to your run's page, choose how you are shown, and press Send.")
+    say("  Sent to Papex. Go back to your run's page, choose how you are shown, and press Send.", event="sent")
     try:
         page = json.loads(answer).get("pagePath")
     except (ValueError, AttributeError):
         page = None
     if isinstance(page, str) and re.match(r"^/[\w/.-]{1,200}$", page):
-        say(f"  {'https://papex.org' + page if kit.api == DEFAULT_API else page}")
+        url = "https://papex.org" + page if kit.api == DEFAULT_API else page
+        say(f"  {url}", event="page", url=url)
     return True
 
 
@@ -1275,24 +1328,34 @@ def free_gb(path):
 
 def check(work_root):
     ok = True
-    say(f"Python {platform.python_version()}: " + ("ok" if sys.version_info >= (3, 9) else "too old, 3.9 or later is needed"))
-    ok &= sys.version_info >= (3, 9)
-    git = shutil.which("git")
-    say("git: " + ("ok" if git else "not found, install git"))
+    new = UI.step("Python", lambda: sys.version_info >= (3, 9))
+    say(f"Python {platform.python_version()}: " + ("ok" if new else "too old, 3.9 or later is needed"),
+        event="check", good=new, detail=platform.python_version() + ("" if new else ": too old, 3.9 or later is needed"))
+    ok &= new
+    git = UI.step("git", lambda: shutil.which("git"))
+    say("git: " + ("ok" if git else "not found, install git"), event="check", good=bool(git),
+        detail=git or "not found, install git")
     ok &= bool(git)
-    curl = shutil.which("curl")
-    say("curl: " + ("ok" if curl else "not found, install curl"))
+    curl = UI.step("curl", lambda: shutil.which("curl"))
+    say("curl: " + ("ok" if curl else "not found, install curl"), event="check", good=bool(curl),
+        detail=curl or "not found, install curl")
     ok &= bool(curl)
     try:
-        say(f"Lean's installer for this computer: {elan_archive()}")
+        name = UI.step("Installer", elan_archive)
+        say(f"Lean's installer for this computer: {name}", event="check", good=True, detail=name)
     except SystemExit as e:
-        say(str(e))
+        say(str(e), event="check", good=False, detail=str(e))
         ok = False
-    free = free_gb(work_root)
-    say(f"Free disk where the work folder goes ({work_root}): {free:.0f} GB" + ("" if free >= 12 else ", a Lean proof that uses Mathlib needs about 12 GB"))
+    free = UI.step("Free disk", lambda: free_gb(work_root))
+    say(f"Free disk where the work folder goes ({work_root}): {free:.0f} GB" + ("" if free >= 12 else ", a Lean proof that uses Mathlib needs about 12 GB"),
+        event="check", good=free >= 12,
+        detail=f"{free:.0f} GB in {work_root}" + ("" if free >= 12 else "; a Lean proof that uses Mathlib needs about 12 GB"))
     ok &= free >= 12
-    say("Docker (only for --docker): " + ("found" if shutil.which("docker") else "not found"))
-    say("This computer can do a run." if ok else "This computer cannot do a run yet; see the lines above.")
+    docker = UI.step("Docker", lambda: shutil.which("docker"))
+    say("Docker (only for --docker): " + ("found" if docker else "not found"), event="check",
+        good=True if docker else None, detail=("found" if docker else "not found") + " (only for --docker)")
+    say("This computer can do a run." if ok else "This computer cannot do a run yet; see the lines above.",
+        event="ready", good=ok)
     return 0 if ok else 1
 
 
@@ -1345,7 +1408,9 @@ def main(argv=None):
             stop("--phase is fetch or build.")
         return 0
 
+    plain = flag(argv, "--plain")
     if flag(argv, "--check"):
+        use_show(plain)
         return check(work_root)
     if flag(argv, "--clean"):
         return clean(work_root)
@@ -1362,12 +1427,13 @@ def main(argv=None):
         stop("This kit needs Python 3.9 or later.")
 
     kit = None
+    if key and not KEY_RE.match(key):
+        stop("That is not a kit key. Copy the command again from your run's page on papex.org.")
+    use_show(plain)
     if key:
-        if not KEY_RE.match(key):
-            stop("That is not a kit key. Copy the command again from your run's page on papex.org.")
-        say("With the key the kit asks Papex what to run, says when it is done, and sends the result")
-        say("file at the end. Nothing else leaves this computer.")
-        say()
+        say("With the key the kit asks Papex what to run, says when it is done, and sends the result", event="leaves")
+        say("file at the end. Nothing else leaves this computer.", event="leaves")
+        say(event="leaves")
         kit = Kit(api, key)
         batch_path = fetch_batch(kit, work_root)
     else:
@@ -1389,8 +1455,9 @@ def main(argv=None):
         unit_key = str(unit.get("key"))
         spec_path, spec, digest = find_spec(batch, unit_key)
         work = os.path.join(work_root, "runs", unit_key)
-        say(f"{spec.get('title', unit_key)}")
-        say(f"  {spec['repo'][:-4]} at {spec['commit'][:12]}")
+        say(f"{spec.get('title', unit_key)}", event="unit", repo=spec["repo"], commit=spec["commit"],
+            files=len(spec["files"]), docker=use_docker)
+        say(f"  {spec['repo'][:-4]} at {spec['commit'][:12]}", event="repo")
         need = float(spec.get("diskGb", 12))
         if not use_docker and not os.path.exists(os.path.join(work, "fetched.json")) and free_gb(work) < need:
             stop(f"This run needs about {need:.0f} GB of free disk and {free_gb(work):.0f} GB is free "
@@ -1406,12 +1473,12 @@ def main(argv=None):
         record.update({"spec": digest, "commit": spec["commit"]})
         records[unit_key] = record
         if record["outcome"] == "PASS":
-            say(f"  Passed in {minutes(record['buildSeconds'] + record['checkSeconds'])}.")
+            say(f"  Passed in {minutes(record['buildSeconds'] + record['checkSeconds'])}.", event="passed", record=record)
             for name, axioms in record["axioms"].items():
-                say(f"  {name} rests on: {', '.join(axioms) if axioms else 'no axioms'}")
+                say(f"  {name} rests on: {', '.join(axioms) if axioms else 'no axioms'}", event="axioms", name=name)
         else:
-            say("  Did NOT pass: " + "; ".join(record["problems"]))
-            say(f"  The log is {os.path.join(work, 'build.log')}")
+            say("  Did NOT pass: " + "; ".join(record["problems"]), event="failed", record=record)
+            say(f"  The log is {os.path.join(work, 'build.log')}", event="log")
         if kit:
             kit.progress(number, quiet)
 
@@ -1420,13 +1487,14 @@ def main(argv=None):
         stop("The result file is larger than Papex takes. Tell Papex Labs: this is a fault of the kit.")
     with open(result_path, "w", encoding="utf-8") as fh:
         fh.write(text)
-    say()
-    say(f"Result file: {result_path}")
+    say(event="result")
+    say(f"Result file: {result_path}", event="result", path=result_path)
     if kit:
         send_result(kit, result_path)
     else:
-        say("  Upload it on your run's page on papex.org, choose how you are shown, and send it.")
-    say(f"The work folder holds Lean and Mathlib ({work_root}). Delete it with: python3 rerun.py --clean")
+        say("  Upload it on your run's page on papex.org, choose how you are shown, and send it.", event="advice")
+    say(f"The work folder holds Lean and Mathlib ({work_root}). Delete it with: python3 rerun.py --clean",
+        event="end", path=work_root)
     return 0
 
 
@@ -1434,4 +1502,12 @@ if __name__ == "__main__":
     try:
         sys.exit(main())
     except KeyboardInterrupt:
-        sys.exit("\nStopped. Run the same command again to go on.")
+        if not UI.fail("\nStopped. Run the same command again to go on."):
+            sys.exit("\nStopped. Run the same command again to go on.")
+        sys.exit(1)
+    except SystemExit as e:
+        if isinstance(e.code, str) and UI.fail(e.code):  # the drawn run says the kit's last word itself
+            sys.exit(1)
+        raise
+    finally:
+        UI.close()  # the terminal gets its cursor back whatever ended the run

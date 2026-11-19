@@ -23,6 +23,9 @@ python3 rerun.py --key <kit key>
 The last command, with a key for your run in it, is on your run's page on papex.org. Copy it from
 there. When the kit has finished, go back to the page, choose how you are shown, and press Send.
 
+In a terminal the kit draws the run. In a pipe, with `NO_COLOR` set or with `--plain`, it prints
+plain lines instead; both say the same.
+
 ## What the kit does
 
 1. It asks Papex what to run and reads the list's file in `lists/`: the repository, the commit, the
