@@ -1,0 +1,4 @@
+# For Papex Labs' hosting of runner/render_task.py only; the kit itself needs nothing but Python.
+# Render Workflows Python SDK (PyPI "render", import path render.workflows), the version Papex's scan worker
+# pins. It needs Python 3.10 or later.
+render==1.7.0

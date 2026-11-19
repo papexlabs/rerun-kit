@@ -22,6 +22,8 @@ import os
 import subprocess
 import sys
 import time
+import urllib.error
+import urllib.parse
 
 sys.dont_write_bytecode = True
 KIT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -530,6 +532,159 @@ finally:
     else:
         os.environ["PAPEX_KIT_BACKGROUND"] = background
 case("S1 the show's Next box: one advice line as before, the three of --batch as one text", one and three, stage.after)
+
+# ---------------------------------------------------------------------------- the runner as a hosted task
+# runner/render_task.py runs `runner.py --post` once and sums up what it printed. Papex is a stand-in: urlopen is
+# replaced, so no request leaves this computer, and the runner's own Api reads the queue and posts. The sent runs
+# are built from this kit's list files, their results shaped as a real kit result.
+task_spec = importlib.util.spec_from_file_location("render_task", os.path.join(KIT, "runner", "render_task.py"))
+render_task = importlib.util.module_from_spec(task_spec)
+task_spec.loader.exec_module(render_task)
+case("H0 runner/render_task.py loads without the Render SDK", "render" not in sys.modules and callable(render_task.decide_queue),
+     f"render in sys.modules: {'render' in sys.modules}")
+
+TOKEN_ENV, API_ENV = render_task.runner.TOKEN_ENV, render_task.API_ENV
+TASK_TOKEN = "made-up-runner-token-for-the-tests"  # the stand-in checks it is sent; it is never in a summary or a failure
+RELEASED_KIT = "0xe987ae1ea2b97e615b843705ab3ccc1c39bc60d968332b89ae2c1bf34af9f347"  # an earlier release, in runner/kits.sha256
+COLLATZ = "collatz-conjecture"
+QUEUE = "/api/admin/shared-work/batches?state=SUBMITTED&page=0&size=100"
+
+
+def sent_run(batch_key, problem, list_key, outcome="PASS", kit=RELEASED_KIT, list_sha256=None):
+    """The runner's view of a sent run of a list of one unit."""
+    folder = os.path.join(KIT, "lists", problem)
+    mpath = os.path.join(folder, list_key + ".manifest.ndjson")
+    line = json.loads(open(mpath).readline())
+    spec = json.load(open(os.path.join(folder, list_key, line["key"] + ".spec.json")))
+    try:
+        proof = json.load(open(os.path.join(folder, list_key, line["key"] + ".reference.json")))["outputSha256"]
+    except OSError:
+        proof = "0x" + "cd" * 32
+    version = spec["toolchain"].split(":v")[-1]
+    list_sha256 = list_sha256 or "0x" + hashlib.sha256(open(mpath, "rb").read()).hexdigest()
+    result = {"schema": "papex-shared-work-result/v1", "problem": problem, "list": list_key, "listSha256": list_sha256,
+              "batch": batch_key,
+              "env": {"os": "macOS-27.2.1-arm64-arm-64bit-Mach-O", "cpu": "Apple M5", "agentHost": "Claude Code",
+                      "tools": [{"name": "lean", "version": f"Lean (version {version}, aarch64-unknown-linux-gnu, commit "},
+                                {"name": "elan", "version": "v4.4.0"},
+                                {"name": "papex-rerun-kit", "version": "1", "sourceSha256": kit}]},
+              "units": [{"key": line["key"], "outcome": outcome, "seconds": 38.4, "proof": {"sha256": proof, "bytes": 3795080},
+                         "checks": [{"tool": "lake build", "result": "passed" if outcome == "PASS" else "failed"},
+                                    {"tool": "#print axioms", "result": "permitted"}],
+                         "extra": {"spec": line["inputSha256"], "commit": spec["commit"], "mode": "docker",
+                                   "axioms": {t["name"]: list(spec["permittedAxioms"]) for t in spec["theorems"]},
+                                   "buildSeconds": 6.0, "checkSeconds": 32.4, "fetchSeconds": 0.1, "problems": []}}]}
+    return {"batchKey": batch_key, "state": "SUBMITTED", "list": {"sha256": list_sha256}, "units": [{"key": line["key"]}],
+            "resultText": json.dumps(result)}
+
+
+def hosted_task(queue, env, errors=None, page_size=100):
+    """decide_queue() against a stand-in Papex. errors: {(method, path): (status, body)} answered as HTTP errors.
+    Returns (the summary, or the failure's message; the requests, with whether the token was sent)."""
+    requests, views = [], {v["batchKey"]: v for v in queue}
+    pages = [queue[i:i + page_size] for i in range(0, len(queue), page_size)] or [[]]
+
+    def urlopen(request, timeout=None):
+        parts = urllib.parse.urlsplit(request.full_url)
+        path = parts.path + ("?" + parts.query if parts.query else "")
+        body = json.loads(request.data) if request.data else None
+        requests.append({"api": f"{parts.scheme}://{parts.netloc}", "method": request.get_method(), "path": path,
+                         "body": body, "tokenSent": request.get_header("X-papex-runner-token") == TASK_TOKEN})
+        if (request.get_method(), path) in (errors or {}):
+            status, text = errors[(request.get_method(), path)]
+            raise urllib.error.HTTPError(request.full_url, status, "error", {}, io.BytesIO(text.encode()))
+        if parts.path == "/api/admin/shared-work/batches":
+            page = int(urllib.parse.parse_qs(parts.query)["page"][0])
+            answer = {"content": [{"batchKey": v["batchKey"]} for v in pages[page]], "totalPages": len(pages)}
+        else:
+            answer = views[parts.path.rsplit("/", 1)[1]] if request.get_method() == "GET" else {}
+        return io.BytesIO(json.dumps(answer).encode())
+
+    saved_env = {k: os.environ.get(k) for k in (TOKEN_ENV, API_ENV)}
+    saved_open = render_task.runner.urllib.request.urlopen
+    for key in saved_env:
+        if key in env:
+            os.environ[key] = env[key]
+        else:
+            os.environ.pop(key, None)
+    render_task.runner.urllib.request.urlopen = urlopen
+    try:
+        with contextlib.redirect_stdout(io.StringIO()):
+            got = render_task.decide_queue()
+    except render_task.RunnerFailed as failure:
+        got = str(failure)
+    finally:
+        render_task.runner.urllib.request.urlopen = saved_open
+        for key, value in saved_env.items():
+            if value is None:
+                os.environ.pop(key, None)
+            else:
+                os.environ[key] = value
+    return got, requests
+
+
+def posts(requests):
+    return [r for r in requests if r["method"] == "POST"]
+
+
+WITH_TOKEN = {TOKEN_ENV: TASK_TOKEN}
+OTHER_API = dict(WITH_TOKEN, **{API_ENV: "https://papex.invalid"})
+NOTHING = {"lines": [], "accepted": 0, "rejected": 0, "skipped": 0, "alert": False, "exitCode": 0}
+
+got, reqs = hosted_task([], WITH_TOKEN)
+case("H1 an empty queue: nothing decided, one read of the queue at https://api.papex.org (no PAPEX_API), the token sent",
+     got == NOTHING and [(r["api"], r["method"], r["path"], r["tokenSent"]) for r in reqs]
+     == [("https://api.papex.org", "GET", QUEUE, True)], f"{got}; requests {[(r['api'], r['method'], r['path']) for r in reqs]}")
+
+got, reqs = hosted_task([sent_run("b-7f3a21", ERDOS, ERDOS_LIST)], OTHER_API)
+verdict = (posts(reqs) or [{}])[0]
+case("H2 one run accepted: the summary, one decision posted with expectedState SUBMITTED, every request to PAPEX_API",
+     got == dict(NOTHING, lines=["b-7f3a21: ACCEPTED "], accepted=1) and json.loads(json.dumps(got)) == got
+     and len(posts(reqs)) == 1 and verdict.get("path") == "/api/admin/shared-work/batches/b-7f3a21/verdict"
+     and verdict["body"]["outcome"] == "ACCEPTED" and verdict["body"]["expectedState"] == "SUBMITTED"
+     and [u["verdict"] for u in verdict["body"]["units"]] == ["ACCEPTED"]
+     and "same fingerprint" in verdict["body"]["summaryText"]
+     and {r["api"] for r in reqs} == {"https://papex.invalid"} and all(r["tokenSent"] for r in reqs),
+     f"returns {json.dumps(got)}")
+
+got, reqs = hosted_task([sent_run("b-7f3a22", COLLATZ, "lean-rerun-first-passage-v1", kit="0x" + "0" * 64)], WITH_TOKEN)
+case("H3 one run rejected (a kit that was never released)",
+     got == dict(NOTHING, lines=["b-7f3a22: REJECTED TOOL_NOT_ALLOWED"], rejected=1)
+     and [(p["body"]["outcome"], p["body"]["reasonCode"]) for p in posts(reqs)] == [("REJECTED", "TOOL_NOT_ALLOWED")], got)
+
+got, reqs = hosted_task([sent_run("b-7f3a23", ERDOS, ERDOS_LIST, list_sha256="0x" + "1" * 64)], WITH_TOKEN)
+case("H4 a run of a list that is not of this kit: skipped, nothing posted",
+     got == dict(NOTHING, lines=["b-7f3a23 SUBMITTED: not a list of this kit"], skipped=1) and not posts(reqs), got)
+
+got, reqs = hosted_task([sent_run("b-7f3a24", COLLATZ, "lean-rerun-first-passage-v2", outcome="FAIL")], WITH_TOKEN)
+case("H5 a run reported as a failed build: rejected, and the ALERT is in the summary",
+     got == dict(NOTHING, lines=["ALERT b-7f3a24: a build is reported as failed. Look at this run and the list.",
+                                 "b-7f3a24: REJECTED OUTCOME_UNEXPECTED"], rejected=1, alert=True)
+     and [p["body"]["reasonCode"] for p in posts(reqs)] == ["OUTCOME_UNEXPECTED"], got)
+
+mixed = [sent_run("b-7f3a21", ERDOS, ERDOS_LIST), sent_run("b-7f3a22", COLLATZ, "lean-rerun-first-passage-v1", kit="0x" + "0" * 64),
+         sent_run("b-7f3a23", ERDOS, ERDOS_LIST, list_sha256="0x" + "1" * 64),
+         sent_run("b-7f3a24", COLLATZ, "lean-rerun-first-passage-v2", outcome="FAIL")]
+got, reqs = hosted_task(mixed, WITH_TOKEN, page_size=2)
+case("H6 the four in one queue over two pages: counted once each",
+     isinstance(got, dict) and (got["accepted"], got["rejected"], got["skipped"], got["alert"], len(got["lines"])) == (1, 2, 1, True, 5)
+     and len(posts(reqs)) == 3 and [r["path"] for r in reqs if "?" in r["path"]] == [QUEUE, QUEUE.replace("page=0", "page=1")],
+     got)
+
+answer = '{"code":"RUNNER_TOKEN_INVALID","message":"no runner has the token %s"}' % TASK_TOKEN
+got, reqs = hosted_task(mixed, WITH_TOKEN, errors={("GET", QUEUE): (401, answer)})
+case("H7 Papex answers with an error: the task fails with the runner's message, and the token is not in it",
+     isinstance(got, str) and got.startswith(f"The runner stopped: GET {QUEUE} answered 401: ")
+     and TASK_TOKEN not in got and "[token]" in got and not posts(reqs), got)
+
+got, reqs = hosted_task(mixed[:2], WITH_TOKEN, errors={("POST", "/api/admin/shared-work/batches/b-7f3a21/verdict"): (
+    409, '{"code":"SHARED_WORK_BATCH_STATE","message":"The batch is ACCEPTED, which does not allow this"}')})
+case("H8 a run another task decided first (409): the task fails and says what was printed before",
+     isinstance(got, str) and "/b-7f3a21/verdict answered 409" in got and "(printed before it stopped: b-7f3a21: ACCEPTED )" in got
+     and len(posts(reqs)) == 1, got)
+
+got, reqs = hosted_task(mixed, {})
+case("H9 no token: the task fails before any request", got == f"The runner stopped: Set {TOKEN_ENV}." and not reqs, got)
 
 # ---------------------------------------------------------------------------- the kit's own lists
 if REAL:

@@ -102,6 +102,10 @@ the Lean version, that the build passed, and that the theorem rests only on the 
 The report comes from the kit you ran; nobody can show from it that your computer did the work.
 The list therefore says "people who ran it", and nothing more.
 
+The comparison is `runner/runner.py`, and its rules are the ones written there; nobody accepts a run by
+hand. Papex Labs runs it as a hosted task that Papex's server starts when a run is sent
+(`runner/render_task.py`), with a scheduled run as a fallback.
+
 ## Lists in this kit
 
 | Problem | List | What is built |
