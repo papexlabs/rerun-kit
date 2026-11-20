@@ -1,0 +1,157 @@
+{
+ "cases": [
+  {
+   "file": "v1_colour_of_2_set_to_colour_of_1.json",
+   "label": "the colour of 2 set to the colour of 1",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "colour 0 contains 1 + 1 = 2"
+   }
+  },
+  {
+   "file": "v2_extend_to_539_with_colour_0.json",
+   "label": "1..539: the published colouring with 539 in colour 0",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "colour 0 contains 1 + 538 = 539"
+   }
+  },
+  {
+   "file": "v2_extend_to_539_with_colour_1.json",
+   "label": "1..539: the published colouring with 539 in colour 1",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "colour 1 contains 2 + 537 = 539"
+   }
+  },
+  {
+   "file": "v2_extend_to_539_with_colour_2.json",
+   "label": "1..539: the published colouring with 539 in colour 2",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "colour 2 contains 6 + 533 = 539"
+   }
+  },
+  {
+   "file": "v2_extend_to_539_with_colour_3.json",
+   "label": "1..539: the published colouring with 539 in colour 3",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "colour 3 contains 4 + 535 = 539"
+   }
+  },
+  {
+   "file": "v2_extend_to_539_with_colour_4.json",
+   "label": "1..539: the published colouring with 539 in colour 4",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "colour 4 contains 5 + 534 = 539"
+   }
+  },
+  {
+   "file": "v2_extend_to_539_with_colour_5.json",
+   "label": "1..539: the published colouring with 539 in colour 5",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "colour 5 contains 145 + 394 = 539"
+   }
+  },
+  {
+   "file": "v3_colour_value_6_at_100.json",
+   "label": "colour 6 (not 0..5) at 100",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "colour of 100 is not an integer in 0..5"
+   }
+  },
+  {
+   "file": "v4_N538_but_537_colours.json",
+   "label": "N = 538 with 537 colours",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "colours must be a list of exactly N entries (colour of 1, 2, ..., N)"
+   }
+  },
+  {
+   "file": "v5_k_is_5.json",
+   "label": "k = 5",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "k must be 6"
+   }
+  },
+  {
+   "file": "v6_not_json.json",
+   "label": "not JSON",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "cannot read object as JSON: JSONDecodeError"
+   }
+  },
+  {
+   "file": "v7_boolean_colour_at_10.json",
+   "label": "true (not a colour) at 10",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "colour of 10 is not an integer in 0..5"
+   }
+  },
+  {
+   "file": "v9_extra_key.json",
+   "label": "the published colouring with a key the format does not name",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "the object must hold exactly the keys k, N and colours"
+   }
+  },
+  {
+   "file": "t1_k_is_6_as_a_float.json",
+   "label": "k written 6.0 (a float, not the integer 6)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "k must be 6"
+   }
+  },
+  {
+   "file": "t2_k_is_true.json",
+   "label": "k written true",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "k must be 6"
+   }
+  },
+  {
+   "file": "t3_N_is_538_as_a_float.json",
+   "label": "N written 538.0",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "N must be an integer between 1 and 5000"
+   }
+  },
+  {
+   "file": "t4_colour_of_5_as_a_float.json",
+   "label": "the colour of 5 written as a float",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "colour of 5 is not an integer in 0..5"
+   }
+  }
+ ]
+}

@@ -1,0 +1,218 @@
+{
+  "schema": "papex-task/v1",
+  "slug": "erdos-483-schur-six-colours",
+  "kind": "record",
+  "title": "Six sum-free colours for 1..N (Schur numbers, S(6))",
+  "shortTitle": "Schur number S(6)",
+  "description": "Colour every whole number from 1 to N with six colours so that no colour holds x, y and x + y (x = y allowed), for an N larger than the best known one. The checker tests a colouring in plain whole-number arithmetic.",
+  "objective": "Colour each integer 1, 2, ..., N with one of 6 colours so that no colour contains numbers x, y and x + y (x = y allowed, so no colour may contain both x and 2x). Score: N. A valid colouring of 1..N shows S(6) >= N (OEIS A045652), equivalently f(6) = S(6) + 1 >= N + 1 (OEIS A030126).",
+  "direction": "max",
+  "scorePlaces": 0,
+  "bestKnown": {
+    "value": "538",
+    "by": "Adam McKenna",
+    "year": 2026,
+    "sourceName": "McKenna's preprint on Zenodo",
+    "sourceUrl": "https://zenodo.org/records/24178815",
+    "asOf": "2026-11-20",
+    "objectUrl": "https://github.com/mysticflounder/schur-538/blob/v1.2.0/schur6-538.word",
+    "quote": "We give an explicit partition of {1, ..., 538} into six sum-free sets. This shows S(6) ≥ 538 and improves the bound S(6) ≥ 537 of Chen, Zhu and Long.",
+    "note": "A preprint (its Zenodo page: 'Version v1.2.0 Preprint'), not peer reviewed. OEIS A045652 (revised 23 Oct 2026) still lists 537. best_known.json is the colouring of that preprint."
+  },
+  "objectFormat": "A JSON object {\"k\": 6, \"N\": <integer 1..5000>, \"colours\": [c_1, ..., c_N]} where c_i is an integer 0..5, the colour of the integer i. No other keys: an accepted object is shown publicly. At most 20,000 bytes as the result file carries it.",
+  "objectKeys": [
+    "k",
+    "N",
+    "colours"
+  ],
+  "shows": "That this one colouring splits 1..N into six sets with no x + y = z inside a set (x = y included), so S(6) is at least N. With N above the best known value, it is better than the value in the named source as of the date shown.",
+  "notCovered": "Passing shows only that this one colouring of 1..N has no monochromatic x + y = z (x = y included), so S(6) >= N. It does not give the exact value of S(6), says nothing about the growth question listed as no. 483 in the Erdős problem database (is f(k) < c^k for some constant c?), and does not show that nobody found the same or a longer colouring earlier.",
+  "alsoBelongsAt": "OEIS A045652 and A030126, the sequences of the Schur numbers. The OEIS does not take AI-generated submissions: a person has to check the result and write any submission themselves.",
+  "effort": "Hard: expect long computer searches (SAT solvers, or local search from the published colourings), not a quick idea. A better colouring may not exist at all.",
+  "limits": {
+    "maxObjectBytes": 20000,
+    "checkerSeconds": 10
+  },
+  "resultLine": "Result: an accepted run's colouring passed this task's checker on Papex's runner with N above the best known value at that time, so S(6) is at least that N. It says nothing about the exact value of S(6) or the growth question of Erdős problem 483, and it is not peer review.",
+  "requirements": "Python 3.9 or later and git. An AI app with a terminal and the Papex connection, or your own code, to search; a C compiler or a SAT solver helps.",
+  "checkedHow": "tasks/erdos-483-schur-six-colours/checker.py (Python, standard library only) reads k = 6, N and the N colours, then for each colour looks for x <= y in that colour with x + y also in it (x = y included), in plain whole-number arithmetic. Papex's runner runs the same checker again on the object in the result file and compares N with the best known value on Papex at that moment.",
+  "expectedSeconds": 3600,
+  "problem": {
+    "slug": "schur-numbers",
+    "create": {
+      "slug": "schur-numbers",
+      "title": "Schur numbers",
+      "question": "For k colours, what is the largest N such that the whole numbers 1, ..., N can be coloured so that no colour contains numbers x, y and x + y (x = y allowed)?",
+      "summary": "The Schur number S(k) is the largest N for which 1, ..., N can be split into k sum-free sets, x = y allowed. Only S(1) to S(5) are known: 1, 4, 13, 44, 160 (OEIS A045652). The problem is also listed as no. 483 in the Erdős problem database, which asks how f(k) = S(k) + 1 grows: is f(k) < c^k for some constant c?",
+      "field": "mathematics",
+      "sinceYear": null,
+      "prize": null,
+      "initialStatus": {
+        "status": "OPEN",
+        "source": {
+          "name": "OEIS A045652, Schur's numbers (version 2)",
+          "list": "OEIS",
+          "url": "https://oeis.org/A045652"
+        },
+        "sourceDate": null,
+        "checkedOn": "2026-11-20"
+      }
+    }
+  },
+  "sources": [
+    {
+      "fact": "The problem as its source states it",
+      "url": "https://oeis.org/A045652",
+      "quote": "Largest number such that there is an n-coloring of the integers 1, ..., a(n) such that each color is sum-free, that is, no color contains a triple x + y = z. - _Charles R Greathouse IV_, Jun 11 2013",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "The best known value",
+      "url": "https://zenodo.org/records/24178815",
+      "quote": "We give an explicit partition of {1, ..., 538} into six sum-free sets. This shows S(6) ≥ 538 and improves the bound S(6) ≥ 537 of Chen, Zhu and Long.",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "Definition of S(k) (largest N with a k-colouring of 1..N, every colour sum-free)",
+      "url": "https://oeis.org/A045652",
+      "quote": "Largest number such that there is an n-coloring of the integers 1, ..., a(n) such that each color is sum-free, that is, no color contains a triple x + y = z. - _Charles R Greathouse IV_, Jun 11 2013",
+      "fetchedOn": "2026-11-20",
+      "note": "oeis/oeisdata commit b460c2e8ffbef9a3aacf263819282712f0f30341, seq/A045/A045652.seq, entry revision '#64 Oct 23 2026 12:04:32'; CC BY-SA 4.0"
+    },
+    {
+      "fact": "Definition of f(k) (smallest N forcing a monochromatic x + y = z) and its link to S(k)",
+      "url": "https://oeis.org/A030126",
+      "quote": "Smallest number such that for any n-coloring of the integers 1, ..., a(n) no color is sum-free, that is, some color contains a triple x + y = z. - _Charles R Greathouse IV_, Jun 11 2013",
+      "fetchedOn": "2026-11-20",
+      "note": "oeis/oeisdata commit b460c2e8, seq/A030/A030126.seq, revision '#74 Oct 23 2026 12:04:46'. A045652 states the link: 'a(n) = A030126(n)-1. a(n) <= A003323(n)-2. - _Max Alekseyev_, Jan 12 2008'"
+    },
+    {
+      "fact": "Convention: x = y is allowed (Chen, Zhu, Long)",
+      "url": "https://arxiv.org/html/2610.31362v1",
+      "quote": "A set $C$ of integers is sum-free if there are no $x,y\\in C$, not necessarily distinct, with $x+y\\in C$.",
+      "fetchedOn": "2026-11-20",
+      "note": "paper text, licence 'CC BY 4.0' shown on the HTML page and on https://arxiv.org/abs/2610.31362; read on an arXiv path that robots.txt allows (/html)"
+    },
+    {
+      "fact": "Convention: x = y is allowed (McKenna)",
+      "url": "https://github.com/mysticflounder/schur-538/blob/v1.2.0/paper/schur-six-538.md",
+      "quote": "A set $A$ of positive integers is *sum-free* when there are no $x,y\\in A$ with $x+y\\in A$; the elements $x$ and $y$ may be equal.",
+      "fetchedOn": "2026-11-20",
+      "note": "repository licence CC-BY-4.0; tag v1.2.0, commit 47c01b341b74ef5620c5e3f858c527cd266e212b; read with gh api"
+    },
+    {
+      "fact": "Known exact values S(1..5)",
+      "url": "https://arxiv.org/html/2610.31362v1",
+      "quote": "The values $S(1),\\dots,S(5)=1,4,13,44,160$ are known, the last one determined by Heule [ 8 ] .",
+      "fetchedOn": "2026-11-20",
+      "note": "OEIS A045652 data line agrees: '%S A045652 1,4,13,44,160'"
+    },
+    {
+      "fact": "Bound before 2026: S(6) >= 536, Fredricksen and Sweet (2000)",
+      "url": "https://arxiv.org/html/2610.31362v1",
+      "quote": "For $k=6$ the record has been $S(6)\\geq 536$ since 2000, when Fredricksen and Sweet [ 7 ] found it by a search over symmetric sum-free partitions; it has been quoted as the best known bound ever since.",
+      "fetchedOn": "2026-11-20",
+      "note": "OEIS A045652 agrees: 'The best known lower bounds for the next terms are due to Fredricksen and Sweet (see links): a(6) >= 536 and a(7) >= 1680. - _Dmitry Kamenetsky_, Oct 23 2019'. Reference [7]: H. Fredricksen and M. M. Sweet, Electron. J. Combin. 7 (2000), #R32, doi:10.37236/1510"
+    },
+    {
+      "fact": "S(6) >= 537, Chen, Zhu and Long (arXiv, 22 Oct 2026)",
+      "url": "https://arxiv.org/abs/2610.31362",
+      "quote": "We give an explicit partition of $\\{1,\\ldots,537\\}$ into six sum-free sets, establishing $S(6)\\ge 537$. This improves the lower bound 536 of Fredricksen and Sweet (2000).",
+      "fetchedOn": "2026-11-20",
+      "note": "abstract page; licence link http://creativecommons.org/licenses/by/4.0/; '[v1] Thu, 22 Oct 2026 14:40:14 UTC'"
+    },
+    {
+      "fact": "The 537 partition is printed in the paper text (proof of Theorem 1)",
+      "url": "https://arxiv.org/html/2610.31362v1",
+      "quote": "The following six sets are pairwise disjoint, their union is $\\{1,\\dots,537\\}$, and none of them contains $x$, $y$ and $x+y$.",
+      "fetchedOn": "2026-11-20",
+      "note": "the six lists that follow were parsed and pass the checker with score 537 (probe.md)"
+    },
+    {
+      "fact": "Chen, Zhu and Long report more partitions of 1..537",
+      "url": "https://arxiv.org/abs/2610.31362",
+      "quote": "We also report 131 pairwise inequivalent partitions found by the search.",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "OEIS records the Chen-Zhu-Long bound (S convention)",
+      "url": "https://oeis.org/A045652",
+      "quote": "Chen-Zhu-Long refines lower bound estimates as follows: a(6) >= 537, a(8) >= 5372, a(11) >= 204208, and a(13) >= 2042082. - _Michael De Vlieger_, Oct 23 2026",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "OEIS records the Chen-Zhu-Long bound (f convention)",
+      "url": "https://oeis.org/A030126",
+      "quote": "Chen-Zhu-Long refines lower bound estimates as follows: a(6) >= 538, a(8) >= 5373, a(11) >= 204209, and a(13) >= 2042083. - _Michael De Vlieger_, Oct 23 2026",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "S(6) >= 538, Adam McKenna (Zenodo preprint; v1 4 Nov 2026, v1.2.0 12 Nov 2026; CC BY 4.0)",
+      "url": "https://zenodo.org/records/24178815",
+      "quote": "We give an explicit partition of {1, ..., 538} into six sum-free sets. This shows S(6) ≥ 538 and improves the bound S(6) ≥ 537 of Chen, Zhu and Long.",
+      "fetchedOn": "2026-11-20",
+      "note": "landing page reached from https://zenodo.org/records/23937655 (concept DOI 10.5281/zenodo.23937655); page shows 'Published November 12, 2026 | Version v1.2.0 Preprint' and licence 'Creative Commons Attribution 4.0 International'. OpenAlex gives the first publication date 2026-11-04 (https://api.openalex.org/works/doi:10.5281/zenodo.23937655)"
+    },
+    {
+      "fact": "McKenna on the state of the art when the note was written",
+      "url": "https://github.com/mysticflounder/schur-538/blob/v1.2.0/paper/schur-six-538.md",
+      "quote": "Fredricksen and Sweet gave $S(6)\\ge 536$ [FS00], and Chen, Zhu and Long gave $S(6)\\ge 537$ [CZL26]. The latter is the largest lower bound in the sources that we read on 11 November 2026.",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "Format and checksum of the 538 colouring (best_known.json)",
+      "url": "https://github.com/mysticflounder/schur-538/blob/v1.2.0/paper/schur-six-538.md",
+      "quote": "The file `schur6-538.word` has the letters of $W$ and one final newline, which must be removed to get the output stated in Section 2. Its SHA-256 is `9e149c007b778655afd199685ebcc76260604a44f4c322d8aa9a1d96afb71d20`",
+      "fetchedOn": "2026-11-20",
+      "note": "the file read with gh api has this SHA-256; it also equals Figure 1 of the same paper letter for letter"
+    },
+    {
+      "fact": "A second 538 colouring",
+      "url": "https://github.com/mysticflounder/schur-538/blob/v1.2.0/paper/schur-six-538.md",
+      "quote": "The repository also holds a second such word, `schur6-538-b.word`, which differs from $W$ in 37 letters.",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "Both are preprints (McKenna's reference list)",
+      "url": "https://github.com/mysticflounder/schur-538/blob/v1.2.0/paper/schur-six-538.md",
+      "quote": "[CZL26] Z. Chen, L. Zhu, F. Long, A new lower bound for the sixth Schur number: $S(6)\\ge 537$, preprint, arXiv:2610.31362v1 (2026).",
+      "fetchedOn": "2026-11-20",
+      "note": "McKenna's own record is labelled 'Preprint' on its Zenodo page"
+    },
+    {
+      "fact": "No later work found in a metadata search",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:sixth%20schur,from_publication_date:2026-10-01&sort=publication_date:desc",
+      "quote": "data: newest matching work on Schur numbers is '2026-11-04 | The sixth Schur number is at least 538 | https://doi.org/10.5281/zenodo.23937655'; the other matches are the Chen-Zhu-Long preprint, a Lean check of its 537 partition (doi:10.5281/zenodo.23906795, 'states no bound of its own') and unrelated works",
+      "fetchedOn": "2026-11-20",
+      "note": "OpenAlex (robots.txt allows all). A search is not proof that nothing newer exists."
+    },
+    {
+      "fact": "Listing in the Erdős problem database",
+      "url": "https://github.com/teorth/erdosproblems/blob/5610470b3d03a393a8bfbd8c40dab3ceccbb9f11/data/problems.yaml",
+      "quote": "- number: \"483\" ... status: state: \"open\" last_update: \"2025-08-31\" oeis: [\"A030126\"]",
+      "fetchedOn": "2026-11-20",
+      "note": "Apache-2.0; commit 5610470 of 2026-11-19; data lines, joined"
+    },
+    {
+      "fact": "The Erdős question (problem 483), as formalized",
+      "url": "https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/483.lean",
+      "quote": "Let $f(k)$ be the minimal $N$ such that if $\\{1,\\ldots,N\\}$ is $k$-coloured then there is a monochromatic solution to $a+b=c$. Estimate $f(k)$. In particular, is it true that $f(k) < c^k$ for some constant $c>0$?",
+      "fetchedOn": "2026-11-20",
+      "note": "Apache-2.0; the file's reference: '[Er61] Erdős, Paul, *Some unsolved problems*. Magyar Tud. Akad. Mat. Kutató Int. Közl. (1961), 221-254, p.233, Problem 20.'; its definition says 'equal summands are allowed'"
+    },
+    {
+      "fact": "OEIS does not accept AI-generated submissions",
+      "url": "https://github.com/teorth/erdosproblems/blob/5610470b3d03a393a8bfbd8c40dab3ceccbb9f11/CONTRIBUTING.md",
+      "quote": "In particular, [AI-generated submissions to the OEIS are forbidden](https://oeis.org/wiki/Use_of_AI_for_OEIS_Submissions_is_Forbidden); any AI-generated components need to be replaced by human-generated substitutes before submission.",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "Where best_known.json comes from",
+      "url": "https://github.com/mysticflounder/schur-538/blob/v1.2.0/schur6-538.word",
+      "quote": "The file `schur6-538.word` has the letters of $W$ and one final newline, which must be removed to get the output stated in Section 2. Its SHA-256 is `9e149c007b778655afd199685ebcc76260604a44f4c322d8aa9a1d96afb71d20`",
+      "fetchedOn": "2026-11-20",
+      "note": "The partition of {1,...,538} into six sum-free sets of Adam McKenna, \"The sixth Schur number is at least 538\" (preprint, Zenodo, 2026). The file schur6-538.word holds one letter 1..6 per integer (letter i is the colour of the integer i); it is copied here unchanged with colours renumbered 0..5 (letter minus one). The same word is printed as Figure 1 of the paper (paper/schur-six-538.md in the repository). Commit 47c01b341b74ef5620c5e3f858c527cd266e212b (tag v1.2.0); record https://zenodo.org/records/24178815 (concept DOI 10.5281/zenodo.23937655); licence CC BY 4.0 (repository LICENSE and README; Zenodo record licence); SHA-256 of the file as read 9e149c007b778655afd199685ebcc76260604a44f4c322d8aa9a1d96afb71d20; read with gh api (GitHub REST API), read-only."
+    }
+  ],
+  "checkerSha256": "0x62cee64739b2ebcd28f64288db231dc36d4e350e1275057bab17d689e3b7675d"
+}

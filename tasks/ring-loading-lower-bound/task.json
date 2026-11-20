@@ -1,0 +1,220 @@
+{
+  "schema": "papex-task/v1",
+  "slug": "ring-loading-lower-bound",
+  "kind": "record",
+  "title": "A larger lower bound for the ring loading constant",
+  "shortTitle": "Ring loading lower bound",
+  "description": "Find a short list of number pairs whose value α is larger than the best known one: every instance shows that the ring loading constant β is at least its α. The checker computes α exactly.",
+  "objective": "Find m pairs (2 <= m <= 20) of nonnegative numbers (u_i, v_i) with u_i + v_i <= 1 that make alpha as large as possible, where alpha = min over all 2^m choices z_i in {v_i, -u_i} of max over k = 1..m of |(z_1 + ... + z_k) - (z_{k+1} + ... + z_m)|. This is Skutella's 'additive performance' (arXiv 1405.0789, Section 2): each k is one edge of the ring, and the k = m term is |z_1 + ... + z_m|. Each instance shows beta >= alpha, where beta is the Schrijver–Seymour–Winkler constant (called C in problem 61).",
+  "direction": "max",
+  "scorePlaces": 18,
+  "bestKnown": {
+    "value": "1.125",
+    "by": "No single discoverer: EinsteinArena entry JSAgent-Ring15 (12 Sep 2026), GitHub issue #12 (Maks23, 8 Oct 2026) and Karl Däubel (13 Oct 2026); which came earliest is unclear",
+    "year": 2026,
+    "sourceName": "GitHub issue #12 of the AlphaEvolve repository of problems",
+    "sourceUrl": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/issues/12",
+    "asOf": "2026-11-20",
+    "objectUrl": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/issues/12",
+    "quote": "C ≥ 9/8 = 1.125 > 47/42 ≈ 1.1190.",
+    "note": "9/8 exactly. Reported by the EinsteinArena leaderboard entry JSAgent-Ring15 (12 Sep 2026, score 1.125), GitHub issue #12 (Maks23, 8 Oct 2026, an exact 14-pair certificate) and a 12-pair instance by Karl Däubel in that thread (13 Oct 2026); Däubel's README credits issue #12 and does not know whether it was the earliest. None is peer reviewed. Known window as of 2026-11-20: 9/8 <= beta <= 13/10 (upper bound: Däubel, arXiv 1904.02119). best_known.json is an instance built for this task (probe.md, section 6)."
+  },
+  "objectFormat": "A JSON object {\"pairs\": [[u1, v1], ..., [um, vm]]} with 2 <= m <= 20. Each u and v is a decimal JSON number or a string such as \"3/16\" or \"0.25\": at most 80 characters, an exponent (as in 1e-05) at most 60 in size; the common denominator of all entries must fit in 2048 bits. Entries must be >= 0. A pair with u + v > 1 is scaled exactly to u + v = 1, as the source's code does. Zero pairs (0, 0) are allowed. No other keys: an accepted object is shown publicly. Write a number of more than 17 digits as a string.",
+  "objectKeys": [
+    "pairs"
+  ],
+  "shows": "That this one instance forces alpha >= the score, so the ring loading constant beta is at least the score. With a score above the best known value, it is better than the value in the named source as of the date shown.",
+  "notCovered": "A pass shows only that this one instance forces alpha >= the score, so beta >= the score, under either reading of 'for every k' (with k = 1..m-1, one (0, 0) pair at an end gives the same value). The checker does not build the ring loading instance of Däubel's Lemma 7. A pass says nothing about upper bounds, peer review, or whether someone found the same or a better instance earlier.",
+  "alsoBelongsAt": "Issue #12 of the AlphaEvolve repository of problems, where the value of that repository's construction was posted, and Karl Däubel's RingLoading repository, whose README asks for improved lower bounds.",
+  "effort": "Hard, maybe impossible: in a one-hour attempt an AI app with local search did not reach the best known value, and published local searches fell short of it too.",
+  "limits": {
+    "maxObjectBytes": 20000,
+    "checkerSeconds": 60
+  },
+  "resultLine": "Result: an accepted run's instance passed this task's checker on Papex's runner with a score above the best known value at that time, so the ring loading constant beta is at least its score. It says nothing about upper bounds on beta, and it is not peer review.",
+  "requirements": "Python 3.9 or later and git. An AI app with a terminal and the Papex connection, or your own code, to search. No special hardware.",
+  "checkedHow": "tasks/ring-loading-lower-bound/checker.py (Python, standard library only) reads every number exactly from its digits, scales a pair with u + v > 1 to u + v = 1, and goes through all 2^m sign choices in exact rational arithmetic with k = 1..m, skipping only branches that cannot lower the minimum. The score is alpha written exactly, or rounded down to 18 decimals when its decimal expansion does not end. Papex's runner runs the same checker again and compares the score with the best known value exactly.",
+  "expectedSeconds": 3600,
+  "problem": {
+    "slug": "ring-loading-problem",
+    "create": {
+      "slug": "ring-loading-problem",
+      "title": "The ring loading problem",
+      "question": "What is the ring loading constant β of Schrijver, Seymour and Winkler: the smallest α such that for any nonnegative u_i, v_i with u_i + v_i ≤ 1 one can choose each z_i as v_i or −u_i with |(z_1 + … + z_k) − (z_{k+1} + … + z_m)| ≤ α for every k?",
+      "summary": "Problem 61 of the AlphaEvolve repository of problems (Georgiev, Gómez-Serrano, Tao and Wagner, 2025). Schrijver, Seymour and Winkler proved 101/100 ≤ β ≤ 3/2; Skutella narrowed this to 11/10 ≤ β ≤ 19/14, and Däubel proved β ≤ 13/10. The source asks for upper and lower bounds on β that are as strong as possible.",
+      "field": "mathematics",
+      "sinceYear": null,
+      "prize": null,
+      "initialStatus": {
+        "status": "OPEN",
+        "source": {
+          "name": "AlphaEvolve repository of problems, problem 61",
+          "list": "AlphaEvolve repository of problems",
+          "url": "https://google-deepmind.github.io/alphaevolve_repository_of_problems/problems/61.html"
+        },
+        "sourceDate": null,
+        "checkedOn": "2026-11-20"
+      }
+    }
+  },
+  "sources": [
+    {
+      "fact": "Problem statement (C, 'for every k')",
+      "url": "https://google-deepmind.github.io/alphaevolve_repository_of_problems/problems/61.html",
+      "quote": "Let $C$ be the infimum of all reals $\\alpha$ for which the following statement holds: for all positive integers $m$ and nonnegative reals $u_1, \\ldots, u_m$ and $v_1, \\ldots, v_m$ with $u_i + v_i \\leq 1$, there exist $z_1, \\ldots, z_m$ such that for every $k$, we have $z_k \\in \\{v_k, -u_k\\}$, and ...",
+      "fetchedOn": "2026-11-20",
+      "note": "read from the repository source problems/61.html with gh api, commit 8f447457957deac61e28bf1676746f0753b3b2f8; licence: README 'All other materials are licensed under the Creative Commons Attribution 4.0 International License (CC-BY)'"
+    },
+    {
+      "fact": "The k-range: each k = 1..m is one edge of the ring (and minus it on the opposite edge)",
+      "url": "https://arxiv.org/html/1405.0789",
+      "quote": "As a consequence, for $k=1,\\dots,m$ , the load on edge $\\{k,k+1\\}$ changes by $\\displaystyle\\sum_{i=1}^{k}z_{i}-\\sum_{i=k+1}^{m}z_{i}\\kern 5.0pt,$ and the load on the opposite edge $\\{k+m,1+(k+m\\mod 2m)\\}$ changes by the negative of this amount.",
+      "fetchedOn": "2026-11-20",
+      "note": "Skutella, 'A note on the ring loading problem', arXiv 1405.0789v3 (19 Aug 2014), Section 2; arXiv non-exclusive licence (quoted, not copied); read on the /html path, which arXiv's robots.txt allows"
+    },
+    {
+      "fact": "Definition of the score (additive performance, k = 1..m)",
+      "url": "https://arxiv.org/html/1405.0789",
+      "quote": "Thus, compared to the given split routing, the maximum increase of flow on any edge is $\\displaystyle\\max_{k=1,\\dots,m}\\,\\left\\lvert\\,\\sum_{i=1}^{k}z_{i}-\\sum_{i=k+1}^{m}z_{i}\\,\\right\\rvert\\kern 5.0pt.$ We refer to this value as the additive performance of solution $z$ .",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "beta is the constant of problem 61; bounds before 2025",
+      "url": "https://arxiv.org/html/1405.0789",
+      "quote": "Schrijver et al. prove that $\\beta\\in[\\frac{101}{100},\\frac{3}{2}]$ . As a consequence of our results, we narrow this interval down to $\\beta\\in[\\frac{11}{10},\\frac{19}{14}]$ .",
+      "fetchedOn": "2026-11-20",
+      "note": "the sentence before it defines beta with the same statement as problem 61"
+    },
+    {
+      "fact": "Upper bound 13/10 (Däubel)",
+      "url": "https://arxiv.org/html/1904.02119",
+      "quote": "As a result of our work, we obtain $\\beta\\in\\left[\\frac{11}{10},\\frac{13}{10}\\right]$ .",
+      "fetchedOn": "2026-11-20",
+      "note": "Däubel, 'An improved upper bound for the ring loading problem', arXiv 1904.02119v2 (30 Apr 2019); Theorem 1: 'Any split routing solution to the Ring Loading Problem can be turned into an unsplittable routing while increasing the load on any edge by at most $\\frac{13}{10}D$ . In particular, we have $L\\leq L^{*}+\\frac{13}{10}D$ .' Journal reference from his README: 'K. Däubel. An improved upper bound for the ring loading problem. SIAM J. Discrete Math., 36(2):867-887, 2022.'"
+    },
+    {
+      "fact": "From a split routing to a ring loading instance (Lemma 7)",
+      "url": "https://arxiv.org/html/1904.02119",
+      "quote": "Let $\\alpha\\geq 0$ . Any split routing solution that cannot be turned into an unsplittable routing without increasing the load on some edge by at least $\\alpha D$ can be turned into an instance of the Ring Loading Problem with $L-L^{*}\\geq\\alpha D$ .",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "The notebook scorer uses k = 1..m-1 and scales pairs with u + v > 1",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/blob/8f447457957deac61e28bf1676746f0753b3b2f8/experiments/ring_loading_problem/ring_loading_problem.ipynb",
+      "quote": "max_alpha_for_z = max(abs(sum(z[:k]) - sum(z[k:])) for k in range(1, m)) ... ui, vi = abs(item[0]), abs(item[1]) / s = ui + vi / if s > 1.0: / ui /= s / vi /= s",
+      "fetchedOn": "2026-11-20",
+      "note": "cell 1 ('Data and verification'); code lines joined with ' / '; the prompt cell says 'the following inequality holds for all k from 1 to m-1'. Apache-2.0"
+    },
+    {
+      "fact": "AlphaEvolve's value (2025)",
+      "url": "https://arxiv.org/html/2511.02864",
+      "quote": "AlphaEvolve found a construction with $m=15$ numbers that achieves a score of at least 1.119, improving the previous known bound by showing that $1.119\\leq C_{\\ref{ring_loading_problem}}$ , see Repository of Problems .",
+      "fetchedOn": "2026-11-20",
+      "note": "Georgiev, Gómez-Serrano, Tao, Wagner, 'Mathematical exploration and discovery at scale', arXiv 2511.02864v3 (22 Dec 2025), Problem 6.61; CC BY 4.0. Its instance scores exactly 874255912866623/781250000000000 = 1.11904756846927744 in the checker (probe.md)"
+    },
+    {
+      "fact": "Exact rational version of the AlphaEvolve construction: 47/42",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/issues/11",
+      "quote": "I give a rational instance whose alpha is exactly **47/42 = 1.1190476190…**.",
+      "fetchedOn": "2026-11-20",
+      "note": "Vividh Yadav (VividhDesign), 2026-10-06; read with gh api"
+    },
+    {
+      "fact": "9/8 in issue #12 (Maks23, 2026-10-08), with k = 1..m",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/issues/12",
+      "quote": "C ≥ 9/8 = 1.125 > 47/42 ≈ 1.1190.",
+      "fetchedOn": "2026-11-20",
+      "note": "issue created 2026-10-08T15:24:53Z. Also: 'For every one of the 2^14 choices z_i ∈ {v_i, −u_i} some k ∈ {1,…,m} has |Σ_{i≤k} z_i − Σ_{i>k} z_i| ≥ 9/8, and 52 choices attain exactly 9/8.' and 'Disclosure: the search code and write-up were produced with the help of an AI assistant (Claude, Anthropic)'. No licence stated: the instance is linked, not copied"
+    },
+    {
+      "fact": "Issue #12 on the notebook's k-range",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/issues/12",
+      "quote": "**Note on the notebook convention.** `compute_alpha_exact` in the notebook takes k = 1..m−1. With a (0,0) pair added at both ends (m = 16) the two conventions coincide",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "Däubel's 12-pair instance with 9/8 (2026-10-13), and his remark on the k-range",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/issues/12#issuecomment-6147523981",
+      "quote": "Exact integer enumeration gives $18/16=9/8$, using the corrected objective (see Remark 1 regarding the notebook’s off-by-one bug).",
+      "fetchedOn": "2026-11-20",
+      "note": "comment by karldaeubel, 2026-10-13T14:12:26Z; also: 'the same $9/8$ bound can be attained with **12 split demands**' and 'This example was also found independently with AI coding assistance.' No licence stated: linked, not copied"
+    },
+    {
+      "fact": "Lemma 7 applies to these certificates",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/issues/12#issuecomment-6147523981",
+      "quote": "Lemma 7 of [Däubel (2022)](https://arxiv.org/abs/1904.02119) provides the needed implication. It yields an instance with $L-L^\\ast\\geq9D/8$, preserving the maximum demand.",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "Leaderboard entry with 1.125 dated 2026-09-12",
+      "url": "https://einsteinarena.com/api/solutions/best?problem_id=30",
+      "quote": "{'id': 2576, 'agentName': 'JSAgent-Ring15', 'score': 1.125, 'createdAt': '2026-09-12T04:47:31.279Z'}",
+      "fetchedOn": "2026-11-20",
+      "note": "data line (object omitted). Other entries in the same response: Wilhelmina 1.1249999999999991 (2026-09-18), GPT-Explorer 1.119047619047619 (2026-09-11), AlphaEvolve 1.1190475684692773 (seed). EinsteinArena has no robots.txt (404) and no licence or terms found; the entry's pairs score exactly 9/8 with k = 1..m and 1 with k = 1..m-1 in a scratch check (not copied)"
+    },
+    {
+      "fact": "The leaderboard scores with k = 1..m and is under review",
+      "url": "https://einsteinarena.com/api/problems/ring-loading-15",
+      "quote": "for value in values:\n            prefix += value\n            worst = max(worst, abs(2 * prefix - total))",
+      "fetchedOn": "2026-11-20",
+      "note": "verifier of problem 30 'Ring Loading Problem (15 pairs)'; the prefix is updated after every value, so k runs over 1..15. The description begins: '**Under active review:** This problem statement and verifier are being reviewed for mathematical correctness, verifier robustness, and potential exploits.' The same description still says the constant is 'currently known to lie between approximately $1.119047568$ and $1.3$', which its own leaderboard has passed"
+    },
+    {
+      "fact": "Who is credited, and the caveat on priority",
+      "url": "https://github.com/karldaeubel/RingLoading",
+      "quote": "Further AI assisted improvements were made resulting in the currently best known bound by Maks23 \\[M26\\] providing an instance with L = L* + 9/8 D. I do not know if this instance is the first that resulted in this bound.",
+      "fetchedOn": "2026-11-20",
+      "note": "README at commit 5edab45a35 (2026-11-04T23:56:21Z), read with gh api; the same README: '- larger than 1.125 is considered an improved lower bound that is worth publishing'"
+    },
+    {
+      "fact": "The ring loading gap itself is 9/8 for both certificates (computed on the ring)",
+      "url": "https://github.com/rozetyp/ring-loading-47-42",
+      "quote": "Both 9/8 certificates give instances with L − L\\* = 9/8 D exactly.",
+      "fetchedOn": "2026-11-20",
+      "note": "README at commit c6ceb6983a (2026-11-05); also: 'So Skutella's conjecture α = 11/10 does not hold, and the window is [9/8, 13/10].' Not run by us"
+    },
+    {
+      "fact": "Peer-reviewed and arXiv literature (June 2026) still states 1.1 as the lower bound",
+      "url": "https://arxiv.org/abs/2606.04456",
+      "quote": "These bounds were ultimately improved to $\\alpha\\in\\left[1.1,\\,1.3\\right]$ by Skutella and Däubel.",
+      "fetchedOn": "2026-11-20",
+      "note": "Alemán Espinosa and Schlomberg, submitted 3 Jun 2026, 'Full version of ICALP 2026 paper'; its new bounds [4/3, 2] are for outerplanar graphs, not rings"
+    },
+    {
+      "fact": "An independent exact check of all published 9/8 instances, nothing higher",
+      "url": "https://carlostoledo.co/reports/alphaevolve-community.html",
+      "quote": "Under k = 1..m; under the notebook's k = 1..m−1 the same bound needs the padded or the m = 17 instance.",
+      "fetchedOn": "2026-11-20",
+      "note": "report generated 2026-10-30T04:15:58Z; its ring loading table ends at 9/8; robots.txt allows all"
+    },
+    {
+      "fact": "Effort: specialists' searches",
+      "url": "https://arxiv.org/html/1405.0789",
+      "quote": "Among hundreds of millions of similar instances of the same size, all featuring a very special, promising structure, the one presented below turned out to be the only counterexample.",
+      "fetchedOn": "2026-11-20",
+      "note": "Skutella, Section 5; Däubel (arXiv 1904.02119, Section 4.2): 'We like to highlight that despite our best efforts, we were unable to find counterexamples that improve upon the additive gap of $\\frac{11}{10}D$ given by Skutella [MR3463048].'"
+    },
+    {
+      "fact": "Effort: AI-assisted searches in 2026 stopped at 47/42",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/issues/11",
+      "quote": "Basin hopping around SLP at m = 15 and m = 17 (the latter by duplicating middle elements) found no instance above 47/42 in about one CPU-hour.",
+      "fetchedOn": "2026-11-20",
+      "note": "also rozetyp README: 'Our local search (a witness LP from many random restarts, m = 15 to 17) never went above 47/42.'"
+    },
+    {
+      "fact": "Searches for later work (nothing above 9/8 found)",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/issues",
+      "quote": "data: no ring loading issue after #12; newest issue #22 (2026-11-16) is about another problem",
+      "fetchedOn": "2026-11-20",
+      "note": "also searched: GitHub repositories and issues for 'ring loading' (gh search), web searches 'ring loading problem lower bound 9/8 new instance 2026' and '\"ring loading\" Schrijver Seymour Winkler constant lower bound improved above 1.125', the EinsteinArena leaderboard (top 1.125), Däubel's README and issues, rozetyp's README. A search is not proof that nothing better exists"
+    },
+    {
+      "fact": "Where best_known.json comes from (built for this task)",
+      "url": "https://github.com/papexlabs/rerun-kit",
+      "quote": "Constructed for this task; contains no copied third-party data.",
+      "fetchedOn": "2026-11-20",
+      "note": "14 pairs (u_i, v_i): one block of 7 pairs repeated twice, all entries multiples of 1/16. Scores exactly 9/8 in checker.py (k = 1..m; 44 of the 2^14 sign choices attain 9/8) and also exactly 9/8 under the AlphaEvolve notebook's k = 1..m-1, without padding. Built by the task preparer's own exhaustive search (a C program over two identical 7-pair blocks on the 1/16 grid; probe.md, section 6). the best known value 9/8, published earlier by others: EinsteinArena leaderboard entry 2576 (agent JSAgent-Ring15, dated 2026-09-12), GitHub issue #12 of google-deepmind/alphaevolve_repository_of_problems (Maks23, 2026-10-08) and Karl Däubel's 12-pair instance in that thread (2026-10-13). This instance adds no new value. Not equivalent (under turning the ring, reversal, swapping u and v, deleting zero pairs) to the published instances we read: issue #12's 14 pairs, Däubel's 12 pairs, EinsteinArena entry 2576; no published instance appears in it after deleting one or two pairs. It is close to Däubel's: 5 of its 7 block pairs are pairs of his block. The search space (1/16 grid, even 16(u+v), demands of size 1 at alternate block positions) was chosen after seeing the published instances' demand sizes; the values came from the enumeration."
+    }
+  ],
+  "checkerSha256": "0xffa8449cedbd400c1bd121c60c7277ec497792d6bffacc58037430d3887e71f9"
+}

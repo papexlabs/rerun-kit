@@ -1,0 +1,35 @@
+{
+  "checkerSeconds": 5,
+  "cases": [
+    {
+      "object": "best.json",
+      "params": "params-30-31.json",
+      "label": "ten numbers, none adding up to 31",
+      "line": "{\"valid\": true, \"score\": 10, \"reason\": \"10 distinct numbers from 1 to 30, no two adding up to 31\"}"
+    },
+    {
+      "object": "sum.json",
+      "params": "params-30-31.json",
+      "label": "1 and 30 add up to 31",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"1 and 30 add up to 31\"}"
+    },
+    {
+      "object": "range.json",
+      "params": "params-30-31.json",
+      "label": "0 is out of range",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"entry 0 is not a whole number from 1 to 30\"}"
+    },
+    {
+      "object": "twice.json",
+      "params": "params-30-31.json",
+      "label": "2 twice",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"2 appears twice\"}"
+    },
+    {
+      "object": "best.json",
+      "params": "params-bad.json",
+      "label": "params without total",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the params must be {\\\"limit\\\": L, \\\"total\\\": T} and nothing else\"}"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "cases": [
+    {
+      "file": "near_39.json",
+      "label": "n = 39, where the value is prime",
+      "expect": {
+        "valid": false,
+        "score": null,
+        "reason": "39*39 + 39 + 41 = 1601 is prime"
+      }
+    },
+    {
+      "file": "near_1001.json",
+      "label": "n outside 0..1000",
+      "expect": {
+        "valid": false,
+        "score": null,
+        "reason": "n must be a whole number from 0 to 1000"
+      }
+    },
+    {
+      "file": "near_text.json",
+      "label": "n written as a text",
+      "expect": {
+        "valid": false,
+        "score": null,
+        "reason": "n must be a whole number from 0 to 1000"
+      }
+    },
+    {
+      "file": "near_extra_key.json",
+      "label": "a key the format does not name",
+      "expect": {
+        "valid": false,
+        "score": null,
+        "reason": "the object must be {\"n\": n} and nothing else"
+      }
+    },
+    {
+      "file": "variant_n2.json",
+      "label": "known-false variant n*n + 1 at n = 3",
+      "via": "variant_check.py",
+      "expect": {
+        "valid": true,
+        "reason": "variant n*n + 1: 10 = 2 * 5"
+      }
+    }
+  ]
+}

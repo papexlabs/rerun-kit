@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "n-squared-plus-one": {
+      "statement": "n*n + 1 is prime for every whole number n >= 1 (false: n = 3 gives 10)",
+      "object": {
+        "n": 3
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "schema": "papex-task/v1",
+  "slug": "erdos-382-wide-bad-interval",
+  "kind": "record",
+  "title": "A wider bad interval (Erdős Problem 382)",
+  "shortTitle": "Wider bad interval",
+  "description": "Find a run of consecutive whole numbers whose product is divisible by the square of its own largest prime factor, wider than the best known run. You hand in the run with the factorization of every number; the checker tests it in exact whole-number arithmetic.",
+  "objective": "Find integers u <= v such that the largest prime p dividing u(u+1)...v divides that product at least twice (a 'bad' interval). Score: the width v - u.",
+  "direction": "max",
+  "scorePlaces": 0,
+  "bestKnown": {
+    "value": "15",
+    "by": "Leandre Jack",
+    "year": 2026,
+    "sourceName": "OEIS A388850",
+    "sourceUrl": "https://oeis.org/A388850",
+    "asOf": "2026-11-20",
+    "quote": "a(15) = 52629641927627, but a(14) is unknown: a(14) = 0 or a(14) > 2*10^14. - _Leandre Jack_, Oct 12 2026",
+    "note": "A comment by Leandre Jack in OEIS A388850 (12 Oct 2026). best_known.json is the run of 16 integers starting at a(15), with factorizations the checker re-verifies."
+  },
+  "objectFormat": "A JSON object {\"u\": <int>, \"v\": <int>, \"factorizations\": {\"<m>\": [[p1, e1], [p2, e2], ...], ...}} with one key (a decimal string) for every integer m in u..v, giving the full prime factorization of m with primes strictly increasing and exponents >= 1. Needs 2 <= u <= v < 3e23 and v - u <= 300. No other keys: an accepted object is shown publicly. At most 100,000 bytes as the result file carries it.",
+  "objectKeys": [
+    "u",
+    "v",
+    "factorizations"
+  ],
+  "shows": "That this one run u..v is bad: the largest prime factor of its product divides the product at least twice, and the run has width v - u. With a width above the best known value, it is better than the value in the named source as of the date shown.",
+  "notCovered": "A pass shows only that this one interval is bad and has width v - u. It does not show the interval is the earliest or a maximal one of its width, does not answer whether v - u can be arbitrarily large or whether v - u = v^{o(1)}, and does not show that nobody found a wider one before. Intervals with v >= 3e23 are refused, not judged (the primality test is exact only below 3.18 x 10^23).",
+  "alsoBelongsAt": "OEIS A388850 (the earliest maximal bad interval of each width; some widths are open there) and A388654. The OEIS does not take AI-generated submissions: a person has to check the result and write any submission themselves.",
+  "effort": "Mostly computer time: the search that OEIS A388850 links took about 2.5 hours on 8 threads to reach 2 x 10^14. Going further needs a fast compiled program and days of CPU.",
+  "limits": {
+    "maxObjectBytes": 100000,
+    "checkerSeconds": 30
+  },
+  "resultLine": "Result: an accepted run's interval passed this task's checker on Papex's runner and was wider than the best known bad interval at that time. It does not answer whether bad intervals can be arbitrarily wide, and it is not peer review.",
+  "requirements": "Python 3.9 or later and git. An AI app with a terminal and the Papex connection, or your own code; a C or Rust compiler for a fast search.",
+  "checkedHow": "tasks/erdos-382-wide-bad-interval/checker.py (Python, standard library only) multiplies each listed factorization back, tests every listed prime with a Miller-Rabin test that is exact below 3.18 x 10^23 (OEIS A014233), finds the largest prime of the whole product and counts how often it divides: the run passes when it divides at least twice. Papex's runner runs the same checker again and compares the width with the best known value on Papex at that moment.",
+  "expectedSeconds": 3600,
+  "problem": {
+    "slug": "erdos-problem-382",
+    "create": {
+      "slug": "erdos-problem-382",
+      "title": "Erdős Problem 382 (bad intervals of consecutive integers, Erdős and Graham)",
+      "question": "Let u <= v be such that the largest prime dividing the product u(u+1)...v appears in it with exponent at least 2. Can v - u be arbitrarily large?",
+      "summary": "Erdős and Graham called an interval of consecutive integers bad when its product is divisible by the square of its largest prime factor (OEIS A388654). Problem 382 asks, for such intervals [u, v], whether v - u = v^{o(1)}, and whether v - u can be arbitrarily large. Both parts are open in google-deepmind/formal-conjectures, where a heuristic of Cambie suggests the second answer is yes.",
+      "field": "mathematics",
+      "sinceYear": null,
+      "prize": null,
+      "initialStatus": {
+        "status": "OPEN",
+        "source": {
+          "name": "Erdős problem database (github.com/teorth/erdosproblems), problem 382, status \"open\"",
+          "list": "Erdős problem database (GitHub)",
+          "url": "https://github.com/teorth/erdosproblems/blob/5610470b3d03a393a8bfbd8c40dab3ceccbb9f11/data/problems.yaml"
+        },
+        "sourceDate": null,
+        "checkedOn": "2026-11-20"
+      }
+    }
+  },
+  "sources": [
+    {
+      "fact": "The problem as its source states it",
+      "url": "https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/382.lean",
+      "quote": "Let $u \\leq v$ be such that the largest prime dividing $\\prod_{u \\leq m \\leq v} m$ appears with exponent at least $2$. Can $v - u$ be arbitrarily large?",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "The best known value",
+      "url": "https://oeis.org/A388850",
+      "quote": "a(15) = 52629641927627, but a(14) is unknown: a(14) = 0 or a(14) > 2*10^14. - _Leandre Jack_, Oct 12 2026",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "The question this task addresses (part ii)",
+      "url": "https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/382.lean",
+      "quote": "Let $u \\leq v$ be such that the largest prime dividing $\\prod_{u \\leq m \\leq v} m$ appears with exponent at least $2$. Can $v - u$ be arbitrarily large?",
+      "fetchedOn": "2026-11-20",
+      "note": "Apache-2.0; read with gh api. The file's references: '[ErGr80] Erdős, P. and Graham, R., *Old and new problems and results in combinatorial number theory*. Monographies de L'Enseignement Mathematique (1980).'"
+    },
+    {
+      "fact": "The other part of the problem (part i)",
+      "url": "https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/382.lean",
+      "quote": "Let $u \\leq v$ be such that the largest prime dividing $\\prod_{u \\leq m \\leq v} m$ appears with exponent at least $2$. Is it true that $v - u = v^{o(1)}$?",
+      "fetchedOn": "2026-11-20",
+      "note": "both parts are tagged 'research open' in the file"
+    },
+    {
+      "fact": "Heuristic that every width occurs",
+      "url": "https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/382.lean",
+      "quote": "That is, for every $k$, is there such a pair with $v - u \\geq k$? Cambie gives a heuristic that suggests the answer is yes.",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "Name 'bad' and the set of members",
+      "url": "https://oeis.org/A388654",
+      "quote": "Intervals with this property were called \"bad\" by Erdős and Graham. Using Bertrand's postulate, one can show that a bad interval [N, N+H] must obey H <= N.",
+      "fetchedOn": "2026-11-20",
+      "note": "oeis/oeisdata commit b460c2e8ffbef9a3aacf263819282712f0f30341, seq/A388/A388654.seq (CC BY-SA 4.0); its name line: 'Elements of an interval of natural numbers whose product is divisible by the square of the largest prime factor.'"
+    },
+    {
+      "fact": "Same definition in a paper abstract",
+      "url": "https://arxiv.org/abs/2603.27990",
+      "quote": "Call an interval $\\{N+1,\\dots,N+H\\}$ of consecutive natural numbers \\emph{bad} if the product $(N+1) \\dots (N+H)$ is divisible by the square of its largest prime factor",
+      "fetchedOn": "2026-11-20",
+      "note": "Terence Tao, 'Products of consecutive integers with unusual anatomy', v3 of 26 Sep 2026; arXiv non-exclusive licence, so only the abstract is used"
+    },
+    {
+      "fact": "Definition of the record table",
+      "url": "https://oeis.org/A388850",
+      "quote": "Initial term of first maximal bad interval of width n, i.e., initial term of the first run of exactly n+1 consecutive integers in A388654; or 0 if no such interval exists.",
+      "fetchedOn": "2026-11-20",
+      "note": "oeis/oeisdata commit b460c2e8, seq/A388/A388850.seq, revision '#22 Oct 12 2026 10:46:41' (CC BY-SA 4.0). Its data lines give a(0)..a(13), ending '436502026483,17952448643078'; a(15) appears only in the comment quoted under bestKnown."
+    },
+    {
+      "fact": "Width-15 run and where its largest prime's square sits",
+      "url": "https://github.com/leandrejack-afk/erdos-computations/blob/c643291f7419c475c89086046885623480477a91/e382/README.md",
+      "quote": "| 15 | 52629641927627 | 52629641927627 to 52629641927642 | 7254629 | 7254629^2 = 52629641927641 |",
+      "fetchedOn": "2026-11-20",
+      "note": "the write-up OEIS A388850 links ('Leandre Jack, Erdős Problem 382: the first maximal bad intervals of widths 9 to 13 and 15, GitHub'); commit c643291 of 2026-10-13; repository has no licence file, so only short quotes are used; read with gh api"
+    },
+    {
+      "fact": "Range searched: no run of 17 or more members of A388654 (no bad interval of width >= 16) starting at or below 2 x 10^14",
+      "url": "https://github.com/leandrejack-afk/erdos-computations/blob/c643291f7419c475c89086046885623480477a91/e382/README.md",
+      "quote": "so a(15) = 52629641927627. No run of 17 or more starts at or below 2 x 10^14.",
+      "fetchedOn": "2026-11-20",
+      "note": "a 'run' there is a run of consecutive members of A388654; the README's steps 2 and 3 argue that every bad interval lies inside one such run and that each maximal run is itself bad, so the widest bad interval below the bound has width 15"
+    },
+    {
+      "fact": "Range searched for width 14",
+      "url": "https://github.com/leandrejack-afk/erdos-computations/blob/c643291f7419c475c89086046885623480477a91/e382/README.md",
+      "quote": "No run of exactly 15 consecutive members of A388654 starts at or below 2 x 10^14, so a(14) = 0 or a(14) > 2 x 10^14",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "Search hint: every bad interval contains a square point",
+      "url": "https://github.com/leandrejack-afk/erdos-computations/blob/c643291f7419c475c89086046885623480477a91/e382/README.md",
+      "quote": "Every bad interval [u, v] contains a square point m with P(m) equal to the largest prime p of the product.",
+      "fetchedOn": "2026-11-20",
+      "note": "same README: 'Call m > 1 a square point if P(m)^2 divides m, and let W(m) be the longest interval of integers containing m on which every k has P(k) <= P(m).' The README attributes step 1 to Section 6 and Lemma 6.1 of arXiv:2603.27990 (not read beyond the abstract)."
+    },
+    {
+      "fact": "Cost of the search to 2 x 10^14",
+      "url": "https://github.com/leandrejack-afk/erdos-computations/blob/c643291f7419c475c89086046885623480477a91/e382/README.md",
+      "quote": "./cand 200000000000000 10 8       # 2.5 hours on 8 threads shared with other jobs",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "How the search was made",
+      "url": "https://github.com/leandrejack-afk/erdos-computations/blob/c643291f7419c475c89086046885623480477a91/e382/README.md",
+      "quote": "Programs written and run with the assistance of a large language model; every number above comes from the executed runs.",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "Listing in the Erdős problem database",
+      "url": "https://github.com/teorth/erdosproblems/blob/5610470b3d03a393a8bfbd8c40dab3ceccbb9f11/data/problems.yaml",
+      "quote": "- number: \"382\" ... status: state: \"open\" last_update: \"2025-08-31\" oeis: [\"A388850\"]",
+      "fetchedOn": "2026-11-20",
+      "note": "Apache-2.0; commit 5610470 of 2026-11-19; data lines, joined"
+    },
+    {
+      "fact": "Range in which the checker's primality test is exact",
+      "url": "https://oeis.org/A014233",
+      "quote": "Smallest odd composite number that is a strong pseudoprime to each of the first n prime bases.",
+      "fetchedOn": "2026-11-20",
+      "note": "data line '%U A014233 3825123056546413051,3825123056546413051,318665857834031151167461,3317044064679887385961981' gives a(12) = 318665857834031151167461; '%E A014233 a(12)-a(13) from the Sorenson/Webster reference'. oeis/oeisdata commit b460c2e8, seq/A014/A014233.seq. The checker uses the first 13 prime bases and refuses v >= 3e23 < a(12)."
+    },
+    {
+      "fact": "No later work found in a metadata search",
+      "url": "https://api.openalex.org/works?search=bad%20interval%20largest%20prime&filter=from_publication_date:2026-09-01",
+      "quote": "data: no result after 2026-09-01 concerns widths of bad intervals (searches also run for 'erdős problem 382' and 'consecutive integers largest prime factor square')",
+      "fetchedOn": "2026-11-20",
+      "note": "OpenAlex (robots.txt allows all). A search is not proof that nothing newer exists. OEIS A388850 in oeisdata of 2026-11-19 is still at revision #22 of Oct 12 2026."
+    },
+    {
+      "fact": "OEIS does not accept AI-generated submissions",
+      "url": "https://github.com/teorth/erdosproblems/blob/5610470b3d03a393a8bfbd8c40dab3ceccbb9f11/CONTRIBUTING.md",
+      "quote": "In particular, [AI-generated submissions to the OEIS are forbidden](https://oeis.org/wiki/Use_of_AI_for_OEIS_Submissions_is_Forbidden); any AI-generated components need to be replaced by human-generated substitutes before submission.",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "Where best_known.json comes from",
+      "url": "https://oeis.org/A388850",
+      "quote": "a(15) = 52629641927627, but a(14) is unknown: a(14) = 0 or a(14) > 2*10^14. - _Leandre Jack_, Oct 12 2026",
+      "fetchedOn": "2026-11-20",
+      "note": "The run of 16 consecutive integers starting at a(15) = 52629641927627 of OEIS A388850 (the first maximal bad interval of width 15). The factorizations were computed for this file by the task preparer (Pollard-Brent factoring, deterministic Miller-Rabin); they are arithmetic facts that the checker re-verifies. OEIS licence: CC BY-SA 4.0 (OEIS Foundation; read from the oeis/oeisdata GitHub export, seq/A388/A388850.seq). The search range: https://github.com/leandrejack-afk/erdos-computations/blob/main/e382/README.md (\"so a(15) = 52629641927627. No run of 17 or more starts at or below 2 x 10^14.\")."
+    }
+  ],
+  "checkerSha256": "0xa3a93bd23819fce95eccf46d990b1522a36efe9b76b134adcbd5e65584c41d3b"
+}

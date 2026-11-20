@@ -1,0 +1,2557 @@
+{
+"schur-5": {
+"name": "Schur number $S(5)$",
+"family": "schur",
+"exact_value": {
+"latex": "160",
+"decimal_approx": 160,
+"alt_display": null
+},
+"lower_bound": {
+"latex": "160",
+"decimal_approx": 160,
+"alt_display": null
+},
+"upper_bound": {
+"latex": "160",
+"decimal_approx": 160,
+"alt_display": null
+},
+"updates": [
+{
+"type": "lower_bound",
+"value": {
+"latex": "121",
+"decimal_approx": 121,
+"alt_display": null
+},
+"date": "1916",
+"source": "schur-1916",
+"via": null
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "326",
+"decimal_approx": 326,
+"alt_display": null
+},
+"date": "1916",
+"source": "schur-1916",
+"via": "heule-2017-schur"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "325",
+"decimal_approx": 325,
+"alt_display": null
+},
+"date": "1955",
+"source": "greenwood-gleason-1955",
+"via": "abbott-hanson-1972"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "321",
+"decimal_approx": 321,
+"alt_display": null
+},
+"date": "1973",
+"source": "irving-1973-schur",
+"via": "heule-2017-schur"
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "157",
+"decimal_approx": 157,
+"alt_display": null
+},
+"date": "1979-11",
+"source": "fredricksen-1979",
+"via": "oeis-a045652-schur"
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "160",
+"decimal_approx": 160,
+"alt_display": null
+},
+"date": "1994-09-18",
+"source": "exoo-1994",
+"via": "oeis-a045652-schur"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "315",
+"decimal_approx": 315,
+"alt_display": null
+},
+"date": "1995-06",
+"source": "sanchez-flores-1995",
+"via": "fredricksen-sweet-2000"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "305",
+"decimal_approx": 305,
+"alt_display": null
+},
+"date": "2004",
+"source": "fettes-kramer-radziszowski-2004",
+"via": "eliahou-2016-schur"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "160",
+"decimal_approx": 160,
+"alt_display": null
+},
+"date": "2017-11-21",
+"source": "heule-2017-schur",
+"via": "oeis-a045652-schur"
+}
+],
+"certifiable": true,
+"certificates": [
+{
+"id": "schur-5-lower-160",
+"bound": "lower",
+"value": 160,
+"kind": "witness",
+"submitted_by": "daniel-munro",
+"date": "2026-11-03",
+"source": "exoo-1994",
+"notes": "Exoo's partition, as given in OEIS A045652.",
+"path": "certificates/schur/schur-5-lower-160.yml",
+"status": "verified",
+"role": "evidence"
+}
+],
+"lower_bound_evidence": "verified",
+"verified_lower_bound": {
+"latex": "160",
+"decimal_approx": 160,
+"alt_display": null
+},
+"verified_lower_certificate": "schur-5-lower-160",
+"upper_bound_evidence": "literature",
+"verified_upper_bound": null,
+"verified_upper_certificate": null,
+"history": [
+{
+"type": "lower_bound",
+"value": {
+"latex": "121",
+"decimal_approx": 121,
+"alt_display": null
+},
+"date": "1916",
+"discovery": {
+"kind": "source",
+"id": "schur-1916",
+"via": null,
+"date": "1916"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "schur-5-lower-160",
+"source": null,
+"value": {
+"latex": "160",
+"decimal_approx": 160,
+"alt_display": null
+},
+"date": "2026-11-03"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "326",
+"decimal_approx": 326,
+"alt_display": null
+},
+"date": "1916",
+"discovery": {
+"kind": "source",
+"id": "schur-1916",
+"via": "heule-2017-schur",
+"date": "1916"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "schur-1916",
+"value": null,
+"date": "1916"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "325",
+"decimal_approx": 325,
+"alt_display": null
+},
+"date": "1955",
+"discovery": {
+"kind": "source",
+"id": "greenwood-gleason-1955",
+"via": "abbott-hanson-1972",
+"date": "1955"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "greenwood-gleason-1955",
+"value": null,
+"date": "1955"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "321",
+"decimal_approx": 321,
+"alt_display": null
+},
+"date": "1973",
+"discovery": {
+"kind": "source",
+"id": "irving-1973-schur",
+"via": "heule-2017-schur",
+"date": "1973"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "irving-1973-schur",
+"value": null,
+"date": "1973"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "157",
+"decimal_approx": 157,
+"alt_display": null
+},
+"date": "1979-11",
+"discovery": {
+"kind": "source",
+"id": "fredricksen-1979",
+"via": "oeis-a045652-schur",
+"date": "1979-11"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "schur-5-lower-160",
+"source": null,
+"value": {
+"latex": "160",
+"decimal_approx": 160,
+"alt_display": null
+},
+"date": "2026-11-03"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "160",
+"decimal_approx": 160,
+"alt_display": null
+},
+"date": "1994-09-18",
+"discovery": {
+"kind": "source",
+"id": "exoo-1994",
+"via": "oeis-a045652-schur",
+"date": "1994-09-18"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "schur-5-lower-160",
+"source": null,
+"value": null,
+"date": "2026-11-03"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "315",
+"decimal_approx": 315,
+"alt_display": null
+},
+"date": "1995-06",
+"discovery": {
+"kind": "source",
+"id": "sanchez-flores-1995",
+"via": "fredricksen-sweet-2000",
+"date": "1995-06"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "sanchez-flores-1995",
+"value": null,
+"date": "1995-06"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "305",
+"decimal_approx": 305,
+"alt_display": null
+},
+"date": "2004",
+"discovery": {
+"kind": "source",
+"id": "fettes-kramer-radziszowski-2004",
+"via": "eliahou-2016-schur",
+"date": "2004"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "fettes-kramer-radziszowski-2004",
+"value": null,
+"date": "2004"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "160",
+"decimal_approx": 160,
+"alt_display": null
+},
+"date": "2017-11-21",
+"discovery": {
+"kind": "source",
+"id": "heule-2017-schur",
+"via": "oeis-a045652-schur",
+"date": "2017-11-21"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "heule-2017-schur",
+"value": null,
+"date": "2017-11-21"
+}
+}
+]
+},
+"schur-6": {
+"name": "Schur number $S(6)$",
+"family": "schur",
+"exact_value": null,
+"lower_bound": {
+"latex": "538",
+"decimal_approx": 538,
+"alt_display": null
+},
+"upper_bound": {
+"latex": "1836",
+"decimal_approx": 1836,
+"alt_display": null
+},
+"updates": [
+{
+"type": "lower_bound",
+"value": {
+"latex": "364",
+"decimal_approx": 364,
+"alt_display": null
+},
+"date": "1916",
+"source": "schur-1916",
+"via": null
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "1957",
+"decimal_approx": 1957,
+"alt_display": null
+},
+"date": "1916",
+"source": "schur-1916",
+"via": "heule-2017-schur"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "1956",
+"decimal_approx": 1956,
+"alt_display": null
+},
+"date": "1955",
+"source": "greenwood-gleason-1955",
+"via": "abbott-hanson-1972"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "1927",
+"decimal_approx": 1927,
+"alt_display": null
+},
+"date": "1973",
+"source": "irving-1973-schur",
+"via": "heule-2017-schur"
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "481",
+"decimal_approx": 481,
+"alt_display": null
+},
+"date": "1994-09-18",
+"source": "exoo-1994",
+"via": "fredricksen-sweet-2000"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "1922",
+"decimal_approx": 1922,
+"alt_display": null
+},
+"date": "1997-11",
+"source": "wan-1997",
+"via": null
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "536",
+"decimal_approx": 536,
+"alt_display": null
+},
+"date": "2000-05-18",
+"source": "fredricksen-sweet-2000",
+"via": "ageron-et-al-2021"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "1836",
+"decimal_approx": 1836,
+"alt_display": null
+},
+"date": "2004",
+"source": "fettes-kramer-radziszowski-2004",
+"via": "eliahou-revuelta-2020"
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "537",
+"decimal_approx": 537,
+"alt_display": null
+},
+"date": "2026-10-22",
+"source": "chen-zhu-long-2026",
+"via": null
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "538",
+"decimal_approx": 538,
+"alt_display": null
+},
+"date": "2026-11-04",
+"source": "mckenna-2026",
+"via": null
+}
+],
+"certifiable": true,
+"certificates": [
+{
+"id": "schur-6-lower-537",
+"bound": "lower",
+"value": 537,
+"kind": "witness",
+"submitted_by": "daniel-munro",
+"date": "2026-11-03",
+"source": "chen-zhu-long-2026",
+"notes": "Partition F1.001 from the ancillary file solutions537.txt of arXiv:2610.31362.",
+"path": "certificates/schur/schur-6-lower-537.yml",
+"status": "verified",
+"role": "evidence"
+},
+{
+"id": "schur-6-lower-538",
+"bound": "lower",
+"value": 538,
+"kind": "witness",
+"submitted_by": "daniel-munro",
+"date": "2026-11-12",
+"source": "mckenna-2026",
+"notes": "The colouring schur6-538.word from https://github.com/mysticflounder/schur-538 (commit c330669), with colours re-indexed from 1..6 to 0..5. The same colouring is checked in Lean there (theorem schur_six_538), and on Prove2Me (https://prove2.me/theorems/05b7c0f2-3f34-4ee4-89e4-381a700752d3).",
+"path": "certificates/schur/schur-6-lower-538.yml",
+"status": "verified",
+"role": "evidence"
+}
+],
+"lower_bound_evidence": "verified",
+"verified_lower_bound": {
+"latex": "538",
+"decimal_approx": 538,
+"alt_display": null
+},
+"verified_lower_certificate": "schur-6-lower-538",
+"upper_bound_evidence": "literature",
+"verified_upper_bound": null,
+"verified_upper_certificate": null,
+"history": [
+{
+"type": "lower_bound",
+"value": {
+"latex": "364",
+"decimal_approx": 364,
+"alt_display": null
+},
+"date": "1916",
+"discovery": {
+"kind": "source",
+"id": "schur-1916",
+"via": null,
+"date": "1916"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "schur-6-lower-537",
+"source": null,
+"value": {
+"latex": "537",
+"decimal_approx": 537,
+"alt_display": null
+},
+"date": "2026-11-03"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "1957",
+"decimal_approx": 1957,
+"alt_display": null
+},
+"date": "1916",
+"discovery": {
+"kind": "source",
+"id": "schur-1916",
+"via": "heule-2017-schur",
+"date": "1916"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "schur-1916",
+"value": null,
+"date": "1916"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "1956",
+"decimal_approx": 1956,
+"alt_display": null
+},
+"date": "1955",
+"discovery": {
+"kind": "source",
+"id": "greenwood-gleason-1955",
+"via": "abbott-hanson-1972",
+"date": "1955"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "greenwood-gleason-1955",
+"value": null,
+"date": "1955"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "1927",
+"decimal_approx": 1927,
+"alt_display": null
+},
+"date": "1973",
+"discovery": {
+"kind": "source",
+"id": "irving-1973-schur",
+"via": "heule-2017-schur",
+"date": "1973"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "irving-1973-schur",
+"value": null,
+"date": "1973"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "481",
+"decimal_approx": 481,
+"alt_display": null
+},
+"date": "1994-09-18",
+"discovery": {
+"kind": "source",
+"id": "exoo-1994",
+"via": "fredricksen-sweet-2000",
+"date": "1994-09-18"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "schur-6-lower-537",
+"source": null,
+"value": {
+"latex": "537",
+"decimal_approx": 537,
+"alt_display": null
+},
+"date": "2026-11-03"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "1922",
+"decimal_approx": 1922,
+"alt_display": null
+},
+"date": "1997-11",
+"discovery": {
+"kind": "source",
+"id": "wan-1997",
+"via": null,
+"date": "1997-11"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "wan-1997",
+"value": null,
+"date": "1997-11"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "536",
+"decimal_approx": 536,
+"alt_display": null
+},
+"date": "2000-05-18",
+"discovery": {
+"kind": "source",
+"id": "fredricksen-sweet-2000",
+"via": "ageron-et-al-2021",
+"date": "2000-05-18"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "schur-6-lower-537",
+"source": null,
+"value": {
+"latex": "537",
+"decimal_approx": 537,
+"alt_display": null
+},
+"date": "2026-11-03"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "1836",
+"decimal_approx": 1836,
+"alt_display": null
+},
+"date": "2004",
+"discovery": {
+"kind": "source",
+"id": "fettes-kramer-radziszowski-2004",
+"via": "eliahou-revuelta-2020",
+"date": "2004"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "fettes-kramer-radziszowski-2004",
+"value": null,
+"date": "2004"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "537",
+"decimal_approx": 537,
+"alt_display": null
+},
+"date": "2026-10-22",
+"discovery": {
+"kind": "source",
+"id": "chen-zhu-long-2026",
+"via": null,
+"date": "2026-10-22"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "schur-6-lower-537",
+"source": null,
+"value": null,
+"date": "2026-11-03"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "538",
+"decimal_approx": 538,
+"alt_display": null
+},
+"date": "2026-11-04",
+"discovery": {
+"kind": "source",
+"id": "mckenna-2026",
+"via": null,
+"date": "2026-11-04"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "schur-6-lower-538",
+"source": null,
+"value": null,
+"date": "2026-11-12"
+}
+}
+]
+},
+"schur-9": {
+"name": "Schur number $S(9)$",
+"family": "schur",
+"exact_value": null,
+"lower_bound": {
+"latex": "17803",
+"decimal_approx": 17803,
+"alt_display": "17,803"
+},
+"upper_bound": {
+"latex": "925929",
+"decimal_approx": 925929,
+"alt_display": "925,929"
+},
+"updates": [
+{
+"type": "lower_bound",
+"value": {
+"latex": "9841",
+"decimal_approx": 9841,
+"alt_display": null
+},
+"date": "1916",
+"source": "schur-1916",
+"via": null
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "986410",
+"decimal_approx": 986410,
+"alt_display": "986,410"
+},
+"date": "1916",
+"source": "schur-1916",
+"via": "heule-2017-schur"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "986409",
+"decimal_approx": 986409,
+"alt_display": "986,409"
+},
+"date": "1955",
+"source": "greenwood-gleason-1955",
+"via": "abbott-hanson-1972"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "971290",
+"decimal_approx": 971290,
+"alt_display": "971,290"
+},
+"date": "1973",
+"source": "irving-1973-schur",
+"via": "heule-2017-schur"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "970776",
+"decimal_approx": 970776,
+"alt_display": "970,776"
+},
+"date": "1997-11",
+"source": "wan-1997",
+"via": null
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "925929",
+"decimal_approx": 925929,
+"alt_display": "925,929"
+},
+"date": "2004",
+"source": "fettes-kramer-radziszowski-2004",
+"via": "ejc-ds1-small-ramsey-numbers"
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "17694",
+"decimal_approx": 17694,
+"alt_display": "17,694"
+},
+"date": "2019-12-03",
+"source": "rowley-2019",
+"via": "ageron-et-al-2021"
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "17803",
+"decimal_approx": 17803,
+"alt_display": "17,803"
+},
+"date": "2021-12-06",
+"source": "ageron-et-al-2021",
+"via": null
+}
+],
+"certifiable": true,
+"certificates": [
+{
+"id": "schur-9-lower-17727",
+"bound": "lower",
+"value": 17727,
+"kind": "witness",
+"submitted_by": "daniel-munro",
+"date": "2026-11-11",
+"source": "rowley-2019",
+"notes": "S(k+3) >= 33 S(k) + 6, applied to the 6-coloring g of 1 to 537 in schur-6-lower-537. For q from 1 to 537, the integers 33q + r get color g(q) for r in R = {0, -1, -10, -11, -12, -14, -15, -16, -25, -26}, so a monochromatic x + y = z among them would need r1 + r2 - r3 to be a nonzero multiple of 33 (which never happens in R) or q1 + q2 = q3. The other residues mod 33 get three new colors, each sum-free mod 33: {1, 6, 9, 13, 16, 20, 24, 27, 31}, {2, 5, 14, 15, 25, 26} and {3, 4, 10, 11, 12, 28, 29, 30}. The length is 33 (537 + 1) - 26 - 1. The residue pattern was found by an AI agent (Claude) with a backtracking search, which also showed that no such pattern exists mod 34 with R in (-34, 0]; the bound S(k+3) >= 33 S(k) + 6 matches the one behind S(8) >= 5286 = 33 S(5) + 6 in rowley-2019.",
+"path": "certificates/schur/schur-9-lower-17727.yml",
+"status": "verified",
+"role": "evidence"
+},
+{
+"id": "schur-9-lower-17760",
+"bound": "lower",
+"value": 17760,
+"kind": "witness",
+"submitted_by": "daniel-munro",
+"date": "2026-11-12",
+"source": "rowley-2019",
+"notes": "S(k+3) >= 33 S(k) + 6, applied to the 6-coloring g of 1 to 538 in schur-6-lower-538, as in schur-9-lower-17727. For q from 1 to 538, the integers 33q + r get color g(q) for r in R = {0, -1, -10, -11, -12, -14, -15, -16, -25, -26}. The other residues mod 33 get three new colors, each sum-free mod 33: {1, 6, 9, 13, 16, 20, 24, 27, 31}, {2, 5, 14, 15, 25, 26} and {3, 4, 10, 11, 12, 28, 29, 30}. The length is 33 (538 + 1) - 26 - 1.",
+"path": "certificates/schur/schur-9-lower-17760.yml",
+"status": "verified",
+"role": "superseded"
+}
+],
+"lower_bound_evidence": "literature",
+"verified_lower_bound": {
+"latex": "17760",
+"decimal_approx": 17760,
+"alt_display": "17,760"
+},
+"verified_lower_certificate": "schur-9-lower-17760",
+"upper_bound_evidence": "literature",
+"verified_upper_bound": null,
+"verified_upper_certificate": null,
+"history": [
+{
+"type": "lower_bound",
+"value": {
+"latex": "9841",
+"decimal_approx": 9841,
+"alt_display": null
+},
+"date": "1916",
+"discovery": {
+"kind": "source",
+"id": "schur-1916",
+"via": null,
+"date": "1916"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "schur-9-lower-17727",
+"source": null,
+"value": {
+"latex": "17727",
+"decimal_approx": 17727,
+"alt_display": "17,727"
+},
+"date": "2026-11-11"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "986410",
+"decimal_approx": 986410,
+"alt_display": "986,410"
+},
+"date": "1916",
+"discovery": {
+"kind": "source",
+"id": "schur-1916",
+"via": "heule-2017-schur",
+"date": "1916"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "schur-1916",
+"value": null,
+"date": "1916"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "986409",
+"decimal_approx": 986409,
+"alt_display": "986,409"
+},
+"date": "1955",
+"discovery": {
+"kind": "source",
+"id": "greenwood-gleason-1955",
+"via": "abbott-hanson-1972",
+"date": "1955"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "greenwood-gleason-1955",
+"value": null,
+"date": "1955"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "971290",
+"decimal_approx": 971290,
+"alt_display": "971,290"
+},
+"date": "1973",
+"discovery": {
+"kind": "source",
+"id": "irving-1973-schur",
+"via": "heule-2017-schur",
+"date": "1973"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "irving-1973-schur",
+"value": null,
+"date": "1973"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "970776",
+"decimal_approx": 970776,
+"alt_display": "970,776"
+},
+"date": "1997-11",
+"discovery": {
+"kind": "source",
+"id": "wan-1997",
+"via": null,
+"date": "1997-11"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "wan-1997",
+"value": null,
+"date": "1997-11"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "925929",
+"decimal_approx": 925929,
+"alt_display": "925,929"
+},
+"date": "2004",
+"discovery": {
+"kind": "source",
+"id": "fettes-kramer-radziszowski-2004",
+"via": "ejc-ds1-small-ramsey-numbers",
+"date": "2004"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "fettes-kramer-radziszowski-2004",
+"value": null,
+"date": "2004"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "17694",
+"decimal_approx": 17694,
+"alt_display": "17,694"
+},
+"date": "2019-12-03",
+"discovery": {
+"kind": "source",
+"id": "rowley-2019",
+"via": "ageron-et-al-2021",
+"date": "2019-12-03"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "schur-9-lower-17727",
+"source": null,
+"value": {
+"latex": "17727",
+"decimal_approx": 17727,
+"alt_display": "17,727"
+},
+"date": "2026-11-11"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "17803",
+"decimal_approx": 17803,
+"alt_display": "17,803"
+},
+"date": "2021-12-06",
+"discovery": {
+"kind": "source",
+"id": "ageron-et-al-2021",
+"via": null,
+"date": "2021-12-06"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "ageron-et-al-2021",
+"value": null,
+"date": "2021-12-06"
+}
+}
+]
+},
+"weak-schur-6": {
+"name": "Weak Schur number $WS(6)$",
+"family": "weak-schur",
+"exact_value": null,
+"lower_bound": {
+"latex": "650",
+"decimal_approx": 650,
+"alt_display": null
+},
+"upper_bound": {
+"latex": "11742",
+"decimal_approx": 11742,
+"alt_display": "11,742"
+},
+"updates": [
+{
+"type": "upper_bound",
+"value": {
+"latex": "12722",
+"decimal_approx": 12722,
+"alt_display": "12,722"
+},
+"date": "1973",
+"source": "irving-1973-schur",
+"via": null
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "11742",
+"decimal_approx": 11742,
+"alt_display": "11,742"
+},
+"date": "2002",
+"source": "bornsztein-2002",
+"via": null
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "572",
+"decimal_approx": 572,
+"alt_display": null
+},
+"date": "2011-12-07",
+"source": "eliahou-et-al-2012",
+"via": "ageron-et-al-2021"
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "574",
+"decimal_approx": 574,
+"alt_display": null
+},
+"date": "2012",
+"source": "robilliard-et-al-2012",
+"via": "ageron-et-al-2021"
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "581",
+"decimal_approx": 581,
+"alt_display": null
+},
+"date": "2012-07",
+"source": "le-bras-gomes-selman-2012",
+"via": "ageron-et-al-2021"
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "582",
+"decimal_approx": 582,
+"alt_display": null
+},
+"date": "2013-04",
+"source": "eliahou-et-al-2013",
+"via": "ageron-et-al-2021"
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "642",
+"decimal_approx": 642,
+"alt_display": null
+},
+"date": "2020-11-23",
+"source": "rowley-2020",
+"via": "ageron-et-al-2021"
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "646",
+"decimal_approx": 646,
+"alt_display": null
+},
+"date": "2021-12-06",
+"source": "ageron-et-al-2021",
+"via": null
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "650",
+"decimal_approx": 650,
+"alt_display": null
+},
+"date": "2026-06-10",
+"source": "rodrigo-2026",
+"via": null
+}
+],
+"certifiable": true,
+"certificates": [
+{
+"id": "weak-schur-6-lower-650",
+"bound": "lower",
+"value": 650,
+"kind": "witness",
+"submitted_by": "daniel-munro",
+"date": "2026-11-03",
+"source": "rodrigo-2026",
+"notes": "Partition from https://doi.org/10.5281/zenodo.20633634",
+"path": "certificates/weak-schur/weak-schur-6-lower-650.yml",
+"status": "verified",
+"role": "evidence"
+}
+],
+"lower_bound_evidence": "verified",
+"verified_lower_bound": {
+"latex": "650",
+"decimal_approx": 650,
+"alt_display": null
+},
+"verified_lower_certificate": "weak-schur-6-lower-650",
+"upper_bound_evidence": "literature",
+"verified_upper_bound": null,
+"verified_upper_certificate": null,
+"history": [
+{
+"type": "upper_bound",
+"value": {
+"latex": "12722",
+"decimal_approx": 12722,
+"alt_display": "12,722"
+},
+"date": "1973",
+"discovery": {
+"kind": "source",
+"id": "irving-1973-schur",
+"via": null,
+"date": "1973"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "irving-1973-schur",
+"value": null,
+"date": "1973"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "11742",
+"decimal_approx": 11742,
+"alt_display": "11,742"
+},
+"date": "2002",
+"discovery": {
+"kind": "source",
+"id": "bornsztein-2002",
+"via": null,
+"date": "2002"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "bornsztein-2002",
+"value": null,
+"date": "2002"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "572",
+"decimal_approx": 572,
+"alt_display": null
+},
+"date": "2011-12-07",
+"discovery": {
+"kind": "source",
+"id": "eliahou-et-al-2012",
+"via": "ageron-et-al-2021",
+"date": "2011-12-07"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "weak-schur-6-lower-650",
+"source": null,
+"value": {
+"latex": "650",
+"decimal_approx": 650,
+"alt_display": null
+},
+"date": "2026-11-03"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "574",
+"decimal_approx": 574,
+"alt_display": null
+},
+"date": "2012",
+"discovery": {
+"kind": "source",
+"id": "robilliard-et-al-2012",
+"via": "ageron-et-al-2021",
+"date": "2012"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "weak-schur-6-lower-650",
+"source": null,
+"value": {
+"latex": "650",
+"decimal_approx": 650,
+"alt_display": null
+},
+"date": "2026-11-03"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "581",
+"decimal_approx": 581,
+"alt_display": null
+},
+"date": "2012-07",
+"discovery": {
+"kind": "source",
+"id": "le-bras-gomes-selman-2012",
+"via": "ageron-et-al-2021",
+"date": "2012-07"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "weak-schur-6-lower-650",
+"source": null,
+"value": {
+"latex": "650",
+"decimal_approx": 650,
+"alt_display": null
+},
+"date": "2026-11-03"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "582",
+"decimal_approx": 582,
+"alt_display": null
+},
+"date": "2013-04",
+"discovery": {
+"kind": "source",
+"id": "eliahou-et-al-2013",
+"via": "ageron-et-al-2021",
+"date": "2013-04"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "weak-schur-6-lower-650",
+"source": null,
+"value": {
+"latex": "650",
+"decimal_approx": 650,
+"alt_display": null
+},
+"date": "2026-11-03"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "642",
+"decimal_approx": 642,
+"alt_display": null
+},
+"date": "2020-11-23",
+"discovery": {
+"kind": "source",
+"id": "rowley-2020",
+"via": "ageron-et-al-2021",
+"date": "2020-11-23"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "weak-schur-6-lower-650",
+"source": null,
+"value": {
+"latex": "650",
+"decimal_approx": 650,
+"alt_display": null
+},
+"date": "2026-11-03"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "646",
+"decimal_approx": 646,
+"alt_display": null
+},
+"date": "2021-12-06",
+"discovery": {
+"kind": "source",
+"id": "ageron-et-al-2021",
+"via": null,
+"date": "2021-12-06"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "weak-schur-6-lower-650",
+"source": null,
+"value": {
+"latex": "650",
+"decimal_approx": 650,
+"alt_display": null
+},
+"date": "2026-11-03"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "650",
+"decimal_approx": 650,
+"alt_display": null
+},
+"date": "2026-06-10",
+"discovery": {
+"kind": "source",
+"id": "rodrigo-2026",
+"via": null,
+"date": "2026-06-10"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "weak-schur-6-lower-650",
+"source": null,
+"value": null,
+"date": "2026-11-03"
+}
+}
+]
+},
+"weak-schur-7": {
+"name": "Weak Schur number $WS(7)$",
+"family": "weak-schur",
+"exact_value": null,
+"lower_bound": {
+"latex": "2154",
+"decimal_approx": 2154,
+"alt_display": null
+},
+"upper_bound": {
+"latex": "95900",
+"decimal_approx": 95900,
+"alt_display": "95,900"
+},
+"updates": [
+{
+"type": "upper_bound",
+"value": {
+"latex": "102752",
+"decimal_approx": 102752,
+"alt_display": "102,752"
+},
+"date": "1973",
+"source": "irving-1973-schur",
+"via": null
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "95900",
+"decimal_approx": 95900,
+"alt_display": "95,900"
+},
+"date": "2002",
+"source": "bornsztein-2002",
+"via": null
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "1736",
+"decimal_approx": 1736,
+"alt_display": null
+},
+"date": "2015-09-17",
+"source": "bouzy-2015",
+"via": "ageron-et-al-2021"
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "1740",
+"decimal_approx": 1740,
+"alt_display": null
+},
+"date": "2016-07-13",
+"source": "rafilipojaona-2015",
+"via": "ageron-et-al-2021"
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "2146",
+"decimal_approx": 2146,
+"alt_display": null
+},
+"date": "2020-11-23",
+"source": "rowley-2020",
+"via": "ageron-et-al-2021"
+}
+],
+"certifiable": true,
+"certificates": [
+{
+"id": "weak-schur-7-lower-2154",
+"bound": "lower",
+"value": 2154,
+"kind": "witness",
+"submitted_by": "arhancanli",
+"date": "2026-11-08",
+"notes": "A weak Schur partition of [1, 2154] into 7 sets: Rowley's first construction (rowley-2020, Theorem 1: WS(k+1) >= 4 S(k) + 2) applied to Adam McKenna's partition of [1, 538] into 6 sum-free sets (\"The sixth Schur number is at least 538\", Zenodo, 4 Nov 2026, doi:10.5281/zenodo.23937655, file schur6-538.word, colours renumbered in the order of their least elements). T_i = {4i - 1, 4i, 4i + 1} takes the colour of i for i in [1, 538], and {1, 2, 6, 10, ..., 2154} is the seventh colour. This improves the published WS(7) >= 2146 (Rowley, from S(6) >= 536). Built by our own script and checked by three programs of our own (a C bitset scan over each colour class, a NumPy FFT convolution and an exact number-theoretic transform modulo 2013265921), written by an AI agent (Claude, Anthropic) for Quantavane; each rejects a copy with one number recoloured.",
+"path": "certificates/weak-schur/weak-schur-7-lower-2154.yml",
+"status": "verified",
+"role": "discovery"
+}
+],
+"lower_bound_evidence": "verified",
+"verified_lower_bound": {
+"latex": "2154",
+"decimal_approx": 2154,
+"alt_display": null
+},
+"verified_lower_certificate": "weak-schur-7-lower-2154",
+"upper_bound_evidence": "literature",
+"verified_upper_bound": null,
+"verified_upper_certificate": null,
+"history": [
+{
+"type": "upper_bound",
+"value": {
+"latex": "102752",
+"decimal_approx": 102752,
+"alt_display": "102,752"
+},
+"date": "1973",
+"discovery": {
+"kind": "source",
+"id": "irving-1973-schur",
+"via": null,
+"date": "1973"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "irving-1973-schur",
+"value": null,
+"date": "1973"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "95900",
+"decimal_approx": 95900,
+"alt_display": "95,900"
+},
+"date": "2002",
+"discovery": {
+"kind": "source",
+"id": "bornsztein-2002",
+"via": null,
+"date": "2002"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "bornsztein-2002",
+"value": null,
+"date": "2002"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "1736",
+"decimal_approx": 1736,
+"alt_display": null
+},
+"date": "2015-09-17",
+"discovery": {
+"kind": "source",
+"id": "bouzy-2015",
+"via": "ageron-et-al-2021",
+"date": "2015-09-17"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "weak-schur-7-lower-2154",
+"source": null,
+"value": {
+"latex": "2154",
+"decimal_approx": 2154,
+"alt_display": null
+},
+"date": "2026-11-08"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "1740",
+"decimal_approx": 1740,
+"alt_display": null
+},
+"date": "2016-07-13",
+"discovery": {
+"kind": "source",
+"id": "rafilipojaona-2015",
+"via": "ageron-et-al-2021",
+"date": "2016-07-13"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "weak-schur-7-lower-2154",
+"source": null,
+"value": {
+"latex": "2154",
+"decimal_approx": 2154,
+"alt_display": null
+},
+"date": "2026-11-08"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "2146",
+"decimal_approx": 2146,
+"alt_display": null
+},
+"date": "2020-11-23",
+"discovery": {
+"kind": "source",
+"id": "rowley-2020",
+"via": "ageron-et-al-2021",
+"date": "2020-11-23"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "weak-schur-7-lower-2154",
+"source": null,
+"value": {
+"latex": "2154",
+"decimal_approx": 2154,
+"alt_display": null
+},
+"date": "2026-11-08"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "2154",
+"decimal_approx": 2154,
+"alt_display": null
+},
+"date": "2026-11-08",
+"discovery": {
+"kind": "certificate",
+"id": "weak-schur-7-lower-2154",
+"via": null,
+"date": "2026-11-08",
+"submitted_by": "arhancanli"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "weak-schur-7-lower-2154",
+"source": null,
+"value": null,
+"date": "2026-11-08"
+}
+}
+]
+},
+"sorting-network-size-12": {
+"name": "Smallest sorting network $S(12)$",
+"family": "sorting-network-size",
+"exact_value": {
+"latex": "39",
+"decimal_approx": 39,
+"alt_display": null
+},
+"lower_bound": {
+"latex": "39",
+"decimal_approx": 39,
+"alt_display": null
+},
+"upper_bound": {
+"latex": "39",
+"decimal_approx": 39,
+"alt_display": null
+},
+"updates": [
+{
+"type": "upper_bound",
+"value": {
+"latex": "42",
+"decimal_approx": 42,
+"alt_display": null
+},
+"date": "1962-04",
+"source": "bose-nelson-1962",
+"via": "floyd-knuth-1970"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "41",
+"decimal_approx": 41,
+"alt_display": null
+},
+"date": "1964-09",
+"source": "batcher-1964",
+"via": "floyd-knuth-1970"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "39",
+"decimal_approx": 39,
+"alt_display": null
+},
+"date": "1970-11",
+"source": "floyd-knuth-1970",
+"via": null
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "31",
+"decimal_approx": 31,
+"alt_display": null
+},
+"date": "1970-11",
+"source": "floyd-knuth-1970",
+"via": null
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "35",
+"decimal_approx": 35,
+"alt_display": null
+},
+"date": "1972-06",
+"source": "van-voorhis-1972",
+"via": "codish-et-al-2014"
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "37",
+"decimal_approx": 37,
+"alt_display": null
+},
+"date": "2014-05-22",
+"source": "codish-et-al-2014",
+"via": null
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "39",
+"decimal_approx": 39,
+"alt_display": null
+},
+"date": "2019-12-07",
+"source": "harder-2019",
+"via": "harder-2020"
+}
+],
+"certifiable": true,
+"certificates": [
+{
+"id": "sorting-network-size-12-lower-11",
+"bound": "lower",
+"value": 11,
+"kind": "lean",
+"submitted_by": "daniel-munro",
+"date": "2026-11-11",
+"notes": "S(n) >= n - 1. If the comparators don't join the n wires into one connected component, putting 1 on one component and 0 on the rest (or the reverse) leaves some input unsorted, and a connected graph on n vertices has at least n - 1 edges. Proof written by an AI agent (Claude).",
+"path": "certificates/sorting-network-size/sorting-network-size-12-lower-11.yml",
+"status": "verified",
+"theorem": "LeapsInBounds.Proofs.SortingNetworkLower.size_12",
+"role": "weaker"
+},
+{
+"id": "sorting-network-size-12-upper-39",
+"bound": "upper",
+"value": 39,
+"kind": "witness",
+"submitted_by": "daniel-munro",
+"date": "2026-11-11",
+"source": "dobbelaere-sorting-networks",
+"path": "certificates/sorting-network-size/sorting-network-size-12-upper-39.yml",
+"status": "verified",
+"role": "evidence"
+}
+],
+"lower_bound_evidence": "literature",
+"verified_lower_bound": {
+"latex": "11",
+"decimal_approx": 11,
+"alt_display": null
+},
+"verified_lower_certificate": "sorting-network-size-12-lower-11",
+"upper_bound_evidence": "verified",
+"verified_upper_bound": {
+"latex": "39",
+"decimal_approx": 39,
+"alt_display": null
+},
+"verified_upper_certificate": "sorting-network-size-12-upper-39",
+"history": [
+{
+"type": "upper_bound",
+"value": {
+"latex": "42",
+"decimal_approx": 42,
+"alt_display": null
+},
+"date": "1962-04",
+"discovery": {
+"kind": "source",
+"id": "bose-nelson-1962",
+"via": "floyd-knuth-1970",
+"date": "1962-04"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "sorting-network-size-12-upper-39",
+"source": null,
+"value": {
+"latex": "39",
+"decimal_approx": 39,
+"alt_display": null
+},
+"date": "2026-11-11"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "41",
+"decimal_approx": 41,
+"alt_display": null
+},
+"date": "1964-09",
+"discovery": {
+"kind": "source",
+"id": "batcher-1964",
+"via": "floyd-knuth-1970",
+"date": "1964-09"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "sorting-network-size-12-upper-39",
+"source": null,
+"value": {
+"latex": "39",
+"decimal_approx": 39,
+"alt_display": null
+},
+"date": "2026-11-11"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "31",
+"decimal_approx": 31,
+"alt_display": null
+},
+"date": "1970-11",
+"discovery": {
+"kind": "source",
+"id": "floyd-knuth-1970",
+"via": null,
+"date": "1970-11"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "floyd-knuth-1970",
+"value": null,
+"date": "1970-11"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "39",
+"decimal_approx": 39,
+"alt_display": null
+},
+"date": "1970-11",
+"discovery": {
+"kind": "source",
+"id": "floyd-knuth-1970",
+"via": null,
+"date": "1970-11"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "sorting-network-size-12-upper-39",
+"source": null,
+"value": null,
+"date": "2026-11-11"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "35",
+"decimal_approx": 35,
+"alt_display": null
+},
+"date": "1972-06",
+"discovery": {
+"kind": "source",
+"id": "van-voorhis-1972",
+"via": "codish-et-al-2014",
+"date": "1972-06"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "van-voorhis-1972",
+"value": null,
+"date": "1972-06"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "37",
+"decimal_approx": 37,
+"alt_display": null
+},
+"date": "2014-05-22",
+"discovery": {
+"kind": "source",
+"id": "codish-et-al-2014",
+"via": null,
+"date": "2014-05-22"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "codish-et-al-2014",
+"value": null,
+"date": "2014-05-22"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "39",
+"decimal_approx": 39,
+"alt_display": null
+},
+"date": "2019-12-07",
+"discovery": {
+"kind": "source",
+"id": "harder-2019",
+"via": "harder-2020",
+"date": "2019-12-07"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "harder-2019",
+"value": null,
+"date": "2019-12-07"
+}
+}
+]
+},
+"sorting-network-size-20": {
+"name": "Smallest sorting network $S(20)$",
+"family": "sorting-network-size",
+"exact_value": null,
+"lower_bound": {
+"latex": "78",
+"decimal_approx": 78,
+"alt_display": null
+},
+"upper_bound": {
+"latex": "91",
+"decimal_approx": 91,
+"alt_display": null
+},
+"updates": [
+{
+"type": "upper_bound",
+"value": {
+"latex": "93",
+"decimal_approx": 93,
+"alt_display": null
+},
+"date": "1970-05",
+"source": "kautz-pease-green-1970",
+"via": "van-voorhis-1971"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "92",
+"decimal_approx": 92,
+"alt_display": null
+},
+"date": "2010-08",
+"source": "valsalam-2010",
+"via": "valsalam-miikkulainen-2013"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "91",
+"decimal_approx": 91,
+"alt_display": null
+},
+"date": "2017-12-29",
+"source": "dobbelaere-2017-12-29",
+"via": null
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "72",
+"decimal_approx": 72,
+"alt_display": null
+},
+"date": "2018-01-02",
+"source": "dobbelaere-2018-01-02",
+"via": null
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "74",
+"decimal_approx": 74,
+"alt_display": null
+},
+"date": "2020-05-30",
+"source": "dobbelaere-2020-05-30",
+"via": null
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "75",
+"decimal_approx": 75,
+"alt_display": null
+},
+"date": "2020-06-07",
+"source": "dobbelaere-2020-06-07",
+"via": null
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "78",
+"decimal_approx": 78,
+"alt_display": null
+},
+"date": "2026-10-18",
+"source": "tomar-2026",
+"via": "dobbelaere-2025-04-21"
+}
+],
+"certifiable": true,
+"certificates": [
+{
+"id": "sorting-network-size-20-lower-19",
+"bound": "lower",
+"value": 19,
+"kind": "lean",
+"submitted_by": "daniel-munro",
+"date": "2026-11-11",
+"notes": "S(n) >= n - 1. If the comparators don't join the n wires into one connected component, putting 1 on one component and 0 on the rest (or the reverse) leaves some input unsorted, and a connected graph on n vertices has at least n - 1 edges. Proof written by an AI agent (Claude).",
+"path": "certificates/sorting-network-size/sorting-network-size-20-lower-19.yml",
+"status": "verified",
+"theorem": "LeapsInBounds.Proofs.SortingNetworkLower.size_20",
+"role": "weaker"
+},
+{
+"id": "sorting-network-size-20-upper-91",
+"bound": "upper",
+"value": 91,
+"kind": "witness",
+"submitted_by": "daniel-munro",
+"date": "2026-11-11",
+"source": "dobbelaere-sorting-networks",
+"path": "certificates/sorting-network-size/sorting-network-size-20-upper-91.yml",
+"status": "verified",
+"role": "evidence"
+}
+],
+"lower_bound_evidence": "literature",
+"verified_lower_bound": {
+"latex": "19",
+"decimal_approx": 19,
+"alt_display": null
+},
+"verified_lower_certificate": "sorting-network-size-20-lower-19",
+"upper_bound_evidence": "verified",
+"verified_upper_bound": {
+"latex": "91",
+"decimal_approx": 91,
+"alt_display": null
+},
+"verified_upper_certificate": "sorting-network-size-20-upper-91",
+"history": [
+{
+"type": "upper_bound",
+"value": {
+"latex": "93",
+"decimal_approx": 93,
+"alt_display": null
+},
+"date": "1970-05",
+"discovery": {
+"kind": "source",
+"id": "kautz-pease-green-1970",
+"via": "van-voorhis-1971",
+"date": "1970-05"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "sorting-network-size-20-upper-91",
+"source": null,
+"value": {
+"latex": "91",
+"decimal_approx": 91,
+"alt_display": null
+},
+"date": "2026-11-11"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "92",
+"decimal_approx": 92,
+"alt_display": null
+},
+"date": "2010-08",
+"discovery": {
+"kind": "source",
+"id": "valsalam-2010",
+"via": "valsalam-miikkulainen-2013",
+"date": "2010-08"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "sorting-network-size-20-upper-91",
+"source": null,
+"value": {
+"latex": "91",
+"decimal_approx": 91,
+"alt_display": null
+},
+"date": "2026-11-11"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "91",
+"decimal_approx": 91,
+"alt_display": null
+},
+"date": "2017-12-29",
+"discovery": {
+"kind": "source",
+"id": "dobbelaere-2017-12-29",
+"via": null,
+"date": "2017-12-29"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "sorting-network-size-20-upper-91",
+"source": null,
+"value": null,
+"date": "2026-11-11"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "72",
+"decimal_approx": 72,
+"alt_display": null
+},
+"date": "2018-01-02",
+"discovery": {
+"kind": "source",
+"id": "dobbelaere-2018-01-02",
+"via": null,
+"date": "2018-01-02"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "dobbelaere-2018-01-02",
+"value": null,
+"date": "2018-01-02"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "74",
+"decimal_approx": 74,
+"alt_display": null
+},
+"date": "2020-05-30",
+"discovery": {
+"kind": "source",
+"id": "dobbelaere-2020-05-30",
+"via": null,
+"date": "2020-05-30"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "dobbelaere-2020-05-30",
+"value": null,
+"date": "2020-05-30"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "75",
+"decimal_approx": 75,
+"alt_display": null
+},
+"date": "2020-06-07",
+"discovery": {
+"kind": "source",
+"id": "dobbelaere-2020-06-07",
+"via": null,
+"date": "2020-06-07"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "dobbelaere-2020-06-07",
+"value": null,
+"date": "2020-06-07"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "78",
+"decimal_approx": 78,
+"alt_display": null
+},
+"date": "2026-10-18",
+"discovery": {
+"kind": "source",
+"id": "tomar-2026",
+"via": "dobbelaere-2025-04-21",
+"date": "2026-10-18"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "tomar-2026",
+"value": null,
+"date": "2026-10-18"
+}
+}
+]
+},
+"sorting-network-depth-20": {
+"name": "Fastest sorting network $D(20)$",
+"family": "sorting-network-depth",
+"exact_value": null,
+"lower_bound": {
+"latex": "10",
+"decimal_approx": 10,
+"alt_display": null
+},
+"upper_bound": {
+"latex": "11",
+"decimal_approx": 11,
+"alt_display": null
+},
+"updates": [
+{
+"type": "upper_bound",
+"value": {
+"latex": "15",
+"decimal_approx": 15,
+"alt_display": null
+},
+"date": "1968-04-30",
+"source": "batcher-1968",
+"via": null
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "9",
+"decimal_approx": 9,
+"alt_display": null
+},
+"date": "2013-10-23",
+"source": "bundala-zavodny-2013",
+"via": "ehlers-muller-2014"
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "11",
+"decimal_approx": 11,
+"alt_display": null
+},
+"date": "2014-10-08",
+"source": "ehlers-muller-2014",
+"via": null
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "10",
+"decimal_approx": 10,
+"alt_display": null
+},
+"date": "2015-01-27",
+"source": "ehlers-muller-2015",
+"via": null
+}
+],
+"certifiable": true,
+"certificates": [
+{
+"id": "sorting-network-depth-20-lower-5",
+"bound": "lower",
+"value": 5,
+"kind": "lean",
+"submitted_by": "daniel-munro",
+"date": "2026-11-11",
+"notes": "D(n) >= ceil(log2 n). After depth d the value on wire 0 depends on the inputs on at most 2^d wires, but in a sorting network it is the minimum of all n inputs. Proof written by an AI agent (Claude).",
+"path": "certificates/sorting-network-depth/sorting-network-depth-20-lower-5.yml",
+"status": "verified",
+"theorem": "LeapsInBounds.Proofs.SortingNetworkLower.depth_20",
+"role": "weaker"
+},
+{
+"id": "sorting-network-depth-20-upper-11",
+"bound": "upper",
+"value": 11,
+"kind": "witness",
+"submitted_by": "daniel-munro",
+"date": "2026-11-11",
+"source": "dobbelaere-sorting-networks",
+"path": "certificates/sorting-network-depth/sorting-network-depth-20-upper-11.yml",
+"status": "verified",
+"role": "evidence"
+}
+],
+"lower_bound_evidence": "literature",
+"verified_lower_bound": {
+"latex": "5",
+"decimal_approx": 5,
+"alt_display": null
+},
+"verified_lower_certificate": "sorting-network-depth-20-lower-5",
+"upper_bound_evidence": "verified",
+"verified_upper_bound": {
+"latex": "11",
+"decimal_approx": 11,
+"alt_display": null
+},
+"verified_upper_certificate": "sorting-network-depth-20-upper-11",
+"history": [
+{
+"type": "upper_bound",
+"value": {
+"latex": "15",
+"decimal_approx": 15,
+"alt_display": null
+},
+"date": "1968-04-30",
+"discovery": {
+"kind": "source",
+"id": "batcher-1968",
+"via": null,
+"date": "1968-04-30"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "sorting-network-depth-20-upper-11",
+"source": null,
+"value": {
+"latex": "11",
+"decimal_approx": 11,
+"alt_display": null
+},
+"date": "2026-11-11"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "9",
+"decimal_approx": 9,
+"alt_display": null
+},
+"date": "2013-10-23",
+"discovery": {
+"kind": "source",
+"id": "bundala-zavodny-2013",
+"via": "ehlers-muller-2014",
+"date": "2013-10-23"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "bundala-zavodny-2013",
+"value": null,
+"date": "2013-10-23"
+}
+},
+{
+"type": "upper_bound",
+"value": {
+"latex": "11",
+"decimal_approx": 11,
+"alt_display": null
+},
+"date": "2014-10-08",
+"discovery": {
+"kind": "source",
+"id": "ehlers-muller-2014",
+"via": null,
+"date": "2014-10-08"
+},
+"evidence": {
+"tier": "verified",
+"kind": "witness",
+"certificate": "sorting-network-depth-20-upper-11",
+"source": null,
+"value": null,
+"date": "2026-11-11"
+}
+},
+{
+"type": "lower_bound",
+"value": {
+"latex": "10",
+"decimal_approx": 10,
+"alt_display": null
+},
+"date": "2015-01-27",
+"discovery": {
+"kind": "source",
+"id": "ehlers-muller-2015",
+"via": null,
+"date": "2015-01-27"
+},
+"evidence": {
+"tier": "literature",
+"kind": null,
+"certificate": null,
+"source": "ehlers-muller-2015",
+"value": null,
+"date": "2015-01-27"
+}
+}
+]
+}
+}

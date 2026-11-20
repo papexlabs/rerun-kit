@@ -831,9 +831,16 @@ WITH_TOKEN = {TOKEN_ENV: TASK_TOKEN}
 OTHER_API = dict(WITH_TOKEN, **{API_ENV: "https://papex.invalid"})
 NOTHING = {"lines": [], "accepted": 0, "rejected": 0, "skipped": 0, "alert": False, "exitCode": 0}
 
+
+def nothing_line(seen):
+    """The line the runner prints when it decided nothing, so that a hosted log shows it ran."""
+    return (f"nothing waiting: {seen} sent runs in the queue, none to decide; read {len(render_task.runner.known_lists())} "
+            f"re-run lists and {len(render_task.runner.known_tasks()['bySlug'])} task folders of this kit")
+
 got, reqs = hosted_task([], WITH_TOKEN)
-case("H1 an empty queue: nothing decided, one read of the queue at https://api.papex.org (no PAPEX_API), the token sent",
-     got == NOTHING and [(r["api"], r["method"], r["path"], r["tokenSent"]) for r in reqs]
+case("H1 an empty queue: nothing decided (one line says so), one read of the queue at https://api.papex.org (no "
+     "PAPEX_API), the token sent",
+     got == dict(NOTHING, lines=[nothing_line(0)]) and [(r["api"], r["method"], r["path"], r["tokenSent"]) for r in reqs]
      == [("https://api.papex.org", "GET", QUEUE, True)], f"{got}; requests {[(r['api'], r['method'], r['path']) for r in reqs]}")
 
 got, reqs = hosted_task([sent_run("b-7f3a21", ERDOS, ERDOS_LIST)], OTHER_API)
@@ -854,7 +861,8 @@ case("H3 one run rejected (a kit that was never released)",
 
 got, reqs = hosted_task([sent_run("b-7f3a23", ERDOS, ERDOS_LIST, list_sha256="0x" + "1" * 64)], WITH_TOKEN)
 case("H4 a run of a list that is not of this kit: skipped, nothing posted",
-     got == dict(NOTHING, lines=["b-7f3a23 SUBMITTED: not a list of this kit"], skipped=1) and not posts(reqs), got)
+     got == dict(NOTHING, lines=["b-7f3a23 SUBMITTED: not a list of this kit", nothing_line(1)], skipped=1)
+     and not posts(reqs), got)
 
 got, reqs = hosted_task([sent_run("b-7f3a24", COLLATZ, "lean-rerun-first-passage-v2", outcome="FAIL")], WITH_TOKEN)
 case("H5 a run reported as a failed build: rejected, and the ALERT is in the summary",
@@ -879,9 +887,32 @@ case("H7 Papex answers with an error: the task fails with the runner's message, 
 
 got, reqs = hosted_task(mixed[:2], WITH_TOKEN, errors={("POST", "/api/admin/shared-work/batches/b-7f3a21/verdict"): (
     409, '{"code":"SHARED_WORK_BATCH_STATE","message":"The batch is ACCEPTED, which does not allow this"}')})
-case("H8 a run another task decided first (409): the task fails and says what was printed before",
-     isinstance(got, str) and "/b-7f3a21/verdict answered 409" in got and "(printed before it stopped: b-7f3a21: ACCEPTED )" in got
-     and len(posts(reqs)) == 1, got)
+case("H8 a run another task decided first (409): not sent again, an ALERT names it (not counted as accepted), and "
+     "the next run in the queue is still decided",
+     isinstance(got, dict) and got["accepted"] == 0 and got["rejected"] == 1 and got["alert"]
+     and got["lines"][0].startswith("ALERT b-7f3a21: not decided in this run (POST /api/admin/shared-work/batches/"
+                                    "b-7f3a21/verdict answered 409")
+     and "b-7f3a22: REJECTED TOOL_NOT_ALLOWED" in got["lines"] and len(posts(reqs)) == 2, got)
+
+saved_pause, render_task.runner.RETRY_PAUSE = render_task.runner.RETRY_PAUSE, 0
+try:
+    got, reqs = hosted_task(mixed[:2], WITH_TOKEN, errors={("POST", "/api/admin/shared-work/batches/b-7f3a21/verdict"): (
+        500, '{"code":"INTERNAL_ERROR","message":"made-up-runner-token-for-the-tests broke"}')})
+finally:
+    render_task.runner.RETRY_PAUSE = saved_pause
+tries = [r for r in posts(reqs) if r["path"].endswith("/b-7f3a21/verdict")]
+case(f"H10 Papex answers 500 to one run's verdict: sent {render_task.runner.VERDICT_TRIES} times with the same body, then "
+     "an ALERT (the token not in it); the next run is decided and the task does not fail",
+     isinstance(got, dict) and len(tries) == render_task.runner.VERDICT_TRIES
+     and len({json.dumps(r["body"], sort_keys=True) for r in tries}) == 1
+     and got["accepted"] == 0 and got["rejected"] == 1 and got["alert"] and TASK_TOKEN not in json.dumps(got)
+     and any(l.startswith("ALERT b-7f3a21: not decided in this run") for l in got["lines"]), got)
+
+broken = dict(sent_run("b-7f3a25", ERDOS, ERDOS_LIST), resultText="[1, 2")
+got, reqs = hosted_task([broken, sent_run("b-7f3a26", ERDOS, ERDOS_LIST)], WITH_TOKEN)
+case("H11 a re-run list's run whose result is not JSON: an ALERT names it, and the next run is still decided",
+     isinstance(got, dict) and got["accepted"] == 1 and got["alert"]
+     and any(l.startswith("ALERT b-7f3a25: not decided in this run") for l in got["lines"]), got)
 
 got, reqs = hosted_task(mixed, {})
 case("H9 no token: the task fails before any request", got == f"The runner stopped: Set {TOKEN_ENV}." and not reqs, got)

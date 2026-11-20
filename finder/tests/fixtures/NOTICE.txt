@@ -1,0 +1,6 @@
+leaps-*.json, leaps-*.yml, leaps-*.txt: trimmed from Leaps in Bounds (https://leapsinbounds.org,
+https://github.com/daniel-munro/leaps-in-bounds), MIT License, Copyright (c) 2025 Daniel Munro.
+The WS(6) >= 650 colouring is S. E. Rodrigo's (2026), as held in that repository.
+
+Every other file here is written for these tests in the same layout as its source (B. Dobbelaere's pages, A. E.
+Brouwer's table and code files, an OEIS entry); the values in them are made up or are small textbook objects.

@@ -1,0 +1,1866 @@
+{
+ "family": "comparator-network",
+ "records": [
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_10_24_6.json",
+   "params": {
+    "goal": "median",
+    "inputs": 10,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "6",
+   "sha256": "0xca7c875c2796447a3db8d2feb56fb58b861dbbc1d4cd75d8992e5073a386a98d",
+   "source": "dobbelaere",
+   "tableValue": "6"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_10_22_8.json",
+   "params": {
+    "goal": "median",
+    "inputs": 10,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "22",
+   "sha256": "0x003c803ab1c58035a24d4ab1a2aefd023a369497b2b1d5a8c27663a4584e1e01",
+   "source": "dobbelaere",
+   "tableValue": "22"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_11_26_8.json",
+   "params": {
+    "goal": "median",
+    "inputs": 11,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "8",
+   "sha256": "0x83352a9beeceb1d096323cd610bebbc52de0e772d487083804056a6695c6e3eb",
+   "source": "dobbelaere",
+   "tableValue": "8"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_11_25_11.json",
+   "params": {
+    "goal": "median",
+    "inputs": 11,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "25",
+   "sha256": "0x301f006f27ba4856d784c567e61c184d5372c2911bb03faa6256a69417448d05",
+   "source": "dobbelaere",
+   "tableValue": "25"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_11_37_10.json",
+   "params": {
+    "goal": "median",
+    "inputs": 11,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "37",
+   "sha256": "0x49728a5f9da2c70723198016537f379e5294a47f139c9571d540dc6d10abe400",
+   "source": "dobbelaere",
+   "tableValue": "37"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_12_29_7.json",
+   "params": {
+    "goal": "median",
+    "inputs": 12,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "7",
+   "sha256": "0x537b446b64e1cd9814354d67d1c01b1e3a3b35d589a362ff5b5a6dd04c0c0643",
+   "source": "dobbelaere",
+   "tableValue": "7"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_12_29_7.json",
+   "params": {
+    "goal": "median",
+    "inputs": 12,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "29",
+   "sha256": "0x537b446b64e1cd9814354d67d1c01b1e3a3b35d589a362ff5b5a6dd04c0c0643",
+   "source": "dobbelaere",
+   "tableValue": "29"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_13_33_9.json",
+   "params": {
+    "goal": "median",
+    "inputs": 13,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "9",
+   "sha256": "0x8483b613b0559c51efad32c33d886eebb22490ddb96b38cc9f3ac3127dbb5d06",
+   "source": "dobbelaere",
+   "tableValue": "9"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_13_32_10.json",
+   "params": {
+    "goal": "median",
+    "inputs": 13,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "32",
+   "sha256": "0x0d70b556b4f7cb6a3e73d770882b895b156144b360def2a25220800d28361cd4",
+   "source": "dobbelaere",
+   "tableValue": "32"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_14_40_8.json",
+   "params": {
+    "goal": "median",
+    "inputs": 14,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "8",
+   "sha256": "0x1a498e3f1ddbac042a213879da5d2444adc68cf61583c123ebb3dd35e182df12",
+   "source": "dobbelaere",
+   "tableValue": "8"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_14_38_9.json",
+   "params": {
+    "goal": "median",
+    "inputs": 14,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "38",
+   "sha256": "0x5dad4dc35492af4821c8359bfc363f0d765db2a8509b5b87dfdb0e9ae44b4555",
+   "source": "dobbelaere",
+   "tableValue": "38"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_15_45_9.json",
+   "params": {
+    "goal": "median",
+    "inputs": 15,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "9",
+   "sha256": "0xc4a413a6c9ff5c989b3040669994d48fd327a1fbe2fcad3cea51549095fb483b",
+   "source": "dobbelaere",
+   "tableValue": "9"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_15_41_11.json",
+   "params": {
+    "goal": "median",
+    "inputs": 15,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "41",
+   "sha256": "0x4b4c2a227552de101088a4527aca8f3a445a6d6e60439c1f301d780ec1923848",
+   "source": "dobbelaere",
+   "tableValue": "41"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_16_49_8.json",
+   "params": {
+    "goal": "median",
+    "inputs": 16,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "8",
+   "sha256": "0xbaea1103bfb4ba95b22a9283125975d75722f732b3d36beca8601373640e0b07",
+   "source": "dobbelaere",
+   "tableValue": "8"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_16_46_10.json",
+   "params": {
+    "goal": "median",
+    "inputs": 16,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "46",
+   "sha256": "0xe9e02eff6e7642fb71564754bc247d24f09a755663f309a519ce102e4ef348ec",
+   "source": "dobbelaere",
+   "tableValue": "46"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_17_52_10.json",
+   "params": {
+    "goal": "median",
+    "inputs": 17,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "10",
+   "sha256": "0x684df5ca5d70f52b290aaa2fd6e82b29a7731ec8ddf7de69b49843328cdbed0e",
+   "source": "dobbelaere",
+   "tableValue": "10"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_17_49_12.json",
+   "params": {
+    "goal": "median",
+    "inputs": 17,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "49",
+   "sha256": "0xa5c653a68c5c422f91c8cdc04dccab013c8caf446c1775cafac20981e94b5a14",
+   "source": "dobbelaere",
+   "tableValue": "49"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_18_56_10.json",
+   "params": {
+    "goal": "median",
+    "inputs": 18,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "10",
+   "sha256": "0x429f1bd10d7961ce0ad17c4969995f32c7d46016a21931cd078bdbb312d58787",
+   "source": "dobbelaere",
+   "tableValue": "10"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_18_55_12.json",
+   "params": {
+    "goal": "median",
+    "inputs": 18,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "55",
+   "sha256": "0x22c9550428305c8dd5504f3f205f28cf06df925e392f4b631891eeeb8977cb17",
+   "source": "dobbelaere",
+   "tableValue": "55"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_19_60_11.json",
+   "params": {
+    "goal": "median",
+    "inputs": 19,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "11",
+   "sha256": "0xa4ace9e6fe00c451efb598b499c303ecb9e441f229aef796d4b771b3efeae1ab",
+   "source": "dobbelaere",
+   "tableValue": "11"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_19_58_15.json",
+   "params": {
+    "goal": "median",
+    "inputs": 19,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "58",
+   "sha256": "0x184f0c2085e4e5fc48cf0239f0b6512dbe9932dbc4ca6db2c28d1c6fdf0e85ff",
+   "source": "dobbelaere",
+   "tableValue": "58"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_20_64_10.json",
+   "params": {
+    "goal": "median",
+    "inputs": 20,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "10",
+   "sha256": "0x14e3444fcbcae0e8c0e0af8899970dbac7bebc0d8db94d7e357b8890bdd9d390",
+   "source": "dobbelaere",
+   "tableValue": "10"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_20_63_12.json",
+   "params": {
+    "goal": "median",
+    "inputs": 20,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "63",
+   "sha256": "0x7c9e27b30fe4167ff41a1bdec992c11a601f2077a5e05a4f3a71172b1be88a76",
+   "source": "dobbelaere",
+   "tableValue": "63"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_21_67_12.json",
+   "params": {
+    "goal": "median",
+    "inputs": 21,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "12",
+   "sha256": "0xda4fb3da6c7ee610edd43fe85f37193ba2377db31ffe70a80ce8c406dce4a873",
+   "source": "dobbelaere",
+   "tableValue": "12"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_21_66_15.json",
+   "params": {
+    "goal": "median",
+    "inputs": 21,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "66",
+   "sha256": "0x8ed726e46ba4adea7477ce044bc969aff352a3bd6de36ba66fea1fa2d3d11deb",
+   "source": "dobbelaere",
+   "tableValue": "66"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_22_75_11.json",
+   "params": {
+    "goal": "median",
+    "inputs": 22,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "11",
+   "sha256": "0xe7b10d2010a7d079a99a38f5d64c1e11d05be177a036208fca8b4c93e9d9dddc",
+   "source": "dobbelaere",
+   "tableValue": "11"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_22_74_13.json",
+   "params": {
+    "goal": "median",
+    "inputs": 22,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "74",
+   "sha256": "0x18bf6dd860fb60cbf7a1b180569e7720ec48fdd0ab4fc3a793be6992de0f21f7",
+   "source": "dobbelaere",
+   "tableValue": "74"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_23_83_12.json",
+   "params": {
+    "goal": "median",
+    "inputs": 23,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "12",
+   "sha256": "0x8797d8fb9309af08787688b69c65e433be7e126d20b8f935373218c79732f3cd",
+   "source": "dobbelaere",
+   "tableValue": "12"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_23_77_16.json",
+   "params": {
+    "goal": "median",
+    "inputs": 23,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "77",
+   "sha256": "0xb3377ade0d9a8169311cb5777f4f8eee26632d83f6dc1529912cc30089611c90",
+   "source": "dobbelaere",
+   "tableValue": "77"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_24_86_11.json",
+   "params": {
+    "goal": "median",
+    "inputs": 24,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "11",
+   "sha256": "0x6658a3fa84ca4e71d21d46843d195b047a10478670b6255a00de6b31191156fc",
+   "source": "dobbelaere",
+   "tableValue": "11"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_24_82_13.json",
+   "params": {
+    "goal": "median",
+    "inputs": 24,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "82",
+   "sha256": "0x8ccf4204deed1a9bfdd7dbfe89f5040f18190dbe0e586a3bb8fbc3a12eb65242",
+   "source": "dobbelaere",
+   "tableValue": "82"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_25_93_13.json",
+   "params": {
+    "goal": "median",
+    "inputs": 25,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "13",
+   "sha256": "0xd00a7a766dab9c8897988da2002146604fd35fa0b12af71fb8f2b20764816509",
+   "source": "dobbelaere",
+   "tableValue": "13"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_25_85_16.json",
+   "params": {
+    "goal": "median",
+    "inputs": 25,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "85",
+   "sha256": "0xc80c894f0949cc6ccb40504f3bf699bacd9740e755e1a9b4c648e9b7b328017c",
+   "source": "dobbelaere",
+   "tableValue": "85"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_26_98_12.json",
+   "params": {
+    "goal": "median",
+    "inputs": 26,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "12",
+   "sha256": "0xbce08d96ab1c72d24a45fd487a3c13720c99fb3fb056fcc71b416956447e6c11",
+   "source": "dobbelaere",
+   "tableValue": "12"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_26_94_15.json",
+   "params": {
+    "goal": "median",
+    "inputs": 26,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "94",
+   "sha256": "0x3c49288b1498692f2f3d1db8db633fe41d8b39786f3c587b40be7c111fe8baae",
+   "source": "dobbelaere",
+   "tableValue": "94"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_27_105_13.json",
+   "params": {
+    "goal": "median",
+    "inputs": 27,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "13",
+   "sha256": "0xcdc3bebce76441fe37e8ad523b88dda73ed7700611e67806556a3927c6525d4c",
+   "source": "dobbelaere",
+   "tableValue": "13"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_27_97_18.json",
+   "params": {
+    "goal": "median",
+    "inputs": 27,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "97",
+   "sha256": "0x43f6970467dc1c863a95eaaac7e6616e40e047f8e2c1cff31acee7d2cda7d2a2",
+   "source": "dobbelaere",
+   "tableValue": "97"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_28_111_12.json",
+   "params": {
+    "goal": "median",
+    "inputs": 28,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "12",
+   "sha256": "0xd200741f796a3f66e95d139af5f42cc43021725296b86c255bfea0ab452751bf",
+   "source": "dobbelaere",
+   "tableValue": "12"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_28_104_14.json",
+   "params": {
+    "goal": "median",
+    "inputs": 28,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "104",
+   "sha256": "0xecefb16256828838e7ecb7e9502c7dd366c04a08c75dceae9ff1d12f67586c96",
+   "source": "dobbelaere",
+   "tableValue": "104"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_29_118_14.json",
+   "params": {
+    "goal": "median",
+    "inputs": 29,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "14",
+   "sha256": "0x92cc2cf9ccffa9b401afd99dff4b2e0bdecf7870f70f54b152e9d7fff453f76a",
+   "source": "dobbelaere",
+   "tableValue": "14"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_29_107_17.json",
+   "params": {
+    "goal": "median",
+    "inputs": 29,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "107",
+   "sha256": "0x2a7387fbeb378a0e6241e39c905673bc92cb542406ea44fe755bd63eca72471a",
+   "source": "dobbelaere",
+   "tableValue": "107"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_3_3_3.json",
+   "params": {
+    "goal": "median",
+    "inputs": 3,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "3",
+   "sha256": "0x92a4538b8e57b93a9c1c5337f47a1bf9789fc5b25da1f83ebfe74aef79fc0746",
+   "source": "dobbelaere",
+   "tableValue": "3"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_3_3_3.json",
+   "params": {
+    "goal": "median",
+    "inputs": 3,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "3",
+   "sha256": "0x92a4538b8e57b93a9c1c5337f47a1bf9789fc5b25da1f83ebfe74aef79fc0746",
+   "source": "dobbelaere",
+   "tableValue": "3"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_30_122_13.json",
+   "params": {
+    "goal": "median",
+    "inputs": 30,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "13",
+   "sha256": "0xc9e36da6e1d2e9fedf8817c4a2f1785e52911cd1211bd1b44ae70a23d2561782",
+   "source": "dobbelaere",
+   "tableValue": "13"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_30_118_16.json",
+   "params": {
+    "goal": "median",
+    "inputs": 30,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "118",
+   "sha256": "0x6276b9c455ed538106229ace8472f425c3b74bb5aa639e8f4aa6b0027a021d35",
+   "source": "dobbelaere",
+   "tableValue": "118"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_31_128_14.json",
+   "params": {
+    "goal": "median",
+    "inputs": 31,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "14",
+   "sha256": "0x3077325b72f30a50a320b413dfad5ed6cfd5a3cef34de4f7bdb665509132ff29",
+   "source": "dobbelaere",
+   "tableValue": "14"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_31_121_19.json",
+   "params": {
+    "goal": "median",
+    "inputs": 31,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "121",
+   "sha256": "0xb90fc3dc8981f5451ce6578526fadf09e3b3145c7ed9a0478243d6548cd83e3b",
+   "source": "dobbelaere",
+   "tableValue": "121"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_32_132_13.json",
+   "params": {
+    "goal": "median",
+    "inputs": 32,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "13",
+   "sha256": "0x372102dcf76179830a2184beb988d1038e178c16327ed6c8cd812db5ce4b8ba7",
+   "source": "dobbelaere",
+   "tableValue": "13"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_32_128_14.json",
+   "params": {
+    "goal": "median",
+    "inputs": 32,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "128",
+   "sha256": "0x5e85cc0aa1db308d48ada682a4625cc9bd2f0c314fc52387973d6dca864e659d",
+   "source": "dobbelaere",
+   "tableValue": "128"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_4_4_2.json",
+   "params": {
+    "goal": "median",
+    "inputs": 4,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "2",
+   "sha256": "0xae1c66d509fe5d5feb9ce16b81a50ecfb4c18a415dbcebb66778436d31140394",
+   "source": "dobbelaere",
+   "tableValue": "2"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_4_4_2.json",
+   "params": {
+    "goal": "median",
+    "inputs": 4,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "4",
+   "sha256": "0xae1c66d509fe5d5feb9ce16b81a50ecfb4c18a415dbcebb66778436d31140394",
+   "source": "dobbelaere",
+   "tableValue": "4"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_5_7_5.json",
+   "params": {
+    "goal": "median",
+    "inputs": 5,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "5",
+   "sha256": "0x01cefad9d2228bf82d31899d370fb7275691f317562f24ccc86cdca71a09ed0b",
+   "source": "dobbelaere",
+   "tableValue": "5"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_5_7_5.json",
+   "params": {
+    "goal": "median",
+    "inputs": 5,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "7",
+   "sha256": "0x01cefad9d2228bf82d31899d370fb7275691f317562f24ccc86cdca71a09ed0b",
+   "source": "dobbelaere",
+   "tableValue": "7"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_6_10_4.json",
+   "params": {
+    "goal": "median",
+    "inputs": 6,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "4",
+   "sha256": "0x815f44c0e596387b845150b2ea83a42b538db11a55c6a54609edf92673d2cf77",
+   "source": "dobbelaere",
+   "tableValue": "4"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_6_10_4.json",
+   "params": {
+    "goal": "median",
+    "inputs": 6,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "10",
+   "sha256": "0x815f44c0e596387b845150b2ea83a42b538db11a55c6a54609edf92673d2cf77",
+   "source": "dobbelaere",
+   "tableValue": "10"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_7_13_6.json",
+   "params": {
+    "goal": "median",
+    "inputs": 7,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "6",
+   "sha256": "0xa074bf53e52937690300ab67c5499f0297a779f31c208d82e333038a9f91d6ef",
+   "source": "dobbelaere",
+   "tableValue": "6"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_7_13_6.json",
+   "params": {
+    "goal": "median",
+    "inputs": 7,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "13",
+   "sha256": "0xa074bf53e52937690300ab67c5499f0297a779f31c208d82e333038a9f91d6ef",
+   "source": "dobbelaere",
+   "tableValue": "13"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_8_16_5.json",
+   "params": {
+    "goal": "median",
+    "inputs": 8,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "5",
+   "sha256": "0x2b592af5cafe454a658dbcd1f3542dcdbf42285cefdc4393a5bce07409fed5ff",
+   "source": "dobbelaere",
+   "tableValue": "5"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_8_16_5.json",
+   "params": {
+    "goal": "median",
+    "inputs": 8,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "16",
+   "sha256": "0x2b592af5cafe454a658dbcd1f3542dcdbf42285cefdc4393a5bce07409fed5ff",
+   "source": "dobbelaere",
+   "tableValue": "16"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_9_19_7.json",
+   "params": {
+    "goal": "median",
+    "inputs": 9,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "7",
+   "sha256": "0x65146d00229b957f119c5c3149a88837fab121725f710ee317d8e628ed428a4d",
+   "source": "dobbelaere",
+   "tableValue": "7"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_9_19_7.json",
+   "params": {
+    "goal": "median",
+    "inputs": 9,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "19",
+   "sha256": "0x65146d00229b957f119c5c3149a88837fab121725f710ee317d8e628ed428a4d",
+   "source": "dobbelaere",
+   "tableValue": "19"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_10_31_7.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 10,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "7",
+   "sha256": "0x277c6d1a2b9619707490842993a81305e8e76cdb00ac0c7002f12959b650a3d7",
+   "source": "dobbelaere",
+   "tableValue": "7"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_10_29_8.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 10,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "29",
+   "sha256": "0xd5cb97c185325215a0b2a7ba1fb5147a52aae9d671003d92377822b804a18067",
+   "source": "dobbelaere",
+   "tableValue": "29"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_11_35_8.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 11,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "8",
+   "sha256": "0x4a6bd8393ceb7959363b18643e32b1f58edacb294749de27dd3bad0fde7d60ef",
+   "source": "dobbelaere",
+   "tableValue": "8"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_11_35_8.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 11,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "35",
+   "sha256": "0x4a6bd8393ceb7959363b18643e32b1f58edacb294749de27dd3bad0fde7d60ef",
+   "source": "dobbelaere",
+   "tableValue": "35"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_12_40_8.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 12,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "8",
+   "sha256": "0xe5cd40f28b8a0411878c5ef89762a4f304f28fea825429c23ba3be621dd09d4b",
+   "source": "dobbelaere",
+   "tableValue": "8"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_12_39_9.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 12,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "39",
+   "sha256": "0x1d44aaa0602555de9eeacfa954973e19a9aaff51da59906675c0fd6d22d1fb01",
+   "source": "dobbelaere",
+   "tableValue": "39"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_13_46_9.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 13,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "9",
+   "sha256": "0x19869e620a5f78d6e273d3d70a52342c4bd4d029ce79dfd7d7b6a629bf389dd6",
+   "source": "dobbelaere",
+   "tableValue": "9"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_13_45_10.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 13,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "45",
+   "sha256": "0x9528395d117947a5c046c4b7c5b95f18e4080a8cc46c44ac9cb610b51593ee2a",
+   "source": "dobbelaere",
+   "tableValue": "45"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_13_48_10.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 13,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "48",
+   "sha256": "0xfb0e21cb5f9610aa25952843fb5621a0611b68518108c3a23975ed11c93e558b",
+   "source": "dobbelaere",
+   "tableValue": "48"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_14_52_9.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 14,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "9",
+   "sha256": "0x79689b5412e4974c3cc691d7f8ac473a7951e057b0c881b72ce547e6d3cc542b",
+   "source": "dobbelaere",
+   "tableValue": "9"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_14_51_10.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 14,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "51",
+   "sha256": "0x9bf7f749b61ae03c035f6e56105c4deb67b317a70458bbfdc647833b9d1ae8ee",
+   "source": "dobbelaere",
+   "tableValue": "51"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_15_57_9.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 15,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "9",
+   "sha256": "0x50f6e19b55664c5f8708a4965f748171f0201798d35a9dd325fec2dfa6752d90",
+   "source": "dobbelaere",
+   "tableValue": "9"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_15_56_10.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 15,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "56",
+   "sha256": "0x8ede6bf555f9a8189aa81f1f93e82298f3a374184ba5c99f4f04df6796fdf580",
+   "source": "dobbelaere",
+   "tableValue": "56"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_16_61_9.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 16,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "9",
+   "sha256": "0x7e2d02972149d437643a344dcd1d210e1b3546ae824cf2c5492af23580fe523b",
+   "source": "dobbelaere",
+   "tableValue": "9"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_16_60_10.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 16,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "60",
+   "sha256": "0xe2040fb7ebeee316538620e2d57dcb002430ead3126f51bf3af083423d93bb40",
+   "source": "dobbelaere",
+   "tableValue": "60"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_17_74_10.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 17,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "10",
+   "sha256": "0x819f360a488e982f388e690b3513ed05799fc969084a3139b86267d0dce9a612",
+   "source": "dobbelaere",
+   "tableValue": "10"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_17_71_12.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 17,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "71",
+   "sha256": "0x9721b0d11886a3dd4283de6f1015cdbf8d98d538467de09b5549f63480a17ddf",
+   "source": "dobbelaere",
+   "tableValue": "71"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_18_78_11.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 18,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "11",
+   "sha256": "0x1ec80c8e877d3015c159adf7ecc9cfa4fce0578ee143d9806b3b7994ca038417",
+   "source": "dobbelaere",
+   "tableValue": "11"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_18_77_12.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 18,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "77",
+   "sha256": "0x1f3099c8f7f884931b9001d9772348c163ae1111a690b55cd88e3d376f701915",
+   "source": "dobbelaere",
+   "tableValue": "77"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_19_87_11.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 19,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "11",
+   "sha256": "0x28e0161a7548ea6a742631ca85cc741efe606008a9d26e2ecddb71ae7aa76583",
+   "source": "dobbelaere",
+   "tableValue": "11"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_19_85_12.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 19,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "85",
+   "sha256": "0x043189d583b48ffce016d2fc9c6e9a3474583fcf78a6c08be80905a07ffd5ba1",
+   "source": "dobbelaere",
+   "tableValue": "85"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_2_1_1.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 2,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "1",
+   "sha256": "0x127e9120a8ff4234945149cd1dcb7388b9a73d10759c2db67afa31a5515c5078",
+   "source": "dobbelaere",
+   "tableValue": "1"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_2_1_1.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 2,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "1",
+   "sha256": "0x127e9120a8ff4234945149cd1dcb7388b9a73d10759c2db67afa31a5515c5078",
+   "source": "dobbelaere",
+   "tableValue": "1"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_20_93_11.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 20,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "11",
+   "sha256": "0x9789ccaaae390551ce8815c77d3a2686e316b2ea0b7f88f3284cbfb22a87c3e0",
+   "source": "dobbelaere",
+   "tableValue": "11"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_20_91_12.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 20,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "91",
+   "sha256": "0x232fb98edcb62cdb29ba68b2d16886781232b231fc47f26fd766df143714514c",
+   "source": "dobbelaere",
+   "tableValue": "91"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_21_100_12.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 21,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "12",
+   "sha256": "0x30838aa3f9cf04c83a7bc4108422850fa57fe0ba0df5a6213610530f7e30767d",
+   "source": "dobbelaere",
+   "tableValue": "12"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_21_99_15.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 21,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "99",
+   "sha256": "0x51d0d837cd3e1f7c8aa7d33a0a0aa4ccad366f464230c922547e569f5a75c8db",
+   "source": "dobbelaere",
+   "tableValue": "99"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_22_107_12.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 22,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "12",
+   "sha256": "0x402b8f4cd5e5f104f70a9029649ed2cb68f90bf8b76f5257b914260e35236422",
+   "source": "dobbelaere",
+   "tableValue": "12"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_22_106_13.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 22,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "106",
+   "sha256": "0x4c2baaa7904ac1a6b6e1627bc2169dd649dd5acf7b5a7693c9e5271bf937e868",
+   "source": "dobbelaere",
+   "tableValue": "106"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_23_116_12.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 23,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "12",
+   "sha256": "0xc0ba0c83621f947b391410fb33bcf117fa90dc60368c4085bc7e699e46670221",
+   "source": "dobbelaere",
+   "tableValue": "12"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_23_114_14.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 23,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "114",
+   "sha256": "0x7ee1c937e8f3d22aea5d67105bbe419524b40a176ae248c2797cdee05569b8f2",
+   "source": "dobbelaere",
+   "tableValue": "114"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_24_122_12.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 24,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "12",
+   "sha256": "0x7fd7ac544b92168baeb6e40d7289cb40f58eb0b63933a89e0e0a430a62c6e39c",
+   "source": "dobbelaere",
+   "tableValue": "12"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_24_120_13.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 24,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "120",
+   "sha256": "0xab6988270024fec06cc96606d8d30b129803d224ab30e1e11d3e1c784236740a",
+   "source": "dobbelaere",
+   "tableValue": "120"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_25_131_13.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 25,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "13",
+   "sha256": "0x9c2826b13c7001a2f3f9928b0a001ddf7de459f18b3e5771620dd7fd80894d02",
+   "source": "dobbelaere",
+   "tableValue": "13"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_25_130_15.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 25,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "130",
+   "sha256": "0xf5dad4605ae80cb7ea8a87ad7bd0fc76d5228eda9de84acf1890f2bd2f36432f",
+   "source": "dobbelaere",
+   "tableValue": "130"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_26_141_13.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 26,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "13",
+   "sha256": "0x57ca092b0e2954ee25671b5d3b30cde3a9843488e9611a68a6dca5f108e00137",
+   "source": "dobbelaere",
+   "tableValue": "13"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_26_138_15.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 26,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "138",
+   "sha256": "0xf91f8e9e7642686d0d3d3586b60d941bb6fb875a7246be3b84569234f8fb41be",
+   "source": "dobbelaere",
+   "tableValue": "138"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_27_152_13.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 27,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "13",
+   "sha256": "0xe44de6fa0cd760fb77fcc66372d17f898914b61ef0de82b15f8776451a38a919",
+   "source": "dobbelaere",
+   "tableValue": "13"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_27_147_16.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 27,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "147",
+   "sha256": "0x3c8a1956f10f0ff04dfa869cb3b2e7faf6621de718a348ebca298f9ad604f080",
+   "source": "dobbelaere",
+   "tableValue": "147"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_28_159_13.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 28,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "13",
+   "sha256": "0x284cc411c98ca9ccf98e84d5b02926c3c618e617a6ef865cca538f2b461ba348",
+   "source": "dobbelaere",
+   "tableValue": "13"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_28_155_14.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 28,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "155",
+   "sha256": "0x26437f90dd5efd0d3ca735624cd26446320f88dc105b335799f331b828bbd765",
+   "source": "dobbelaere",
+   "tableValue": "155"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_29_166_14.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 29,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "14",
+   "sha256": "0x8306401b688e248703db617532e6d48ca40fd30682d094bf70eb0ca7fc19738a",
+   "source": "dobbelaere",
+   "tableValue": "14"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_29_164_15.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 29,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "164",
+   "sha256": "0x6ec8001fb0f801134d30094da32bbab75fe585552a69bc9a349b2ecfdf88b956",
+   "source": "dobbelaere",
+   "tableValue": "164"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_3_3_3.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 3,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "3",
+   "sha256": "0xce50ae96181430cbfa0e267e73905fe6cffdacc9766982151d9023fa82ec735e",
+   "source": "dobbelaere",
+   "tableValue": "3"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_3_3_3.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 3,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "3",
+   "sha256": "0xce50ae96181430cbfa0e267e73905fe6cffdacc9766982151d9023fa82ec735e",
+   "source": "dobbelaere",
+   "tableValue": "3"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_30_172_14.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 30,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "14",
+   "sha256": "0x6c7af8bde17585e4863a697c198658ca23392455036ff68ed34e5f1845a468ff",
+   "source": "dobbelaere",
+   "tableValue": "14"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_30_172_14.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 30,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "172",
+   "sha256": "0x6c7af8bde17585e4863a697c198658ca23392455036ff68ed34e5f1845a468ff",
+   "source": "dobbelaere",
+   "tableValue": "172"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_31_180_14.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 31,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "14",
+   "sha256": "0x2215fcf239f2f8a2043b5cf8e4ac9ca1583dac8b3b4ac2e6c4bdd8cc17164594",
+   "source": "dobbelaere",
+   "tableValue": "14"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_31_180_14.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 31,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "180",
+   "sha256": "0x2215fcf239f2f8a2043b5cf8e4ac9ca1583dac8b3b4ac2e6c4bdd8cc17164594",
+   "source": "dobbelaere",
+   "tableValue": "180"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_32_185_14.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 32,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "14",
+   "sha256": "0xc71f24779b4bf43f15bbd2ae9a44cbe2422a29c31754862ec9364a410c950762",
+   "source": "dobbelaere",
+   "tableValue": "14"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_32_185_14.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 32,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "185",
+   "sha256": "0xc71f24779b4bf43f15bbd2ae9a44cbe2422a29c31754862ec9364a410c950762",
+   "source": "dobbelaere",
+   "tableValue": "185"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_4_5_3.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 4,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "3",
+   "sha256": "0xd4f8ded2f396b5a6c4060ddde44f20d37f8312d272736a8c910894b6c1ac1ade",
+   "source": "dobbelaere",
+   "tableValue": "3"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_4_5_3.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 4,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "5",
+   "sha256": "0xd4f8ded2f396b5a6c4060ddde44f20d37f8312d272736a8c910894b6c1ac1ade",
+   "source": "dobbelaere",
+   "tableValue": "5"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_5_9_5.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 5,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "5",
+   "sha256": "0x2c5cf041ab90c3d37d9e0ba9f6d4c5f2fec504a63879f0d62f221a2e31f30548",
+   "source": "dobbelaere",
+   "tableValue": "5"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_5_9_5.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 5,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "9",
+   "sha256": "0x2c5cf041ab90c3d37d9e0ba9f6d4c5f2fec504a63879f0d62f221a2e31f30548",
+   "source": "dobbelaere",
+   "tableValue": "9"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_6_12_5.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 6,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "5",
+   "sha256": "0x0d49034cf3d0dbeb275f5228926dae82e2131c6e39f82e2cf7700db1d08b010e",
+   "source": "dobbelaere",
+   "tableValue": "5"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_6_12_5.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 6,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "12",
+   "sha256": "0x0d49034cf3d0dbeb275f5228926dae82e2131c6e39f82e2cf7700db1d08b010e",
+   "source": "dobbelaere",
+   "tableValue": "12"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_7_16_6.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 7,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "6",
+   "sha256": "0x46a23c2a6665de1498336a171ae3548442302cc762fdb753c54e5645e7adec1c",
+   "source": "dobbelaere",
+   "tableValue": "6"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_7_16_6.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 7,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "16",
+   "sha256": "0x46a23c2a6665de1498336a171ae3548442302cc762fdb753c54e5645e7adec1c",
+   "source": "dobbelaere",
+   "tableValue": "16"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_8_19_6.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 8,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "6",
+   "sha256": "0xfb6a3168e4173f79bc9df14ca18d39b91c81ed4af178b235bd6eee3037d3a7cc",
+   "source": "dobbelaere",
+   "tableValue": "6"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_8_19_6.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 8,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "19",
+   "sha256": "0xfb6a3168e4173f79bc9df14ca18d39b91c81ed4af178b235bd6eee3037d3a7cc",
+   "source": "dobbelaere",
+   "tableValue": "19"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_9_25_7.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 9,
+    "measure": "depth"
+   },
+   "result": "reproduced",
+   "score": "7",
+   "sha256": "0x71628986cf841b183e4e0f6c31bce17c6990ce383ab9a48b382940359500b16f",
+   "source": "dobbelaere",
+   "tableValue": "7"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x77ddbd6459e979208454d889c8a2d7a94fe0f81ddef9e6af5c8837a803fbfbd7",
+   "objectUrl": "https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_9_25_7.json",
+   "params": {
+    "goal": "sort",
+    "inputs": 9,
+    "measure": "size"
+   },
+   "result": "reproduced",
+   "score": "25",
+   "sha256": "0x71628986cf841b183e4e0f6c31bce17c6990ce383ab9a48b382940359500b16f",
+   "source": "dobbelaere",
+   "tableValue": "25"
+  }
+ ],
+ "schema": "papex-finder-evidence/v1"
+}

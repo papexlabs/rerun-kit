@@ -1,0 +1,113 @@
+{
+  "schema": "papex-task/v1",
+  "slug": "isosceles-free-grid-100",
+  "kind": "record",
+  "title": "Isosceles-free points in a 100 × 100 grid",
+  "shortTitle": "Isosceles-free grid, 100 × 100",
+  "description": "Find more points in the 100 × 100 grid than the best known set, with no isosceles triangle among them (flat ones included). A short Python program checks any set in under a second.",
+  "objective": "Find a set of points in the 100 x 100 grid such that no three distinct points a, b, c have |a - b| = |b - c| (no isosceles triangle, including the flat case where b is the midpoint of a and c). The score is the number of points; a larger set gives a better lower bound on C(100).",
+  "direction": "max",
+  "scorePlaces": 0,
+  "scoreLabel": "points",
+  "bestKnown": {
+    "value": "164",
+    "by": "AlphaEvolve, run and reported by Bogdan Georgiev, Javier Gómez-Serrano, Terence Tao, Adam Zsolt Wagner",
+    "year": 2025,
+    "sourceName": "arXiv 2511.02864",
+    "sourceUrl": "https://arxiv.org/abs/2511.02864v3",
+    "asOf": "2026-11-20",
+    "objectUrl": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/blob/8f447457957deac61e28bf1676746f0753b3b2f8/experiments/subsets_of_the_grid_with_no_isosceles_triangles/subsets_of_the_grid_with_no_isosceles_triangles.ipynb",
+    "quote": "We also ran \\AlphaEvolve on the $100\\times 100$ grid, where it improved the previous best construction of 160 points~\\cite{charton2024patternboost} to 164, but we believe this is still not optimal.",
+    "note": "arXiv 2511.02864v3 TeX source, appendix.tex line 1950, section 'Subsets of the grid with no isosceles triangles'. The 164 points are published in the problem 59 notebook (best_known.json)."
+  },
+  "objectFormat": "A JSON object {\"n\": 100, \"points\": [[x, y], ...]} where every x and y is an integer from 0 to 99 (the grid {1..100}^2 shifted by -1, as the source publishes its construction; a shift changes no distance). Points must be distinct. No other keys: an accepted object is shown publicly. At most 20,000 bytes as the result file carries it.",
+  "objectKeys": [
+    "n",
+    "points"
+  ],
+  "shows": "That this one set of points has no isosceles triangle, flat ones included, and has the stated number of points, so C(100) is at least that number. With more points than the best known set, it is better than the value in the named source as of the date shown.",
+  "notCovered": "A pass shows only that this one finite set has no isosceles triangle and has the stated size, so C(100) is at least that size. It says nothing about the exact value of C(100), about other grid sizes, or about the asymptotic bounds; it does not show the set is optimal, and it does not show who found it or how.",
+  "alsoBelongsAt": "The AlphaEvolve repository of problems, problem 59 (its README says: \"Comments are most welcome - please feel free to contact the repository owners or send a pull request.\")",
+  "effort": "Hours of search at least, and it may not succeed: the authors report that AlphaEvolve, given hints, needed a few days for the 64 × 64 grid.",
+  "limits": {
+    "maxObjectBytes": 20000,
+    "checkerSeconds": 60
+  },
+  "resultLine": "Result: an accepted run's set passed this task's checker on Papex's runner and had more points than the best known set at that time, so C(100) is at least its size. It says nothing about the largest possible set, and it is not peer review.",
+  "requirements": "Python 3.9 or later and git. An AI app with a terminal and the Papex connection, or your own code, to search. No special hardware.",
+  "checkedHow": "tasks/isosceles-free-grid-100/checker.py (Python, standard library only) tests that the points are distinct and inside the grid, then, for every point, that its squared distances to all other points are distinct, in exact integers. The kit runs it on your computer; Papex's runner runs the same checker again on the object in the result file and compares the number of points with the best known value on Papex at that moment.",
+  "expectedSeconds": 3600,
+  "problem": {
+    "slug": "grid-subsets-without-isosceles-triangles",
+    "create": {
+      "slug": "grid-subsets-without-isosceles-triangles",
+      "title": "Subsets of the grid with no isosceles triangles",
+      "question": "How many points can be chosen from the n × n grid so that no three of them form an isosceles triangle, flat ones included?",
+      "summary": "Problem 59 of the AlphaEvolve repository of problems (Georgiev, Gómez-Serrano, Tao and Wagner, 2025). C(n) is the size of the largest subset of the n × n grid in which no three distinct points a, b, c have |a − b| = |b − c|. The source asks for upper and lower bounds on C(n) that are as strong as possible.",
+      "field": "mathematics",
+      "sinceYear": null,
+      "prize": null,
+      "initialStatus": {
+        "status": "OPEN",
+        "source": {
+          "name": "AlphaEvolve repository of problems, problem 59",
+          "list": "AlphaEvolve repository of problems",
+          "url": "https://google-deepmind.github.io/alphaevolve_repository_of_problems/problems/59.html"
+        },
+        "sourceDate": null,
+        "checkedOn": "2026-11-20"
+      }
+    }
+  },
+  "sources": [
+    {
+      "fact": "The problem as its source states it",
+      "url": "https://google-deepmind.github.io/alphaevolve_repository_of_problems/problems/59.html",
+      "quote": "For $n$ a natural number, let $C(n)$ denote the size of the largest subset of $[n]^2 = \\{1,\\dots,n\\}^2$ that does not contain a (possibly flat) isosceles triangle. In other words, $$C(n) \\coloneqq \\max_{S\\subset [n]^2}\\{|S|: a,b,c\\in S \\text{ distinct} \\implies \\|a-b\\| \\neq \\|b-c\\|\\}.$$ Obtain upper and lower bounds for $C(n)$ that are as strong as possible.",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "The best known value, 164 points, and the previous 160",
+      "url": "https://arxiv.org/e-print/2511.02864v3",
+      "quote": "We also ran \\AlphaEvolve on the $100\\times 100$ grid, where it improved the previous best construction of 160 points~\\cite{charton2024patternboost} to 164, but we believe this is still not optimal.",
+      "fetchedOn": "2026-11-20",
+      "note": "appendix.tex line 1950"
+    },
+    {
+      "fact": "The published 164-point set, copied into best_known.json",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/blob/8f447457957deac61e28bf1676746f0753b3b2f8/experiments/subsets_of_the_grid_with_no_isosceles_triangles/subsets_of_the_grid_with_no_isosceles_triangles.ipynb",
+      "quote": "sol_100",
+      "fetchedOn": "2026-11-20",
+      "note": "the list sol_100 of cell 1, parsed from the notebook's JSON with Python's ast (literal values only, nothing run); commit 8f447457957deac61e28bf1676746f0753b3b2f8; Repository README: software Apache-2.0; all other materials CC-BY 4.0. Copyright 2025 Google LLC. Attribution: Georgiev, Gomez-Serrano, Tao, Wagner, 'Mathematical exploration and discovery at scale', arXiv:2511.02864."
+    },
+    {
+      "fact": "Effort: a few days of AlphaEvolve, with hints, for the 64 × 64 grid",
+      "url": "https://arxiv.org/e-print/2511.02864v3",
+      "quote": "we gave \\AlphaEvolve the advice that the optimal constructions probably are close to having a four-fold symmetry, ... and that the optimal construction probably has most points near the edge of the grid. Using this advice, after a few days \\AlphaEvolve found the elusive configuration of 112 points in the $64\\times 64$ grid!",
+      "fetchedOn": "2026-11-20",
+      "note": "appendix.tex line 1950"
+    },
+    {
+      "fact": "Authors and title of the source",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems",
+      "quote": "Bogdan Georgiev, Javier Gómez-Serrano, Terence Tao, Adam Zsolt Wagner -- Mathematical exploration and discovery at scale, 2025",
+      "fetchedOn": "2026-11-20",
+      "note": "repository README"
+    },
+    {
+      "fact": "Licence of the repository's materials",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems",
+      "quote": "All software is licensed under the Apache License, Version 2.0 ... All other materials are licensed under the Creative Commons Attribution 4.0 International License (CC-BY).",
+      "fetchedOn": "2026-11-20",
+      "note": "repository README"
+    },
+    {
+      "fact": "Where a result also belongs",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems",
+      "quote": "Comments are most welcome - please feel free to contact the repository owners or send a pull request.",
+      "fetchedOn": "2026-11-20",
+      "note": "repository README"
+    }
+  ],
+  "checkerSha256": "0xd51944682568731c3f061ed4ef0266213585adffa66dcb2a1732398f087f96fd"
+}

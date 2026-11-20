@@ -1,0 +1,291 @@
+{
+ "family": "constant-weight-code",
+ "records": [
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d10/a24.10.8.39",
+   "params": {
+    "d": 10,
+    "n": 24,
+    "w": 8
+   },
+   "result": "reproduced",
+   "score": "39",
+   "sha256": "0x25d8b5c0d20f5a64055e967759eeb601da965a30fdf781f21584e49ef95c8e81",
+   "source": "brouwer",
+   "tableValue": "39"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d10/a25.10.9.75",
+   "params": {
+    "d": 10,
+    "n": 25,
+    "w": 9
+   },
+   "result": "reproduced",
+   "score": "75",
+   "sha256": "0x9842a37ea160b3e2f9ef3f45a5952e038a7a54ffb0434b65a6ab752037280a8c",
+   "source": "brouwer",
+   "tableValue": "75"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d10/a26.10.8.68",
+   "params": {
+    "d": 10,
+    "n": 26,
+    "w": 8
+   },
+   "result": "reproduced",
+   "score": "68",
+   "sha256": "0xc13c609e604d191bb678b88a8e4551be5032e0606d681ab3abf538c14b13c0de",
+   "source": "brouwer",
+   "tableValue": "68"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d10/a27.10.8.76",
+   "params": {
+    "d": 10,
+    "n": 27,
+    "w": 8
+   },
+   "result": "reproduced",
+   "score": "76",
+   "sha256": "0x508482ff00d813685e09bf29fbe4920b9a41f3e40dd4739c3b2d412fe76ac4de",
+   "source": "brouwer",
+   "tableValue": "76"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d10/a28.10.7.40",
+   "params": {
+    "d": 10,
+    "n": 28,
+    "w": 7
+   },
+   "result": "reproduced",
+   "score": "40",
+   "sha256": "0xecb9f5f29fa841c642258623e614d9627d1cdee18f962dc372e5be879b1dc8bc",
+   "source": "brouwer",
+   "tableValue": "40"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d10/a28.10.8.85",
+   "params": {
+    "d": 10,
+    "n": 28,
+    "w": 8
+   },
+   "result": "reproduced",
+   "score": "85",
+   "sha256": "0x8590e916748ac3c4c56bc1f1e609bc276fd23e114648d56a6d5e6f2801da7bee",
+   "source": "brouwer",
+   "tableValue": "85"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d10/a29.10.8.96",
+   "params": {
+    "d": 10,
+    "n": 29,
+    "w": 8
+   },
+   "result": "reproduced",
+   "score": "96",
+   "sha256": "0x85bf1529eb9ccc3332003b842eed9138e3c35a42a0be6b6bd85100189df017c5",
+   "source": "brouwer",
+   "tableValue": "96"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d12/a27.12.13.87",
+   "params": {
+    "d": 12,
+    "n": 27,
+    "w": 13
+   },
+   "result": "reproduced",
+   "score": "87",
+   "sha256": "0xbdc7985ee4908289248aebaac376dc986299f86d14d0db291068b008bba11b1b",
+   "source": "brouwer",
+   "tableValue": "87"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d12/a29.12.10.70",
+   "params": {
+    "d": 12,
+    "n": 29,
+    "w": 10
+   },
+   "result": "reproduced",
+   "score": "70",
+   "sha256": "0x6fc529eb957808828fa8e1e9051508e9be58c9eb1717f745e8668ab02ed7a85f",
+   "source": "brouwer",
+   "tableValue": "70"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d12/a29.12.12.120",
+   "params": {
+    "d": 12,
+    "n": 29,
+    "w": 12
+   },
+   "result": "reproduced",
+   "score": "120",
+   "sha256": "0xb32d95f69a85f76c27b6a0f7a2d087b6af7ee4643a33f38188754ccf2207d656",
+   "source": "brouwer",
+   "tableValue": "120"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d12/a30.12.10.101",
+   "params": {
+    "d": 12,
+    "n": 30,
+    "w": 10
+   },
+   "result": "reproduced",
+   "score": "101",
+   "sha256": "0x8fdf7441de641325031095b527e7f87de35fb1bae90b2681083ed273ac2ebc2e",
+   "source": "brouwer",
+   "tableValue": "101"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d12/a31.12.10.108H",
+   "params": {
+    "d": 12,
+    "n": 31,
+    "w": 10
+   },
+   "result": "reproduced",
+   "score": "108",
+   "sha256": "0xeb32bf592813c0dc3520adc0f380c82c95f4ef7297cf11b81d22a9dd9004c1fa",
+   "source": "brouwer",
+   "tableValue": "108"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d12/a32.12.10.123H",
+   "params": {
+    "d": 12,
+    "n": 32,
+    "w": 10
+   },
+   "result": "reproduced",
+   "score": "123",
+   "sha256": "0xf618fd57b9b9087972a423c63fd71b5878b11412e70242bb580d04505105a056",
+   "source": "brouwer",
+   "tableValue": "123"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d14/a29.14.13.38",
+   "params": {
+    "d": 14,
+    "n": 29,
+    "w": 13
+   },
+   "result": "reproduced",
+   "score": "38",
+   "sha256": "0x1c8649c63c29225e0185948c391de65f738e909100e8e3abf9cfbfcfa9bbeaf6",
+   "source": "brouwer",
+   "tableValue": "38"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d14/a30.14.13.46",
+   "params": {
+    "d": 14,
+    "n": 30,
+    "w": 13
+   },
+   "result": "reproduced",
+   "score": "46",
+   "sha256": "0x4c3d5ad7ffbe118cd957b595ad23a6066d8fceec94adcfeed2164178162cd96c",
+   "source": "brouwer",
+   "tableValue": "46"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d4/a15.4.5.243",
+   "params": {
+    "d": 4,
+    "n": 15,
+    "w": 5
+   },
+   "result": "reproduced",
+   "score": "243",
+   "sha256": "0xf1f81b670a119c95a8c8be7ce2b142244575330acc006794510efa03bcb9d784",
+   "source": "brouwer",
+   "tableValue": "243"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d4/h8",
+   "params": {
+    "d": 4,
+    "n": 8,
+    "w": 4
+   },
+   "result": "reproduced",
+   "score": "14",
+   "sha256": "0x99ab98973ae799a6679d22cc82c169ed72635f705814fa2080634197dc64ade8",
+   "source": "brouwer",
+   "tableValue": "14"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d6/a21.6.5.110H",
+   "params": {
+    "d": 6,
+    "n": 21,
+    "w": 5
+   },
+   "result": "reproduced",
+   "score": "110",
+   "sha256": "0x7b4f93d9447a06e52994f427883ab3f7273c5a3dd6fd2846192580acda051930",
+   "source": "brouwer",
+   "tableValue": "110"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d8/a28.8.6.132H",
+   "params": {
+    "d": 8,
+    "n": 28,
+    "w": 6
+   },
+   "result": "reproduced",
+   "score": "132",
+   "sha256": "0x02a5a73cd41fb25fe5c7f5cb55ab07d1083a8ac774db2a7952718dd5294ff8e0",
+   "source": "brouwer",
+   "tableValue": "132"
+  }
+ ],
+ "schema": "papex-finder-evidence/v1"
+}

@@ -1,0 +1,104 @@
+{
+ "family": "sum-free-colouring",
+ "records": [
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x0142755348a81d7cb99520d967a9b935ddbebdb005d1970ff5d7b666fb580806",
+   "objectUrl": "https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-5-lower-207.yml",
+   "params": {
+    "colours": 5,
+    "weak": true
+   },
+   "result": "reproduced",
+   "score": "207",
+   "sha256": "0x73a0bc3757385f44dc54850f365bb55c30dd6c76fe5e1f973f8cba1c9b31dcf7",
+   "source": "leaps",
+   "tableValue": "207"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x0142755348a81d7cb99520d967a9b935ddbebdb005d1970ff5d7b666fb580806",
+   "objectUrl": "https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-6-lower-650.yml",
+   "params": {
+    "colours": 6,
+    "weak": true
+   },
+   "result": "reproduced",
+   "score": "650",
+   "sha256": "0xe0f83e901a883e033761c57150f139d23e97b5793a69981da4df08d178d7fbcc",
+   "source": "leaps",
+   "tableValue": "650"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x0142755348a81d7cb99520d967a9b935ddbebdb005d1970ff5d7b666fb580806",
+   "objectUrl": "https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/schur/schur-7-lower-1696.yml",
+   "params": {
+    "colours": 7,
+    "weak": false
+   },
+   "result": "reproduced",
+   "score": "1696",
+   "sha256": "0x6759681d47fd149a7a8fec1d993436df88cbc72851dee36c72367ea0e292fc5b",
+   "source": "leaps",
+   "tableValue": "1696"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x0142755348a81d7cb99520d967a9b935ddbebdb005d1970ff5d7b666fb580806",
+   "objectUrl": "https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-7-lower-2154.yml",
+   "params": {
+    "colours": 7,
+    "weak": true
+   },
+   "result": "reproduced",
+   "score": "2154",
+   "sha256": "0xd0c6191b05c829fd23d74c63c86c405066a15aa53cfb11394d4480740fd48f0e",
+   "source": "leaps",
+   "tableValue": "2154"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x0142755348a81d7cb99520d967a9b935ddbebdb005d1970ff5d7b666fb580806",
+   "objectUrl": "https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/schur/schur-8-lower-5382.yml",
+   "params": {
+    "colours": 8,
+    "weak": false
+   },
+   "result": "reproduced",
+   "score": "5382",
+   "sha256": "0xd923c3651999489c588a5d8450a4fdc31d0e2ae106c89d7286928bf6e0ac627d",
+   "source": "leaps",
+   "tableValue": "5382"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x0142755348a81d7cb99520d967a9b935ddbebdb005d1970ff5d7b666fb580806",
+   "objectUrl": "https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-8-lower-7002.yml",
+   "params": {
+    "colours": 8,
+    "weak": true
+   },
+   "result": "reproduced",
+   "score": "7002",
+   "sha256": "0x411dbce839f53899560dae4657da47fc1c70e460917a44eb3c2b696feeb99938",
+   "source": "leaps",
+   "tableValue": "7002"
+  },
+  {
+   "checkedOn": "2026-11-19",
+   "checkerSha256": "0x0142755348a81d7cb99520d967a9b935ddbebdb005d1970ff5d7b666fb580806",
+   "objectUrl": "https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-9-lower-22620.yml",
+   "params": {
+    "colours": 9,
+    "weak": true
+   },
+   "result": "reproduced",
+   "score": "22620",
+   "sha256": "0x4e42907d3ddc2c7e1ef1d5c3bb7408acc7c753b3ba438563543730aacef9bfca",
+   "source": "leaps",
+   "tableValue": "22620"
+  }
+ ],
+ "schema": "papex-finder-evidence/v1"
+}

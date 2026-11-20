@@ -1,0 +1,143 @@
+{
+  "checkerSeconds": 30,
+  "cases": [
+    {
+      "object": "good-schur-3-13.json",
+      "params": "params-3-strong.json",
+      "label": "S(3) >= 13 (the classic construction)",
+      "line": "{\"valid\": true, \"score\": 13, \"reason\": \"every one of the 3 colours of 1..13 is sum-free (a = b counts), so S(3) >= 13; score = N = 13\"}"
+    },
+    {
+      "object": "good-schur-4-40.json",
+      "params": "params-4-strong.json",
+      "label": "S(4) >= 40 (the same construction)",
+      "line": "{\"valid\": true, \"score\": 40, \"reason\": \"every one of the 4 colours of 1..40 is sum-free (a = b counts), so S(4) >= 40; score = N = 40\"}"
+    },
+    {
+      "object": "good-schur-5-121.json",
+      "params": "params-5-strong.json",
+      "label": "S(5) >= 121 (the same construction)",
+      "line": "{\"valid\": true, \"score\": 121, \"reason\": \"every one of the 5 colours of 1..121 is sum-free (a = b counts), so S(5) >= 121; score = N = 121\"}"
+    },
+    {
+      "object": "good-schur-3-13.json",
+      "params": "params-3-weak.json",
+      "label": "a sum-free colouring is also weakly sum-free",
+      "line": "{\"valid\": true, \"score\": 13, \"reason\": \"every one of the 3 colours of 1..13 is weakly sum-free (only a != b counts), so WS(3) >= 13; score = N = 13\"}"
+    },
+    {
+      "object": "good-weak-2-8.json",
+      "params": "params-2-weak.json",
+      "label": "WS(2) >= 8: {1,2,4,8}, {3,5,6,7}",
+      "line": "{\"valid\": true, \"score\": 8, \"reason\": \"every one of the 2 colours of 1..8 is weakly sum-free (only a != b counts), so WS(2) >= 8; score = N = 8\"}"
+    },
+    {
+      "object": "good-weak-2-8.json",
+      "params": "params-2-strong.json",
+      "label": "violated in the strong sense: 4 + 4 = 8 in one colour",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"colour 0 holds 1, 1 and 2 = 1 + 1\"}"
+    },
+    {
+      "object": "good-schur-6-leaps.json",
+      "params": "params-6-strong.json",
+      "label": "schur-6 witness from Leaps in Bounds, N = 538 (MIT)",
+      "line": "{\"valid\": true, \"score\": 538, \"reason\": \"every one of the 6 colours of 1..538 is sum-free (a = b counts), so S(6) >= 538; score = N = 538\"}"
+    },
+    {
+      "object": "good-weak-schur-6-leaps.json",
+      "params": "params-6-weak.json",
+      "label": "weak-schur-6 witness from Leaps in Bounds, N = 650 (MIT)",
+      "line": "{\"valid\": true, \"score\": 650, \"reason\": \"every one of the 6 colours of 1..650 is weakly sum-free (only a != b counts), so WS(6) >= 650; score = N = 650\"}"
+    },
+    {
+      "object": "bad-sum-in-colour.json",
+      "params": "params-3-strong.json",
+      "label": "violated: 1, 4 and 5 = 1 + 4 in one colour",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"colour 0 holds 1, 4 and 5 = 1 + 4\"}"
+    },
+    {
+      "object": "bad-sum-in-colour.json",
+      "params": "params-3-weak.json",
+      "label": "violated in the weak sense too: 1 + 4 = 5 with 1 and 4 different",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"colour 0 holds 1, 4 and 5 = 1 + 4\"}"
+    },
+    {
+      "object": "bad-N-mismatch.json",
+      "params": "params-3-strong.json",
+      "label": "wrong size: N = 14 with 13 colours listed",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"colours must be a list of exactly N entries (the colours of 1, 2, ..., N)\"}"
+    },
+    {
+      "object": "good-schur-4-40.json",
+      "params": "params-3-strong.json",
+      "label": "wrong size: k = 4 against params for 3 colours",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"k must be the whole number 3\"}"
+    },
+    {
+      "object": "bad-colour-range.json",
+      "params": "params-3-strong.json",
+      "label": "out of range: colour 3 with 3 colours",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the colour of 3 is not a whole number from 0 to 2\"}"
+    },
+    {
+      "object": "bad-negative-colour.json",
+      "params": "params-3-strong.json",
+      "label": "out of range: colour -1",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the colour of 2 is not a whole number from 0 to 2\"}"
+    },
+    {
+      "object": "bad-N-zero.json",
+      "params": "params-3-strong.json",
+      "label": "out of range: N = 0",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"N must be a whole number from 1 to 50000 (this checker's limit)\"}"
+    },
+    {
+      "object": "bad-N-over-limit.json",
+      "params": "params-3-strong.json",
+      "label": "over the limit: N = 50001",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"N must be a whole number from 1 to 50000 (this checker's limit)\"}"
+    },
+    {
+      "object": "bad-extra-key.json",
+      "params": "params-3-strong.json",
+      "label": "extra key \"by\"",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the object holds the key \\\"by\\\", which the format does not name (only k, N, colours)\"}"
+    },
+    {
+      "object": "bad-type-string.json",
+      "params": "params-3-strong.json",
+      "label": "wrong type: colours as text",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"colours must be a list of exactly N entries (the colours of 1, 2, ..., N)\"}"
+    },
+    {
+      "object": "bad-type-float.json",
+      "params": "params-3-strong.json",
+      "label": "wrong type: a colour 1.0",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the colour of 3 is not a whole number from 0 to 2\"}"
+    },
+    {
+      "object": "bad-type-bool.json",
+      "params": "params-3-strong.json",
+      "label": "wrong type: a colour true",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the colour of 2 is not a whole number from 0 to 2\"}"
+    },
+    {
+      "object": "good-schur-3-13.json",
+      "params": "params-extra-key.json",
+      "label": "params with an extra key",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"params must be a JSON object with exactly colours and weak\"}"
+    },
+    {
+      "object": "good-schur-3-13.json",
+      "params": "params-weak-not-bool.json",
+      "label": "params: weak given as 0",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"params.weak must be true or false\"}"
+    },
+    {
+      "object": "good-schur-3-13.json",
+      "params": "params-over-limit.json",
+      "label": "params: 17 colours, above the limit",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"params.colours must be a whole number from 1 to 16\"}"
+    }
+  ]
+}

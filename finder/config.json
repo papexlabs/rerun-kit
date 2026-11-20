@@ -1,0 +1,63 @@
+{
+  "schema": "papex-finder-config/v3",
+  "families": {
+    "comparator-network": {
+      "sources": [
+        "dobbelaere"
+      ],
+      "minInputs": {
+        "sort": 2,
+        "median": 10
+      },
+      "minInputsWhy": "The median list states no lower bounds; entries below 10 inputs are skipped by this setting (a reviewer's choice, not a fact from the source).",
+      "objectless": {
+        "allow": false,
+        "tablePrimary": true,
+        "why": "Off by default. B. Dobbelaere's list is the primary record of these networks (every listed network is a file in his repository, so no card lacks an object today)."
+      }
+    },
+    "sum-free-colouring": {
+      "sources": [
+        "leaps"
+      ],
+      "objectless": {
+        "allow": false,
+        "tablePrimary": false,
+        "why": "Off. Leaps in Bounds compiles values from papers; for a value it holds no witness of, the paper is the primary record, not the table."
+      }
+    },
+    "constant-weight-code": {
+      "sources": [
+        "brouwer"
+      ],
+      "objectless": {
+        "allow": false,
+        "tablePrimary": true,
+        "why": "Off by default. A. E. Brouwer's table is the primary record of these bounds (many are first given there); its unlinked entries are constructions it names only by a label. When on, a card also needs: the value at most the table's upper bound, the neighbouring entries in order (families.py, neighbours), and the same value on two runs in a row."
+      }
+    }
+  },
+  "familyOrder": [
+    "comparator-network",
+    "sum-free-colouring",
+    "constant-weight-code"
+  ],
+  "covered": [
+    {
+      "family": "sum-free-colouring",
+      "params": {
+        "colours": 6,
+        "weak": false
+      },
+      "by": "the hand-built task erdos-483-schur-six-colours (the same question and the same 538 colouring)"
+    }
+  ],
+  "hostBudgets": {
+    "bertdobbelaere.github.io": 4,
+    "api.github.com": 4,
+    "raw.githubusercontent.com": 80,
+    "leapsinbounds.org": 4,
+    "aeb.win.tue.nl": 32
+  },
+  "defaultHostBudget": 4
+}

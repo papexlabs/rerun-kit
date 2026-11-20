@@ -7,12 +7,15 @@ run is sent. A scheduled run of runner.py stays as the fallback.
 
 One task, decide. It takes no input and runs what the scheduled run runs, `runner.py --post`, with --api
 from PAPEX_API (default https://api.papex.org) and the token from PAPEX_SHARED_WORK_RUNNER_TOKEN, read by
-runner.py as always. It returns what the runner printed, and the counts:
+runner.py as always (and, for open tasks, PAPEX_SHARED_WORK_PUBLISHER_TOKEN when it is set: the step after an
+accepted run). It returns what the runner printed, and the counts:
 
   {"lines": ["b-7f3a21: ACCEPTED "], "accepted": 1, "rejected": 0, "skipped": 0, "alert": false, "exitCode": 0}
 
-When the runner stops (Papex answers with an error, there is no token, the network fails) the task fails
-with the runner's message, and the token is never in it. The rules are runner.py's; this file adds none.
+When the runner stops (the queue cannot be read, there is no token, --api is not https) the task fails with
+the runner's message, and the token is never in it. A verdict Papex refuses, or one sent run the runner cannot
+decide, does not stop it: an ALERT line names that batch ("alert": true) and the others are decided. The rules
+are runner.py's; this file adds none.
 
 Only this file needs the Render SDK (runner/requirements.txt), and only where the worker is built
 (build_app). decide_queue() needs nothing but Python, so the kit's tests run it without the SDK.
@@ -70,9 +73,10 @@ def summarize(lines, exit_code):
 
 def _failure(reason, printed):
     text = reason if not printed else f"{reason} (printed before it stopped: {' | '.join(printed)})"
-    token = os.environ.get(runner.TOKEN_ENV, "").strip()
-    if token:
-        text = text.replace(token, "[token]")
+    for name in (runner.TOKEN_ENV, runner.PUBLISHER_TOKEN_ENV):
+        token = os.environ.get(name, "").strip()
+        if token:
+            text = text.replace(token, "[token]")
     return "The runner stopped: " + text[:1500]
 
 

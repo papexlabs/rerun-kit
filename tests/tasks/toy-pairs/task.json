@@ -1,0 +1,51 @@
+{
+  "schema": "papex-task/v1",
+  "slug": "toy-pairs",
+  "kind": "record",
+  "title": "Toy: numbers with no pair adding up to 31",
+  "shortTitle": "Toy pairs",
+  "description": "A made-up task for the kit's tests: many distinct numbers from 1 to 30, no two adding up to 31.",
+  "objective": "Find distinct whole numbers from 1 to 30, no two of them adding up to 31. The score is how many.",
+  "direction": "max",
+  "scorePlaces": 0,
+  "scoreLabel": "numbers",
+  "bestKnown": {
+    "value": "10",
+    "by": "the kit's tests",
+    "year": 2026,
+    "sourceName": "the kit's tests",
+    "sourceUrl": "https://github.com/papexlabs/rerun-kit",
+    "asOf": "2026-11-20",
+    "quote": "a made-up task for the kit's tests"
+  },
+  "searched": null,
+  "objectFormat": "A JSON object {\"numbers\": [a, b, ...]}.",
+  "objectKeys": [
+    "numbers"
+  ],
+  "shows": "That the numbers pass the toy checker.",
+  "notCovered": "Anything else: this is a toy.",
+  "alsoBelongsAt": null,
+  "effort": "Seconds.",
+  "limits": {
+    "maxObjectBytes": 2000,
+    "checkerSeconds": 5
+  },
+  "resultLine": "Result: a toy run passed the toy checker.",
+  "checkedHow": "tests/tasks/toy-pairs/checker.py.",
+  "requirements": "Python 3.9 or later. A made-up task for the kit's tests.",
+  "expectedSeconds": 60,
+  "problem": {
+    "slug": "toy-problem",
+    "create": null
+  },
+  "sources": [
+    {
+      "fact": "A made-up task for the kit's tests",
+      "url": "https://github.com/papexlabs/rerun-kit",
+      "quote": "a made-up task for the kit's tests",
+      "fetchedOn": "2026-11-20"
+    }
+  ],
+  "checkerSha256": "0xf6958b47d33cfe30ddfe2493db0f91ecc149cbe958f3a708e10cad3e0fef7608"
+}

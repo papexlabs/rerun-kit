@@ -1,0 +1,157 @@
+{
+ "cases": [
+  {
+   "file": "v1_extend_right_to_v_plus_1.json",
+   "label": "the published run extended to v + 1 (correct factorizations)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "not bad: largest prime 60962411 divides the product only once"
+   }
+  },
+  {
+   "file": "v2_extend_left_to_u_minus_1.json",
+   "label": "the published run extended to u - 1 (correct factorizations)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "not bad: largest prime 496506055921 divides the product only once"
+   }
+  },
+  {
+   "file": "v3_wrong_exponent.json",
+   "label": "7254629 listed once in 52629641927641 = 7254629^2",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "factorization of 52629641927641: product is 7254629, not 52629641927641"
+   }
+  },
+  {
+   "file": "v4_composite_listed_as_prime.json",
+   "label": "52629641927641 listed as a prime",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "factorization of 52629641927641: 52629641927641 is not prime"
+   }
+  },
+  {
+   "file": "v5_missing_member.json",
+   "label": "the factorization of 52629641927630 left out",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "factorizations must have exactly the keys u..v (missing ['52629641927630'], extra [])"
+   }
+  },
+  {
+   "file": "v6_v_moved_without_factorization.json",
+   "label": "v moved one up without a factorization",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "factorizations must have exactly the keys u..v (missing ['52629641927643'], extra [])"
+   }
+  },
+  {
+   "file": "v7_width_15_at_10_15.json",
+   "label": "a run of width 15 starting at 10^15",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "not bad: largest prime 166666666666667 divides the product only once"
+   }
+  },
+  {
+   "file": "v8_u_as_string.json",
+   "label": "u written as a text",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "u and v must be integers"
+   }
+  },
+  {
+   "file": "v9_beyond_proven_range.json",
+   "label": "v at 3e23 or above",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "v must be below 3e23 (range where the primality test is proven)"
+   }
+  },
+  {
+   "file": "v10_primes_not_increasing.json",
+   "label": "the primes of 52629641927627 in decreasing order",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "factorization of 52629641927627: primes must be strictly increasing"
+   }
+  },
+  {
+   "file": "v11_not_json.json",
+   "label": "not JSON",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "cannot read object as JSON: JSONDecodeError"
+   }
+  },
+  {
+   "file": "sub_u_to_v_minus_1_width_14.json",
+   "label": "the published run without its last number (width 14, still bad)",
+   "expect": {
+    "valid": true,
+    "score": "14",
+    "reason": "bad interval: largest prime 7254629 divides the product 2 times; v - u = 14"
+   }
+  },
+  {
+   "file": "v12_extra_key.json",
+   "label": "the published run with a key the format does not name",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "the object must hold exactly the keys u, v and factorizations"
+   }
+  },
+  {
+   "file": "v13_u_as_a_float.json",
+   "label": "u written as a float",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "u and v must be integers"
+   }
+  },
+  {
+   "file": "v14_exponent_is_true.json",
+   "label": "an exponent written true",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "factorization of 52629641927627: each entry must be [p, e] with integers"
+   }
+  },
+  {
+   "file": "v15_exponent_as_a_float.json",
+   "label": "an exponent written 1.0",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "factorization of 52629641927627: each entry must be [p, e] with integers"
+   }
+  },
+  {
+   "file": "v16_prime_as_a_float.json",
+   "label": "a prime written as a float",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "factorization of 52629641927627: each entry must be [p, e] with integers"
+   }
+  }
+ ]
+}

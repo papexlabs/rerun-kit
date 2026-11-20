@@ -1,0 +1,3585 @@
+{
+ "lastSeen": {
+  "comparator-network {\"goal\":\"median\",\"inputs\":10,\"measure\":\"depth\"}|6|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_10_24_6.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":10,\"measure\":\"size\"}|22|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_10_22_8.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":11,\"measure\":\"depth\"}|8|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_11_26_8.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":11,\"measure\":\"size\"}|25|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_11_25_11.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":12,\"measure\":\"depth\"}|7|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_12_29_7.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":12,\"measure\":\"size\"}|29|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_12_29_7.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":13,\"measure\":\"depth\"}|9|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_13_33_9.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":13,\"measure\":\"size\"}|32|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_13_32_10.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":14,\"measure\":\"depth\"}|8|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_14_40_8.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":14,\"measure\":\"size\"}|38|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_14_38_9.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":15,\"measure\":\"depth\"}|9|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_15_45_9.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":15,\"measure\":\"size\"}|41|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_15_41_11.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":16,\"measure\":\"depth\"}|8|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_16_49_8.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":16,\"measure\":\"size\"}|46|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_16_46_10.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":17,\"measure\":\"depth\"}|10|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_17_52_10.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":17,\"measure\":\"size\"}|49|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_17_49_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":18,\"measure\":\"depth\"}|10|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_18_56_10.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":18,\"measure\":\"size\"}|55|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_18_55_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":19,\"measure\":\"depth\"}|11|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_19_60_11.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":19,\"measure\":\"size\"}|58|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_19_58_15.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":20,\"measure\":\"depth\"}|10|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_20_64_10.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":20,\"measure\":\"size\"}|63|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_20_63_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":21,\"measure\":\"depth\"}|12|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_21_67_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":21,\"measure\":\"size\"}|66|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_21_66_15.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":22,\"measure\":\"depth\"}|11|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_22_75_11.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":22,\"measure\":\"size\"}|74|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_22_74_13.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":23,\"measure\":\"depth\"}|12|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_23_83_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":23,\"measure\":\"size\"}|77|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_23_77_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":24,\"measure\":\"depth\"}|11|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_24_86_11.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":24,\"measure\":\"size\"}|82|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_24_82_13.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":25,\"measure\":\"depth\"}|13|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_25_93_13.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":25,\"measure\":\"size\"}|85|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_25_85_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":26,\"measure\":\"depth\"}|12|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_26_98_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":26,\"measure\":\"size\"}|94|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_26_94_15.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":27,\"measure\":\"depth\"}|13|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_27_105_13.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":27,\"measure\":\"size\"}|97|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_27_97_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":28,\"measure\":\"depth\"}|12|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_28_111_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":28,\"measure\":\"size\"}|104|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_28_104_14.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":29,\"measure\":\"depth\"}|14|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_29_118_14.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":29,\"measure\":\"size\"}|107|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_29_107_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":3,\"measure\":\"depth\"}|3|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_3_3_3.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":3,\"measure\":\"size\"}|3|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_3_3_3.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":30,\"measure\":\"depth\"}|13|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_30_122_13.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":30,\"measure\":\"size\"}|118|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_30_118_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":31,\"measure\":\"depth\"}|14|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_31_128_14.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":31,\"measure\":\"size\"}|121|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_31_121_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":32,\"measure\":\"depth\"}|13|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_32_132_13.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":32,\"measure\":\"size\"}|128|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_32_128_14.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":33,\"measure\":\"depth\"}|15|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_33_139_15.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":33,\"measure\":\"size\"}|131|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_33_131_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":34,\"measure\":\"depth\"}|14|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_34_142_14.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":34,\"measure\":\"size\"}|140|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_34_140_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":35,\"measure\":\"depth\"}|16|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_35_148_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":35,\"measure\":\"size\"}|143|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_35_143_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":36,\"measure\":\"depth\"}|15|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_36_152_15.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":36,\"measure\":\"size\"}|150|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_36_150_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":37,\"measure\":\"depth\"}|16|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_37_167_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":37,\"measure\":\"size\"}|153|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_37_153_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":38,\"measure\":\"depth\"}|15|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_38_172_15.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":38,\"measure\":\"size\"}|164|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_38_164_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":39,\"measure\":\"depth\"}|16|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_39_177_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":39,\"measure\":\"size\"}|167|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_39_167_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":4,\"measure\":\"depth\"}|2|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_4_4_2.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":4,\"measure\":\"size\"}|4|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_4_4_2.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":40,\"measure\":\"depth\"}|15|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_40_182_15.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":40,\"measure\":\"size\"}|174|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_40_174_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":41,\"measure\":\"depth\"}|17|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_41_192_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":41,\"measure\":\"size\"}|177|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_41_177_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":42,\"measure\":\"depth\"}|16|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_42_198_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":42,\"measure\":\"size\"}|191|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_42_191_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":43,\"measure\":\"depth\"}|17|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_43_203_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":43,\"measure\":\"size\"}|194|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_43_194_21.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":44,\"measure\":\"depth\"}|16|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_44_208_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":44,\"measure\":\"size\"}|202|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_44_202_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":45,\"measure\":\"depth\"}|18|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_45_213_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":45,\"measure\":\"size\"}|205|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_45_205_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":46,\"measure\":\"depth\"}|17|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_46_221_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":46,\"measure\":\"size\"}|216|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_46_216_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":47,\"measure\":\"depth\"}|18|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_47_230_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":47,\"measure\":\"size\"}|219|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_47_219_23.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":48,\"measure\":\"depth\"}|17|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_48_235_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":48,\"measure\":\"size\"}|226|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_48_226_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":49,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_49_267_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":49,\"measure\":\"size\"}|229|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_49_229_23.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":5,\"measure\":\"depth\"}|5|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_5_7_5.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":5,\"measure\":\"size\"}|7|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_5_7_5.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":50,\"measure\":\"depth\"}|18|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_50_272_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":50,\"measure\":\"size\"}|245|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_50_245_23.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":51,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_51_283_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":51,\"measure\":\"size\"}|248|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_51_248_26.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":52,\"measure\":\"depth\"}|18|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_52_288_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":52,\"measure\":\"size\"}|255|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_52_255_23.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":53,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_53_296_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":53,\"measure\":\"size\"}|258|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_53_258_26.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":54,\"measure\":\"depth\"}|18|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_54_302_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":54,\"measure\":\"size\"}|274|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_54_274_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":55,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_55_315_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":55,\"measure\":\"size\"}|277|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_55_277_23.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":56,\"measure\":\"depth\"}|18|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_56_322_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":56,\"measure\":\"size\"}|286|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_56_286_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":57,\"measure\":\"depth\"}|20|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_57_307_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":57,\"measure\":\"size\"}|289|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_57_289_23.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":58,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_58_312_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":58,\"measure\":\"size\"}|298|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_58_298_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":59,\"measure\":\"depth\"}|20|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_59_319_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":59,\"measure\":\"size\"}|301|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_59_301_23.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":6,\"measure\":\"depth\"}|4|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_6_10_4.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":6,\"measure\":\"size\"}|10|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_6_10_4.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":60,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_60_325_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":60,\"measure\":\"size\"}|311|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_60_311_24.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":61,\"measure\":\"depth\"}|20|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_61_331_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":61,\"measure\":\"size\"}|314|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_61_314_27.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":62,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_62_350_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":62,\"measure\":\"size\"}|325|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_62_325_23.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":63,\"measure\":\"depth\"}|20|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_63_356_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":63,\"measure\":\"size\"}|328|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_63_328_26.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":64,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_64_362_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":64,\"measure\":\"size\"}|337|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_64_337_23.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":7,\"measure\":\"depth\"}|6|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_7_13_6.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":7,\"measure\":\"size\"}|13|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_7_13_6.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":8,\"measure\":\"depth\"}|5|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_8_16_5.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":8,\"measure\":\"size\"}|16|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_8_16_5.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":9,\"measure\":\"depth\"}|7|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_9_19_7.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"median\",\"inputs\":9,\"measure\":\"size\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_9_19_7.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":10,\"measure\":\"depth\"}|7|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_10_31_7.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":10,\"measure\":\"size\"}|29|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_10_29_8.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":11,\"measure\":\"depth\"}|8|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_11_35_8.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":11,\"measure\":\"size\"}|35|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_11_35_8.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":12,\"measure\":\"depth\"}|8|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_12_40_8.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":12,\"measure\":\"size\"}|39|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_12_39_9.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":13,\"measure\":\"depth\"}|9|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_13_46_9.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":13,\"measure\":\"size\"}|45|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_13_45_10.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":14,\"measure\":\"depth\"}|9|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_14_52_9.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":14,\"measure\":\"size\"}|51|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_14_51_10.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":15,\"measure\":\"depth\"}|9|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_15_57_9.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":15,\"measure\":\"size\"}|56|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_15_56_10.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":16,\"measure\":\"depth\"}|9|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_16_61_9.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":16,\"measure\":\"size\"}|60|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_16_60_10.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":17,\"measure\":\"depth\"}|10|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_17_74_10.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":17,\"measure\":\"size\"}|71|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_17_71_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":18,\"measure\":\"depth\"}|11|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_18_78_11.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":18,\"measure\":\"size\"}|77|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_18_77_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":19,\"measure\":\"depth\"}|11|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_19_87_11.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":19,\"measure\":\"size\"}|85|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_19_85_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":2,\"measure\":\"depth\"}|1|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_2_1_1.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":2,\"measure\":\"size\"}|1|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_2_1_1.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":20,\"measure\":\"depth\"}|11|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_20_93_11.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":20,\"measure\":\"size\"}|91|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_20_91_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":21,\"measure\":\"depth\"}|12|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_21_100_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":21,\"measure\":\"size\"}|99|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_21_99_15.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":22,\"measure\":\"depth\"}|12|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_22_107_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":22,\"measure\":\"size\"}|106|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_22_106_13.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":23,\"measure\":\"depth\"}|12|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_23_116_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":23,\"measure\":\"size\"}|114|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_23_114_14.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":24,\"measure\":\"depth\"}|12|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_24_122_12.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":24,\"measure\":\"size\"}|120|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_24_120_13.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":25,\"measure\":\"depth\"}|13|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_25_131_13.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":25,\"measure\":\"size\"}|130|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_25_130_15.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":26,\"measure\":\"depth\"}|13|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_26_141_13.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":26,\"measure\":\"size\"}|138|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_26_138_15.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":27,\"measure\":\"depth\"}|13|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_27_152_13.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":27,\"measure\":\"size\"}|147|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_27_147_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":28,\"measure\":\"depth\"}|13|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_28_159_13.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":28,\"measure\":\"size\"}|155|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_28_155_14.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":29,\"measure\":\"depth\"}|14|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_29_166_14.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":29,\"measure\":\"size\"}|164|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_29_164_15.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":3,\"measure\":\"depth\"}|3|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_3_3_3.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":3,\"measure\":\"size\"}|3|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_3_3_3.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":30,\"measure\":\"depth\"}|14|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_30_172_14.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":30,\"measure\":\"size\"}|172|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_30_172_14.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":31,\"measure\":\"depth\"}|14|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_31_180_14.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":31,\"measure\":\"size\"}|180|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_31_180_14.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":32,\"measure\":\"depth\"}|14|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_32_185_14.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":32,\"measure\":\"size\"}|185|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_32_185_14.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":33,\"measure\":\"depth\"}|15|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_33_199_15.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":33,\"measure\":\"size\"}|199|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_33_199_15.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":34,\"measure\":\"depth\"}|15|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_34_213_15.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":34,\"measure\":\"size\"}|209|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_34_209_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":35,\"measure\":\"depth\"}|16|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_35_220_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":35,\"measure\":\"size\"}|220|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_35_220_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":36,\"measure\":\"depth\"}|16|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_36_228_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":36,\"measure\":\"size\"}|227|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_36_227_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":37,\"measure\":\"depth\"}|16|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_37_243_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":37,\"measure\":\"size\"}|240|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_37_240_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":38,\"measure\":\"depth\"}|16|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_38_252_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":38,\"measure\":\"size\"}|250|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_38_250_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":39,\"measure\":\"depth\"}|16|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_39_263_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":39,\"measure\":\"size\"}|259|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_39_259_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":4,\"measure\":\"depth\"}|3|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_4_5_3.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":4,\"measure\":\"size\"}|5|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_4_5_3.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":40,\"measure\":\"depth\"}|16|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_40_269_16.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":40,\"measure\":\"size\"}|265|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_40_265_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":41,\"measure\":\"depth\"}|17|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_41_283_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":41,\"measure\":\"size\"}|282|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_41_282_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":42,\"measure\":\"depth\"}|17|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_42_293_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":42,\"measure\":\"size\"}|291|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_42_291_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":43,\"measure\":\"depth\"}|17|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_43_304_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":43,\"measure\":\"size\"}|303|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_43_303_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":44,\"measure\":\"depth\"}|17|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_44_311_17.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":44,\"measure\":\"size\"}|309|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_44_309_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":45,\"measure\":\"depth\"}|18|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_45_324_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":45,\"measure\":\"size\"}|324|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_45_324_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":46,\"measure\":\"depth\"}|18|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_46_332_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":46,\"measure\":\"size\"}|332|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_46_332_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":47,\"measure\":\"depth\"}|18|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_47_341_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":47,\"measure\":\"size\"}|340|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_47_340_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":48,\"measure\":\"depth\"}|18|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_48_347_18.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":48,\"measure\":\"size\"}|346|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_48_346_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":49,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_49_369_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":49,\"measure\":\"size\"}|364|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_49_364_22.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":5,\"measure\":\"depth\"}|5|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_5_9_5.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":5,\"measure\":\"size\"}|9|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_5_9_5.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":50,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_50_381_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":50,\"measure\":\"size\"}|376|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_50_376_21.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":51,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_51_396_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":51,\"measure\":\"size\"}|387|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_51_387_22.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":52,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_52_407_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":52,\"measure\":\"size\"}|395|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_52_395_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":53,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_53_423_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":53,\"measure\":\"size\"}|410|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_53_410_23.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":54,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_54_435_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":54,\"measure\":\"size\"}|421|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_54_421_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":55,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_55_447_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":55,\"measure\":\"size\"}|432|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_55_432_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":56,\"measure\":\"depth\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_56_455_19.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":56,\"measure\":\"size\"}|438|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_56_438_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":57,\"measure\":\"depth\"}|20|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_57_461_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":57,\"measure\":\"size\"}|454|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_57_454_21.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":58,\"measure\":\"depth\"}|20|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_58_470_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":58,\"measure\":\"size\"}|465|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_58_465_21.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":59,\"measure\":\"depth\"}|20|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_59_480_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":59,\"measure\":\"size\"}|476|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_59_476_21.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":6,\"measure\":\"depth\"}|5|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_6_12_5.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":6,\"measure\":\"size\"}|12|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_6_12_5.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":60,\"measure\":\"depth\"}|20|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_60_488_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":60,\"measure\":\"size\"}|483|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_60_483_21.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":61,\"measure\":\"depth\"}|20|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_61_502_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":61,\"measure\":\"size\"}|497|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_61_497_22.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":62,\"measure\":\"depth\"}|20|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_62_511_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":62,\"measure\":\"size\"}|506|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_62_506_21.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":63,\"measure\":\"depth\"}|20|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_63_519_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":63,\"measure\":\"size\"}|515|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_63_515_21.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":64,\"measure\":\"depth\"}|20|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_64_525_20.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":64,\"measure\":\"size\"}|521|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_64_521_21.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":7,\"measure\":\"depth\"}|6|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_7_16_6.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":7,\"measure\":\"size\"}|16|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_7_16_6.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":8,\"measure\":\"depth\"}|6|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_8_19_6.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":8,\"measure\":\"size\"}|19|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_8_19_6.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":9,\"measure\":\"depth\"}|7|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_9_25_7.json": [
+   "2026-11-20"
+  ],
+  "comparator-network {\"goal\":\"sort\",\"inputs\":9,\"measure\":\"size\"}|25|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_9_25_7.json": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":12,\"w\":6}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":13,\"w\":6}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":14,\"w\":6}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":14,\"w\":7}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":15,\"w\":6}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":15,\"w\":7}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":16,\"w\":6}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":16,\"w\":7}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":16,\"w\":8}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":17,\"w\":6}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":17,\"w\":7}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":17,\"w\":8}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":18,\"w\":6}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":18,\"w\":7}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":18,\"w\":8}|9|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":18,\"w\":9}|10|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":19,\"w\":6}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":19,\"w\":7}|8|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":19,\"w\":8}|12|https://aeb.win.tue.nl/codes/cwc/d10/a19.10.8.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":19,\"w\":9}|19|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":20,\"w\":10}|38|https://aeb.win.tue.nl/codes/cwc/d10/a20.10.10.38": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":20,\"w\":6}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":20,\"w\":7}|10|https://aeb.win.tue.nl/codes/cwc/d10/i20.7": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":20,\"w\":8}|17|https://aeb.win.tue.nl/codes/cwc/d10/a20.10.8.17": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":20,\"w\":9}|20|https://aeb.win.tue.nl/codes/cwc/d10/i20.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":21,\"w\":10}|38|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":21,\"w\":6}|7|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":21,\"w\":7}|13|https://aeb.win.tue.nl/codes/cwc/d10/a21.10.7.13": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":21,\"w\":8}|21|https://aeb.win.tue.nl/codes/cwc/d10/i21.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":21,\"w\":9}|27|https://aeb.win.tue.nl/codes/cwc/d10/a21.10.9.27": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":22,\"w\":10}|46|https://aeb.win.tue.nl/codes/cwc/d10/a22.10.10.46": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":22,\"w\":11}|46|https://aeb.win.tue.nl/codes/cwc/d10/i22.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":22,\"w\":6}|7|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":22,\"w\":7}|16|https://aeb.win.tue.nl/codes/cwc/d10/i22.7": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":22,\"w\":8}|25|https://aeb.win.tue.nl/codes/cwc/d10/a22.10.8.25": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":22,\"w\":9}|35|https://aeb.win.tue.nl/codes/cwc/d10/i22.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":23,\"w\":10}|54|https://aeb.win.tue.nl/codes/cwc/d10/a23.10.10.54": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":23,\"w\":11}|65|https://aeb.win.tue.nl/codes/cwc/d10/i23.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":23,\"w\":6}|8|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":23,\"w\":7}|20|https://aeb.win.tue.nl/codes/cwc/d10/a23.10.7.20": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":23,\"w\":8}|33|https://aeb.win.tue.nl/codes/cwc/d10/i23.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":23,\"w\":9}|45|https://aeb.win.tue.nl/codes/cwc/d10/i23.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":24,\"w\":10}|72|https://aeb.win.tue.nl/codes/cwc/d10/i24.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":24,\"w\":11}|95|https://aeb.win.tue.nl/codes/cwc/d10/a24.10.11.95": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":24,\"w\":12}|123|https://aeb.win.tue.nl/codes/cwc/d10/a24.10.12.123": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":24,\"w\":6}|9|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":24,\"w\":7}|24|https://aeb.win.tue.nl/codes/cwc/d10/i24.7": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":24,\"w\":8}|39|https://aeb.win.tue.nl/codes/cwc/d10/a24.10.8.39": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":24,\"w\":9}|56|https://aeb.win.tue.nl/codes/cwc/d10/i24.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":25,\"w\":10}|100|https://aeb.win.tue.nl/codes/cwc/d10/i25.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":25,\"w\":11}|125|https://aeb.win.tue.nl/codes/cwc/d10/i25.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":25,\"w\":12}|141|https://aeb.win.tue.nl/codes/cwc/d10/a25.10.12.141H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":25,\"w\":6}|10|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":25,\"w\":7}|28|https://aeb.win.tue.nl/codes/cwc/d10/i25.7": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":25,\"w\":8}|51|https://aeb.win.tue.nl/codes/cwc/d10/a25.10.8.51": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":25,\"w\":9}|75|https://aeb.win.tue.nl/codes/cwc/d10/a25.10.9.75": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":26,\"w\":10}|130|https://aeb.win.tue.nl/codes/cwc/d10/i26.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":26,\"w\":11}|168|https://aeb.win.tue.nl/codes/cwc/d10/i26.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":26,\"w\":12}|213|https://aeb.win.tue.nl/codes/cwc/d10/a26.10.12.213H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":26,\"w\":13}|234|https://aeb.win.tue.nl/codes/cwc/d10/a26.10.13.234H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":26,\"w\":6}|13|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":26,\"w\":7}|30|https://aeb.win.tue.nl/codes/cwc/d10/i26.7": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":26,\"w\":8}|68|https://aeb.win.tue.nl/codes/cwc/d10/a26.10.8.68": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":26,\"w\":9}|91|https://aeb.win.tue.nl/codes/cwc/d10/i26.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":27,\"w\":10}|162|https://aeb.win.tue.nl/codes/cwc/d10/i27.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":27,\"w\":11}|243|https://aeb.win.tue.nl/codes/cwc/d10/i27.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":27,\"w\":12}|351|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":27,\"w\":13}|425|https://aeb.win.tue.nl/codes/cwc/d10/a27.10.13.425H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":27,\"w\":6}|14|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":27,\"w\":7}|36|https://aeb.win.tue.nl/codes/cwc/d10/i27.7": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":27,\"w\":8}|76|https://aeb.win.tue.nl/codes/cwc/d10/a27.10.8.76": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":27,\"w\":9}|118|https://aeb.win.tue.nl/codes/cwc/d10/a27.10.9.118": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":28,\"w\":10}|225|https://aeb.win.tue.nl/codes/cwc/d10/a28.10.10.225H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":28,\"w\":11}|308|https://aeb.win.tue.nl/codes/cwc/d10/i28.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":28,\"w\":12}|390|https://aeb.win.tue.nl/codes/cwc/d10/i28.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":28,\"w\":13}|756|https://aeb.win.tue.nl/codes/cwc/d10/i28.13": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":28,\"w\":14}|817|https://aeb.win.tue.nl/codes/cwc/d10/a28.10.14.817H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":28,\"w\":6}|16|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":28,\"w\":7}|40|https://aeb.win.tue.nl/codes/cwc/d10/a28.10.7.40": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":28,\"w\":8}|85|https://aeb.win.tue.nl/codes/cwc/d10/a28.10.8.85": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":28,\"w\":9}|140|https://aeb.win.tue.nl/codes/cwc/d10/i28.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":29,\"w\":10}|266|https://aeb.win.tue.nl/codes/cwc/d10/i29.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":29,\"w\":11}|406|https://aeb.win.tue.nl/codes/cwc/d10/i29.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":29,\"w\":12}|543|https://aeb.win.tue.nl/codes/cwc/d10/a29.10.12.543H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":29,\"w\":13}|759|https://aeb.win.tue.nl/codes/cwc/d10/a29.10.13.759H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":29,\"w\":14}|1458|https://aeb.win.tue.nl/codes/cwc/d10/i29.14": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":29,\"w\":6}|20|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":29,\"w\":7}|42|https://aeb.win.tue.nl/codes/cwc/d10/i29.7": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":29,\"w\":8}|96|https://aeb.win.tue.nl/codes/cwc/d10/a29.10.8.96": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":29,\"w\":9}|168|https://aeb.win.tue.nl/codes/cwc/d10/i29.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":30,\"w\":10}|373|https://aeb.win.tue.nl/codes/cwc/d10/a30.10.10.373H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":30,\"w\":11}|514|https://aeb.win.tue.nl/codes/cwc/d10/a30.10.11.514H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":30,\"w\":12}|768|https://aeb.win.tue.nl/codes/cwc/d10/a30.10.12.768H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":30,\"w\":13}|940|https://aeb.win.tue.nl/codes/cwc/d10/a30.10.13.940H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":30,\"w\":14}|1467|https://aeb.win.tue.nl/codes/cwc/d10/a30.10.14.1467H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":30,\"w\":15}|1458|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":30,\"w\":6}|25|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":30,\"w\":7}|48|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":30,\"w\":8}|108|https://aeb.win.tue.nl/codes/cwc/d10/i30.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":30,\"w\":9}|203|https://aeb.win.tue.nl/codes/cwc/d10/a30.10.9.203H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":31,\"w\":10}|465|https://aeb.win.tue.nl/codes/cwc/d10/i31.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":31,\"w\":11}|651|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":31,\"w\":12}|1015|https://aeb.win.tue.nl/codes/cwc/d10/a31.10.12.1015H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":31,\"w\":13}|1395|https://aeb.win.tue.nl/codes/cwc/d10/i31.13": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":31,\"w\":14}|1539|https://aeb.win.tue.nl/codes/cwc/d10/a31.10.14.1539H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":31,\"w\":15}|1922|https://aeb.win.tue.nl/codes/cwc/d10/a31.10.15.1922H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":31,\"w\":6}|31|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":31,\"w\":7}|62|https://aeb.win.tue.nl/codes/cwc/d10/i31.7": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":31,\"w\":8}|124|https://aeb.win.tue.nl/codes/cwc/d10/i31.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":31,\"w\":9}|232|https://aeb.win.tue.nl/codes/cwc/d10/i31.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":32,\"w\":10}|558|https://aeb.win.tue.nl/codes/cwc/d10/a32.10.10.558H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":32,\"w\":11}|992|https://aeb.win.tue.nl/codes/cwc/d10/i32.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":32,\"w\":12}|1395|https://aeb.win.tue.nl/codes/cwc/d10/i32.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":32,\"w\":13}|1984|https://aeb.win.tue.nl/codes/cwc/d10/i32.13": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":32,\"w\":14}|2325|https://aeb.win.tue.nl/codes/cwc/d10/i32.14": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":32,\"w\":15}|2635|https://aeb.win.tue.nl/codes/cwc/d10/i32.15": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":32,\"w\":16}|3038|https://aeb.win.tue.nl/codes/cwc/d10/a32.10.16.3038H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":32,\"w\":6}|31|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":32,\"w\":7}|64|https://aeb.win.tue.nl/codes/cwc/d10/i32.7": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":32,\"w\":8}|145|https://aeb.win.tue.nl/codes/cwc/d10/a32.10.8.145H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":10,\"n\":32,\"w\":9}|307|https://aeb.win.tue.nl/codes/cwc/d10/a32.10.9.307H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":14,\"w\":7}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":15,\"w\":7}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":16,\"w\":7}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":16,\"w\":8}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":17,\"w\":7}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":17,\"w\":8}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":18,\"w\":7}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":18,\"w\":8}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":18,\"w\":9}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":19,\"w\":7}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":19,\"w\":8}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":19,\"w\":9}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":20,\"w\":10}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":20,\"w\":7}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":20,\"w\":8}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":20,\"w\":9}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":21,\"w\":10}|7|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":21,\"w\":7}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":21,\"w\":8}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":21,\"w\":9}|7|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":22,\"w\":10}|11|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":22,\"w\":11}|12|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":22,\"w\":7}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":22,\"w\":8}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":22,\"w\":9}|8|https://aeb.win.tue.nl/codes/cwc/d12/i22.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":23,\"w\":10}|16|https://aeb.win.tue.nl/codes/cwc/d12/a23.12.10.16": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":23,\"w\":11}|23|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":23,\"w\":7}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":23,\"w\":8}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":23,\"w\":9}|10|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":24,\"w\":10}|24|https://aeb.win.tue.nl/codes/cwc/d12/i24.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":24,\"w\":11}|24|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":24,\"w\":12}|46|https://aeb.win.tue.nl/codes/cwc/d12/a24.12.12.46": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":24,\"w\":7}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":24,\"w\":8}|9|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":24,\"w\":9}|16|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":25,\"w\":10}|28|https://aeb.win.tue.nl/codes/cwc/d12/i25.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":25,\"w\":11}|36|https://aeb.win.tue.nl/codes/cwc/d12/i25.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":25,\"w\":12}|50|https://aeb.win.tue.nl/codes/cwc/d12/i25.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":25,\"w\":7}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":25,\"w\":8}|10|https://aeb.win.tue.nl/codes/cwc/d12/i25.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":25,\"w\":9}|25|https://aeb.win.tue.nl/codes/cwc/d12/i25.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":26,\"w\":10}|33|https://aeb.win.tue.nl/codes/cwc/d12/i26.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":26,\"w\":11}|41|https://aeb.win.tue.nl/codes/cwc/d12/i26.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":26,\"w\":12}|54|https://aeb.win.tue.nl/codes/cwc/d12/i26.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":26,\"w\":13}|58|https://aeb.win.tue.nl/codes/cwc/d12/a26.12.13.58": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":26,\"w\":7}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":26,\"w\":8}|13|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":26,\"w\":9}|26|https://aeb.win.tue.nl/codes/cwc/d12/i26.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":27,\"w\":10}|39|https://aeb.win.tue.nl/codes/cwc/d12/i27.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":27,\"w\":11}|54|https://aeb.win.tue.nl/codes/cwc/d12/i27.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":27,\"w\":12}|82|https://aeb.win.tue.nl/codes/cwc/d12/a27.12.12.82": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":27,\"w\":13}|87|https://aeb.win.tue.nl/codes/cwc/d12/a27.12.13.87": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":27,\"w\":7}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":27,\"w\":8}|15|https://aeb.win.tue.nl/codes/cwc/d12/i27.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":27,\"w\":9}|39|https://aeb.win.tue.nl/codes/cwc/d12/i27.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":28,\"w\":10}|56|https://aeb.win.tue.nl/codes/cwc/d12/i28.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":28,\"w\":11}|65|https://aeb.win.tue.nl/codes/cwc/d12/i28.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":28,\"w\":12}|119|https://aeb.win.tue.nl/codes/cwc/d12/i28.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":28,\"w\":13}|112|https://aeb.win.tue.nl/codes/cwc/d12/i28.13": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":28,\"w\":14}|172|https://aeb.win.tue.nl/codes/cwc/d12/i28.14": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":28,\"w\":7}|8|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":28,\"w\":8}|19|https://aeb.win.tue.nl/codes/cwc/d12/i28.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":28,\"w\":9}|39|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":29,\"w\":10}|70|https://aeb.win.tue.nl/codes/cwc/d12/a29.12.10.70": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":29,\"w\":11}|87|https://aeb.win.tue.nl/codes/cwc/d12/i29.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":29,\"w\":12}|120|https://aeb.win.tue.nl/codes/cwc/d12/a29.12.12.120": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":29,\"w\":13}|153|https://aeb.win.tue.nl/codes/cwc/d12/a29.12.13.153": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":29,\"w\":14}|174|https://aeb.win.tue.nl/codes/cwc/d12/a29.12.14.174": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":29,\"w\":7}|8|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":29,\"w\":8}|22|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":29,\"w\":9}|42|https://aeb.win.tue.nl/codes/cwc/d12/i29.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":30,\"w\":10}|101|https://aeb.win.tue.nl/codes/cwc/d12/a30.12.10.101": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":30,\"w\":11}|120|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":30,\"w\":12}|190|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":30,\"w\":13}|239|https://aeb.win.tue.nl/codes/cwc/d12/a30.12.13.239H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":30,\"w\":14}|289|https://aeb.win.tue.nl/codes/cwc/d12/a30.12.14.289H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":30,\"w\":15}|302|https://aeb.win.tue.nl/codes/cwc/d12/a30.12.15.302H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":30,\"w\":7}|9|https://aeb.win.tue.nl/codes/cwc/d12/a30.12.7.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":30,\"w\":8}|30|https://aeb.win.tue.nl/codes/cwc/d12/i30.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":30,\"w\":9}|44|https://aeb.win.tue.nl/codes/cwc/d12/a30.12.9.44": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":31,\"w\":10}|108|https://aeb.win.tue.nl/codes/cwc/d12/a31.12.10.108H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":31,\"w\":11}|186|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":31,\"w\":12}|310|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":31,\"w\":13}|400|https://aeb.win.tue.nl/codes/cwc/d12/a31.12.13.400H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":31,\"w\":14}|510|https://aeb.win.tue.nl/codes/cwc/d12/a31.12.14.510H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":31,\"w\":15}|572|https://aeb.win.tue.nl/codes/cwc/d12/a31.12.15.572H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":31,\"w\":7}|9|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":31,\"w\":8}|31|https://aeb.win.tue.nl/codes/cwc/d12/i31.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":31,\"w\":9}|50|https://aeb.win.tue.nl/codes/cwc/d12/i31.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":32,\"w\":10}|123|https://aeb.win.tue.nl/codes/cwc/d12/a32.12.10.123H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":32,\"w\":11}|215|https://aeb.win.tue.nl/codes/cwc/d12/a32.12.11.215": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":32,\"w\":12}|496|https://aeb.win.tue.nl/codes/cwc/d12/a32.12.12.496H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":32,\"w\":13}|434|https://aeb.win.tue.nl/codes/cwc/d12/a32.12.13.434H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":32,\"w\":14}|900|https://aeb.win.tue.nl/codes/cwc/d12/a32.12.14.900H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":32,\"w\":15}|629|https://aeb.win.tue.nl/codes/cwc/d12/a32.12.15.629H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":32,\"w\":16}|1144|https://aeb.win.tue.nl/codes/cwc/d12/a32.12.16.1144H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":32,\"w\":7}|10|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":32,\"w\":8}|36|https://aeb.win.tue.nl/codes/cwc/d12/i32.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":12,\"n\":32,\"w\":9}|60|https://aeb.win.tue.nl/codes/cwc/d12/i32.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":16,\"w\":8}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":17,\"w\":8}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":18,\"w\":8}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":18,\"w\":9}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":19,\"w\":8}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":19,\"w\":9}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":20,\"w\":10}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":20,\"w\":8}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":20,\"w\":9}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":21,\"w\":10}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":21,\"w\":8}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":21,\"w\":9}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":22,\"w\":10}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":22,\"w\":11}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":22,\"w\":8}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":22,\"w\":9}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":23,\"w\":10}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":23,\"w\":11}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":23,\"w\":8}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":23,\"w\":9}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":24,\"w\":10}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":24,\"w\":11}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":24,\"w\":12}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":24,\"w\":8}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":24,\"w\":9}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":25,\"w\":10}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":25,\"w\":11}|7|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":25,\"w\":12}|8|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":25,\"w\":8}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":25,\"w\":9}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":26,\"w\":10}|8|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":26,\"w\":11}|10|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":26,\"w\":12}|13|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":26,\"w\":13}|14|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":26,\"w\":8}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":26,\"w\":9}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":27,\"w\":10}|9|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":27,\"w\":11}|13|https://aeb.win.tue.nl/codes/cwc/d14/i26.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":27,\"w\":12}|19|https://aeb.win.tue.nl/codes/cwc/d14/i27.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":27,\"w\":13}|27|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":27,\"w\":8}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":27,\"w\":9}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":28,\"w\":10}|11|https://aeb.win.tue.nl/codes/cwc/d14/a28.14.10.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":28,\"w\":11}|21|https://aeb.win.tue.nl/codes/cwc/d14/i28.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":28,\"w\":12}|28|https://aeb.win.tue.nl/codes/cwc/d14/i28.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":28,\"w\":13}|28|https://aeb.win.tue.nl/codes/cwc/d14/i28.13": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":28,\"w\":14}|54|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":28,\"w\":8}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":28,\"w\":9}|7|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":29,\"w\":10}|15|https://aeb.win.tue.nl/codes/cwc/d14/i29.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":29,\"w\":11}|28|https://aeb.win.tue.nl/codes/cwc/d14/i29.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":29,\"w\":12}|29|https://aeb.win.tue.nl/codes/cwc/d14/i29.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":29,\"w\":13}|38|https://aeb.win.tue.nl/codes/cwc/d14/a29.14.13.38": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":29,\"w\":14}|58|https://aeb.win.tue.nl/codes/cwc/d14/i29.14": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":29,\"w\":8}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":29,\"w\":9}|7|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":30,\"w\":10}|21|https://aeb.win.tue.nl/codes/cwc/d14/a30.14.10.21": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":30,\"w\":11}|30|https://aeb.win.tue.nl/codes/cwc/d14/i30.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":30,\"w\":12}|36|https://aeb.win.tue.nl/codes/cwc/d14/i30.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":30,\"w\":13}|46|https://aeb.win.tue.nl/codes/cwc/d14/a30.14.13.46": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":30,\"w\":14}|58|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":30,\"w\":15}|62|https://aeb.win.tue.nl/codes/cwc/d14/i30.15": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":30,\"w\":8}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":30,\"w\":9}|10|https://aeb.win.tue.nl/codes/cwc/d14/a30.14.9.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":31,\"w\":10}|31|https://aeb.win.tue.nl/codes/cwc/d14/a31.14.10.31": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":31,\"w\":11}|35|https://aeb.win.tue.nl/codes/cwc/d14/i31.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":31,\"w\":12}|45|https://aeb.win.tue.nl/codes/cwc/d14/i31.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":31,\"w\":13}|60|https://aeb.win.tue.nl/codes/cwc/d14/i31.13": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":31,\"w\":14}|66|https://aeb.win.tue.nl/codes/cwc/d14/i31.14": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":31,\"w\":15}|72|https://aeb.win.tue.nl/codes/cwc/d14/i31.15": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":31,\"w\":8}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":31,\"w\":9}|10|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":32,\"w\":10}|32|https://aeb.win.tue.nl/codes/cwc/d14/i32.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":32,\"w\":11}|40|https://aeb.win.tue.nl/codes/cwc/d14/a32.14.11.40": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":32,\"w\":12}|55|https://aeb.win.tue.nl/codes/cwc/d14/i32.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":32,\"w\":13}|70|https://aeb.win.tue.nl/codes/cwc/d14/i32.13": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":32,\"w\":14}|96|https://aeb.win.tue.nl/codes/cwc/d14/i32.14": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":32,\"w\":15}|96|https://aeb.win.tue.nl/codes/cwc/d14/i32.15": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":32,\"w\":16}|122|https://aeb.win.tue.nl/codes/cwc/d14/i32.16": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":32,\"w\":8}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":14,\"n\":32,\"w\":9}|12|https://aeb.win.tue.nl/codes/cwc/d14/a32.14.9.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":18,\"w\":9}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":19,\"w\":9}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":20,\"w\":10}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":20,\"w\":9}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":21,\"w\":10}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":21,\"w\":9}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":22,\"w\":10}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":22,\"w\":11}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":22,\"w\":9}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":23,\"w\":10}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":23,\"w\":11}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":23,\"w\":9}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":24,\"w\":10}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":24,\"w\":11}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":24,\"w\":12}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":24,\"w\":9}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":25,\"w\":10}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":25,\"w\":11}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":25,\"w\":12}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":25,\"w\":9}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":26,\"w\":10}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":26,\"w\":11}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":26,\"w\":12}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":26,\"w\":13}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":26,\"w\":9}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":27,\"w\":10}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":27,\"w\":11}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":27,\"w\":12}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":27,\"w\":13}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":27,\"w\":9}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":28,\"w\":10}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":28,\"w\":11}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":28,\"w\":12}|7|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":28,\"w\":13}|7|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":28,\"w\":14}|8|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":28,\"w\":9}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":29,\"w\":10}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":29,\"w\":11}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":29,\"w\":12}|7|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":29,\"w\":13}|9|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":29,\"w\":14}|10|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":29,\"w\":9}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":30,\"w\":10}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":30,\"w\":11}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":30,\"w\":12}|10|https://aeb.win.tue.nl/codes/cwc/d16/a30.16.12.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":30,\"w\":13}|12|https://aeb.win.tue.nl/codes/cwc/d16/a30.16.13.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":30,\"w\":14}|15|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":30,\"w\":15}|16|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":30,\"w\":9}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":31,\"w\":10}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":31,\"w\":11}|8|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":31,\"w\":12}|11|https://aeb.win.tue.nl/codes/cwc/d16/a31.16.12.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":31,\"w\":13}|17|https://aeb.win.tue.nl/codes/cwc/d16/a31.16.13.17": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":31,\"w\":14}|24|https://aeb.win.tue.nl/codes/cwc/d16/a31.16.14.24": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":31,\"w\":15}|31|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":31,\"w\":9}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":32,\"w\":10}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":32,\"w\":11}|9|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":32,\"w\":12}|16|https://aeb.win.tue.nl/codes/cwc/d16/a32.16.12.16": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":32,\"w\":13}|25|https://aeb.win.tue.nl/codes/cwc/d16/a32.16.13.25": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":32,\"w\":14}|32|https://aeb.win.tue.nl/codes/cwc/d16/i32.14": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":32,\"w\":15}|32|https://aeb.win.tue.nl/codes/cwc/d16/a32.16.15.32": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":32,\"w\":16}|62|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":16,\"n\":32,\"w\":9}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":20,\"w\":10}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":21,\"w\":10}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":22,\"w\":10}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":22,\"w\":11}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":23,\"w\":10}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":23,\"w\":11}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":24,\"w\":10}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":24,\"w\":11}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":24,\"w\":12}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":25,\"w\":10}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":25,\"w\":11}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":25,\"w\":12}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":26,\"w\":10}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":26,\"w\":11}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":26,\"w\":12}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":26,\"w\":13}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":27,\"w\":10}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":27,\"w\":11}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":27,\"w\":12}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":27,\"w\":13}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":28,\"w\":10}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":28,\"w\":11}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":28,\"w\":12}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":28,\"w\":13}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":28,\"w\":14}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":29,\"w\":10}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":29,\"w\":11}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":29,\"w\":12}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":29,\"w\":13}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":29,\"w\":14}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":30,\"w\":10}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":30,\"w\":11}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":30,\"w\":12}|5|https://aeb.win.tue.nl/codes/cwc/d18/a30.18.12.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":30,\"w\":13}|5|https://aeb.win.tue.nl/codes/cwc/d18/a30.18.13.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":30,\"w\":14}|5|https://aeb.win.tue.nl/codes/cwc/d18/a30.18.14.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":30,\"w\":15}|6|https://aeb.win.tue.nl/codes/cwc/d18/a30.18.15.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":31,\"w\":10}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":31,\"w\":11}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":31,\"w\":12}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":31,\"w\":13}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":31,\"w\":14}|6|https://aeb.win.tue.nl/codes/cwc/d18/a31.18.14.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":31,\"w\":15}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":32,\"w\":10}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":32,\"w\":11}|4|https://aeb.win.tue.nl/codes/cwc/d18/a32.18.11.4": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":32,\"w\":12}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":32,\"w\":13}|6|https://aeb.win.tue.nl/codes/cwc/d18/a32.18.13.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":32,\"w\":14}|7|https://aeb.win.tue.nl/codes/cwc/d18/a32.18.14.7": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":32,\"w\":15}|8|https://aeb.win.tue.nl/codes/cwc/d18/a32.18.15.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":18,\"n\":32,\"w\":16}|8|https://aeb.win.tue.nl/codes/cwc/d18/a32.18.16.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":10,\"w\":3}|13|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":10,\"w\":4}|30|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":10,\"w\":5}|36|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":11,\"w\":3}|17|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":11,\"w\":4}|35|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":11,\"w\":5}|66|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":12,\"w\":3}|20|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":12,\"w\":4}|51|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":12,\"w\":5}|80|https://aeb.win.tue.nl/codes/cwc/d4/a12.4.5.80H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":12,\"w\":6}|132|https://aeb.win.tue.nl/codes/cwc/d4/i12.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":13,\"w\":3}|26|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":13,\"w\":4}|65|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":13,\"w\":5}|123|https://aeb.win.tue.nl/codes/cwc/d4/a13.4.5.123H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":13,\"w\":6}|166|https://aeb.win.tue.nl/codes/cwc/d4/a13.4.6.166H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":14,\"w\":3}|28|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":14,\"w\":4}|91|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":14,\"w\":5}|169|https://aeb.win.tue.nl/codes/cwc/d4/i14.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":14,\"w\":6}|278|https://aeb.win.tue.nl/codes/cwc/d4/a14.4.6.278H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":14,\"w\":7}|325|https://aeb.win.tue.nl/codes/cwc/d4/a14.4.7.325H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":15,\"w\":3}|35|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":15,\"w\":4}|105|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":15,\"w\":5}|243|https://aeb.win.tue.nl/codes/cwc/d4/a15.4.5.243": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":15,\"w\":6}|399|https://aeb.win.tue.nl/codes/cwc/d4/i15.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":15,\"w\":7}|585|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":16,\"w\":3}|37|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":16,\"w\":4}|140|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":16,\"w\":5}|322|https://aeb.win.tue.nl/codes/cwc/d4/i16.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":16,\"w\":6}|624|https://aeb.win.tue.nl/codes/cwc/d4/i16.6a": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":16,\"w\":7}|841|https://aeb.win.tue.nl/codes/cwc/d4/a16.4.7.841H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":16,\"w\":8}|1170|https://aeb.win.tue.nl/codes/cwc/d4/a16.4.8.1170H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":17,\"w\":3}|44|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":17,\"w\":4}|157|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":17,\"w\":5}|444|https://aeb.win.tue.nl/codes/cwc/d4/a17.4.5.444": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":17,\"w\":6}|854|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":17,\"w\":7}|1416|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":17,\"w\":8}|1770|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":18,\"w\":3}|48|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":18,\"w\":4}|198|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":18,\"w\":5}|544|https://aeb.win.tue.nl/codes/cwc/d4/i18.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":18,\"w\":6}|1260|https://aeb.win.tue.nl/codes/cwc/d4/i18.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":18,\"w\":7}|2042|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":18,\"w\":8}|3186|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":18,\"w\":9}|3540|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":19,\"w\":3}|57|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":19,\"w\":4}|228|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":19,\"w\":5}|692|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":19,\"w\":6}|1620|https://aeb.win.tue.nl/codes/cwc/d4/a19.4.6.1620H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":19,\"w\":7}|3172|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":19,\"w\":8}|4698|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":19,\"w\":9}|6726|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":20,\"w\":10}|13452|https://aeb.win.tue.nl/codes/cwc/d4/i20.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":20,\"w\":3}|60|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":20,\"w\":4}|285|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":20,\"w\":5}|876|https://aeb.win.tue.nl/codes/cwc/d4/a20.4.5.876H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":20,\"w\":6}|2304|https://aeb.win.tue.nl/codes/cwc/d4/i20.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":20,\"w\":7}|4213|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":20,\"w\":8}|7830|https://aeb.win.tue.nl/codes/cwc/d4/i20.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":20,\"w\":9}|10048|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":21,\"w\":10}|20654|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":21,\"w\":3}|70|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":21,\"w\":4}|315|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":21,\"w\":5}|1113|https://aeb.win.tue.nl/codes/cwc/d4/i21.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":21,\"w\":6}|2880|https://aeb.win.tue.nl/codes/cwc/d4/i21.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":21,\"w\":7}|6161|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":21,\"w\":8}|10767|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":21,\"w\":9}|17177|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":22,\"w\":10}|37127|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":22,\"w\":11}|40624|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":22,\"w\":3}|73|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":22,\"w\":4}|385|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":22,\"w\":5}|1386|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":22,\"w\":6}|3927|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":22,\"w\":7}|8338|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":22,\"w\":8}|16527|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":22,\"w\":9}|25902|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":23,\"w\":10}|58659|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":23,\"w\":11}|76233|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":23,\"w\":3}|83|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":23,\"w\":4}|419|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":23,\"w\":5}|1771|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":23,\"w\":6}|5313|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":23,\"w\":7}|11696|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":23,\"w\":8}|23467|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":23,\"w\":9}|41413|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":24,\"w\":10}|98852|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":24,\"w\":11}|118422|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":24,\"w\":12}|151484|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":24,\"w\":3}|88|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":24,\"w\":4}|498|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":24,\"w\":5}|1920|https://aeb.win.tue.nl/codes/cwc/d4/i24.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":24,\"w\":6}|7084|https://aeb.win.tue.nl/codes/cwc/d4/i24.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":24,\"w\":7}|15656|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":24,\"w\":8}|34914|https://aeb.win.tue.nl/codes/cwc/d4/i24.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":24,\"w\":9}|59904|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":25,\"w\":10}|142373|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":25,\"w\":11}|198387|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":25,\"w\":12}|231530|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":25,\"w\":3}|100|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":25,\"w\":4}|550|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":25,\"w\":5}|2380|https://aeb.win.tue.nl/codes/cwc/d4/i25.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":25,\"w\":6}|7800|https://aeb.win.tue.nl/codes/cwc/d4/a25.4.6.7800H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":25,\"w\":7}|21220|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":25,\"w\":8}|47265|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":25,\"w\":9}|89742|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":26,\"w\":10}|222775|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":26,\"w\":11}|320584|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":26,\"w\":12}|401937|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":26,\"w\":13}|431724|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":26,\"w\":3}|104|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":26,\"w\":4}|650|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":26,\"w\":5}|2816|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":26,\"w\":6}|10010|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":26,\"w\":7}|27050|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":26,\"w\":8}|66352|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":26,\"w\":9}|129708|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":27,\"w\":10}|334859|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":27,\"w\":11}|518014|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":27,\"w\":12}|686164|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":27,\"w\":13}|791461|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":27,\"w\":3}|117|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":27,\"w\":4}|702|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":27,\"w\":5}|3456|https://aeb.win.tue.nl/codes/cwc/d4/i27.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":27,\"w\":6}|12285|https://aeb.win.tue.nl/codes/cwc/d4/a27.4.6.12285H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":27,\"w\":7}|35874|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":27,\"w\":8}|88604|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":27,\"w\":9}|188561|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":28,\"w\":10}|508952|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":28,\"w\":11}|819041|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":28,\"w\":12}|1167909|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":28,\"w\":13}|1420920|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":28,\"w\":14}|1535756|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":28,\"w\":3}|121|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":28,\"w\":4}|819|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":28,\"w\":5}|3822|https://aeb.win.tue.nl/codes/cwc/d4/a28.4.5.3822H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":28,\"w\":6}|15288|https://aeb.win.tue.nl/codes/cwc/d4/i28.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":28,\"w\":7}|44915|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":28,\"w\":8}|122685|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":28,\"w\":9}|263008|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":29,\"w\":10}|728330|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":29,\"w\":11}|1266026|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":29,\"w\":12}|1895939|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":29,\"w\":13}|2499311|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":29,\"w\":14}|2870880|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":29,\"w\":3}|134|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":29,\"w\":4}|877|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":29,\"w\":5}|4491|https://aeb.win.tue.nl/codes/cwc/d4/a29.4.5.4491H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":29,\"w\":6}|17710|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":29,\"w\":7}|57943|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":29,\"w\":8}|157734|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":29,\"w\":9}|365699|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":30,\"w\":10}|1085000|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":30,\"w\":11}|1977548|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":30,\"w\":12}|3143989|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":30,\"w\":13}|4325235|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":30,\"w\":14}|5313399|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":30,\"w\":15}|5697080|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":30,\"w\":3}|140|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":30,\"w\":4}|1005|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":30,\"w\":5}|5148|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":30,\"w\":6}|21931|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":30,\"w\":7}|73853|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":30,\"w\":8}|214545|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":30,\"w\":9}|514015|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":31,\"w\":3}|155|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":31,\"w\":4}|1085|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":32,\"w\":3}|160|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":32,\"w\":4}|1240|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":6,\"w\":3}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":7,\"w\":3}|7|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":8,\"w\":3}|8|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":8,\"w\":4}|14|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":9,\"w\":3}|12|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":4,\"n\":9,\"w\":4}|18|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":10,\"w\":4}|5|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":10,\"w\":5}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":11,\"w\":4}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":11,\"w\":5}|11|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":12,\"w\":4}|9|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":12,\"w\":5}|12|https://aeb.win.tue.nl/codes/cwc/d6/i12.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":12,\"w\":6}|22|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":13,\"w\":4}|13|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":13,\"w\":5}|18|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":13,\"w\":6}|26|https://aeb.win.tue.nl/codes/cwc/d6/i13.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":14,\"w\":4}|14|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":14,\"w\":5}|28|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":14,\"w\":6}|42|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":14,\"w\":7}|42|https://aeb.win.tue.nl/codes/cwc/d6/a14.6.7.42": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":15,\"w\":4}|15|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":15,\"w\":5}|42|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":15,\"w\":6}|70|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":15,\"w\":7}|69|https://aeb.win.tue.nl/codes/cwc/d6/a15.6.7.69": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":16,\"w\":4}|20|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":16,\"w\":5}|48|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":16,\"w\":6}|112|https://aeb.win.tue.nl/codes/cwc/d6/i16.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":16,\"w\":7}|109|https://aeb.win.tue.nl/codes/cwc/d6/a16.6.7.109": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":16,\"w\":8}|120|https://aeb.win.tue.nl/codes/cwc/d6/i16.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":17,\"w\":4}|20|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":17,\"w\":5}|68|https://aeb.win.tue.nl/codes/cwc/d6/i17.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":17,\"w\":6}|113|https://aeb.win.tue.nl/codes/cwc/d6/a17.6.6.113": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":17,\"w\":7}|166|https://aeb.win.tue.nl/codes/cwc/d6/a17.6.7.166": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":17,\"w\":8}|184|https://aeb.win.tue.nl/codes/cwc/d6/i17.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":18,\"w\":4}|22|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":18,\"w\":5}|69|https://aeb.win.tue.nl/codes/cwc/d6/a18.6.5.69": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":18,\"w\":6}|133|https://aeb.win.tue.nl/codes/cwc/d6/a18.6.6.133": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":18,\"w\":7}|243|https://aeb.win.tue.nl/codes/cwc/d6/a18.6.7.243": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":18,\"w\":8}|260|https://aeb.win.tue.nl/codes/cwc/d6/a18.6.8.260": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":18,\"w\":9}|320|https://aeb.win.tue.nl/codes/cwc/d6/i18.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":19,\"w\":4}|25|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":19,\"w\":5}|76|https://aeb.win.tue.nl/codes/cwc/d6/i19.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":19,\"w\":6}|172|https://aeb.win.tue.nl/codes/cwc/d6/i19.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":19,\"w\":7}|338|https://aeb.win.tue.nl/codes/cwc/d6/a19.6.7.338": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":19,\"w\":8}|408|https://aeb.win.tue.nl/codes/cwc/d6/i19.8a": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":19,\"w\":9}|504|https://aeb.win.tue.nl/codes/cwc/d6/i19.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":20,\"w\":10}|944|https://aeb.win.tue.nl/codes/cwc/d6/a20.6.10.944H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":20,\"w\":4}|30|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":20,\"w\":5}|90|https://aeb.win.tue.nl/codes/cwc/d6/i20.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":20,\"w\":6}|232|https://aeb.win.tue.nl/codes/cwc/d6/i20.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":20,\"w\":7}|462|https://aeb.win.tue.nl/codes/cwc/d6/a20.6.7.462H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":20,\"w\":8}|597|https://aeb.win.tue.nl/codes/cwc/d6/a20.6.8.597H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":20,\"w\":9}|832|https://aeb.win.tue.nl/codes/cwc/d6/i20.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":21,\"w\":10}|1478|https://aeb.win.tue.nl/codes/cwc/d6/a21.6.10.1478H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":21,\"w\":4}|31|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":21,\"w\":5}|110|https://aeb.win.tue.nl/codes/cwc/d6/a21.6.5.110H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":21,\"w\":6}|273|https://aeb.win.tue.nl/codes/cwc/d6/i21.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":21,\"w\":7}|570|https://aeb.win.tue.nl/codes/cwc/d6/i21.7": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":21,\"w\":8}|791|https://aeb.win.tue.nl/codes/cwc/d6/a21.6.8.791H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":21,\"w\":9}|1186|https://aeb.win.tue.nl/codes/cwc/d6/a21.6.9.1186H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":22,\"w\":10}|2186|https://aeb.win.tue.nl/codes/cwc/d6/a22.6.10.2186H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":22,\"w\":11}|2668|https://aeb.win.tue.nl/codes/cwc/d6/a22.6.11.2668H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":22,\"w\":4}|37|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":22,\"w\":5}|132|https://aeb.win.tue.nl/codes/cwc/d6/i22.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":22,\"w\":6}|343|https://aeb.win.tue.nl/codes/cwc/d6/i22.6a": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":22,\"w\":7}|759|https://aeb.win.tue.nl/codes/cwc/d6/a22.6.7.759": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":22,\"w\":8}|1145|https://aeb.win.tue.nl/codes/cwc/d6/a22.6.8.1145H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":22,\"w\":9}|1827|https://aeb.win.tue.nl/codes/cwc/d6/a22.6.9.1827H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":23,\"w\":10}|2992|https://aeb.win.tue.nl/codes/cwc/d6/a23.6.10.2992H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":23,\"w\":11}|3588|https://aeb.win.tue.nl/codes/cwc/d6/a23.6.11.3588H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":23,\"w\":4}|40|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":23,\"w\":5}|147|https://aeb.win.tue.nl/codes/cwc/d6/a23.6.5.147": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":23,\"w\":6}|399|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":23,\"w\":7}|969|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":23,\"w\":8}|1439|https://aeb.win.tue.nl/codes/cwc/d6/a23.6.8.1439H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":23,\"w\":9}|2278|https://aeb.win.tue.nl/codes/cwc/d6/a23.6.9.2278H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":24,\"w\":10}|4237|https://aeb.win.tue.nl/codes/cwc/d6/a24.6.10.4237H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":24,\"w\":11}|5376|https://aeb.win.tue.nl/codes/cwc/d6/i24.11a": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":24,\"w\":12}|5625|https://aeb.win.tue.nl/codes/cwc/d6/a24.6.12.5625H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":24,\"w\":4}|42|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":24,\"w\":5}|168|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":24,\"w\":6}|532|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":24,\"w\":7}|1368|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":24,\"w\":8}|1915|https://aeb.win.tue.nl/codes/cwc/d6/a24.6.8.1915H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":24,\"w\":9}|3080|https://aeb.win.tue.nl/codes/cwc/d6/i24.9a": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":25,\"w\":10}|6600|https://aeb.win.tue.nl/codes/cwc/d6/i25.10a": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":25,\"w\":11}|8733|https://aeb.win.tue.nl/codes/cwc/d6/a25.6.11.8733H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":25,\"w\":12}|9910|https://aeb.win.tue.nl/codes/cwc/d6/a25.6.12.9910H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":25,\"w\":4}|50|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":25,\"w\":5}|210|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":25,\"w\":6}|700|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":25,\"w\":7}|1900|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":25,\"w\":8}|2646|https://aeb.win.tue.nl/codes/cwc/d6/a25.6.8.2646H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":25,\"w\":9}|4260|https://aeb.win.tue.nl/codes/cwc/d6/a25.6.9.4260H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":26,\"w\":10}|9025|https://aeb.win.tue.nl/codes/cwc/d6/a26.6.10.9025H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":26,\"w\":11}|12225|https://aeb.win.tue.nl/codes/cwc/d6/a26.6.11.12225H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":26,\"w\":12}|14900|https://aeb.win.tue.nl/codes/cwc/d6/a26.6.12.14900H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":26,\"w\":13}|16254|https://aeb.win.tue.nl/codes/cwc/d6/a26.6.13.16254H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":26,\"w\":4}|52|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":26,\"w\":5}|260|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":26,\"w\":6}|910|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":26,\"w\":7}|2600|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":26,\"w\":8}|3603|https://aeb.win.tue.nl/codes/cwc/d6/a26.6.8.3603H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":26,\"w\":9}|5997|https://aeb.win.tue.nl/codes/cwc/d6/a26.6.9.5997H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":27,\"w\":10}|13338|https://aeb.win.tue.nl/codes/cwc/d6/a27.6.10.13338H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":27,\"w\":11}|19344|https://aeb.win.tue.nl/codes/cwc/d6/a27.6.11.19344H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":27,\"w\":12}|24804|https://aeb.win.tue.nl/codes/cwc/d6/a27.6.12.24804H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":27,\"w\":13}|27783|https://aeb.win.tue.nl/codes/cwc/d6/a27.6.13.27783H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":27,\"w\":4}|54|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":27,\"w\":5}|262|https://aeb.win.tue.nl/codes/cwc/d6/a27.6.5.262H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":27,\"w\":6}|1170|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":27,\"w\":7}|3510|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":27,\"w\":8}|4828|https://aeb.win.tue.nl/codes/cwc/d6/a27.6.8.4828H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":27,\"w\":9}|8325|https://aeb.win.tue.nl/codes/cwc/d6/a27.6.9.8325H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":28,\"w\":10}|19110|https://aeb.win.tue.nl/codes/cwc/d6/a28.6.10.19110H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":28,\"w\":11}|29484|https://aeb.win.tue.nl/codes/cwc/d6/i28.11": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":28,\"w\":12}|40237|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":28,\"w\":13}|49510|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":28,\"w\":14}|53046|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":28,\"w\":4}|63|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":28,\"w\":5}|280|https://aeb.win.tue.nl/codes/cwc/d6/i28.5": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":28,\"w\":6}|1174|https://aeb.win.tue.nl/codes/cwc/d6/a28.6.6.1174H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":28,\"w\":7}|4680|https://aeb.win.tue.nl/codes/cwc/d6/i28.7": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":28,\"w\":8}|6356|https://aeb.win.tue.nl/codes/cwc/d6/a28.6.8.6356H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":28,\"w\":9}|11388|https://aeb.win.tue.nl/codes/cwc/d6/a28.6.9.11388H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":29,\"w\":10}|27183|https://aeb.win.tue.nl/codes/cwc/d6/a29.6.10.27183H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":29,\"w\":11}|42042|https://aeb.win.tue.nl/codes/cwc/d6/a29.6.11.42042H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":29,\"w\":12}|61823|https://aeb.win.tue.nl/codes/cwc/d6/a29.6.12.61823H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":29,\"w\":13}|80837|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":29,\"w\":14}|92366|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":29,\"w\":4}|65|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":29,\"w\":5}|336|https://aeb.win.tue.nl/codes/cwc/d6/a29.6.5.336H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":29,\"w\":6}|1204|https://aeb.win.tue.nl/codes/cwc/d6/a29.6.6.1204H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":29,\"w\":7}|4689|https://aeb.win.tue.nl/codes/cwc/d6/a29.6.7.4689H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":29,\"w\":8}|8148|https://aeb.win.tue.nl/codes/cwc/d6/a29.6.8.8148H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":29,\"w\":9}|14781|https://aeb.win.tue.nl/codes/cwc/d6/a29.6.9.14781H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":8,\"w\":4}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":6,\"n\":9,\"w\":4}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":10,\"w\":5}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":11,\"w\":5}|2|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":12,\"w\":5}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":12,\"w\":6}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":13,\"w\":5}|3|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":13,\"w\":6}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":14,\"w\":5}|4|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":14,\"w\":6}|7|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":14,\"w\":7}|8|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":15,\"w\":5}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":15,\"w\":6}|10|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":15,\"w\":7}|15|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":16,\"w\":5}|6|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":16,\"w\":6}|16|https://aeb.win.tue.nl/codes/cwc/d8/i16.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":16,\"w\":7}|16|https://aeb.win.tue.nl/codes/cwc/d8/i16.7": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":16,\"w\":8}|30|https://aeb.win.tue.nl/codes/cwc/d8/a16.8.8.30": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":17,\"w\":5}|7|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":17,\"w\":6}|17|https://aeb.win.tue.nl/codes/cwc/d8/i17.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":17,\"w\":7}|24|https://aeb.win.tue.nl/codes/cwc/d8/i17.7": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":17,\"w\":8}|34|https://aeb.win.tue.nl/codes/cwc/d8/i17.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":18,\"w\":5}|9|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":18,\"w\":6}|21|https://aeb.win.tue.nl/codes/cwc/d8/i18.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":18,\"w\":7}|33|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":18,\"w\":8}|46|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":18,\"w\":9}|48|https://aeb.win.tue.nl/codes/cwc/d8/a18.8.9.48": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":19,\"w\":5}|12|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":19,\"w\":6}|28|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":19,\"w\":7}|52|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":19,\"w\":8}|78|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":19,\"w\":9}|88|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":20,\"w\":10}|176|https://aeb.win.tue.nl/codes/cwc/d8/i20.10": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":20,\"w\":5}|16|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":20,\"w\":6}|40|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":20,\"w\":7}|80|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":20,\"w\":8}|130|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":20,\"w\":9}|160|https://aeb.win.tue.nl/codes/cwc/d8/i20.9": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":21,\"w\":10}|336|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":21,\"w\":5}|21|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":21,\"w\":6}|56|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":21,\"w\":7}|120|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":21,\"w\":8}|210|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":21,\"w\":9}|280|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":22,\"w\":10}|616|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":22,\"w\":11}|672|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":22,\"w\":5}|21|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":22,\"w\":6}|77|https://aeb.win.tue.nl/codes/cwc/d8/i22.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":22,\"w\":7}|176|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":22,\"w\":8}|330|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":22,\"w\":9}|292|https://aeb.win.tue.nl/codes/cwc/d8/a22.8.9.292": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":23,\"w\":10}|648|https://aeb.win.tue.nl/codes/cwc/d8/a23.8.10.648": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":23,\"w\":11}|1288|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":23,\"w\":5}|23|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":23,\"w\":6}|77|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":23,\"w\":7}|253|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":23,\"w\":8}|506|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":23,\"w\":9}|412|https://aeb.win.tue.nl/codes/cwc/d8/a23.8.9.412": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":24,\"w\":10}|960|https://aeb.win.tue.nl/codes/cwc/d8/a24.8.10.960H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":24,\"w\":11}|1378|https://aeb.win.tue.nl/codes/cwc/d8/a24.8.11.1378H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":24,\"w\":12}|2576|https://aeb.win.tue.nl/codes/cwc/d8/i24.12": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":24,\"w\":5}|24|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":24,\"w\":6}|78|https://aeb.win.tue.nl/codes/cwc/d8/a24.8.6.78": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":24,\"w\":7}|253|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":24,\"w\":8}|759|https://aeb.win.tue.nl/codes/cwc/d8/i24.8": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":24,\"w\":9}|656|https://aeb.win.tue.nl/codes/cwc/d8/a24.8.9.656": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":25,\"w\":10}|1248|https://aeb.win.tue.nl/codes/cwc/d8/a25.8.10.1248H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":25,\"w\":11}|1722|https://aeb.win.tue.nl/codes/cwc/d8/a25.8.11.1722H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":25,\"w\":12}|2610|https://aeb.win.tue.nl/codes/cwc/d8/a25.8.12.2610H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":25,\"w\":5}|30|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":25,\"w\":6}|100|https://aeb.win.tue.nl/codes/cwc/d8/i25.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":25,\"w\":7}|255|https://aeb.win.tue.nl/codes/cwc/d8/a25.8.7.255": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":25,\"w\":8}|759|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":25,\"w\":9}|837|https://aeb.win.tue.nl/codes/cwc/d8/a25.8.9.837H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":26,\"w\":10}|1519|https://aeb.win.tue.nl/codes/cwc/d8/a26.8.10.1519H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":26,\"w\":11}|2044|https://aeb.win.tue.nl/codes/cwc/d8/a26.8.11.2044H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":26,\"w\":12}|3070|https://aeb.win.tue.nl/codes/cwc/d8/a26.8.12.3070H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":26,\"w\":13}|3588|https://aeb.win.tue.nl/codes/cwc/d8/i26.13": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":26,\"w\":5}|30|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":26,\"w\":6}|130|https://aeb.win.tue.nl/codes/cwc/d8/i26.6": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":26,\"w\":7}|264|https://aeb.win.tue.nl/codes/cwc/d8/a26.8.7.264H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":26,\"w\":8}|763|https://aeb.win.tue.nl/codes/cwc/d8/a26.8.8.763H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":26,\"w\":9}|890|https://aeb.win.tue.nl/codes/cwc/d8/a26.8.9.890H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":27,\"w\":10}|1737|https://aeb.win.tue.nl/codes/cwc/d8/a27.8.10.1737H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":27,\"w\":11}|2422|https://aeb.win.tue.nl/codes/cwc/d8/a27.8.11.2422H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":27,\"w\":12}|3337|https://aeb.win.tue.nl/codes/cwc/d8/a27.8.12.3337H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":27,\"w\":13}|4094|https://aeb.win.tue.nl/codes/cwc/d8/i27.13": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":27,\"w\":5}|31|https://aeb.win.tue.nl/codes/cwc/d8/a27.8.5.31": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":27,\"w\":6}|130|no-object": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":27,\"w\":7}|303|https://aeb.win.tue.nl/codes/cwc/d8/a27.8.7.303H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":27,\"w\":8}|776|https://aeb.win.tue.nl/codes/cwc/d8/a27.8.8.776H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":27,\"w\":9}|1044|https://aeb.win.tue.nl/codes/cwc/d8/a27.8.9.1044H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":28,\"w\":10}|2103|https://aeb.win.tue.nl/codes/cwc/d8/a28.8.10.2103H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":28,\"w\":11}|3832|https://aeb.win.tue.nl/codes/cwc/d8/a28.8.11.3832H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":28,\"w\":12}|4962|https://aeb.win.tue.nl/codes/cwc/d8/a28.8.12.4962H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":28,\"w\":13}|6848|https://aeb.win.tue.nl/codes/cwc/d8/i28.13": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":28,\"w\":14}|6392|https://aeb.win.tue.nl/codes/cwc/d8/a28.8.14.6392H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":28,\"w\":5}|33|https://aeb.win.tue.nl/codes/cwc/d8/a28.8.5.33": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":28,\"w\":6}|132|https://aeb.win.tue.nl/codes/cwc/d8/a28.8.6.132H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":28,\"w\":7}|321|https://aeb.win.tue.nl/codes/cwc/d8/a28.8.7.321H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":28,\"w\":8}|1057|https://aeb.win.tue.nl/codes/cwc/d8/a28.8.8.1057H": [
+   "2026-11-20"
+  ],
+  "constant-weight-code {\"d\":8,\"n\":28,\"w\":9}|1406|https://aeb.win.tue.nl/codes/cwc/d8/a28.8.9.1406H": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":10,\"measure\":\"depth\"}|7": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":10,\"measure\":\"size\"}|29": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":11,\"measure\":\"depth\"}|8": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":11,\"measure\":\"size\"}|35": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":12,\"measure\":\"depth\"}|8": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":12,\"measure\":\"size\"}|39": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":13,\"measure\":\"depth\"}|9": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":14,\"measure\":\"depth\"}|9": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":15,\"measure\":\"depth\"}|9": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":16,\"measure\":\"depth\"}|9": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":17,\"measure\":\"depth\"}|10": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":2,\"measure\":\"depth\"}|1": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":2,\"measure\":\"size\"}|1": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":3,\"measure\":\"depth\"}|3": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":3,\"measure\":\"size\"}|3": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":4,\"measure\":\"depth\"}|3": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":4,\"measure\":\"size\"}|5": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":5,\"measure\":\"depth\"}|5": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":5,\"measure\":\"size\"}|9": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":6,\"measure\":\"depth\"}|5": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":6,\"measure\":\"size\"}|12": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":7,\"measure\":\"depth\"}|6": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":7,\"measure\":\"size\"}|16": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":8,\"measure\":\"depth\"}|6": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":8,\"measure\":\"size\"}|19": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":9,\"measure\":\"depth\"}|7": [
+   "2026-11-20"
+  ],
+  "proved|comparator-network {\"goal\":\"sort\",\"inputs\":9,\"measure\":\"size\"}|25": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":10,\"w\":3}|13": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":10,\"w\":4}|30": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":10,\"w\":5}|36": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":11,\"w\":3}|17": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":11,\"w\":4}|35": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":11,\"w\":5}|66": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":12,\"w\":3}|20": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":12,\"w\":4}|51": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":12,\"w\":5}|80": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":12,\"w\":6}|132": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":13,\"w\":3}|26": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":13,\"w\":4}|65": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":14,\"w\":3}|28": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":14,\"w\":4}|91": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":15,\"w\":3}|35": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":15,\"w\":4}|105": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":16,\"w\":3}|37": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":16,\"w\":4}|140": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":17,\"w\":3}|44": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":17,\"w\":4}|157": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":18,\"w\":3}|48": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":18,\"w\":4}|198": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":19,\"w\":3}|57": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":19,\"w\":4}|228": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":20,\"w\":3}|60": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":20,\"w\":4}|285": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":21,\"w\":3}|70": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":21,\"w\":4}|315": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":22,\"w\":3}|73": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":22,\"w\":4}|385": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":22,\"w\":5}|1386": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":23,\"w\":3}|83": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":23,\"w\":4}|419": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":23,\"w\":5}|1771": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":23,\"w\":6}|5313": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":24,\"w\":3}|88": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":24,\"w\":4}|498": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":24,\"w\":6}|7084": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":25,\"w\":3}|100": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":25,\"w\":4}|550": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":26,\"w\":3}|104": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":26,\"w\":4}|650": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":27,\"w\":3}|117": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":27,\"w\":4}|702": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":28,\"w\":3}|121": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":28,\"w\":4}|819": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":29,\"w\":3}|134": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":29,\"w\":4}|877": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":30,\"w\":3}|140": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":30,\"w\":4}|1005": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":31,\"w\":3}|155": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":31,\"w\":4}|1085": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":32,\"w\":3}|160": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":32,\"w\":4}|1240": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":6,\"w\":3}|4": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":7,\"w\":3}|7": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":8,\"w\":3}|8": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":8,\"w\":4}|14": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":9,\"w\":3}|12": [
+   "2026-11-20"
+  ],
+  "proved|constant-weight-code {\"d\":4,\"n\":9,\"w\":4}|18": [
+   "2026-11-20"
+  ],
+  "proved|sum-free-colouring {\"colours\":1,\"weak\":false}|1": [
+   "2026-11-20"
+  ],
+  "proved|sum-free-colouring {\"colours\":1,\"weak\":true}|2": [
+   "2026-11-20"
+  ],
+  "proved|sum-free-colouring {\"colours\":2,\"weak\":false}|4": [
+   "2026-11-20"
+  ],
+  "proved|sum-free-colouring {\"colours\":2,\"weak\":true}|8": [
+   "2026-11-20"
+  ],
+  "proved|sum-free-colouring {\"colours\":3,\"weak\":false}|13": [
+   "2026-11-20"
+  ],
+  "proved|sum-free-colouring {\"colours\":3,\"weak\":true}|23": [
+   "2026-11-20"
+  ],
+  "proved|sum-free-colouring {\"colours\":4,\"weak\":false}|44": [
+   "2026-11-20"
+  ],
+  "proved|sum-free-colouring {\"colours\":4,\"weak\":true}|66": [
+   "2026-11-20"
+  ],
+  "proved|sum-free-colouring {\"colours\":5,\"weak\":false}|160": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":1,\"weak\":false}|1|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/schur/schur-1-lower-1.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":1,\"weak\":true}|2|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-1-lower-2.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":2,\"weak\":false}|4|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/schur/schur-2-lower-4.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":2,\"weak\":true}|8|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-2-lower-8.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":3,\"weak\":false}|13|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/schur/schur-3-lower-13.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":3,\"weak\":true}|23|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-3-lower-23.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":4,\"weak\":false}|44|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/schur/schur-4-lower-44.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":4,\"weak\":true}|66|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-4-lower-66.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":5,\"weak\":false}|160|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/schur/schur-5-lower-160.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":5,\"weak\":true}|207|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-5-lower-207.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":6,\"weak\":false}|538|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/schur/schur-6-lower-538.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":6,\"weak\":true}|650|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-6-lower-650.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":7,\"weak\":false}|1696|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/schur/schur-7-lower-1696.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":7,\"weak\":true}|2154|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-7-lower-2154.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":8,\"weak\":false}|5382|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/schur/schur-8-lower-5382.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":8,\"weak\":true}|7002|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-8-lower-7002.yml": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":9,\"weak\":false}|17803|no-object": [
+   "2026-11-20"
+  ],
+  "sum-free-colouring {\"colours\":9,\"weak\":true}|22620|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-9-lower-22620.yml": [
+   "2026-11-20"
+  ]
+ },
+ "runs": [
+  "2026-11-20"
+ ],
+ "schema": "papex-finder-first-seen/v2",
+ "seen": {
+  "comparator-network {\"goal\":\"median\",\"inputs\":11,\"measure\":\"size\"}|37|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_11_37_10.json": "2026-11-19",
+  "comparator-network {\"goal\":\"median\",\"inputs\":14,\"measure\":\"depth\"}|8|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_14_40_8.json": "2026-11-19",
+  "comparator-network {\"goal\":\"median\",\"inputs\":14,\"measure\":\"size\"}|38|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_14_38_9.json": "2026-11-19",
+  "comparator-network {\"goal\":\"median\",\"inputs\":15,\"measure\":\"size\"}|41|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Median/Median_15_41_11.json": "2026-11-19",
+  "comparator-network {\"goal\":\"sort\",\"inputs\":13,\"measure\":\"size\"}|45|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_13_45_10.json": "2026-11-19",
+  "comparator-network {\"goal\":\"sort\",\"inputs\":13,\"measure\":\"size\"}|48|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_13_48_10.json": "2026-11-19",
+  "comparator-network {\"goal\":\"sort\",\"inputs\":18,\"measure\":\"depth\"}|11|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_18_78_11.json": "2026-11-19",
+  "comparator-network {\"goal\":\"sort\",\"inputs\":27,\"measure\":\"depth\"}|13|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_27_152_13.json": "2026-11-19",
+  "comparator-network {\"goal\":\"sort\",\"inputs\":27,\"measure\":\"size\"}|147|https://github.com/bertdobbelaere/SorterHunter/blob/master/Networks/Sorters/Sort_27_147_16.json": "2026-11-19",
+  "constant-weight-code {\"d\":10,\"n\":24,\"w\":8}|39|https://aeb.win.tue.nl/codes/cwc/d10/a24.10.8.39": "2026-11-19",
+  "constant-weight-code {\"d\":12,\"n\":29,\"w\":10}|70|https://aeb.win.tue.nl/codes/cwc/d12/a29.12.10.70": "2026-11-19",
+  "constant-weight-code {\"d\":14,\"n\":29,\"w\":13}|38|https://aeb.win.tue.nl/codes/cwc/d14/a29.14.13.38": "2026-11-19",
+  "constant-weight-code {\"d\":4,\"n\":15,\"w\":5}|243|https://aeb.win.tue.nl/codes/cwc/d4/a15.4.5.243": "2026-11-19",
+  "constant-weight-code {\"d\":4,\"n\":8,\"w\":4}|14|https://aeb.win.tue.nl/codes/cwc/d4/h8": "2026-11-19",
+  "constant-weight-code {\"d\":6,\"n\":21,\"w\":5}|110|https://aeb.win.tue.nl/codes/cwc/d6/a21.6.5.110H": "2026-11-19",
+  "constant-weight-code {\"d\":8,\"n\":28,\"w\":6}|132|https://aeb.win.tue.nl/codes/cwc/d8/a28.8.6.132H": "2026-11-19",
+  "sum-free-colouring {\"colours\":5,\"weak\":true}|207|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-5-lower-207.yml": "2026-11-19",
+  "sum-free-colouring {\"colours\":6,\"weak\":true}|650|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-6-lower-650.yml": "2026-11-19",
+  "sum-free-colouring {\"colours\":7,\"weak\":false}|1696|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/schur/schur-7-lower-1696.yml": "2026-11-19",
+  "sum-free-colouring {\"colours\":7,\"weak\":true}|2154|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-7-lower-2154.yml": "2026-11-19",
+  "sum-free-colouring {\"colours\":8,\"weak\":false}|5382|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/schur/schur-8-lower-5382.yml": "2026-11-19",
+  "sum-free-colouring {\"colours\":8,\"weak\":true}|7002|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-8-lower-7002.yml": "2026-11-19",
+  "sum-free-colouring {\"colours\":9,\"weak\":true}|22620|https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-9-lower-22620.yml": "2026-11-19"
+ }
+}

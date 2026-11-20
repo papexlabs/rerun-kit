@@ -1,0 +1,161 @@
+{
+  "checkerSeconds": 60,
+  "cases": [
+    {
+      "object": "good-sort-4.json",
+      "params": "params-4-sort-size.json",
+      "label": "sorting network on 4 inputs (5 comparators)",
+      "line": "{\"valid\": true, \"score\": 5, \"reason\": \"the network on 4 inputs sorts every input (0-1 principle, all inputs); 5 comparators, 3 layers; score = size = 5\"}"
+    },
+    {
+      "object": "good-sort-4.json",
+      "params": "params-4-sort-depth.json",
+      "label": "the same network scored by depth (3 layers)",
+      "line": "{\"valid\": true, \"score\": 3, \"reason\": \"the network on 4 inputs sorts every input (0-1 principle, all inputs); 5 comparators, 3 layers; score = depth = 3\"}"
+    },
+    {
+      "object": "good-sort-8-batcher.json",
+      "params": "params-8-sort-size.json",
+      "label": "Batcher's network on 8 inputs (19 comparators)",
+      "line": "{\"valid\": true, \"score\": 19, \"reason\": \"the network on 8 inputs sorts every input (0-1 principle, all inputs); 19 comparators, 6 layers; score = size = 19\"}"
+    },
+    {
+      "object": "good-sort-24-batcher.json",
+      "params": "params-24-sort-size.json",
+      "label": "Batcher's network on 24 inputs",
+      "line": "{\"valid\": true, \"score\": 127, \"reason\": \"the network on 24 inputs sorts every input (0-1 principle, all inputs); 127 comparators, 15 layers; score = size = 127\"}"
+    },
+    {
+      "object": "good-sort-32-batcher.json",
+      "params": "params-32-sort-depth.json",
+      "label": "Batcher's network on 32 inputs, scored by depth",
+      "line": "{\"valid\": true, \"score\": 15, \"reason\": \"the network on 32 inputs sorts every input (0-1 principle, all inputs); 191 comparators, 15 layers; score = depth = 15\"}"
+    },
+    {
+      "object": "good-median-5-dobbelaere.json",
+      "params": "params-5-median-size.json",
+      "label": "Dobbelaere's median network for 5 inputs (MIT)",
+      "line": "{\"valid\": true, \"score\": 7, \"reason\": \"the network on 5 inputs selects the median of every input (0-1 principle, all inputs); 7 comparators, 5 layers; score = size = 7\"}"
+    },
+    {
+      "object": "good-median-4-dobbelaere.json",
+      "params": "params-4-median-size.json",
+      "label": "Dobbelaere's median network for 4 inputs: two middle values on wires 1 and 2 (MIT)",
+      "line": "{\"valid\": true, \"score\": 4, \"reason\": \"the network on 4 inputs selects the median of every input (0-1 principle, all inputs); 4 comparators, 2 layers; score = size = 4\"}"
+    },
+    {
+      "object": "good-median-6-dobbelaere.json",
+      "params": "params-6-median-depth.json",
+      "label": "Dobbelaere's median network for 6 inputs, scored by depth (MIT)",
+      "line": "{\"valid\": true, \"score\": 4, \"reason\": \"the network on 6 inputs selects the median of every input (0-1 principle, all inputs); 10 comparators, 4 layers; score = depth = 4\"}"
+    },
+    {
+      "object": "good-median-9-dobbelaere.json",
+      "params": "params-9-median-size.json",
+      "label": "Dobbelaere's median network for 9 inputs (MIT)",
+      "line": "{\"valid\": true, \"score\": 19, \"reason\": \"the network on 9 inputs selects the median of every input (0-1 principle, all inputs); 19 comparators, 7 layers; score = size = 19\"}"
+    },
+    {
+      "object": "good-sort-8-batcher.json",
+      "params": "params-4-sort-size.json",
+      "label": "wrong size: an 8-input network against params for 4 inputs",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"inputs must be the whole number 4\"}"
+    },
+    {
+      "object": "bad-missing-comparator.json",
+      "params": "params-4-sort-size.json",
+      "label": "violated: the last comparator removed, so 0101 is not sorted",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the network leaves wire 1 above wire 2 for the 0-1 input 0101 (wire 0 on the left)\"}"
+    },
+    {
+      "object": "bad-median-as-sort.json",
+      "params": "params-5-sort-size.json",
+      "label": "violated: a median network does not sort",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the network leaves wire 0 above wire 1 for the 0-1 input 11110 (wire 0 on the left)\"}"
+    },
+    {
+      "object": "bad-sort-14-one-short.json",
+      "params": "params-14-sort-size.json",
+      "label": "violated: Batcher's 14-input network less its last comparator",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the network leaves wire 11 above wire 12 for the 0-1 input 10000000100000 (wire 0 on the left)\"}"
+    },
+    {
+      "object": "bad-extra-key.json",
+      "params": "params-4-sort-size.json",
+      "label": "extra key \"note\"",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the object holds the key \\\"note\\\", which the format does not name (only inputs, comparators)\"}"
+    },
+    {
+      "object": "good-sort-4.json",
+      "params": "params-extra-key.json",
+      "label": "params with an extra key",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"params must hold exactly inputs, goal and measure\"}"
+    },
+    {
+      "object": "good-sort-4.json",
+      "params": "params-over-limit.json",
+      "label": "params: 40 inputs, above the limit",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"params.inputs must be a whole number from 2 to 32 (this checker's limit)\"}"
+    },
+    {
+      "object": "good-sort-4.json",
+      "params": "params-bad-goal.json",
+      "label": "params: goal \"max\"",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"params.goal must be \\\"sort\\\" or \\\"median\\\"\"}"
+    },
+    {
+      "object": "bad-type-string-wire.json",
+      "params": "params-4-sort-size.json",
+      "label": "wrong type: a wire written as text",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"comparator 0 is not a pair [i, j] of whole numbers\"}"
+    },
+    {
+      "object": "bad-type-bool-wire.json",
+      "params": "params-4-sort-size.json",
+      "label": "wrong type: true as a wire",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"comparator 0 is not a pair [i, j] of whole numbers\"}"
+    },
+    {
+      "object": "bad-type-float-inputs.json",
+      "params": "params-4-sort-size.json",
+      "label": "wrong type: inputs 4.0",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"inputs must be the whole number 4\"}"
+    },
+    {
+      "object": "bad-triple.json",
+      "params": "params-4-sort-size.json",
+      "label": "wrong shape: a comparator of three wires",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"comparator 0 is not a pair [i, j] of whole numbers\"}"
+    },
+    {
+      "object": "bad-range-wire-4.json",
+      "params": "params-4-sort-size.json",
+      "label": "out of range: wire 4 on 4 inputs",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"comparator 1 is [3, 4]; each needs 0 <= i < j < 4\"}"
+    },
+    {
+      "object": "bad-range-reversed.json",
+      "params": "params-4-sort-size.json",
+      "label": "out of range: [1, 0] (i must be below j)",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"comparator 0 is [1, 0]; each needs 0 <= i < j < 4\"}"
+    },
+    {
+      "object": "bad-not-object.json",
+      "params": "params-4-sort-size.json",
+      "label": "not a JSON object",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the object must be a JSON object {\\\"inputs\\\": n, \\\"comparators\\\": [[i, j], ...]}\"}"
+    },
+    {
+      "object": "bad-duplicate-key.json",
+      "params": "params-4-sort-size.json",
+      "label": "a key twice",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the key \\\"inputs\\\" appears twice in one JSON object\"}"
+    },
+    {
+      "object": "bad-not-json.json",
+      "params": "params-4-sort-size.json",
+      "label": "not JSON",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the object file is not JSON\"}"
+    }
+  ]
+}

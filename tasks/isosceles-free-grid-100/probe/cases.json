@@ -1,0 +1,103 @@
+{
+ "cases": [
+  {
+   "file": "v1_wrong_n.json",
+   "label": "declared grid size `n` set to 64 (wrong size)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "field n must be the integer 100"
+   }
+  },
+  {
+   "file": "v2_out_of_range.json",
+   "label": "point 0 moved to x = 100 (outside 0..99)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "point 0 = (100, 4) is outside 0..99"
+   }
+  },
+  {
+   "file": "v3_add_midpoint.json",
+   "label": "added (78, 4), the midpoint of published points (67, 4) and (89, 4) (violated constraint)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "isosceles: |a-b| = |b-c| with a=[75, 97], b=[92, 51], c=[78, 4] (squared distance 2405)"
+   }
+  },
+  {
+   "file": "v4_tampered_point.json",
+   "label": "point 0 changed from (67, 4) to (67, 5) (tampered value)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "isosceles: |a-b| = |b-c| with a=[67, 5], b=[91, 86], c=[7, 95] (squared distance 7137)"
+   }
+  },
+  {
+   "file": "v5_duplicate_point.json",
+   "label": "last point repeated, so the list claims 165 entries",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "point 164 = (3, 56) appears twice"
+   }
+  },
+  {
+   "file": "v6_non_integer.json",
+   "label": "point 1 changed to (89.5, 4)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "point 1 is not a pair of integers: [89.5, 4]"
+   }
+  },
+  {
+   "file": "v7_extra_key.json",
+   "label": "extra field \"score\": 999 added: a key the format does not name (was v7_claimed_score_ignored.json, then accepted)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "key \"score\" is not part of the format (only n and points)"
+   }
+  },
+  {
+   "file": "v8_truncated.json",
+   "label": "file cut after 500 characters",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "not valid JSON: Expecting value: line 1 column 501 (char 500)"
+   }
+  },
+  {
+   "file": "v9_n_is_100_as_a_float.json",
+   "label": "n written 100.0",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "field n must be the integer 100"
+   }
+  },
+  {
+   "file": "v10_n_is_true.json",
+   "label": "n written true",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "field n must be the integer 100"
+   }
+  },
+  {
+   "file": "v11_coordinate_is_true.json",
+   "label": "a coordinate written true",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "point 0 is not a pair of integers: [True, 4]"
+   }
+  }
+ ]
+}

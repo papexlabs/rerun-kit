@@ -1,0 +1,107 @@
+{
+  "checkerSeconds": 60,
+  "cases": [
+    {
+      "object": "good-golay-octads-759.json",
+      "params": "params-24-8-8.json",
+      "label": "the 759 octads of the Golay code: A(24,8,8) >= 759",
+      "line": "{\"valid\": true, \"score\": 759, \"reason\": \"759 distinct codewords of length 24 and weight 8, any two at distance at least 8, so A(24,8,8) >= 759; score = 759\"}"
+    },
+    {
+      "object": "good-pg23-lines-13.json",
+      "params": "params-13-6-4.json",
+      "label": "the 13 lines of the projective plane of order 3: A(13,6,4) >= 13",
+      "line": "{\"valid\": true, \"score\": 13, \"reason\": \"13 distinct codewords of length 13 and weight 4, any two at distance at least 6, so A(13,6,4) >= 13; score = 13\"}"
+    },
+    {
+      "object": "good-fano-7.json",
+      "params": "params-7-4-3.json",
+      "label": "the 7 lines of the Fano plane: A(7,4,3) >= 7",
+      "line": "{\"valid\": true, \"score\": 7, \"reason\": \"7 distinct codewords of length 7 and weight 3, any two at distance at least 4, so A(7,4,3) >= 7; score = 7\"}"
+    },
+    {
+      "object": "good-sum-mod-20.json",
+      "params": "params-20-4-6.json",
+      "label": "weight-6 words of length 20 whose positions sum to 0 mod 20",
+      "line": "{\"valid\": true, \"score\": 1932, \"reason\": \"1932 distinct codewords of length 20 and weight 6, any two at distance at least 4, so A(20,4,6) >= 1932; score = 1932\"}"
+    },
+    {
+      "object": "bad-duplicate-word.json",
+      "params": "params-7-4-3.json",
+      "label": "violated: a codeword twice",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"codeword 1 (11) appears twice\"}"
+    },
+    {
+      "object": "bad-too-close.json",
+      "params": "params-7-4-3.json",
+      "label": "violated: an eighth word closer than 4 to a line",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"codewords 0 (11) and 7 (7) share 2 ones, so they differ in only 2 coordinates\"}"
+    },
+    {
+      "object": "bad-weight.json",
+      "params": "params-7-4-3.json",
+      "label": "violated: a word of weight 4",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"codeword 6 (15) has weight 4, not 3\"}"
+    },
+    {
+      "object": "good-fano-7.json",
+      "params": "params-8-4-4.json",
+      "label": "wrong size: an n = 7 code against params for n = 8",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"n must be the whole number 8\"}"
+    },
+    {
+      "object": "bad-word-too-long.json",
+      "params": "params-7-4-3.json",
+      "label": "out of range: a word with bit 7 on length 7",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"codeword 0 is not a whole number from 0 to 2^7 - 1\"}"
+    },
+    {
+      "object": "bad-negative.json",
+      "params": "params-7-4-3.json",
+      "label": "out of range: a negative word",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"codeword 0 is not a whole number from 0 to 2^7 - 1\"}"
+    },
+    {
+      "object": "bad-extra-key.json",
+      "params": "params-7-4-3.json",
+      "label": "extra key \"source\"",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the object holds the key \\\"source\\\", which the format does not name (only n, d, w, codewords)\"}"
+    },
+    {
+      "object": "bad-type-string-word.json",
+      "params": "params-7-4-3.json",
+      "label": "wrong type: a word as a 0/1 text",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"codeword 0 is not a whole number from 0 to 2^7 - 1\"}"
+    },
+    {
+      "object": "bad-type-float.json",
+      "params": "params-7-4-3.json",
+      "label": "wrong type: a word 11.0",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"codeword 0 is not a whole number from 0 to 2^7 - 1\"}"
+    },
+    {
+      "object": "bad-missing-key.json",
+      "params": "params-7-4-3.json",
+      "label": "missing key d",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"the object must hold n, d, w and codewords\"}"
+    },
+    {
+      "object": "good-fano-7.json",
+      "params": "params-odd-d.json",
+      "label": "params: odd distance 3",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"params.d must be an even whole number from 2 to 2n\"}"
+    },
+    {
+      "object": "good-fano-7.json",
+      "params": "params-over-limit.json",
+      "label": "params: n = 33, above the limit",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"params.n must be a whole number from 1 to 32 (this checker's limit)\"}"
+    },
+    {
+      "object": "good-fano-7.json",
+      "params": "params-extra-key.json",
+      "label": "params with an extra key",
+      "line": "{\"valid\": false, \"score\": null, \"reason\": \"params must be a JSON object with exactly n, d and w\"}"
+    }
+  ]
+}

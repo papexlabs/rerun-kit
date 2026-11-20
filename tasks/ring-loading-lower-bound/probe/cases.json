@@ -1,0 +1,229 @@
+{
+ "cases": [
+  {
+   "file": "v1_too_many_pairs.json",
+   "label": "21 pairs",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "need 2 <= m <= 20 pairs, got 21"
+   }
+  },
+  {
+   "file": "v2_one_pair.json",
+   "label": "1 pair",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "need 2 <= m <= 20 pairs, got 1"
+   }
+  },
+  {
+   "file": "v3_negative_u.json",
+   "label": "first u = -1/16",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "pair 0 has a negative entry"
+   }
+  },
+  {
+   "file": "v4_nan.json",
+   "label": "one v replaced by the literal NaN",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "not accepted: constant NaN is not allowed"
+   }
+  },
+  {
+   "file": "v5_text_value.json",
+   "label": "one u = \"half\"",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "pair 2 u: cannot read 'half' as an exact rational"
+   }
+  },
+  {
+   "file": "v6_tampered_digit.json",
+   "label": "pair 0 changed from (3/16, 13/16) to (4/16, 12/16): valid, recomputed 17/16",
+   "expect": {
+    "valid": true,
+    "score": "1.0625",
+    "reason": "m = 14 pairs (0 scaled so that u+v = 1); k = 1..m; exact minimum over all 2^14 sign choices: alpha = 17/16 = 1.0625 exactly; so beta >= 17/16"
+   }
+  },
+  {
+   "file": "v7_extra_keys.json",
+   "label": "extra keys \"score\" and \"betterThanBestKnown\": keys the format does not name",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "the object must hold exactly the key pairs"
+   }
+  },
+  {
+   "file": "v8_pair_scaled.json",
+   "label": "pair 0 replaced by (3, 1): scaled to (3/4, 1/4), 13/16",
+   "expect": {
+    "valid": true,
+    "score": "0.8125",
+    "reason": "m = 14 pairs (1 scaled so that u+v = 1); k = 1..m; exact minimum over all 2^14 sign choices: alpha = 13/16 = 0.8125 exactly; so beta >= 13/16"
+   }
+  },
+  {
+   "file": "x1_exponent_number.json",
+   "label": "1e999999999 as a JSON number (exponent literal)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "pair 0 u: exponent larger than 60"
+   }
+  },
+  {
+   "file": "x2_exponent_string.json",
+   "label": "\"1e-999999999\" as a string (exponent literal)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "pair 0 u: exponent larger than 60"
+   }
+  },
+  {
+   "file": "x3_long_decimal.json",
+   "label": "a 202-character decimal",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "pair 0 u: literal longer than 80 characters"
+   }
+  },
+  {
+   "file": "x4_huge_integer.json",
+   "label": "a 4000-digit integer",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "pair 0 u: integer longer than 80 digits"
+   }
+  },
+  {
+   "file": "x5_ratio_huge_parts.json",
+   "label": "a fraction of exactly 80 characters",
+   "expect": {
+    "valid": true,
+    "score": "0.5",
+    "reason": "m = 2 pairs (0 scaled so that u+v = 1); k = 1..m; exact minimum over all 2^2 sign choices: alpha = 1/2 = 0.5 exactly; so beta >= 1/2"
+   }
+  },
+  {
+   "file": "x5b_ratio_too_long.json",
+   "label": "the same with 81 characters",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "pair 0 u: literal longer than 80 characters"
+   }
+  },
+  {
+   "file": "x6_denominator_bits.json",
+   "label": "twenty different 40-digit denominators",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "common denominator of all entries has more than 2048 bits (use shorter decimals or smaller fractions)"
+   }
+  },
+  {
+   "file": "x7_nan.json",
+   "label": "NaN",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "not accepted: constant NaN is not allowed"
+   }
+  },
+  {
+   "file": "x8_infinity_string.json",
+   "label": "\"inf\"",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "pair 0 u: cannot read 'inf' as an exact rational"
+   }
+  },
+  {
+   "file": "alphaevolve_m15.json",
+   "label": "AlphaEvolve's published 15 pairs (k = 1..m)",
+   "expect": {
+    "valid": true,
+    "score": "1.11904756846927744",
+    "reason": "m = 15 pairs (2 scaled so that u+v = 1); k = 1..m; exact minimum over all 2^15 sign choices: alpha = 874255912866623/781250000000000 = 1.11904756846927744 exactly; so beta >= 874255912866623/781250000000000"
+   }
+  },
+  {
+   "file": "c_padded_both_ends.json",
+   "label": "best_known.json with (0, 0) at both ends",
+   "expect": {
+    "valid": true,
+    "score": "1.125",
+    "reason": "m = 16 pairs (0 scaled so that u+v = 1); k = 1..m; exact minimum over all 2^16 sign choices: alpha = 9/8 = 1.125 exactly; so beta >= 9/8"
+   }
+  },
+  {
+   "file": "c_padded_end_only.json",
+   "label": "best_known.json with (0, 0) at the end only",
+   "expect": {
+    "valid": true,
+    "score": "1.125",
+    "reason": "m = 15 pairs (0 scaled so that u+v = 1); k = 1..m; exact minimum over all 2^15 sign choices: alpha = 9/8 = 1.125 exactly; so beta >= 9/8"
+   }
+  },
+  {
+   "file": "c_turned6.json",
+   "label": "best_known.json turned by 6 pairs (the same ring)",
+   "expect": {
+    "valid": true,
+    "score": "1.125",
+    "reason": "m = 14 pairs (0 scaled so that u+v = 1); k = 1..m; exact minimum over all 2^14 sign choices: alpha = 9/8 = 1.125 exactly; so beta >= 9/8"
+   }
+  },
+  {
+   "file": "c_turned6_padded_both_ends.json",
+   "label": "the turned ring with (0, 0) at both ends",
+   "expect": {
+    "valid": true,
+    "score": "1.125",
+    "reason": "m = 16 pairs (0 scaled so that u+v = 1); k = 1..m; exact minimum over all 2^16 sign choices: alpha = 9/8 = 1.125 exactly; so beta >= 9/8"
+   }
+  },
+  {
+   "file": "c_turned6_padded_end_only.json",
+   "label": "the turned ring with (0, 0) at the end only",
+   "expect": {
+    "valid": true,
+    "score": "1.125",
+    "reason": "m = 15 pairs (0 scaled so that u+v = 1); k = 1..m; exact minimum over all 2^15 sign choices: alpha = 9/8 = 1.125 exactly; so beta >= 9/8"
+   }
+  },
+  {
+   "file": "v9_u_is_true.json",
+   "label": "a u written true",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "pair 0 u: booleans are not numbers"
+   }
+  },
+  {
+   "file": "v10_v_is_false.json",
+   "label": "a v written false",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "pair 0 v: booleans are not numbers"
+   }
+  }
+ ]
+}

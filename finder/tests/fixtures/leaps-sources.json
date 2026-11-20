@@ -1,0 +1,286 @@
+{
+"eliahou-et-al-2013": {
+"string": "S. Eliahou, C. Fonlupt, J. Fromentin, V. Marion-Poty, D. Robilliard and F. Teytaud, Investigating Monte-Carlo Methods on the Weak Schur Problem, EvoCOP 2013, Lecture Notes in Computer Science 7832 (2013) 191-201.",
+"date": "2013-04",
+"doi": "https://doi.org/10.1007/978-3-642-37198-1_17",
+"added_by": "daniel-munro"
+},
+"irving-1973-schur": {
+"string": "R.W. Irving, An extension of Schur's theorem on sum-free partitions, Acta Arithmetica 25 (1973) 55-64.",
+"date": "1973",
+"doi": "https://doi.org/10.4064/aa-25-1-55-64",
+"notes": "Received 1972-07-06. States S(k) <= floor(k!(e - 1/24)) (p. 55), attributing it to Whitehead; Whitehead's 1973 paper in Discrete Mathematics doesn't state it, so the source may be his 1971 dissertation, which wasn't found. The values 321, 1927, 13490, 107921 and 971290 for k = 5 to 9 are evaluated here. Theorem 2 with r = 2 gives WS(k) <= floor(k!(2k+1)e/2 + 1); the values for k = 3 to 9 used in weak-schur are evaluated from it here, not stated in the paper. Heule (arXiv:1711.08076) also credits the S(k) bound to Irving.",
+"added_by": "daniel-munro"
+},
+"batcher-1964": {
+"string": "K.E. Batcher, A new internal sorting method, Goodyear Aerospace report GER-11759, September 1964.",
+"date": "1964-09",
+"notes": "The odd-even merge sort; values from Table 1 of Floyd and Knuth (1970). Published as Batcher (1968).",
+"added_by": "daniel-munro"
+},
+"floyd-knuth-1970": {
+"string": "R.W. Floyd, D.E. Knuth, The Bose-Nelson sorting problem, Stanford report STAN-CS-70-177, November 1970. Also in A Survey of Combinatorial Theory, North-Holland (1973) 163-172.",
+"date": "1970-11",
+"url": "http://bitsavers.informatik.uni-stuttgart.de/pdf/stanford/Stanford_CS_TR_Collection_2025-12-12/PDF/1970/CS-TR-70-177.pdf",
+"doi": "https://doi.org/10.1016/B978-0-7204-2262-7.50020-X",
+"notes": "Proves S(n) for n <= 8 (Theorems 3 and 4; for 7 inputs, a 1966 computer search by R. Grove). Table 1 gives the best upper bounds known in 1969, including unpublished networks by Waksman (10 inputs) and Shapiro and Green (11, 12 and 16 inputs), and the best lower bounds known in 1966.",
+"added_by": "daniel-munro"
+},
+"wan-1997": {
+"string": "H. Wan, Upper bounds for Ramsey numbers R(3,3,...,3) and Schur numbers, Journal of Graph Theory 26 (1997) 119-122.",
+"date": "1997-11",
+"doi": "https://doi.org/10.1002/(SICI)1097-0118(199711)26:3<119::AID-JGT1>3.0.CO;2-U",
+"notes": "[Wan] in https://doi.org/10.37236/21. Read through its summary (Zbl 0882.05095): R_n(3) < n!(e - e^{-1} + 3)/2 + 1 for n >= 4, and S_n < n!(e - e^{-1} + 3)/2 - n + 2 for even n >= 6. Evaluated here: R_7(3) <= 13484, R_8(3) <= 107865 and R_9(3) <= 970778 (for n = 5 and 6 it gives 322 and 1927, no better than the bounds from S\u00e1nchez-Flores 1995), S(6) <= 1922 and S(8) <= 107858 from the even-n bound, and S(7) <= 13482 and S(9) <= 970776 from S(n) <= R_n(3) - 2. Whether S_n is the largest n with a partition or one more isn't clear from the summary; the values used hold either way.",
+"added_by": "daniel-munro"
+},
+"robilliard-et-al-2012": {
+"string": "D. Robilliard, C. Fonlupt, V. Marion-Poty and A. Boumaza, A Multilevel Tabu Search with Backtracking for Exploring Weak Schur Numbers, Artificial Evolution (EA 2011), Lecture Notes in Computer Science 7401 (2012) 109-119.",
+"date": "2012",
+"doi": "https://doi.org/10.1007/978-3-642-35533-2_10",
+"added_by": "daniel-munro"
+},
+"le-bras-gomes-selman-2012": {
+"string": "R. Le Bras, C.P. Gomes and B. Selman, From Streamlined Combinatorial Search to Efficient Constructive Procedures, Proceedings of the AAAI Conference on Artificial Intelligence 26 (2012) 499-506.",
+"date": "2012-07",
+"doi": "https://doi.org/10.1609/aaai.v26i1.8147",
+"added_by": "daniel-munro"
+},
+"dobbelaere-2018-01-02": {
+"string": "B. Dobbelaere, Smallest and fastest sorting networks for a given number of inputs, SorterHunter repository, sorting_networks.html, 2018-01-02.",
+"date": "2018-01-02",
+"url": "https://github.com/bertdobbelaere/SorterHunter/blob/96c663941b118d07af6a3c623867c389ffd2aa1c/sorting_networks.html",
+"notes": "A smaller network for 22 inputs, and a column of lower bounds on size, by S(n+1) >= S(n) + ceil(log2 n) (Van Voorhis).",
+"added_by": "daniel-munro"
+},
+"exoo-1994": {
+"string": "G. Exoo, A Lower Bound for Schur Numbers and Multicolor Ramsey Numbers of K3, Electronic Journal of Combinatorics 1 (1994) #R8.",
+"date": "1994-09-18",
+"doi": "https://doi.org/10.37236/1188",
+"notes": "Submitted 1994-09-13, accepted 1994-09-18. Gives a partition of [1, 160] into 5 sum-free sets, so S(5) >= 160 and R_5(3) >= 162, and R_6(3) >= 500 from Chung's recurrence. Says the best previously published bounds were 157 <= S(5) <= 321 (Fredricksen 1979, Whitehead 1973). S(6) >= 481 = 3 * 160 + 1 follows by Schur's recurrence, as https://doi.org/10.37236/1510 notes.",
+"added_by": "daniel-munro"
+},
+"van-voorhis-1972": {
+"string": "D.C. Van Voorhis, An improved lower bound for sorting networks, IEEE Transactions on Computers C-21 (1972) 612-613.",
+"date": "1972-06",
+"doi": "https://doi.org/10.1109/TC.1972.5009021",
+"notes": "Proves S(n) >= S(n-1) + ceil(log2 n), first in Stanford Digital Systems Laboratory Technical Note 7 (February 1971). The resulting lower bounds for 9 to 16 inputs are from Codish et al. (2014).",
+"added_by": "daniel-munro"
+},
+"bose-nelson-1962": {
+"string": "R.C. Bose, R.J. Nelson, A sorting problem, Journal of the ACM 9 (1962) 282-296.",
+"date": "1962-04",
+"doi": "https://doi.org/10.1145/321119.321126",
+"notes": "Values from Table 1 of Floyd and Knuth (1970).",
+"added_by": "daniel-munro"
+},
+"codish-et-al-2014": {
+"string": "M. Codish, L. Cruz-Filipe, M. Frank, P. Schneider-Kamp, Twenty-five comparators is optimal when sorting nine inputs (and twenty-nine for ten), ICTAI 2014, arXiv:1405.5754. Also Journal of Computer and System Sciences 82 (2016) 551-563.",
+"date": "2014-05-22",
+"url": "https://arxiv.org/abs/1405.5754",
+"doi": "https://doi.org/10.1016/j.jcss.2015.11.014",
+"notes": "Proves S(9) = 25 and S(10) = 29, and so new lower bounds for 11 to 16 inputs (table on p. 3), which also lists the older lower bounds.",
+"added_by": "daniel-munro"
+},
+"mckenna-2026": {
+"string": "A. McKenna, The sixth Schur number is at least 538, Zenodo.",
+"date": "2026-11-04",
+"doi": "https://doi.org/10.5281/zenodo.23939242",
+"notes": "Not peer reviewed. The partition is checked directly and in Lean 4. S(8) >= 5382 follows by known recursive constructions.",
+"added_by": "arhancanli"
+},
+"rodrigo-2026": {
+"string": "S.E. Rodrigo, A new lower bound for the sixth weak Schur number: WS(6) >= 650, Zenodo preprint.",
+"date": "2026-06-10",
+"doi": "https://doi.org/10.5281/zenodo.20633634",
+"notes": "Not peer reviewed.",
+"added_by": "daniel-munro"
+},
+"sanchez-flores-1995": {
+"string": "A. S\u00e1nchez-Flores, An improved upper bound for Ramsey number N(3,3,3,3;2), Discrete Mathematics 140 (1995) 281-286.",
+"date": "1995-06",
+"doi": "https://doi.org/10.1016/0012-365X(93)E0187-9",
+"notes": "[S\u00e1n] in https://doi.org/10.37236/21. Read through its zbMATH review (Zbl 0834.05040): any 4-coloring of K_65 has a monochromatic triangle, so R_4(3) <= 64. With the Greenwood-Gleason inequality R_{k+1}(3) <= (k+1)(R_k(3) - 1) + 2 this gives R_5(3) <= 317 and R_6(3) <= 1898, listed in DS1 revisions 2 (1995) and 6 (1999), and S(5) <= 315, stated in https://doi.org/10.37236/1510.",
+"added_by": "daniel-munro"
+},
+"rowley-2019": {
+"string": "F. Rowley, A generalised linear Ramsey graph construction, Australasian Journal of Combinatorics 81 (2021) 245-256, arXiv:1912.01164.",
+"date": "2019-12-03",
+"url": "https://arxiv.org/abs/1912.01164",
+"notes": "Credited with S(8) >= 5286 in https://arxiv.org/abs/2112.03175, and with R_8(3) >= 5288 ([Row3]) in https://doi.org/10.37236/21",
+"added_by": "daniel-munro"
+},
+"chen-zhu-long-2026": {
+"string": "Z. Chen, L. Zhu and F. Long, A new lower bound for the sixth Schur number: S(6) >= 537, arXiv:2610.31362.",
+"date": "2026-10-22",
+"url": "https://arxiv.org/abs/2610.31362",
+"notes": "Not peer reviewed. S(8) >= 5372 follows from S(6) >= 537 by a recurrence.",
+"added_by": "daniel-munro"
+},
+"bornsztein-2002": {
+"string": "P. Bornsztein, On an extension of a theorem of Schur, Acta Arithmetica 101 (2002) 395-399.",
+"date": "2002",
+"doi": "https://doi.org/10.4064/aa101-4-6",
+"notes": "Theorem: for n >= 2, every partition of {1, ..., [n! n e] + 1} into n classes has a class containing two different numbers and their sum, so WS(n) <= floor(n! n e).",
+"added_by": "daniel-munro"
+},
+"batcher-1968": {
+"string": "K.E. Batcher, Sorting networks and their applications, AFIPS Spring Joint Computer Conference 32 (1968) 307-314.",
+"date": "1968-04-30",
+"doi": "https://doi.org/10.1145/1468075.1468121",
+"url": "https://www.cs.kent.edu/~batcher/sort.pdf",
+"notes": "Sorts 2^p inputs in p(p+1)/2 steps, and so n inputs in that many steps for n <= 2^p, by leaving out wires.",
+"added_by": "daniel-munro"
+},
+"harder-2019": {
+"string": "J. Harder, sortnetopt, https://github.com/jix/sortnetopt, 2019-12-07.",
+"date": "2019-12-07",
+"url": "https://github.com/jix/sortnetopt",
+"notes": "Computer proof that S(11) = 35 and S(12) = 39. Written up in Harder (2020).",
+"added_by": "daniel-munro"
+},
+"ageron-et-al-2021": {
+"string": "R. Ageron, P. Casteras, T. Pellerin, Y. Portella, A. Rimmel and J. Tomasik, New lower bounds for Schur and weak Schur numbers, arXiv:2112.03175.",
+"date": "2021-12-06",
+"url": "https://arxiv.org/abs/2112.03175",
+"added_by": "daniel-munro"
+},
+"dobbelaere-2017-12-29": {
+"string": "B. Dobbelaere, Smallest and fastest sorting networks for a given number of inputs, SorterHunter repository, first version of sorting_networks.html, 2017-12-29.",
+"date": "2017-12-29",
+"url": "https://github.com/bertdobbelaere/SorterHunter/blob/c2a6f20684db7eaab9b573cf7f743affd8929bc3/sorting_networks.html",
+"notes": "Smaller networks found by SorterHunter for 19, 20, 21, 23, 24 and 28 inputs, a network for 29 inputs with 165 comparators by Batcher's odd-even merge of the smallest networks for 13 and 16 inputs, and networks of depth 14 for 25 to 32 inputs by Batcher's odd-even merge of networks of depth 9.",
+"added_by": "daniel-munro"
+},
+"dobbelaere-2020-06-07": {
+"string": "B. Dobbelaere, Smallest and fastest sorting networks for a given number of inputs, SorterHunter repository, sorting_networks.html, 2020-06-07.",
+"date": "2020-06-07",
+"url": "https://github.com/bertdobbelaere/SorterHunter/blob/2f566a812bf6759a9afb3adedaa07062f6f1059b/sorting_networks.html",
+"notes": "Corrects the lower bounds on size for 17 to 32 inputs, one higher than before.",
+"added_by": "daniel-munro"
+},
+"ehlers-muller-2015": {
+"string": "T. Ehlers, M. M\u00fcller, New bounds on optimal sorting networks, CiE 2015, LNCS 9136 (2015) 167-176, arXiv:1501.06946.",
+"date": "2015-01-27",
+"url": "https://arxiv.org/abs/1501.06946",
+"doi": "https://doi.org/10.1007/978-3-319-20028-6_17",
+"notes": "Theorem 1: any sorting network on 17 or more inputs has depth at least 10, so D(17) = 10.",
+"added_by": "daniel-munro"
+},
+"ehlers-muller-2014": {
+"string": "T. Ehlers, M. M\u00fcller, Faster sorting networks for 17, 19 and 20 inputs, Technical report 1406, Kiel University, 2014, arXiv:1410.2736.",
+"date": "2014-10-08",
+"url": "https://arxiv.org/abs/1410.2736",
+"notes": "Networks of depth 10 for 17 inputs and 11 for 19 and 20 inputs (Table 1, Figures 3 and 4). Table 1 also lists the earlier bounds for 17 to 20 inputs.",
+"added_by": "daniel-munro"
+},
+"rafilipojaona-2015": {
+"string": "F.A. Rafilipojaona, Nombres de Schur classiques et faibles, Ph.D. thesis, Universit\u00e9 du Littoral C\u00f4te d'Opale, 2015, HAL tel-01344633.",
+"date": "2016-07-13",
+"url": "https://theses.hal.science/tel-01344633",
+"notes": "Defended 2015-07-10; the manuscript was released on HAL on 2016-07-13, the date used here. Its Propositions 68-70 give WS(7) >= 1740, WS(8) >= 5201 and WS(9) >= 15596, later published as rafilipojaona-2017 (received by Integers 2015-04-20). Neither cites Bouzy's report of 2015-09-17 (WS(7) >= 1736, WS(8) >= 5105), found independently. If the defense date is taken as the public date instead, Bouzy's two bounds were not improvements.",
+"added_by": "daniel-munro"
+},
+"heule-2017-schur": {
+"string": "M.J.H. Heule, Schur Number Five, Proceedings of the AAAI Conference on Artificial Intelligence 32 (2018) 6598-6606, arXiv:1711.08076.",
+"date": "2017-11-21",
+"doi": "https://doi.org/10.1609/aaai.v32i1.12209",
+"url": "https://arxiv.org/abs/1711.08076",
+"added_by": "daniel-munro"
+},
+"tomar-2026": {
+"string": "T.S. Tomar, Sorting networks on 13 inputs need at least 44 comparators, Zenodo, 2026, https://doi.org/10.5281/zenodo.23453293.",
+"date": "2026-10-18",
+"doi": "https://doi.org/10.5281/zenodo.23453293",
+"notes": "Computer proof of the lower bounds on size for 13 to 27 inputs that Dobbelaere's list gave from 2025-04-21, with a Lean proof of S(13) >= 44. Version 2 (2026-10-19) adds 28 to 32 inputs. Not peer reviewed. A sequel (Zenodo, 2026-10-21, https://doi.org/10.5281/zenodo.23504358) claims S(13) = 45, and so bounds one higher for 14 to 32 inputs.",
+"added_by": "daniel-munro"
+},
+"schur-1916": {
+"string": "I. Schur, \u00dcber die Kongruenz x^m + y^m \u2261 z^m (mod p), Jahresbericht der Deutschen Mathematiker-Vereinigung 25 (1916) 114-117.",
+"date": "1916",
+"url": "https://gdz.sub.uni-goettingen.de/id/PPN37721857X_0025?tify=%7B%22pages%22:%5B121%5D%7D",
+"notes": "The Hilfssatz (p. 114, proved on p. 116) shows that 1, ..., N can't be split into m rows with no row containing the difference of two of its numbers once N > m! e, so S(m) <= floor(m! e): 65, 326, 1957, 13700, 109601 and 986410 for m = 4 to 9 (evaluated here). P. 117 proves S(m+1) >= 3 S(m) + 1, so S(m) >= (3^m - 1)/2, and a footnote claims without proof that equality holds only for m <= 3, which would give S(3) = 13 and S(4) >= 41; neither is recorded from it. Heule (arXiv:1711.08076) and Ageron et al. date it 1917.",
+"added_by": "daniel-munro"
+},
+"eliahou-et-al-2012": {
+"string": "S. Eliahou, J.M. Mar\u00edn, M.P. Revuelta and M.I. Sanz, Weak Schur numbers and the search for G. W. Walker's lost partitions, Computers & Mathematics with Applications 63 (2012) 175-182.",
+"date": "2011-12-07",
+"doi": "https://doi.org/10.1016/j.camwa.2011.11.006",
+"notes": "Received 2010-11-19, accepted 2011-11-03; the date is the online date in Crossref. Theorem 2.1 (p. 176) gives a partition of [1, 196] into 5 weakly sum-free sets, and Theorem 3.1 one of [1, 572] into 6. A note added in proof (p. 182) claims WS(6) >= 575 without a partition, after a note that Robilliard et al. had reached 574 while the paper was being refereed; the 575 isn't recorded here.",
+"added_by": "daniel-munro"
+},
+"fettes-kramer-radziszowski-2004": {
+"string": "S. Fettes, R.L. Kramer and S.P. Radziszowski, An Upper Bound of 62 on the Classical Ramsey Number R(3,3,3,3), Ars Combinatoria 72 (2004) 41-63.",
+"date": "2004",
+"url": "https://www.cs.rit.edu/~spr/PUBL/paper43.pdf",
+"notes": "[FeKR] in https://doi.org/10.37236/21. Section 2 (pp. 4-6) and Table 2 give the history of bounds on R_4(3). The bound was first claimed in R.L. Kramer's unpublished 116-page manuscript (talks in spring 1994), and was announced as [FKR] 'in preparation' in DS1 revision 7 (2000-07-25), with the computation in S. Fettes's 2001 RIT master's thesis; the journal year is used here. The bounds R_5(3) <= 307, R_6(3) <= 1838 and R_7(3) <= 12861 follow from R_4(3) <= 62 by the Greenwood-Gleason inequality R_{k+1}(3) <= (k+1)(R_k(3) - 1) + 2, as stated in https://doi.org/10.37236/21 (section 6.1.1). Continuing the same inequality gives R_8(3) <= 102882 and R_9(3) <= 925931, which the survey doesn't print but which match its item 6.2.d, R_k(3) <= k!(e - 1/6) + 1 for k >= 4 [XuXC]. With Schur's S(k) <= R_k(3) - 2, these give S(5) <= 305 (stated in Eliahou 2016), S(6) <= 1836 (stated in arXiv:2006.01502), S(7) <= 12859, S(8) <= 102880 and S(9) <= 925929 (not stated as such).",
+"added_by": "daniel-munro"
+},
+"dobbelaere-2020-05-30": {
+"string": "B. Dobbelaere, Smallest and fastest sorting networks for a given number of inputs, SorterHunter repository, sorting_networks.html, 2020-05-30.",
+"date": "2020-05-30",
+"url": "https://github.com/bertdobbelaere/SorterHunter/blob/ceab1520c97c3ced87d653be84da66564d25e5d2/sorting_networks.html",
+"notes": "Lower bounds on size updated from Harder's S(11) = 35 and S(12) = 39, by Van Voorhis's S(n+1) >= S(n) + ceil(log2 n).",
+"added_by": "daniel-munro"
+},
+"bundala-zavodny-2013": {
+"string": "D. Bundala, J. Z\u00e1vodn\u00fd, Optimal sorting networks, LATA 2014, LNCS 8370 (2014) 236-247, arXiv:1310.6271.",
+"date": "2013-10-23",
+"url": "https://arxiv.org/abs/1310.6271",
+"doi": "https://doi.org/10.1007/978-3-319-04921-2_19",
+"notes": "Proves D(11) = D(12) = 8 (Theorem 1) and D(n) = 9 for 13 <= n <= 16 (Theorem 2), with a SAT solver.",
+"added_by": "daniel-munro"
+},
+"bouzy-2015": {
+"string": "B. Bouzy, An Abstract Procedure to Compute Weak Schur Number Lower Bounds, LIPADE technical report TR-2 (2015).",
+"date": "2015-09-17",
+"url": "https://helios2.mi.parisdescartes.fr/~bouzy/publications/bouzy-weakSchur-tr-lipade.pdf",
+"added_by": "daniel-munro"
+},
+"fredricksen-sweet-2000": {
+"string": "H. Fredricksen and M.M. Sweet, Symmetric Sum-Free Partitions and Lower Bounds for Schur Numbers, Electronic Journal of Combinatorics 7 (2000) #R32.",
+"date": "2000-05-18",
+"doi": "https://doi.org/10.37236/1510",
+"notes": "The upper bound S(5) <= 315 follows from the bound R(3,3,3,3,3) <= 317 in https://doi.org/10.37236/21",
+"added_by": "daniel-munro"
+},
+"kautz-pease-green-1970": {
+"string": "W.H. Kautz, M.C. Pease, M.W. Green, Cellular logic-in-memory arrays, Final Report Part 1, SRI Project 5509, Stanford Research Institute, May 1970.",
+"date": "1970-05",
+"notes": "Not seen; cited by Van Voorhis (1971), Table 2, for the sizes previously reported for 17 to 32 inputs.",
+"added_by": "daniel-munro"
+},
+"rowley-2020": {
+"string": "F. Rowley, New lower bounds for weak Schur partitions, Integers 21 (2021) #A59, arXiv:2011.11292.",
+"date": "2020-11-23",
+"url": "https://arxiv.org/abs/2011.11292",
+"added_by": "daniel-munro"
+},
+"fredricksen-1979": {
+"string": "H. Fredricksen, Schur numbers and the Ramsey numbers N(3,3,...,3;2), Journal of Combinatorial Theory, Series A 27 (1979) 376-377.",
+"date": "1979-11",
+"doi": "https://doi.org/10.1016/0097-3165(79)90028-1",
+"notes": "Received 1978-03-28. Lists a partition of 1-157 into five sum-free sets, so S(5) >= 157, and states N(3,3,3,3,3;2) > 158, i.e. R_5(3) >= 159. It says this improves earlier lower bounds, citing H. Fredricksen, Five sum-free sets, Proc. 6th Southeastern Conf. on Combinatorics, Graph Theory and Computing (1975) 309-314, which wasn't found.",
+"added_by": "daniel-munro"
+},
+"greenwood-gleason-1955": {
+"string": "R.E. Greenwood and A.M. Gleason, Combinatorial Relations and Chromatic Graphs, Canadian Journal of Mathematics, 7 (1955) 1-7.",
+"date": "1955",
+"doi": "https://doi.org/10.4153/CJM-1955-001-4",
+"notes": "[GG] in https://doi.org/10.37236/21. Theorems 4 and 5 give R_3(3) = 17 and 42 <= R_4(3) <= 66, and section 5 gives R_k(3) <= [k! e] + 1 for all k (327 for k = 5, 1958 for k = 6, 13701 for k = 7, 109602 for k = 8 and 986411 for k = 9).",
+"added_by": "daniel-munro"
+},
+"valsalam-2010": {
+"string": "V.K. Valsalam, Utilizing Symmetry in Evolutionary Design, PhD thesis, University of Texas at Austin, Technical Report AI-10-04, August 2010.",
+"date": "2010-08",
+"url": "https://nn.cs.utexas.edu/downloads/papers/valsalam.phdtr10.pdf",
+"notes": "Table 7.1 (p. 76): smaller networks for 17 to 20 and 22 inputs.",
+"added_by": "daniel-munro"
+},
+"dobbelaere-sorting-networks": {
+"string": "B. Dobbelaere, Smallest and fastest sorting networks for a given number of inputs, https://bertdobbelaere.github.io/sorting_networks.html (page updated 2026-10-10, retrieved 2026-11-11).",
+"date": "2026-11-11",
+"url": "https://bertdobbelaere.github.io/sorting_networks.html",
+"notes": "List of the smallest and fastest known sorting networks for up to 32 inputs, with their sources, many found by Dobbelaere's SorterHunter program. Earlier versions are in the SorterHunter repository, https://github.com/bertdobbelaere/SorterHunter.",
+"added_by": "daniel-munro"
+}
+}

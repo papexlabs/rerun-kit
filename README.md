@@ -130,6 +130,55 @@ hand. Papex Labs runs it as a hosted task that Papex's server starts when a run 
 | Erdős problem 824 | `lean-rerun-v1` | The Lean proof in `daizisheng/erdos-824` at `b4b7099b`: a lower bound for the number of coprime pairs with equal sum of divisors, **assuming** a hypothesis on primes p with smooth p + 1. The hypothesis is not proved; the problem is open. |
 | Collatz conjecture | `lean-rerun-first-passage-v1` | The Lean proof in `shaikidris/FirstPassageLinearTransport-Palomar` at `dcd32c0f`: polylogarithmic descent for almost all Collatz orbits in natural density, within logarithmically many steps. It is about almost all orbits; the conjecture is open. |
 
+## Open tasks
+
+An open task asks for something new on an open problem: an object better than the best known one
+("Improve a bound"), or an object that refutes a statement ("Find a counterexample"). What you find is
+a small JSON file. A short program, the task's checker, decides whether it passes. A task is either a
+folder of this kit (`tasks/<task>/`, with its card `card.md`) or one of Papex's open tasks of a family:
+one reviewed checker in `families/<family>/` that takes the task's parameters, so a new task of a known
+family needs no new kit.
+
+Three families are here: `comparator-network` (sorting and median networks), `sum-free-colouring` (Schur and weak
+Schur numbers) and `constant-weight-code` (binary codes of constant weight). A daily program, `finder/`, reads
+B. Dobbelaere's lists of networks, Leaps in Bounds and A. E. Brouwer's table of codes, and publishes at most five
+new cards a day of these families. In the daily run a card is made only for an entry whose source links its object,
+and only after the family's checker passes that object with exactly the table's value (`finder/README.md`). Objects
+copied from other sources are credited in `NOTICE`.
+
+```
+python3 task.py list
+python3 task.py show <task>
+python3 task.py check <task> my-object.json
+python3 task.py result <task> my-object.json --batch <batch key> --problem <problem> --list <list> --agent-host "<app's name>"
+```
+
+`list` shows both kinds of task, with their best known values (grouped by problem when there are
+many). `show` prints one task's card: what to find, the best known value with who found it, its source
+and the date it was read, where the best known object is published, the exact file format, what a pass
+shows and does not show, and the next two commands. `check` runs the task's checker on your object
+and says one of three things: it does not pass (and why); it passes but is not better than the best
+known value (with both numbers); it passes and is better (and what to do next). Try as many objects as
+you like; nothing is sent. `result` writes the result file of a run you took with the Papex connection
+(`papex_take_shared_work`), and only when the object passes and, to improve a bound, is strictly
+better. As with a re-run, the AI app gives that file to `papex_prepare_shared_work_batch`, and only
+you send it.
+
+The checker runs in a separate Python process, in an empty folder, with a time limit, on the object
+exactly as the result file carries it. The best known value moves when a run is accepted: `check` and
+`result` read it from Papex when Papex answers within a few seconds, and otherwise use the value in the
+task's folder; they say which. `list`, `show` and `check` keep Papex's answer for 5 minutes in `work/`
+and say when they use that copy; `result` always reads Papex anew. A family's task needs Papex: when
+its checker is not the version this kit has, the kit says "this task needs a newer kit: git pull". When you send a run, Papex Labs runs the same checker again on the
+object in your result file and compares its score with the best known value on Papex at that moment.
+An accepted object is shown publicly on the task's page, so it holds only what the format names.
+
+A pass shows what the task's card says it shows: that this one object passes the task's checker, with
+its score, and, if it was accepted, that the score was better than the value in the named source as
+of that date. It does not show that the object is the best possible, it is not peer review, and it
+says nothing about who found the object or how. `tasks/README.md` describes a task's folder, a
+family's folder and the gates both pass before anything is published.
+
 ## Making a list's file
 
 `python3 tools/make_spec.py SEED.json OUT.spec.json` fetches a repository at a commit, without
@@ -137,4 +186,7 @@ building anything, and writes the SHA-256 of every file under the project folder
 if the kit would stop a run of it.
 
 `python3 tests/test_release.py OUT_DIR` runs the cases for what the kit refuses and for the batch
-file it writes with `--batch`; nothing is built and nothing is sent.
+file it writes with `--batch`; nothing is built and nothing is sent. `python3 tests/test_tasks.py
+OUT_DIR` runs the cases for open tasks: the gates over every folder in `tasks/`, `task.py`, and the
+runner's decisions on task lists against a stand-in Papex. `cd finder/tests && python3 -m unittest` runs the
+finder's cases, with no network. `python3 tools/task_lint.py --family families/*` runs the family gates.

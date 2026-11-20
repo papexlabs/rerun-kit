@@ -1,0 +1,39 @@
+{
+  "schema": "papex-task/v1",
+  "slug": "toy-euler-polynomial",
+  "kind": "counterexample",
+  "title": "Toy: a whole number n where n*n + n + 41 is not prime",
+  "shortTitle": "Toy n*n + n + 41",
+  "description": "A made-up task for the kit's tests: refute that n*n + n + 41 is prime for every n from 0 to 1000.",
+  "objective": "Find a whole number n from 0 to 1000 for which n*n + n + 41 is not prime.",
+  "direction": null,
+  "bestKnown": null,
+  "searched": "Nothing: this is a toy.",
+  "objectFormat": "A JSON object {\"n\": n}.",
+  "objectKeys": [
+    "n"
+  ],
+  "shows": "That n*n + n + 41 is not prime for that n.",
+  "notCovered": "Anything else: this is a toy.",
+  "limits": {
+    "maxObjectBytes": 200,
+    "checkerSeconds": 5
+  },
+  "resultLine": "Result: a toy run passed the toy checker.",
+  "checkedHow": "tests/tasks/toy-euler-polynomial/checker.py.",
+  "requirements": "Python 3.9 or later. A made-up task for the kit's tests.",
+  "expectedSeconds": 60,
+  "problem": {
+    "slug": "toy-problem",
+    "create": null
+  },
+  "sources": [
+    {
+      "fact": "A made-up task for the kit's tests",
+      "url": "https://github.com/papexlabs/rerun-kit",
+      "quote": "a made-up task for the kit's tests",
+      "fetchedOn": "2026-11-20"
+    }
+  ],
+  "checkerSha256": "0x649ac3e9dad49efee5cf8052c7b2c245fc6f82185a52212171ea0f0cef5618ec"
+}

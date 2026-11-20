@@ -1,0 +1,113 @@
+{
+  "schema": "papex-task/v1",
+  "slug": "no-five-on-a-sphere-12",
+  "kind": "record",
+  "title": "No five on a sphere in a 12 × 12 × 12 grid",
+  "shortTitle": "No five on a sphere, 12 × 12 × 12",
+  "description": "Find more points in the 12 × 12 × 12 grid than the best known set, with no 5 of them on one sphere or one plane. A short Python program checks any set in a few seconds at most.",
+  "objective": "Find a set of points in the 12 x 12 x 12 grid such that no 5 of them lie on one sphere or one plane. The score is the number of points; a larger set gives a better lower bound on C(12).",
+  "direction": "max",
+  "scorePlaces": 0,
+  "scoreLabel": "points",
+  "bestKnown": {
+    "value": "33",
+    "by": "AlphaEvolve, run and reported by Bogdan Georgiev, Javier Gómez-Serrano, Terence Tao, Adam Zsolt Wagner",
+    "year": 2025,
+    "sourceName": "arXiv 2511.02864",
+    "sourceUrl": "https://arxiv.org/abs/2511.02864v3",
+    "asOf": "2026-11-20",
+    "objectUrl": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/blob/8f447457957deac61e28bf1676746f0753b3b2f8/experiments/no_5_on_a_sphere/no_5_on_a_sphere.ipynb",
+    "quote": "We also got the new lower bounds $C_{\\ref{nosphere}}(11) \\geq 31$ and $C_{\\ref{nosphere}}(12) \\geq 33$.",
+    "note": "arXiv 2511.02864v3 TeX source, appendix.tex line 1973, section 'The no 5 on a sphere problem'. The 33 points are published in the problem 60 notebook (best_known.json)."
+  },
+  "objectFormat": "A JSON object {\"n\": 12, \"points\": [[x, y, z], ...]} where every coordinate is an integer from 0 to 11 (the grid {1..12}^3 shifted by -1, as the source publishes its construction; a shift maps spheres to spheres and planes to planes). Points must be distinct; at most 48 points (more than 4n points always put 5 on one plane z = c). No other keys: an accepted object is shown publicly. At most 20,000 bytes as the result file carries it.",
+  "objectKeys": [
+    "n",
+    "points"
+  ],
+  "shows": "That this one set of points has no 5 points on a common sphere or plane and has the stated number of points, so C(12) is at least that number. With more points than the best known set, it is better than the value in the named source as of the date shown.",
+  "notCovered": "A pass shows only that this one finite set has no 5 points on a common sphere or plane and has the stated size, so C(12) is at least that size. It does not give the exact value of C(12), says nothing about other n or about the asymptotic bounds, does not show the set is optimal, and does not show who found it or how.",
+  "alsoBelongsAt": "The AlphaEvolve repository of problems, problem 60 (its README says: \"Comments are most welcome - please feel free to contact the repository owners or send a pull request.\")",
+  "effort": "Hours of search at least, and it may not succeed: in a one-hour attempt an AI app with local search did not reach the best known value.",
+  "limits": {
+    "maxObjectBytes": 20000,
+    "checkerSeconds": 60
+  },
+  "resultLine": "Result: an accepted run's set passed this task's checker on Papex's runner and had more points than the best known set at that time, so C(12) is at least its size. It says nothing about the largest possible set, and it is not peer review.",
+  "requirements": "Python 3.9 or later and git. An AI app with a terminal and the Papex connection, or your own code, to search. No special hardware.",
+  "checkedHow": "tasks/no-five-on-a-sphere-12/checker.py (Python, standard library only) tests that the points are distinct and inside the grid, then computes for every 5 of them, in exact integers, the 5 × 5 determinant with rows (x, y, z, x² + y² + z², 1), which is zero exactly when the five lie on one sphere or plane. Papex's runner runs the same checker again on the object in the result file and compares the number of points with the best known value on Papex at that moment.",
+  "expectedSeconds": 3600,
+  "problem": {
+    "slug": "no-five-points-on-a-sphere",
+    "create": {
+      "slug": "no-five-points-on-a-sphere",
+      "title": "The no 5 on a sphere problem",
+      "question": "How many points can be chosen from the n × n × n grid so that no 5 of them lie on one sphere or one plane?",
+      "summary": "Problem 60 of the AlphaEvolve repository of problems (Georgiev, Gómez-Serrano, Tao and Wagner, 2025). C(n) is the size of the largest subset of the n × n × n grid with no 5 points on a sphere or a plane. It is known that C(n) ≤ 4n; the source asks for upper and lower bounds on C(n) that are as strong as possible.",
+      "field": "mathematics",
+      "sinceYear": null,
+      "prize": null,
+      "initialStatus": {
+        "status": "OPEN",
+        "source": {
+          "name": "AlphaEvolve repository of problems, problem 60",
+          "list": "AlphaEvolve repository of problems",
+          "url": "https://google-deepmind.github.io/alphaevolve_repository_of_problems/problems/60.html"
+        },
+        "sourceDate": null,
+        "checkedOn": "2026-11-20"
+      }
+    }
+  },
+  "sources": [
+    {
+      "fact": "The problem as its source states it",
+      "url": "https://google-deepmind.github.io/alphaevolve_repository_of_problems/problems/60.html",
+      "quote": "For $n$ a natural number, let $C(n)$ denote the size of the largest subset of $[n]^3 = \\{1,\\dots,n\\}^3$ such that no 5 points lie on a sphere or a plane. Obtain upper and lower bounds for $C(n)$ that are as strong as possible.",
+      "fetchedOn": "2026-11-20"
+    },
+    {
+      "fact": "The best known value, 33 points",
+      "url": "https://arxiv.org/e-print/2511.02864v3",
+      "quote": "We also got the new lower bounds $C_{\\ref{nosphere}}(11) \\geq 31$ and $C_{\\ref{nosphere}}(12) \\geq 33$.",
+      "fetchedOn": "2026-11-20",
+      "note": "appendix.tex line 1973"
+    },
+    {
+      "fact": "The general bounds: at most 4n, at least n^(3/4 - o(1))",
+      "url": "https://arxiv.org/e-print/2511.02864v3",
+      "quote": "$c\\sqrt{n}\\leq C(n)\\leq 4n$ ... improved ... to $n^{\\frac{3}{4}-o(1)}\\leq C(n)$",
+      "fetchedOn": "2026-11-20",
+      "note": "appendix.tex line 1973"
+    },
+    {
+      "fact": "The published 33-point set, copied into best_known.json",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/blob/8f447457957deac61e28bf1676746f0753b3b2f8/experiments/no_5_on_a_sphere/no_5_on_a_sphere.ipynb",
+      "quote": "construction_n_12_12_12",
+      "fetchedOn": "2026-11-20",
+      "note": "the list construction_n_12_12_12 of cell 1, parsed from the notebook's JSON with Python's ast (literal values only, nothing run); commit 8f447457957deac61e28bf1676746f0753b3b2f8; Repository README: software Apache-2.0; all other materials CC-BY 4.0. Copyright 2025 Google LLC. Attribution: Georgiev, Gomez-Serrano, Tao, Wagner, 'Mathematical exploration and discovery at scale', arXiv:2511.02864."
+    },
+    {
+      "fact": "Authors and title of the source",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems",
+      "quote": "Bogdan Georgiev, Javier Gómez-Serrano, Terence Tao, Adam Zsolt Wagner -- Mathematical exploration and discovery at scale, 2025",
+      "fetchedOn": "2026-11-20",
+      "note": "repository README"
+    },
+    {
+      "fact": "Licence of the repository's materials",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems",
+      "quote": "All software is licensed under the Apache License, Version 2.0 ... All other materials are licensed under the Creative Commons Attribution 4.0 International License (CC-BY).",
+      "fetchedOn": "2026-11-20",
+      "note": "repository README"
+    },
+    {
+      "fact": "Where a result also belongs",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems",
+      "quote": "Comments are most welcome - please feel free to contact the repository owners or send a pull request.",
+      "fetchedOn": "2026-11-20",
+      "note": "repository README"
+    }
+  ],
+  "checkerSha256": "0x2765a77dbd6feff9d20a3cbfbad9c5d38d447012e9f18df12de68ba389830b8e"
+}

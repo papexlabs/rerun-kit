@@ -1,0 +1,121 @@
+{
+ "cases": [
+  {
+   "file": "v1_wrong_n.json",
+   "label": "declared grid size `n` set to 11 (wrong size)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "field n must be the integer 12"
+   }
+  },
+  {
+   "file": "v2_out_of_range.json",
+   "label": "point 0 moved to x = 12 (outside 0..11)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "point 0 = [12, 9, 10] is outside 0..11"
+   }
+  },
+  {
+   "file": "v3_add_point.json",
+   "label": "added (0, 0, 0), the first free grid point (violated constraint)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "5 points on one sphere or plane: [[5, 9, 10], [6, 10, 6], [7, 2, 0], [0, 9, 2], [0, 0, 0]]"
+   }
+  },
+  {
+   "file": "v4_tampered_point.json",
+   "label": "point 0 changed from (5, 9, 10) to (5, 9, 11) (tampered value)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "5 points on one sphere or plane: [[5, 9, 11], [10, 5, 8], [4, 2, 1], [9, 0, 9], [8, 0, 11]]"
+   }
+  },
+  {
+   "file": "v5_duplicate_point.json",
+   "label": "last point repeated (34 entries)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "point 33 = [11, 0, 3] appears twice"
+   }
+  },
+  {
+   "file": "v6_too_many_points.json",
+   "label": "16 free grid points added (49 points)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "49 points: more than 4n = 48 points always put 5 on one plane z = c"
+   }
+  },
+  {
+   "file": "v7_five_coplanar.json",
+   "label": "five points on the plane z = 0",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "5 points on one sphere or plane: [[0, 0, 0], [1, 0, 0], [0, 1, 0], [3, 5, 0], [7, 2, 0]]"
+   }
+  },
+  {
+   "file": "v8_five_cospherical.json",
+   "label": "five points on the sphere of radius 3 about (5, 5, 5)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "5 points on one sphere or plane: [[8, 5, 5], [5, 8, 5], [5, 5, 8], [2, 5, 5], [7, 6, 7]]"
+   }
+  },
+  {
+   "file": "v9_float_coordinate.json",
+   "label": "point 2 written as 11.0 instead of 11",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "point 2 is not a triple of integers: [11.0, 11, 2]"
+   }
+  },
+  {
+   "file": "v10_extra_key.json",
+   "label": "the best known set with an extra field \"note\": a key the format does not name (new)",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "key \"note\" is not part of the format (only n and points)"
+   }
+  },
+  {
+   "file": "v11_n_is_12_as_a_float.json",
+   "label": "n written 12.0",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "field n must be the integer 12"
+   }
+  },
+  {
+   "file": "v12_n_is_true.json",
+   "label": "n written true",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "field n must be the integer 12"
+   }
+  },
+  {
+   "file": "v13_coordinate_is_true.json",
+   "label": "a coordinate written true",
+   "expect": {
+    "valid": false,
+    "score": null,
+    "reason": "point 0 is not a triple of integers: [True, 9, 10]"
+   }
+  }
+ ]
+}

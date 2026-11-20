@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "file": "v1_sum.json",
+      "label": "a pair adding up to 31",
+      "expect": {
+        "valid": false,
+        "score": null,
+        "reason": "1 and 30 add up to 31"
+      }
+    },
+    {
+      "file": "v2_range.json",
+      "label": "a number out of range",
+      "expect": {
+        "valid": false,
+        "score": null,
+        "reason": "entry 0 is not a whole number from 1 to 30"
+      }
+    },
+    {
+      "file": "v3_twice.json",
+      "label": "a number twice",
+      "expect": {
+        "valid": false,
+        "score": null,
+        "reason": "2 appears twice"
+      }
+    },
+    {
+      "file": "v9_extra_key.json",
+      "label": "a key the format does not name",
+      "expect": {
+        "valid": false,
+        "score": null,
+        "reason": "the object must be {\"numbers\": [...]} and nothing else"
+      }
+    }
+  ]
+}
