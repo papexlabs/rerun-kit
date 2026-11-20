@@ -154,7 +154,7 @@ class ComparatorNetwork:
                           "peer review.",
             "alsoBelongsAt": "B. Dobbelaere's list takes improvements by e-mail (the address is on the list's page) "
                              "or as an issue at github.com/bertdobbelaere/SorterHunter.",
-            "effort": "The checker takes seconds up to a minute.",
+            "effort": "Hard: the listed networks come from long searches. In one- and two-hour attempts an AI app matched some and beat none. Expect days, not an evening. The checker takes up to a minute.",
             "resultLine": f"Result: an accepted run's network passed this family's checker on Papex's runner and had "
                           f"fewer {unit} than the best known value at that time. It is not peer review.",
             "requirements": REQUIREMENTS,
@@ -268,7 +268,7 @@ class SumFreeColouring:
                           "about who found the colouring or how. It is not peer review.",
             "alsoBelongsAt": "Leaps in Bounds takes new colourings as certificates by pull request "
                              "(github.com/daniel-munro/leaps-in-bounds).",
-            "effort": "The checker takes under a second.",
+            "effort": "Hard: the listed colourings come from long searches or special constructions. In one- and two-hour attempts an AI app matched one and beat none. Expect days. The checker takes under a second.",
             "resultLine": f"Result: an accepted run's colouring passed this family's checker on Papex's runner and "
                           f"was longer than the best known value at that time, so {name} is at least its N. It is "
                           "not peer review.",
@@ -380,7 +380,7 @@ class ConstantWeightCode:
                           "about who found the code or how. A. E. Brouwer's table is updated from e-mail, so a "
                           "better code may exist that is not on its page yet. It is not peer review.",
             "alsoBelongsAt": "A. E. Brouwer's table asks for new codes by e-mail (the address is on the table's page).",
-            "effort": "The checker takes seconds.",
+            "effort": "Hard: the listed codes come from long searches. In a one-hour attempt an AI app re-found some and beat none. Expect days, not an evening. The checker takes seconds.",
             "resultLine": f"Result: an accepted run's code passed this family's checker on Papex's runner and had "
                           f"more codewords than the best known value at that time, so A({n},{d},{w}) is at least its "
                           "size. It is not peer review.",
