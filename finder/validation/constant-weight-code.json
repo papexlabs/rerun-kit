@@ -227,6 +227,21 @@
    "tableValue": "46"
   },
   {
+   "checkedOn": "2026-11-21",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d16/a32.16.13.25",
+   "params": {
+    "d": 16,
+    "n": 32,
+    "w": 13
+   },
+   "result": "reproduced",
+   "score": "25",
+   "sha256": "0x81c67d7978b86a5070532f741440ecc55d72f9960db64837f1141e9605e858dc",
+   "source": "brouwer",
+   "tableValue": "25"
+  },
+  {
    "checkedOn": "2026-11-19",
    "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
    "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d4/a15.4.5.243",
@@ -270,6 +285,21 @@
    "sha256": "0x7b4f93d9447a06e52994f427883ab3f7273c5a3dd6fd2846192580acda051930",
    "source": "brouwer",
    "tableValue": "110"
+  },
+  {
+   "checkedOn": "2026-11-21",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d6/a27.6.5.262H",
+   "params": {
+    "d": 6,
+    "n": 27,
+    "w": 5
+   },
+   "result": "reproduced",
+   "score": "262",
+   "sha256": "0x33b09c0d0ef86bf52a8433a754803e581ecef0de7c12258582d692b43567bd59",
+   "source": "brouwer",
+   "tableValue": "262"
   },
   {
    "checkedOn": "2026-11-19",
