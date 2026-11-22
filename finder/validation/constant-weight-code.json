@@ -302,6 +302,21 @@
    "tableValue": "262"
   },
   {
+   "checkedOn": "2026-11-22",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d8/a26.8.7.264H",
+   "params": {
+    "d": 8,
+    "n": 26,
+    "w": 7
+   },
+   "result": "reproduced",
+   "score": "264",
+   "sha256": "0x48f9965babb9cae78d9574373a1d2fbe4ebbff20bf1dabf89fe2858eedc29065",
+   "source": "brouwer",
+   "tableValue": "264"
+  },
+  {
    "checkedOn": "2026-11-19",
    "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
    "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d8/a28.8.6.132H",
