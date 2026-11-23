@@ -257,6 +257,21 @@
    "tableValue": "243"
   },
   {
+   "checkedOn": "2026-11-23",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d4/a16.4.7.841H",
+   "params": {
+    "d": 4,
+    "n": 16,
+    "w": 7
+   },
+   "result": "reproduced",
+   "score": "841",
+   "sha256": "0xe86193d1c4abd674241fee345d5a20ecea628c781c28d3b843da67feb1427c86",
+   "source": "brouwer",
+   "tableValue": "841"
+  },
+  {
    "checkedOn": "2026-11-19",
    "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
    "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d4/h8",
