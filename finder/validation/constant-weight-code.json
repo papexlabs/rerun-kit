@@ -317,6 +317,21 @@
    "tableValue": "262"
   },
   {
+   "checkedOn": "2026-11-24",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d6/a29.6.5.336H",
+   "params": {
+    "d": 6,
+    "n": 29,
+    "w": 5
+   },
+   "result": "reproduced",
+   "score": "336",
+   "sha256": "0x45fb1daf1d5b664954e3d9ac33730538d68f6142409eab4edcfcef4971d90cdc",
+   "source": "brouwer",
+   "tableValue": "336"
+  },
+  {
    "checkedOn": "2026-11-22",
    "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
    "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d8/a26.8.7.264H",
@@ -345,6 +360,21 @@
    "sha256": "0x02a5a73cd41fb25fe5c7f5cb55ab07d1083a8ac774db2a7952718dd5294ff8e0",
    "source": "brouwer",
    "tableValue": "132"
+  },
+  {
+   "checkedOn": "2026-11-24",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d8/a28.8.7.321H",
+   "params": {
+    "d": 8,
+    "n": 28,
+    "w": 7
+   },
+   "result": "reproduced",
+   "score": "321",
+   "sha256": "0x60c2844095387ac61f72435c1e8936fb4e768dbb9e10d5d5e81154c271eab2d1",
+   "source": "brouwer",
+   "tableValue": "321"
   }
  ],
  "schema": "papex-finder-evidence/v1"
