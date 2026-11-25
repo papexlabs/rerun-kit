@@ -86,6 +86,20 @@
    "tableValue": "7002"
   },
   {
+   "checkedOn": "2026-11-25",
+   "checkerSha256": "0x0142755348a81d7cb99520d967a9b935ddbebdb005d1970ff5d7b666fb580806",
+   "objectUrl": "https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/schur/schur-9-lower-18920.yml",
+   "params": {
+    "colours": 9,
+    "weak": false
+   },
+   "result": "reproduced",
+   "score": "18920",
+   "sha256": "0xbcbb9e87681f4eb00776c956eb111cf72f813dbef91fe494392c3baaa4f04bf0",
+   "source": "leaps",
+   "tableValue": "18920"
+  },
+  {
    "checkedOn": "2026-11-19",
    "checkerSha256": "0x0142755348a81d7cb99520d967a9b935ddbebdb005d1970ff5d7b666fb580806",
    "objectUrl": "https://github.com/daniel-munro/leaps-in-bounds/blob/main/certificates/weak-schur/weak-schur-9-lower-22620.yml",
