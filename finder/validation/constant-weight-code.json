@@ -272,6 +272,21 @@
    "tableValue": "841"
   },
   {
+   "checkedOn": "2026-11-26",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d4/a20.4.5.876H",
+   "params": {
+    "d": 4,
+    "n": 20,
+    "w": 5
+   },
+   "result": "reproduced",
+   "score": "876",
+   "sha256": "0xaaca67300ed62625e8e3826a3868dcc55075f3fb4c81414a0024d49563c45cfc",
+   "source": "brouwer",
+   "tableValue": "876"
+  },
+  {
    "checkedOn": "2026-11-19",
    "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
    "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d4/h8",
@@ -285,6 +300,21 @@
    "sha256": "0x99ab98973ae799a6679d22cc82c169ed72635f705814fa2080634197dc64ade8",
    "source": "brouwer",
    "tableValue": "14"
+  },
+  {
+   "checkedOn": "2026-11-26",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d6/a20.6.8.597H",
+   "params": {
+    "d": 6,
+    "n": 20,
+    "w": 8
+   },
+   "result": "reproduced",
+   "score": "597",
+   "sha256": "0xa4f885160fa534913dc3c93da8484354569d72cd23a62c8d7946dfd513b21ed8",
+   "source": "brouwer",
+   "tableValue": "597"
   },
   {
    "checkedOn": "2026-11-19",
@@ -345,6 +375,21 @@
    "sha256": "0x48f9965babb9cae78d9574373a1d2fbe4ebbff20bf1dabf89fe2858eedc29065",
    "source": "brouwer",
    "tableValue": "264"
+  },
+  {
+   "checkedOn": "2026-11-26",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d8/a27.8.8.776H",
+   "params": {
+    "d": 8,
+    "n": 27,
+    "w": 8
+   },
+   "result": "reproduced",
+   "score": "776",
+   "sha256": "0x6797bc7ce9802c39d04783954ff52776f16a70eed6c2828d2b6d8ea9681bdeaa",
+   "source": "brouwer",
+   "tableValue": "776"
   },
   {
    "checkedOn": "2026-11-19",
