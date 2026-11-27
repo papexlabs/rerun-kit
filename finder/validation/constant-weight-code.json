@@ -2,6 +2,21 @@
  "family": "constant-weight-code",
  "records": [
   {
+   "checkedOn": "2026-11-27",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d10/a23.10.10.56H",
+   "params": {
+    "d": 10,
+    "n": 23,
+    "w": 10
+   },
+   "result": "reproduced",
+   "score": "56",
+   "sha256": "0xb09fc915bf8dddab81108461d12f305f6560787764aaa6892729f6e0da02bcd9",
+   "source": "brouwer",
+   "tableValue": "56"
+  },
+  {
    "checkedOn": "2026-11-19",
    "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
    "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d10/a24.10.8.39",
@@ -167,6 +182,21 @@
    "tableValue": "101"
   },
   {
+   "checkedOn": "2026-11-27",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d12/a31.12.10.109H",
+   "params": {
+    "d": 12,
+    "n": 31,
+    "w": 10
+   },
+   "result": "reproduced",
+   "score": "109",
+   "sha256": "0xc3d842741a7d3cc1563ce319351af1ce73092b5de6528e0f07c1d6bf9f65aeb3",
+   "source": "brouwer",
+   "tableValue": "109"
+  },
+  {
    "checkedOn": "2026-11-19",
    "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
    "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d12/a31.12.10.108H",
@@ -287,6 +317,21 @@
    "tableValue": "876"
   },
   {
+   "checkedOn": "2026-11-27",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d4/a24.4.5.1923H",
+   "params": {
+    "d": 4,
+    "n": 24,
+    "w": 5
+   },
+   "result": "reproduced",
+   "score": "1923",
+   "sha256": "0xd8ba9d6d3526ca49e45b14818fce95cdcf92f1d926f41129fbad355452bb0d7e",
+   "source": "brouwer",
+   "tableValue": "1923"
+  },
+  {
    "checkedOn": "2026-11-19",
    "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
    "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d4/h8",
@@ -347,6 +392,21 @@
    "tableValue": "262"
   },
   {
+   "checkedOn": "2026-11-27",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d6/a28.6.5.282H",
+   "params": {
+    "d": 6,
+    "n": 28,
+    "w": 5
+   },
+   "result": "reproduced",
+   "score": "282",
+   "sha256": "0xe8359fe9ca5d3daa4d4683cb6d60234e87bd6e262f7677bc32c231894106971e",
+   "source": "brouwer",
+   "tableValue": "282"
+  },
+  {
    "checkedOn": "2026-11-24",
    "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
    "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d6/a29.6.5.336H",
@@ -377,6 +437,21 @@
    "tableValue": "264"
   },
   {
+   "checkedOn": "2026-11-27",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d8/a26.8.9.890H",
+   "params": {
+    "d": 8,
+    "n": 26,
+    "w": 9
+   },
+   "result": "reproduced",
+   "score": "890",
+   "sha256": "0xfaa3cf903318d3bb0ac069963d96ae1f3f80bdac338eb5acd31215397adad021",
+   "source": "brouwer",
+   "tableValue": "890"
+  },
+  {
    "checkedOn": "2026-11-26",
    "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
    "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d8/a27.8.8.776H",
@@ -390,6 +465,21 @@
    "sha256": "0x6797bc7ce9802c39d04783954ff52776f16a70eed6c2828d2b6d8ea9681bdeaa",
    "source": "brouwer",
    "tableValue": "776"
+  },
+  {
+   "checkedOn": "2026-11-27",
+   "checkerSha256": "0x48da39323c98a94e9c2f1589d9cea7499e102de1f9871070aec3b248f45bbd4c",
+   "objectUrl": "https://aeb.win.tue.nl/codes/cwc/d8/a27.8.8.777H",
+   "params": {
+    "d": 8,
+    "n": 27,
+    "w": 8
+   },
+   "result": "reproduced",
+   "score": "777",
+   "sha256": "0x7fb0556f8963fbe4e44f5d610a0d30eef1f392740b31b52963b26cf2b4c61124",
+   "source": "brouwer",
+   "tableValue": "777"
   },
   {
    "checkedOn": "2026-11-19",
